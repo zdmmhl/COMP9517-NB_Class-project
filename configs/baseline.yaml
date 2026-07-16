@@ -1,0 +1,22 @@
+seed: 42
+
+data:
+  root: datasets/inat2021
+  train_annotations: train_mini.json
+  test_annotations: val.json
+  split_dir: data_splits
+  num_classes: 500
+  train_per_class: 40
+  val_per_class: 10
+  test_per_class: 10
+  image_size: 224
+
+training:
+  batch_size: 64
+  num_workers: 4
+  epochs: 30
+  learning_rate: 0.001
+
+model:
+  name: resnet18
+  pretrained: true
