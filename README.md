@@ -47,10 +47,3 @@ The iNaturalist dataset is not stored in Git. Local dataset paths are configured
 in `configs/baseline.yaml`. Generated split manifests should record the random
 seed, selected species, image paths, and labels so that every experiment uses
 exactly the same train, validation, and test data.
-
-## Reuse note
-
-The directory organization was inspired by
-[ParzHe/CV9517_Group-Project](https://github.com/ParzHe/CV9517_Group-Project).
-Its segmentation-specific implementation is not copied because this repository
-targets a different classification task.
