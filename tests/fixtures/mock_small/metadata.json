@@ -1,0 +1,16 @@
+{
+  "method_name": "mock_classifier",
+  "model_type": "synthetic_fixture",
+  "initialization": "not_applicable",
+  "num_classes": 6,
+  "random_seed": 42,
+  "split_id": "mock6_seed42",
+  "score_type": "synthetic_rank_score",
+  "training_time_seconds": 12.5,
+  "inference_time_seconds": 0.3,
+  "inference_num_images": 30,
+  "inference_includes_preprocessing": true,
+  "device": "synthetic",
+  "batch_size": 10,
+  "image_size": 96
+}
