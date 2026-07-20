@@ -1,0 +1,2 @@
+method_name,split_id,score_type,device,random_seed,num_classes,num_samples,top1_accuracy,top5_accuracy,overall_accuracy,macro_precision,macro_recall,macro_f1,balanced_accuracy,training_time_seconds,inference_time_seconds,inference_num_images,inference_images_per_second
+mock_classifier,mock6_seed42,synthetic_rank_score,synthetic,42,6,30,0.4,0.8,0.4,0.4,0.4,0.4,0.4,12.5,0.3,30,100.0

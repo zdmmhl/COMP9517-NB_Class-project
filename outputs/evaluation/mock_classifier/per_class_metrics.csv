@@ -1,0 +1,7 @@
+class_index,category_id,species_name,precision,recall,f1,support,class_accuracy
+0,10000,Mock species 0,0.4,0.4,0.4,5,0.4
+1,10001,Mock species 1,0.4,0.4,0.4,5,0.4
+2,10002,Mock species 2,0.4,0.4,0.4,5,0.4
+3,10003,Mock species 3,0.4,0.4,0.4,5,0.4
+4,10004,Mock species 4,0.4,0.4,0.4,5,0.4
+5,10005,Mock species 5,0.4,0.4,0.4,5,0.4

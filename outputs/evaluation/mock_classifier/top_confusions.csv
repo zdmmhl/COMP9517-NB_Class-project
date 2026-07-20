@@ -1,0 +1,4 @@
+class_a,class_b,species_a,species_b,a_to_b,b_to_a,total_confusions
+0,1,Mock species 0,Mock species 1,3,3,6
+2,3,Mock species 2,Mock species 3,3,3,6
+4,5,Mock species 4,Mock species 5,3,3,6

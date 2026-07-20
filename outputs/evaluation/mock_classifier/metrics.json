@@ -1,0 +1,20 @@
+{
+  "method_name": "mock_classifier",
+  "split_id": "mock6_seed42",
+  "score_type": "synthetic_rank_score",
+  "device": "synthetic",
+  "random_seed": 42,
+  "num_classes": 6,
+  "num_samples": 30,
+  "top1_accuracy": 0.4,
+  "top5_accuracy": 0.8,
+  "overall_accuracy": 0.4,
+  "macro_precision": 0.4,
+  "macro_recall": 0.4,
+  "macro_f1": 0.4,
+  "balanced_accuracy": 0.4,
+  "training_time_seconds": 12.5,
+  "inference_time_seconds": 0.3,
+  "inference_num_images": 30,
+  "inference_images_per_second": 100.0
+}

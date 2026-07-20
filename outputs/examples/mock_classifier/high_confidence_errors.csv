@@ -1,0 +1,13 @@
+sample_id,image_path,true_label,pred_1,pred_2,pred_3,pred_4,pred_5,score_1,score_2,score_3,score_4,score_5,top1_correct,top5_correct,score_margin
+mock_c000_s02,images/class_0/sample_2.png,0,1,0,2,3,4,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c000_s03,images/class_0/sample_3.png,0,1,2,3,0,4,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c000_s04,images/class_0/sample_4.png,0,1,2,3,4,5,0.95,0.8,0.65,0.5,0.35,False,False,0.1499999999999999
+mock_c001_s02,images/class_1/sample_2.png,1,0,1,2,3,4,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c001_s03,images/class_1/sample_3.png,1,0,2,3,1,4,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c001_s04,images/class_1/sample_4.png,1,0,2,3,4,5,0.95,0.8,0.65,0.5,0.35,False,False,0.1499999999999999
+mock_c002_s02,images/class_2/sample_2.png,2,3,2,4,5,0,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c002_s03,images/class_2/sample_3.png,2,3,4,5,2,0,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c002_s04,images/class_2/sample_4.png,2,3,4,5,0,1,0.95,0.8,0.65,0.5,0.35,False,False,0.1499999999999999
+mock_c003_s02,images/class_3/sample_2.png,3,2,3,4,5,0,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c003_s03,images/class_3/sample_3.png,3,2,4,5,3,0,0.95,0.8,0.65,0.5,0.35,False,True,0.1499999999999999
+mock_c003_s04,images/class_3/sample_4.png,3,2,4,5,0,1,0.95,0.8,0.65,0.5,0.35,False,False,0.1499999999999999
