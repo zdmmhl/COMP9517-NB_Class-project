@@ -1,1 +1,1 @@
-"""Dataset loading, transformations, and reproducible split generation."""
+"""Dataset loading, transforms, and reproducible split utilities."""

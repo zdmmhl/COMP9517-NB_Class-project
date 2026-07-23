@@ -1,1 +1,1 @@
-"""Traditional computer vision baselines."""
+"""Handcrafted feature and classical classifier baselines."""

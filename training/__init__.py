@@ -1,1 +1,1 @@
-"""Shared training utilities for deep learning experiments."""
+"""Shared deep-learning optimization and epoch loops."""

@@ -1,8 +1,6 @@
-"""Train and validate the HOG plus SVM baseline."""
+from _bootstrap import PROJECT_ROOT  # noqa: F401
 
-
-def main():
-    raise SystemExit("Traditional training is not implemented yet.")
+from traditional.hog_svm import main
 
 
 if __name__ == "__main__":

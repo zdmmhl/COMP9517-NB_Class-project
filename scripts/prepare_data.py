@@ -1,8 +1,6 @@
-"""Generate the fixed species list and data split manifests."""
+from _bootstrap import PROJECT_ROOT  # noqa: F401
 
-
-def main():
-    raise SystemExit("Data preparation is not implemented yet.")
+from data.prepare_splits import main
 
 
 if __name__ == "__main__":

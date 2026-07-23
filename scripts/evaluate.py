@@ -1,8 +1,8 @@
-"""Evaluate a trained method on the fixed official test split."""
+"""Compatibility entry point for checkpoint-only deep model evaluation."""
 
+from _bootstrap import PROJECT_ROOT  # noqa: F401
 
-def main():
-    raise SystemExit("Evaluation is not implemented yet.")
+from training.train_deep import main
 
 
 if __name__ == "__main__":

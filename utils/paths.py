@@ -1,4 +1,4 @@
-"""Central path handling for datasets and generated artifacts."""
+"""Central paths for source configuration and generated local artifacts."""
 
 from pathlib import Path
 

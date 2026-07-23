@@ -1,14 +1,23 @@
-"""PyTorch dataset for the selected iNaturalist species subset.
+from pathlib import Path
 
-The implementation will read a generated manifest rather than resampling data
-inside each experiment. This keeps all methods on identical splits.
-"""
+from PIL import Image, ImageOps
+from torch.utils.data import Dataset
 
 
-class INatSpeciesDataset:
-    """Placeholder for the manifest-backed classification dataset."""
+class SplitImageDataset(Dataset):
+    """Load RGB images referenced by a generated split manifest."""
 
-    def __init__(self, manifest_path, transform=None):
-        self.manifest_path = manifest_path
+    def __init__(self, rows, data_root, transform):
+        self.rows = rows
+        self.data_root = Path(data_root)
         self.transform = transform
-        raise NotImplementedError("Dataset loading will be implemented next.")
+
+    def __len__(self):
+        return len(self.rows)
+
+    def __getitem__(self, index):
+        row = self.rows[index]
+        path = self.data_root / row["file_name"]
+        with Image.open(path) as img:
+            image = self.transform(ImageOps.exif_transpose(img).convert("RGB"))
+        return image, int(row["class_index"]), row["file_name"]

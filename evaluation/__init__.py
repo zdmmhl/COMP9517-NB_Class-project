@@ -1,1 +1,1 @@
-"""Metrics, timing, visualizations, and error analysis."""
+"""Metrics, plots, model comparison, ensembling, and error analysis."""
