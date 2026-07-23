@@ -42,6 +42,17 @@ comparison/traditional_summary_metrics.csv
 comparison/traditional_methods_comparison.png
 ```
 
+评价模块重新计算得到的三组受控对比位于：
+
+```text
+ablations/handcrafted_features/
+ablations/hog_classifiers/
+ablations/color_classifiers/
+```
+
+每组包含绝对指标图、相对 baseline 的变化图、汇总 CSV 和验证报告。
+`evaluation_manifest.json` 记录哪些方法使用逐图片 Top-5 重新计算，哪些方法只能使用已有汇总指标。
+
 ## 3. 文件夹结构
 
 ```text
@@ -49,6 +60,7 @@ final_results/inat500/
 |-- README.md
 |-- TRADITIONAL_EXPERIMENTS.md
 |-- artifact_manifest.csv
+|-- evaluation_manifest.json
 |-- comparison/
 |   |-- summary_metrics.csv
 |   |-- traditional_summary_metrics.csv
@@ -70,8 +82,12 @@ final_results/inat500/
 |   |-- resnet50_optimized/
 |   |-- convnext_mixup/
 |   `-- deep_ensemble/
-`-- reproducibility/
-    `-- data_splits/
+|-- reproducibility/
+|   `-- data_splits/
+`-- ablations/
+    |-- handcrafted_features/
+    |-- hog_classifiers/
+    `-- color_classifiers/
 ```
 
 ## 4. 每个方法目录中的文件

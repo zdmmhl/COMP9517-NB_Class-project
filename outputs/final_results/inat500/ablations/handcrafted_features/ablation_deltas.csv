@@ -1,0 +1,5 @@
+variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
+color,HSV colour histogram,0,0.0,0.0,0.0
+lbp,Uniform LBP,1,-0.0142,-0.0546,-0.011898075888
+hog,HOG,2,0.011,0.011,0.00899625174
+sift_bovw,SIFT-BoVW,3,-0.0066,-0.0242,-0.007890675004

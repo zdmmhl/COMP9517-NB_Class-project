@@ -1,0 +1,3 @@
+variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
+sgd_svm,SGD linear SVM,0,0.0,0.0,0.0
+linear_svc,LinearSVC,1,0.0118,0.0288,0.003928717464

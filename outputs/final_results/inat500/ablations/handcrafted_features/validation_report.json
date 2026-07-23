@@ -1,0 +1,38 @@
+{
+  "study_name": "Handcrafted feature descriptor comparison",
+  "factor": "feature",
+  "baseline_variant": "color",
+  "variants": [
+    "color",
+    "lbp",
+    "hog",
+    "sift_bovw"
+  ],
+  "seeds": [
+    "9517"
+  ],
+  "num_runs": 4,
+  "checked_pairs": [
+    {
+      "baseline_run": "color/seed_9517",
+      "candidate_run": "lbp/seed_9517",
+      "changed_parameters": [
+        "feature"
+      ]
+    },
+    {
+      "baseline_run": "color/seed_9517",
+      "candidate_run": "hog/seed_9517",
+      "changed_parameters": [
+        "feature"
+      ]
+    },
+    {
+      "baseline_run": "color/seed_9517",
+      "candidate_run": "sift_bovw/seed_9517",
+      "changed_parameters": [
+        "feature"
+      ]
+    }
+  ]
+}

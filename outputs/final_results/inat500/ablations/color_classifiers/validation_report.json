@@ -1,0 +1,22 @@
+{
+  "study_name": "Colour histogram classifier comparison",
+  "factor": "classifier",
+  "baseline_variant": "sgd_svm",
+  "variants": [
+    "sgd_svm",
+    "linear_svc"
+  ],
+  "seeds": [
+    "9517"
+  ],
+  "num_runs": 2,
+  "checked_pairs": [
+    {
+      "baseline_run": "sgd_svm/seed_9517",
+      "candidate_run": "linear_svc/seed_9517",
+      "changed_parameters": [
+        "classifier"
+      ]
+    }
+  ]
+}
