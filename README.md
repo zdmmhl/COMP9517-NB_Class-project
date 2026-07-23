@@ -89,6 +89,37 @@ python scripts\train_deep.py `
 
 Use `--help` on any entry point for all optimization and evaluation options.
 
+## Evaluate Standardized Prediction Artifacts
+
+The repository also supports model-independent evaluation from the shared
+`predictions.csv` and `metadata.json` contract documented in
+`模型输出格式指南.md`. This path does not load a model checkpoint:
+
+```powershell
+python scripts\evaluate_artifacts.py `
+  --prediction-dir tests\fixtures\mock_small `
+  --class-mapping tests\fixtures\mock_small\class_mapping.csv `
+  --test-manifest tests\fixtures\mock_small\test.csv `
+  --history tests\fixtures\mock_small\history.csv `
+  --image-root tests\fixtures\mock_small `
+  --output-dir outputs\evaluation\mock_classifier `
+  --examples-dir outputs\examples\mock_classifier
+
+python scripts\compare_models.py `
+  --evaluation-root outputs\evaluation `
+  --output-dir outputs\comparison
+```
+
+`scripts/evaluate.py` remains the compatibility entry point for checkpoint-based
+deep-model evaluation. `scripts/evaluate_artifacts.py` is the generic evaluator
+for saved outputs from traditional or deep-learning methods.
+
+Run the evaluation contract and pipeline tests with:
+
+```powershell
+python -m pytest
+```
+
 ## Generated Files
 
 Training and evaluation write checkpoints, histories, metrics, predictions,
