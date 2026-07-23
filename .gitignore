@@ -32,9 +32,6 @@ checkpoints/
 logs/
 outputs/*
 !outputs/README.md
-!outputs/runs/
-outputs/runs/*
-!outputs/runs/README.md
 !outputs/final_results/
 !outputs/final_results/**
 
