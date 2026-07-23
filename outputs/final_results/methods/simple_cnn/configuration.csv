@@ -1,0 +1,13 @@
+parameter,value
+method_key,simple_cnn
+method_name,SimpleCNN from scratch
+initialization,random
+image_size,128
+epochs,3
+batch_size,128
+lr,0.001
+weight_decay,0.0001
+seed,9517
+max_classes,
+max_train_per_class,
+max_eval_per_class,

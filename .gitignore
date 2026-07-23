@@ -32,6 +32,8 @@ checkpoints/
 logs/
 outputs/*
 !outputs/README.md
+!outputs/final_results/
+!outputs/final_results/**
 
 # Report build artifacts
 report/*.aux

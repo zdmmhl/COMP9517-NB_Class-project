@@ -2,6 +2,21 @@ import csv
 import json
 
 
+def save_rows_csv(path, rows, fieldnames=None):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    rows = list(rows)
+    if fieldnames is None:
+        fieldnames = []
+        for row in rows:
+            for key in row:
+                if key not in fieldnames:
+                    fieldnames.append(key)
+    with path.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def save_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as file:

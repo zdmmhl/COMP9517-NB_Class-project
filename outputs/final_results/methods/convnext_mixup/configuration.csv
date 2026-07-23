@@ -1,0 +1,21 @@
+parameter,value
+method_key,convnext_mixup
+method_name,ImageNet-pretrained ConvNeXt-Tiny + MixUp
+initialization,imagenet
+image_size,224
+epochs,12
+batch_size,64
+lr,0.0005
+weight_decay,0.01
+backbone_lr_multiplier,0.1
+scheduler,cosine
+min_lr_ratio,0.01
+label_smoothing,0.1
+augmentation,strong
+grad_clip,1.0
+mixup_alpha,0.2
+tta,True
+seed,9517
+max_classes,
+max_train_per_class,
+max_eval_per_class,

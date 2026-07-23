@@ -1,0 +1,14 @@
+parameter,value
+method_key,hog_svm
+method_name,HOG + Linear SVM
+initialization,handcrafted
+classifier,sgd-svm
+image_size,128
+orientations,9
+pixels_per_cell,16
+cells_per_block,2
+svm_c,1.0
+sgd_alpha,0.0001
+max_iter,20
+max_classes,
+max_per_class,

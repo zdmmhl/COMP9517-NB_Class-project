@@ -1,0 +1,13 @@
+parameter,value
+method_key,resnet18_pretrained
+method_name,ImageNet-pretrained ResNet18
+initialization,imagenet
+image_size,128
+epochs,3
+batch_size,64
+lr,0.0003
+weight_decay,0.0001
+seed,9517
+max_classes,
+max_train_per_class,
+max_eval_per_class,

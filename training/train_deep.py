@@ -24,7 +24,7 @@ from models.factory import MODEL_NAMES, build_model
 from training.engine import evaluate, train_one_epoch
 from training.optimizers import build_optimizer
 from utils.reproducibility import seed_everything
-from utils.serialization import save_json, save_predictions
+from utils.serialization import save_json, save_predictions, save_rows_csv
 
 
 def parse_args(argv=None):
@@ -168,6 +168,7 @@ def train_model(args, model, loaders, criterion, optimizer, scheduler, device, u
             row["backbone_lr"] = current_lrs[0]
         history.append(row)
         save_json(args.output_dir / "history.json", history)
+        save_rows_csv(args.output_dir / "history.csv", history)
         print(
             f"epoch {epoch}/{args.epochs}: "
             f"train_loss={row['train_loss']:.4f}, "
@@ -278,6 +279,7 @@ def main(argv=None):
         output_dict=True,
     )
     save_json(args.output_dir / "history.json", history)
+    save_rows_csv(args.output_dir / "history.csv", history)
     save_json(args.output_dir / "test_classification_report.json", report)
     save_predictions(
         args.output_dir / "test_predictions.csv",

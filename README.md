@@ -95,3 +95,25 @@ Training and evaluation write checkpoints, histories, metrics, predictions,
 confusion matrices, plots, and example images to the selected output
 directory. Datasets, model weights, caches, and generated outputs must not be
 committed to GitHub or included in the final code ZIP.
+
+## Shared Final Results
+
+The compact, report-ready results package is tracked under:
+
+```text
+outputs/final_results/
+```
+
+It contains standardized CSV metrics, training histories, per-class metrics,
+confusion matrices, selected result figures, and the fixed 500-class split
+manifests. It excludes datasets, model weights, caches, probability arrays,
+and smoke-test artifacts.
+
+Regenerate the package from completed local experiments with:
+
+```powershell
+python scripts/export_final_results.py
+```
+
+See `outputs/final_results/README.md` for the Chinese result guide, metric
+definitions, known timing limitations, and file descriptions.

@@ -1,0 +1,501 @@
+method,class_index,species,family,genus,test_images,correct,accuracy,most_common_wrong_class,most_common_wrong_species,most_common_wrong_count
+Optimized ImageNet-pretrained ResNet50,469,Ulmus pumila (Siberian elm),Ulmaceae,Ulmus,10,1,0.1,468,Ulmus americana (American elm),3
+Optimized ImageNet-pretrained ResNet50,489,Taxodium mucronatum (Montezuma cypress),Cupressaceae,Taxodium,10,2,0.2,488,Taxodium distichum (baldcypress),4
+Optimized ImageNet-pretrained ResNet50,161,Chroicocephalus ridibundus (Black-headed Gull),Laridae,Chroicocephalus,10,3,0.3,160,Chroicocephalus hartlaubii (Hartlaub's Gull),3
+Optimized ImageNet-pretrained ResNet50,177,Hirundo rustica (Barn Swallow),Hirundinidae,Hirundo,10,3,0.3,169,Passerina ciris (Painted Bunting),1
+Optimized ImageNet-pretrained ResNet50,187,Poecile rufescens (Chestnut-backed Chickadee),Paridae,Poecile,10,3,0.3,189,Setophaga citrina (Hooded Warbler),1
+Optimized ImageNet-pretrained ResNet50,312,Chaerophyllum aromaticum (Broad-leaved Chervil),Apiaceae,Chaerophyllum,10,3,0.3,467,Rubus schmidelioides,1
+Optimized ImageNet-pretrained ResNet50,323,Crepis tectorum (narrow-leaved hawksbeard),Asteraceae,Crepis,10,3,0.3,457,Pulsatilla patens (eastern pasqueflower),1
+Optimized ImageNet-pretrained ResNet50,245,Pseudaspis cana (Mole Snake),Lamprophiidae,Pseudaspis,10,4,0.4,241,Zamenis longissimus (Aesculapian Snake),5
+Optimized ImageNet-pretrained ResNet50,345,Myosotis latifolia (broadleaf forget-me-not),Boraginaceae,Myosotis,10,4,0.4,346,Myosotis scorpioides (water forget-me-not),4
+Optimized ImageNet-pretrained ResNet50,283,Asparagus acutifolius (Spiny Asparagus),Asparagaceae,Asparagus,10,4,0.4,387,Leptecophylla juniperina (Prickly mingimingi),3
+Optimized ImageNet-pretrained ResNet50,407,Coprosma dumosa,Rubiaceae,Coprosma,10,4,0.4,463,Prunus fasciculata (desert almond),3
+Optimized ImageNet-pretrained ResNet50,425,Veronica americana (American brooklime),Plantaginaceae,Veronica,10,4,0.4,426,Veronica filiformis (Slender speedwell),3
+Optimized ImageNet-pretrained ResNet50,440,Salix cinerea (Grey Willow),Salicaceae,Salix,10,4,0.4,439,Salix bebbiana (bebb's willow),3
+Optimized ImageNet-pretrained ResNet50,186,Poecile hudsonicus (Boreal Chickadee),Paridae,Poecile,10,4,0.4,187,Poecile rufescens (Chestnut-backed Chickadee),2
+Optimized ImageNet-pretrained ResNet50,192,Vermivora chrysoptera (Golden-winged Warbler),Parulidae,Vermivora,10,4,0.4,170,Pheucticus chrysopeplus (Yellow Grosbeak),2
+Optimized ImageNet-pretrained ResNet50,247,Crotalus oreganus (Western Rattlesnake),Viperidae,Crotalus,10,4,0.4,248,Sistrurus catenatus (Massasauga),2
+Optimized ImageNet-pretrained ResNet50,459,Morus indica (Korean mulberry),Moraceae,Morus,10,4,0.4,470,Laportea canadensis (Canadian wood nettle),2
+Optimized ImageNet-pretrained ResNet50,498,Pteris vittata (ladder fern),Pteridaceae,Pteris,10,4,0.4,324,Erigeron sumatrensis (tropical horseweed),2
+Optimized ImageNet-pretrained ResNet50,162,Larus cachinnans (Caspian Gull),Laridae,Larus,10,4,0.4,180,Tachycineta thalassina (Violet-green Swallow),1
+Optimized ImageNet-pretrained ResNet50,223,Canis lupus (Gray Wolf),Canidae,Canis,10,4,0.4,91,Nymphalis antiopa (Mourning Cloak),1
+Optimized ImageNet-pretrained ResNet50,383,Dracophyllum longifolium (Inaka),Ericaceae,Dracophyllum,10,4,0.4,382,Ceratiola ericoides (sand heath),1
+Optimized ImageNet-pretrained ResNet50,403,Quercus phellos (willow oak),Fagaceae,Quercus,10,4,0.4,404,Morella californica (California Wax Myrtle),1
+Optimized ImageNet-pretrained ResNet50,417,Vitex agnus-castus (Lilac chaste tree),Lamiaceae,Vitex,10,4,0.4,437,Manihot esculenta (Cassava),1
+Optimized ImageNet-pretrained ResNet50,441,Salix nigra (black willow),Salicaceae,Salix,10,4,0.4,82,Maliattha synochitis (Black-dotted Maliattha),1
+Optimized ImageNet-pretrained ResNet50,464,Prunus pumila (sand cherry),Rosaceae,Prunus,10,4,0.4,465,Prunus spinosa (Blackthorn),1
+Optimized ImageNet-pretrained ResNet50,491,Pinus contorta (lodgepole pine),Pinaceae,Pinus,10,4,0.4,492,Pinus ponderosa (ponderosa pine),1
+Optimized ImageNet-pretrained ResNet50,160,Chroicocephalus hartlaubii (Hartlaub's Gull),Laridae,Chroicocephalus,10,5,0.5,161,Chroicocephalus ridibundus (Black-headed Gull),3
+Optimized ImageNet-pretrained ResNet50,204,Contopus sordidulus (Western Wood-Pewee),Tyrannidae,Contopus,10,5,0.5,203,Contopus cooperi (Olive-sided Flycatcher),3
+Optimized ImageNet-pretrained ResNet50,234,Caiman crocodilus (Common Caiman),Alligatoridae,Caiman,10,5,0.5,235,Crocodylus moreletii (Belize Crocodile),3
+Optimized ImageNet-pretrained ResNet50,236,Anguis veronensis (Italian Slow Worm),Anguidae,Anguis,10,5,0.5,241,Zamenis longissimus (Aesculapian Snake),3
+Optimized ImageNet-pretrained ResNet50,241,Zamenis longissimus (Aesculapian Snake),Colubridae,Zamenis,10,5,0.5,236,Anguis veronensis (Italian Slow Worm),3
+Optimized ImageNet-pretrained ResNet50,492,Pinus ponderosa (ponderosa pine),Pinaceae,Pinus,10,5,0.5,491,Pinus contorta (lodgepole pine),3
+Optimized ImageNet-pretrained ResNet50,146,Aquila heliaca (Imperial Eagle),Accipitridae,Aquila,10,5,0.5,147,Pernis apivorus (European Honey-buzzard),2
+Optimized ImageNet-pretrained ResNet50,155,Charadrius obscurus (Red-breasted Dotterel),Charadriidae,Charadrius,10,5,0.5,156,Charadrius wilsonia (Wilson's Plover),2
+Optimized ImageNet-pretrained ResNet50,163,Larus glaucescens (Glaucous-winged Gull),Laridae,Larus,10,5,0.5,160,Chroicocephalus hartlaubii (Hartlaub's Gull),2
+Optimized ImageNet-pretrained ResNet50,313,Torilis japonica (upright hedge-parsley),Apiaceae,Torilis,10,5,0.5,312,Chaerophyllum aromaticum (Broad-leaved Chervil),2
+Optimized ImageNet-pretrained ResNet50,336,Senecio glastifolius (Woad-leaved ragwort),Asteraceae,Senecio,10,5,0.5,330,Leucanthemum vulgare (oxeye daisy),2
+Optimized ImageNet-pretrained ResNet50,366,Fallopia cilinodis (Fringed Bindweed),Polygonaceae,Fallopia,10,5,0.5,459,Morus indica (Korean mulberry),2
+Optimized ImageNet-pretrained ResNet50,393,Acacia confusa (Taiwan Acacia),Fabaceae,Acacia,10,5,0.5,403,Quercus phellos (willow oak),2
+Optimized ImageNet-pretrained ResNet50,402,Quercus michauxii (swamp chestnut oak),Fagaceae,Quercus,10,5,0.5,433,Magnolia tripetala (umbrella magnolia),2
+Optimized ImageNet-pretrained ResNet50,473,Toxicodendron rydbergii (poison ivy),Anacardiaceae,Toxicodendron,10,5,0.5,366,Fallopia cilinodis (Fringed Bindweed),2
+Optimized ImageNet-pretrained ResNet50,145,Triturus carnifex (Italian Crested Newt),Salamandridae,Triturus,10,5,0.5,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),1
+Optimized ImageNet-pretrained ResNet50,191,Setophaga ruticilla (American Redstart),Parulidae,Setophaga,10,5,0.5,198,Regulus ignicapilla (Common Firecrest),1
+Optimized ImageNet-pretrained ResNet50,207,Myiarchus cinerascens (Ash-throated Flycatcher),Tyrannidae,Myiarchus,10,5,0.5,201,Saltator coerulescens (Grayish Saltator),1
+Optimized ImageNet-pretrained ResNet50,214,Dryobates pubescens (Downy Woodpecker),Picidae,Dryobates,10,5,0.5,215,Megascops asio (Eastern Screech-Owl),1
+Optimized ImageNet-pretrained ResNet50,215,Megascops asio (Eastern Screech-Owl),Strigidae,Megascops,10,5,0.5,85,Peridea angulosa (Angulose Prominent Moth),1
+Optimized ImageNet-pretrained ResNet50,222,Odocoileus virginianus (White-tailed Deer),Cervidae,Odocoileus,10,5,0.5,143,Rana aurora (Northern Red-legged Frog),1
+Optimized ImageNet-pretrained ResNet50,281,Allium cernuum (nodding onion),Amaryllidaceae,Allium,10,5,0.5,377,Symphoricarpos occidentalis (Western Snowberry),1
+Optimized ImageNet-pretrained ResNet50,292,Goodyera tesselata (checkered rattlesnake plantain),Orchidaceae,Goodyera,10,5,0.5,350,Dithyrea californica (California shieldpod),1
+Optimized ImageNet-pretrained ResNet50,303,Smilax glauca (sawbrier),Smilacaceae,Smilax,10,5,0.5,37,Camponotus floridanus (Florida Carpenter Ant),1
+Optimized ImageNet-pretrained ResNet50,306,Paspalum dilatatum (Dallis grass),Poaceae,Paspalum,10,5,0.5,334,Packera tampicana (Great Plains Ragwort),1
+Optimized ImageNet-pretrained ResNet50,307,Poa annua (Annual Meadow-grass),Poaceae,Poa,10,5,0.5,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Optimized ImageNet-pretrained ResNet50,324,Erigeron sumatrensis (tropical horseweed),Asteraceae,Erigeron,10,5,0.5,430,Duranta erecta (golden dewdrop),1
+Optimized ImageNet-pretrained ResNet50,339,Sonchus asper (prickly sowthistle),Asteraceae,Sonchus,10,5,0.5,324,Erigeron sumatrensis (tropical horseweed),1
+Optimized ImageNet-pretrained ResNet50,375,Coriaria arborea (Tree Tutu),Coriariaceae,Coriaria,10,5,0.5,293,Neottia nidus-avis (bird's-nest orchid),1
+Optimized ImageNet-pretrained ResNet50,392,Androsace septentrionalis (pygmy-flower rock-jasmine),Primulaceae,Androsace,10,5,0.5,362,Montia parvifolia (Small-leaved Blinks),1
+Optimized ImageNet-pretrained ResNet50,395,Cytisus scoparius (Scotch Broom),Fabaceae,Cytisus,10,5,0.5,78,Leptotes marina (Marine Blue),1
+Optimized ImageNet-pretrained ResNet50,398,Robinia pseudoacacia (black locust),Fabaceae,Robinia,10,5,0.5,487,Sequoiadendron giganteum (giant sequoia),1
+Optimized ImageNet-pretrained ResNet50,404,Morella californica (California Wax Myrtle),Myricaceae,Morella,10,5,0.5,166,Patagioenas flavirostris (Red-billed Pigeon),1
+Optimized ImageNet-pretrained ResNet50,424,Phryma leptostachya (American lopseed),Phrymaceae,Phryma,10,5,0.5,303,Smilax glauca (sawbrier),1
+Optimized ImageNet-pretrained ResNet50,427,Buddleja davidii (Butterfly bush),Scrophulariaceae,Buddleja,10,5,0.5,431,Glandularia bipinnatifida (Dakota mock vervain),1
+Optimized ImageNet-pretrained ResNet50,447,Aristotelia serrata (Wineberry),Elaeocarpaceae,Aristotelia,10,5,0.5,439,Salix bebbiana (bebb's willow),1
+Optimized ImageNet-pretrained ResNet50,468,Ulmus americana (American elm),Ulmaceae,Ulmus,10,5,0.5,472,Phoradendron californicum (desert mistletoe),1
+Optimized ImageNet-pretrained ResNet50,479,Ribes uva-crispa (Goose-berry),Grossulariaceae,Ribes,10,5,0.5,378,Viburnum acerifolium (mapleleaf viburnum),1
+Optimized ImageNet-pretrained ResNet50,77,Icaricia icarioides (Boisduval's Blue),Lycaenidae,Icaricia,10,6,0.6,76,Cyaniris semiargus (Mazarine Blue),3
+Optimized ImageNet-pretrained ResNet50,217,Phalacrocorax penicillatus (Brandt's Cormorant),Phalacrocoracidae,Phalacrocorax,10,6,0.6,216,Phalacrocorax pelagicus (Pelagic Cormorant),3
+Optimized ImageNet-pretrained ResNet50,414,Salvia columbariae (chia),Lamiaceae,Salvia,10,6,0.6,343,Jasione montana (Sheep's-bit),3
+Optimized ImageNet-pretrained ResNet50,67,Lerodea eufala (Eufala Skipper),Hesperiidae,Lerodea,10,6,0.6,68,Lon melane (Umber Skipper),2
+Optimized ImageNet-pretrained ResNet50,147,Pernis apivorus (European Honey-buzzard),Accipitridae,Pernis,10,6,0.6,146,Aquila heliaca (Imperial Eagle),2
+Optimized ImageNet-pretrained ResNet50,151,Mergellus albellus (Smew),Anatidae,Mergellus,10,6,0.6,160,Chroicocephalus hartlaubii (Hartlaub's Gull),2
+Optimized ImageNet-pretrained ResNet50,153,Archilochus alexandri (Black-chinned Hummingbird),Trochilidae,Archilochus,10,6,0.6,154,Heliodoxa jacula (Green-crowned Brilliant),2
+Optimized ImageNet-pretrained ResNet50,208,Zosterops japonicus (Warbling White-eye),Zosteropidae,Zosterops,10,6,0.6,209,Zosterops palpebrosus (Indian White-eye),2
+Optimized ImageNet-pretrained ResNet50,335,Polymnia canadensis (leafcup),Asteraceae,Polymnia,10,6,0.6,459,Morus indica (Korean mulberry),2
+Optimized ImageNet-pretrained ResNet50,394,Acacia longifolia (longleaf wattle),Fabaceae,Acacia,10,6,0.6,404,Morella californica (California Wax Myrtle),2
+Optimized ImageNet-pretrained ResNet50,486,Krameria erecta (Pima Rhatany),Krameriaceae,Krameria,10,6,0.6,463,Prunus fasciculata (desert almond),2
+Optimized ImageNet-pretrained ResNet50,496,Cystopteris fragilis (brittle bladderfern),Cystopteridaceae,Cystopteris,10,6,0.6,349,Cardamine impatiens (narrow-leaved bittercress),2
+Optimized ImageNet-pretrained ResNet50,68,Lon melane (Umber Skipper),Hesperiidae,Lon,10,6,0.6,47,Pyrausta volupialis (Volupial Pyrausta Moth),1
+Optimized ImageNet-pretrained ResNet50,70,Thymelicus lineola (European Skipper),Hesperiidae,Thymelicus,10,6,0.6,464,Prunus pumila (sand cherry),1
+Optimized ImageNet-pretrained ResNet50,91,Nymphalis antiopa (Mourning Cloak),Nymphalidae,Nymphalis,10,6,0.6,353,Anredera cordifolia (Mignonette vine),1
+Optimized ImageNet-pretrained ResNet50,176,Loxia curvirostra (Red Crossbill),Fringillidae,Loxia,10,6,0.6,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Optimized ImageNet-pretrained ResNet50,225,Lynx canadensis (Canada Lynx),Felidae,Lynx,10,6,0.6,223,Canis lupus (Gray Wolf),1
+Optimized ImageNet-pretrained ResNet50,230,Castor canadensis (American Beaver),Castoridae,Castor,10,6,0.6,232,Marmota monax (Woodchuck),1
+Optimized ImageNet-pretrained ResNet50,237,Gerrhonotus infernalis (Texas Alligator Lizard),Anguidae,Gerrhonotus,10,6,0.6,95,Eurema daira (Barred Yellow),1
+Optimized ImageNet-pretrained ResNet50,238,Dendrelaphis pictus (Common Bronze-back),Colubridae,Dendrelaphis,10,6,0.6,331,Melanthera nivea (Snow Squarestem),1
+Optimized ImageNet-pretrained ResNet50,253,Californiconus californicus (California Cone),Conidae,Californiconus,10,6,0.6,254,Americoliva sayana (Lettered Olive),1
+Optimized ImageNet-pretrained ResNet50,284,Asparagus officinalis (asparagus),Asparagaceae,Asparagus,10,6,0.6,451,Actaea racemosa (black cohosh),1
+Optimized ImageNet-pretrained ResNet50,288,Phormium cookianum (Mountain flax),Asphodelaceae,Phormium,10,6,0.6,383,Dracophyllum longifolium (Inaka),1
+Optimized ImageNet-pretrained ResNet50,309,Stenotaphrum secundatum (Saint Augustine grass),Poaceae,Stenotaphrum,10,6,0.6,310,Themeda triandra (Kangaroo Grass),1
+Optimized ImageNet-pretrained ResNet50,314,Fatsia japonica (Japanese aralia),Araliaceae,Fatsia,10,6,0.6,459,Morus indica (Korean mulberry),1
+Optimized ImageNet-pretrained ResNet50,317,Ilex opaca (American holly),Aquifoliaceae,Ilex,10,6,0.6,475,Acer campestre (field maple),1
+Optimized ImageNet-pretrained ResNet50,325,Eupatorium altissimum (tall boneset),Asteraceae,Eupatorium,10,6,0.6,404,Morella californica (California Wax Myrtle),1
+Optimized ImageNet-pretrained ResNet50,326,Eupatorium capillifolium (dogfennel),Asteraceae,Eupatorium,10,6,0.6,349,Cardamine impatiens (narrow-leaved bittercress),1
+Optimized ImageNet-pretrained ResNet50,348,Cardamine hirsuta (hairy bittercress),Brassicaceae,Cardamine,10,6,0.6,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Optimized ImageNet-pretrained ResNet50,349,Cardamine impatiens (narrow-leaved bittercress),Brassicaceae,Cardamine,10,6,0.6,329,Hymenopappus artemisiifolius (Old Plainsman),1
+Optimized ImageNet-pretrained ResNet50,351,Pseudowintera colorata (Mountain Horopito),Winteraceae,Pseudowintera,10,6,0.6,303,Smilax glauca (sawbrier),1
+Optimized ImageNet-pretrained ResNet50,353,Anredera cordifolia (Mignonette vine),Basellaceae,Anredera,10,6,0.6,467,Rubus schmidelioides,1
+Optimized ImageNet-pretrained ResNet50,362,Montia parvifolia (Small-leaved Blinks),Montiaceae,Montia,10,6,0.6,370,Pterostegia drymarioides (woodland pterostegia),1
+Optimized ImageNet-pretrained ResNet50,368,Polygonum aviculare (prostrate knotweed),Polygonaceae,Polygonum,10,6,0.6,369,Polygonum paronychia (beach knotweed),1
+Optimized ImageNet-pretrained ResNet50,370,Pterostegia drymarioides (woodland pterostegia),Polygonaceae,Pterostegia,10,6,0.6,392,Androsace septentrionalis (pygmy-flower rock-jasmine),1
+Optimized ImageNet-pretrained ResNet50,372,Canotia holacantha (crucifixion thorn),Celastraceae,Canotia,10,6,0.6,319,Ambrosia salsola (common burrobrush),1
+Optimized ImageNet-pretrained ResNet50,388,Vaccinium membranaceum (black huckleberry),Ericaceae,Vaccinium,10,6,0.6,439,Salix bebbiana (bebb's willow),1
+Optimized ImageNet-pretrained ResNet50,432,Asimina triloba (common pawpaw),Annonaceae,Asimina,10,6,0.6,463,Prunus fasciculata (desert almond),1
+Optimized ImageNet-pretrained ResNet50,433,Magnolia tripetala (umbrella magnolia),Magnoliaceae,Magnolia,10,6,0.6,337,Silphium terebinthinaceum (prairie dock),1
+Optimized ImageNet-pretrained ResNet50,436,Euphorbia ophthalmica (Florida Hammock Sandmat),Euphorbiaceae,Euphorbia,10,6,0.6,466,Rubus bifrons (Himalayan-berry),1
+Optimized ImageNet-pretrained ResNet50,449,Leucadendron laureolum (Golden Sunshinebush),Proteaceae,Leucadendron,10,6,0.6,464,Prunus pumila (sand cherry),1
+Optimized ImageNet-pretrained ResNet50,466,Rubus bifrons (Himalayan-berry),Rosaceae,Rubus,10,6,0.6,366,Fallopia cilinodis (Fringed Bindweed),1
+Optimized ImageNet-pretrained ResNet50,467,Rubus schmidelioides,Rosaceae,Rubus,10,6,0.6,339,Sonchus asper (prickly sowthistle),1
+Optimized ImageNet-pretrained ResNet50,6,Scolopendra heros (Giant Desert Centipede),Scolopendridae,Scolopendra,10,7,0.7,5,Hemiscolopendra marginata (Eastern Bark Centipede),2
+Optimized ImageNet-pretrained ResNet50,38,Camponotus novaeboracensis (New York Carpenter Ant),Formicidae,Camponotus,10,7,0.7,37,Camponotus floridanus (Florida Carpenter Ant),2
+Optimized ImageNet-pretrained ResNet50,51,Catocala ilia (Ilia Underwing),Erebidae,Catocala,10,7,0.7,102,Hemileuca maia (Buck Moth),2
+Optimized ImageNet-pretrained ResNet50,118,Enallagma geminatum (Skimming Bluet),Coenagrionidae,Enallagma,10,7,0.7,117,Enallagma cyathigerum (Common Blue Damselfly),2
+Optimized ImageNet-pretrained ResNet50,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),Acrididae,Pseudochorthippus,10,7,0.7,125,Conocephalus fuscus (Long-winged Conehead),2
+Optimized ImageNet-pretrained ResNet50,139,Plotosus lineatus (Striped Eel Catfish),Plotosidae,Plotosus,10,7,0.7,138,Paralabrax clathratus (Kelp Bass),2
+Optimized ImageNet-pretrained ResNet50,156,Charadrius wilsonia (Wilson's Plover),Charadriidae,Charadrius,10,7,0.7,155,Charadrius obscurus (Red-breasted Dotterel),2
+Optimized ImageNet-pretrained ResNet50,178,Riparia riparia (Bank Swallow),Hirundinidae,Riparia,10,7,0.7,179,Stelgidopteryx ruficollis (Southern Rough-winged Swallow),2
+Optimized ImageNet-pretrained ResNet50,194,Centronyx henslowii (Henslow's Sparrow),Passerellidae,Centronyx,10,7,0.7,184,Anthus pratensis (Meadow Pipit),2
+Optimized ImageNet-pretrained ResNet50,199,Sitta pusilla (Brown-headed Nuthatch),Sittidae,Sitta,10,7,0.7,186,Poecile hudsonicus (Boreal Chickadee),2
+Optimized ImageNet-pretrained ResNet50,201,Saltator coerulescens (Grayish Saltator),Thraupidae,Saltator,10,7,0.7,170,Pheucticus chrysopeplus (Yellow Grosbeak),2
+Optimized ImageNet-pretrained ResNet50,209,Zosterops palpebrosus (Indian White-eye),Zosteropidae,Zosterops,10,7,0.7,208,Zosterops japonicus (Warbling White-eye),2
+Optimized ImageNet-pretrained ResNet50,221,Tragelaphus oryx (Eland),Bovidae,Tragelaphus,10,7,0.7,229,Macropus fuliginosus (Western Grey Kangaroo),2
+Optimized ImageNet-pretrained ResNet50,248,Sistrurus catenatus (Massasauga),Viperidae,Sistrurus,10,7,0.7,247,Crotalus oreganus (Western Rattlesnake),2
+Optimized ImageNet-pretrained ResNet50,354,Echinocereus enneacanthus (Strawberry Cactus),Cactaceae,Echinocereus,10,7,0.7,356,Echinocereus stramineus (strawberry hedgehog cactus),2
+Optimized ImageNet-pretrained ResNet50,410,Ajuga reptans (carpet bugle),Lamiaceae,Ajuga,10,7,0.7,409,Ajuga genevensis (Blue Bugle),2
+Optimized ImageNet-pretrained ResNet50,452,Adonis vernalis (Spring Adonis),Ranunculaceae,Adonis,10,7,0.7,458,Ranunculus acris (meadow buttercup),2
+Optimized ImageNet-pretrained ResNet50,477,Crassula ovata (jade plant),Crassulaceae,Crassula,10,7,0.7,333,Ozothamnus leptophyllus (Tauhinu),2
+Optimized ImageNet-pretrained ResNet50,7,Agrilus planipennis (Emerald Ash Borer),Buprestidae,Agrilus,10,7,0.7,402,Quercus michauxii (swamp chestnut oak),1
+Optimized ImageNet-pretrained ResNet50,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),Cantharidae,Chauliognathus,10,7,0.7,9,Rutpela maculata (Spotted Longhorn),1
+Optimized ImageNet-pretrained ResNet50,15,Oedemera femorata,Oedemeridae,Oedemera,10,7,0.7,282,Hymenocallis liriosme (spring spiderlily),1
+Optimized ImageNet-pretrained ResNet50,17,Exomala orientalis (Oriental Beetle),Scarabaeidae,Exomala,10,7,0.7,27,Leptoglossus occidentalis (Western Conifer Seed Bug),1
+Optimized ImageNet-pretrained ResNet50,31,Nezara viridula (Southern Green Stink Bug),Pentatomidae,Nezara,10,7,0.7,466,Rubus bifrons (Himalayan-berry),1
+Optimized ImageNet-pretrained ResNet50,44,Agriphila straminella (Pearl Veneer),Crambidae,Agriphila,10,7,0.7,288,Phormium cookianum (Mountain flax),1
+Optimized ImageNet-pretrained ResNet50,71,Urbanus dorantes (Dorantes Longtail),Hesperiidae,Urbanus,10,7,0.7,403,Quercus phellos (willow oak),1
+Optimized ImageNet-pretrained ResNet50,93,Papilio anactus (Dainty Swallowtail),Papilionidae,Papilio,10,7,0.7,91,Nymphalis antiopa (Mourning Cloak),1
+Optimized ImageNet-pretrained ResNet50,95,Eurema daira (Barred Yellow),Pieridae,Eurema,10,7,0.7,66,Iambrix salsala (Chestnut Bob),1
+Optimized ImageNet-pretrained ResNet50,124,Schistocerca obscura (Obscure Bird Grasshopper),Acrididae,Schistocerca,10,7,0.7,129,Rhinichthys atratulus (Blacknose Dace),1
+Optimized ImageNet-pretrained ResNet50,133,Eupetrichthys angustipes (Snakeskin Wrasse),Labridae,Eupetrichthys,10,7,0.7,138,Paralabrax clathratus (Kelp Bass),1
+Optimized ImageNet-pretrained ResNet50,143,Rana aurora (Northern Red-legged Frog),Ranidae,Rana,10,7,0.7,141,Pristimantis achatinus (Cachabi Robber Frog),1
+Optimized ImageNet-pretrained ResNet50,150,Melanitta perspicillata (Surf Scoter),Anatidae,Melanitta,10,7,0.7,147,Pernis apivorus (European Honey-buzzard),1
+Optimized ImageNet-pretrained ResNet50,158,Vanellus coronatus (Crowned Lapwing),Charadriidae,Vanellus,10,7,0.7,151,Mergellus albellus (Smew),1
+Optimized ImageNet-pretrained ResNet50,165,Tringa glareola (Wood Sandpiper),Scolopacidae,Tringa,10,7,0.7,164,Numenius madagascariensis (Far Eastern Curlew),1
+Optimized ImageNet-pretrained ResNet50,166,Patagioenas flavirostris (Red-billed Pigeon),Columbidae,Patagioenas,10,7,0.7,233,Sciurus aureogaster (Red-bellied Squirrel),1
+Optimized ImageNet-pretrained ResNet50,171,Certhia americana (Brown Creeper),Certhiidae,Certhia,10,7,0.7,211,Nycticorax nycticorax (Black-crowned Night Heron),1
+Optimized ImageNet-pretrained ResNet50,172,Corvus ossifragus (Fish Crow),Corvidae,Corvus,10,7,0.7,203,Contopus cooperi (Olive-sided Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,173,Psilorhinus morio (Brown Jay),Corvidae,Psilorhinus,10,7,0.7,203,Contopus cooperi (Olive-sided Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,180,Tachycineta thalassina (Violet-green Swallow),Hirundinidae,Tachycineta,10,7,0.7,83,Ponometia semiflava (Half-yellow Moth),1
+Optimized ImageNet-pretrained ResNet50,188,Setophaga cerulea (Cerulean Warbler),Parulidae,Setophaga,10,7,0.7,465,Prunus spinosa (Blackthorn),1
+Optimized ImageNet-pretrained ResNet50,190,Setophaga dominica (Yellow-throated Warbler),Parulidae,Setophaga,10,7,0.7,33,Andrena cineraria (Ashy Mining Bee),1
+Optimized ImageNet-pretrained ResNet50,193,Calamospiza melanocorys (Lark Bunting),Passerellidae,Calamospiza,10,7,0.7,203,Contopus cooperi (Olive-sided Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,202,Thraupis episcopus (Blue-gray Tanager),Thraupidae,Thraupis,10,7,0.7,188,Setophaga cerulea (Cerulean Warbler),1
+Optimized ImageNet-pretrained ResNet50,203,Contopus cooperi (Olive-sided Flycatcher),Tyrannidae,Contopus,10,7,0.7,204,Contopus sordidulus (Western Wood-Pewee),1
+Optimized ImageNet-pretrained ResNet50,205,Empidonax hammondii (Hammond's Flycatcher),Tyrannidae,Empidonax,10,7,0.7,201,Saltator coerulescens (Grayish Saltator),1
+Optimized ImageNet-pretrained ResNet50,210,Cochlearius cochlearius (Boat-billed Heron),Ardeidae,Cochlearius,10,7,0.7,212,Pelecanus crispus (Dalmatian Pelican),1
+Optimized ImageNet-pretrained ResNet50,212,Pelecanus crispus (Dalmatian Pelican),Pelecanidae,Pelecanus,10,7,0.7,163,Larus glaucescens (Glaucous-winged Gull),1
+Optimized ImageNet-pretrained ResNet50,233,Sciurus aureogaster (Red-bellied Squirrel),Sciuridae,Sciurus,10,7,0.7,166,Patagioenas flavirostris (Red-billed Pigeon),1
+Optimized ImageNet-pretrained ResNet50,235,Crocodylus moreletii (Belize Crocodile),Crocodylidae,Crocodylus,10,7,0.7,145,Triturus carnifex (Italian Crested Newt),1
+Optimized ImageNet-pretrained ResNet50,243,Micrurus tener (Texas Coralsnake),Elapidae,Micrurus,10,7,0.7,306,Paspalum dilatatum (Dallis grass),1
+Optimized ImageNet-pretrained ResNet50,252,Buccinum undatum (Common Whelk),Buccinidae,Buccinum,10,7,0.7,78,Leptotes marina (Marine Blue),1
+Optimized ImageNet-pretrained ResNet50,264,Agaricus xanthodermus (Yellow Stainer),Agaricaceae,Agaricus,10,7,0.7,340,Taraxacum officinale (common dandelion),1
+Optimized ImageNet-pretrained ResNet50,316,Schefflera actinophylla (Octopus Tree),Araliaceae,Schefflera,10,7,0.7,314,Fatsia japonica (Japanese aralia),1
+Optimized ImageNet-pretrained ResNet50,318,Achillea millefolium (common yarrow),Asteraceae,Achillea,10,7,0.7,427,Buddleja davidii (Butterfly bush),1
+Optimized ImageNet-pretrained ResNet50,320,Artemisia vulgaris (common mugwort),Asteraceae,Artemisia,10,7,0.7,284,Asparagus officinalis (asparagus),1
+Optimized ImageNet-pretrained ResNet50,328,Helenium amarum (Bitterweed),Asteraceae,Helenium,10,7,0.7,321,Bidens aristosa (tickseed beggar-ticks),1
+Optimized ImageNet-pretrained ResNet50,333,Ozothamnus leptophyllus (Tauhinu),Asteraceae,Ozothamnus,10,7,0.7,324,Erigeron sumatrensis (tropical horseweed),1
+Optimized ImageNet-pretrained ResNet50,340,Taraxacum officinale (common dandelion),Asteraceae,Taraxacum,10,7,0.7,349,Cardamine impatiens (narrow-leaved bittercress),1
+Optimized ImageNet-pretrained ResNet50,352,Dysphania ambrosioides (Mexican tea),Amaranthaceae,Dysphania,10,7,0.7,474,Bursera microphylla (elephant tree),1
+Optimized ImageNet-pretrained ResNet50,365,Eriogonum deflexum (skeleton weed),Polygonaceae,Eriogonum,10,7,0.7,175,Taeniopygia bichenovii (Double-barred Finch),1
+Optimized ImageNet-pretrained ResNet50,378,Viburnum acerifolium (mapleleaf viburnum),Viburnaceae,Viburnum,10,7,0.7,485,Ampelopsis glandulosa (Porcelain Berry),1
+Optimized ImageNet-pretrained ResNet50,380,Arctostaphylos glauca (Big Berry Manzanita),Ericaceae,Arctostaphylos,10,7,0.7,474,Bursera microphylla (elephant tree),1
+Optimized ImageNet-pretrained ResNet50,387,Leptecophylla juniperina (Prickly mingimingi),Ericaceae,Leptecophylla,10,7,0.7,460,Crataegus marshallii (parsley hawthorn),1
+Optimized ImageNet-pretrained ResNet50,405,Garrya elliptica (Coast silk tassel),Garryaceae,Garrya,10,7,0.7,388,Vaccinium membranaceum (black huckleberry),1
+Optimized ImageNet-pretrained ResNet50,429,Verbascum virgatum (Wand Mullein),Scrophulariaceae,Verbascum,10,7,0.7,428,Verbascum nigrum (Dark Mullein),1
+Optimized ImageNet-pretrained ResNet50,430,Duranta erecta (golden dewdrop),Verbenaceae,Duranta,10,7,0.7,469,Ulmus pumila (Siberian elm),1
+Optimized ImageNet-pretrained ResNet50,438,Hypericum perforatum (Klamath weed),Hypericaceae,Hypericum,10,7,0.7,324,Erigeron sumatrensis (tropical horseweed),1
+Optimized ImageNet-pretrained ResNet50,439,Salix bebbiana (bebb's willow),Salicaceae,Salix,10,7,0.7,440,Salix cinerea (Grey Willow),1
+Optimized ImageNet-pretrained ResNet50,446,Oenothera rosea (rose evening primrose),Onagraceae,Oenothera,10,7,0.7,367,Persicaria maculosa (redshank),1
+Optimized ImageNet-pretrained ResNet50,454,Aquilegia vulgaris (common columbine),Ranunculaceae,Aquilegia,10,7,0.7,118,Enallagma geminatum (Skimming Bluet),1
+Optimized ImageNet-pretrained ResNet50,456,Clematis virginiana (Virginia virgin's-bower),Ranunculaceae,Clematis,10,7,0.7,367,Persicaria maculosa (redshank),1
+Optimized ImageNet-pretrained ResNet50,457,Pulsatilla patens (eastern pasqueflower),Ranunculaceae,Pulsatilla,10,7,0.7,289,Crocus vernus (Spring Crocus),1
+Optimized ImageNet-pretrained ResNet50,461,Eriobotrya japonica (Loquat),Rosaceae,Eriobotrya,10,7,0.7,439,Salix bebbiana (bebb's willow),1
+Optimized ImageNet-pretrained ResNet50,463,Prunus fasciculata (desert almond),Rosaceae,Prunus,10,7,0.7,319,Ambrosia salsola (common burrobrush),1
+Optimized ImageNet-pretrained ResNet50,465,Prunus spinosa (Blackthorn),Rosaceae,Prunus,10,7,0.7,362,Montia parvifolia (Small-leaved Blinks),1
+Optimized ImageNet-pretrained ResNet50,476,Aesculus pavia (Red Buckeye),Sapindaceae,Aesculus,10,7,0.7,421,Odontites vulgaris (Red Odontites),1
+Optimized ImageNet-pretrained ResNet50,480,Tolmiea menziesii (youth on age),Saxifragaceae,Tolmiea,10,7,0.7,310,Themeda triandra (Kangaroo Grass),1
+Optimized ImageNet-pretrained ResNet50,484,Solanum elaeagnifolium (White Horse-nettle),Solanaceae,Solanum,10,7,0.7,170,Pheucticus chrysopeplus (Yellow Grosbeak),1
+Optimized ImageNet-pretrained ResNet50,490,Abies concolor (white fir),Pinaceae,Abies,10,7,0.7,489,Taxodium mucronatum (Montezuma cypress),1
+Optimized ImageNet-pretrained ResNet50,5,Hemiscolopendra marginata (Eastern Bark Centipede),Scolopendridae,Hemiscolopendra,10,8,0.8,6,Scolopendra heros (Giant Desert Centipede),2
+Optimized ImageNet-pretrained ResNet50,9,Rutpela maculata (Spotted Longhorn),Cerambycidae,Rutpela,10,8,0.8,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),2
+Optimized ImageNet-pretrained ResNet50,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),Halictidae,Augochloropsis,10,8,0.8,39,Augochlora pura (Pure Green Sweat Bee),2
+Optimized ImageNet-pretrained ResNet50,120,Hagenius brevistylus (Dragonhunter),Gomphidae,Hagenius,10,8,0.8,119,Erpetogomphus designatus (Eastern Ringtail),2
+Optimized ImageNet-pretrained ResNet50,174,Pyrrhocorax graculus (Alpine Chough),Corvidae,Pyrrhocorax,10,8,0.8,172,Corvus ossifragus (Fish Crow),2
+Optimized ImageNet-pretrained ResNet50,216,Phalacrocorax pelagicus (Pelagic Cormorant),Phalacrocoracidae,Phalacrocorax,10,8,0.8,217,Phalacrocorax penicillatus (Brandt's Cormorant),2
+Optimized ImageNet-pretrained ResNet50,346,Myosotis scorpioides (water forget-me-not),Boraginaceae,Myosotis,10,8,0.8,345,Myosotis latifolia (broadleaf forget-me-not),2
+Optimized ImageNet-pretrained ResNet50,361,Stellaria graminea (lesser stitchwort),Caryophyllaceae,Stellaria,10,8,0.8,362,Montia parvifolia (Small-leaved Blinks),2
+Optimized ImageNet-pretrained ResNet50,390,Phlox drummondii (Drummond's phlox),Polemoniaceae,Phlox,10,8,0.8,431,Glandularia bipinnatifida (Dakota mock vervain),2
+Optimized ImageNet-pretrained ResNet50,488,Taxodium distichum (baldcypress),Cupressaceae,Taxodium,10,8,0.8,489,Taxodium mucronatum (Montezuma cypress),2
+Optimized ImageNet-pretrained ResNet50,11,Leptinotarsa juncta (False Potato Beetle),Chrysomelidae,Leptinotarsa,10,8,0.8,17,Exomala orientalis (Oriental Beetle),1
+Optimized ImageNet-pretrained ResNet50,21,Eristalis stipator (Yellow-shouldered Drone Fly),Syrphidae,Eristalis,10,8,0.8,319,Ambrosia salsola (common burrobrush),1
+Optimized ImageNet-pretrained ResNet50,22,Eristalis transversa (Transverse-banded Flower Fly),Syrphidae,Eristalis,10,8,0.8,9,Rutpela maculata (Spotted Longhorn),1
+Optimized ImageNet-pretrained ResNet50,27,Leptoglossus occidentalis (Western Conifer Seed Bug),Coreidae,Leptoglossus,10,8,0.8,26,Leptoglossus clypealis (Western Leaf-footed Bug),1
+Optimized ImageNet-pretrained ResNet50,30,Halyomorpha halys (Brown Marmorated Stink Bug),Pentatomidae,Halyomorpha,10,8,0.8,291,Dactylorhiza fuchsii (Common Spotted Orchid),1
+Optimized ImageNet-pretrained ResNet50,32,Phymata americana (Jagged Ambush Bug),Reduviidae,Phymata,10,8,0.8,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Optimized ImageNet-pretrained ResNet50,33,Andrena cineraria (Ashy Mining Bee),Andrenidae,Andrena,10,8,0.8,23,Toxomerus politus (Maize Calligrapher Fly),1
+Optimized ImageNet-pretrained ResNet50,35,Cimbex americanus (Elm Sawfly),Cimbicidae,Cimbex,10,8,0.8,265,Chlorophyllum molybdites (green-spored parasol),1
+Optimized ImageNet-pretrained ResNet50,39,Augochlora pura (Pure Green Sweat Bee),Halictidae,Augochlora,10,8,0.8,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),1
+Optimized ImageNet-pretrained ResNet50,43,Achyra rantalis (Garden Webworm Moth),Crambidae,Achyra,10,8,0.8,44,Agriphila straminella (Pearl Veneer),1
+Optimized ImageNet-pretrained ResNet50,52,Hypena bijugalis (Dimorphic Bomolocha Moth),Erebidae,Hypena,10,8,0.8,50,Catocala grynea (Woody Underwing),1
+Optimized ImageNet-pretrained ResNet50,58,Idaea aversata (Riband Wave),Geometridae,Idaea,10,8,0.8,54,Pantydia sparsa,1
+Optimized ImageNet-pretrained ResNet50,63,Ancyloxypha numitor (Least Skipper),Hesperiidae,Ancyloxypha,10,8,0.8,96,Glutophrissa drusilla (Florida White),1
+Optimized ImageNet-pretrained ResNet50,65,Erynnis juvenalis (Juvenal's Duskywing),Hesperiidae,Erynnis,10,8,0.8,243,Micrurus tener (Texas Coralsnake),1
+Optimized ImageNet-pretrained ResNet50,80,Autographa californica (Alfalfa Looper),Noctuidae,Autographa,10,8,0.8,71,Urbanus dorantes (Dorantes Longtail),1
+Optimized ImageNet-pretrained ResNet50,82,Maliattha synochitis (Black-dotted Maliattha),Noctuidae,Maliattha,10,8,0.8,81,Lithacodia musta (Small Mossy Lithacodia),1
+Optimized ImageNet-pretrained ResNet50,87,Doxocopa laure (Silver Emperor),Nymphalidae,Doxocopa,10,8,0.8,405,Garrya elliptica (Coast silk tassel),1
+Optimized ImageNet-pretrained ResNet50,89,Euphydryas phaeton (Baltimore Checkerspot),Nymphalidae,Euphydryas,10,8,0.8,91,Nymphalis antiopa (Mourning Cloak),1
+Optimized ImageNet-pretrained ResNet50,90,Limenitis arthemis (Red-spotted Admiral),Nymphalidae,Limenitis,10,8,0.8,93,Papilio anactus (Dainty Swallowtail),1
+Optimized ImageNet-pretrained ResNet50,94,Papilio thoas (Thoas Swallowtail),Papilionidae,Papilio,10,8,0.8,63,Ancyloxypha numitor (Least Skipper),1
+Optimized ImageNet-pretrained ResNet50,97,Pieris brassicae (Large White Butterfly),Pieridae,Pieris,10,8,0.8,108,Sphinx pinastri (Pine Hawk-Moth),1
+Optimized ImageNet-pretrained ResNet50,98,Moodna ostrinella (Darker Moodna Moth),Pyralidae,Moodna,10,8,0.8,37,Camponotus floridanus (Florida Carpenter Ant),1
+Optimized ImageNet-pretrained ResNet50,107,Paonias excaecata (Blinded Sphinx Moth),Sphingidae,Paonias,10,8,0.8,32,Phymata americana (Jagged Ambush Bug),1
+Optimized ImageNet-pretrained ResNet50,108,Sphinx pinastri (Pine Hawk-Moth),Sphingidae,Sphinx,10,8,0.8,49,Bulia deducta (Deduced Graphic),1
+Optimized ImageNet-pretrained ResNet50,117,Enallagma cyathigerum (Common Blue Damselfly),Coenagrionidae,Enallagma,10,8,0.8,2,Dolomedes triton (Six-spotted Fishing Spider),1
+Optimized ImageNet-pretrained ResNet50,130,Squalius cephalus (Chub),Cyprinidae,Squalius,10,8,0.8,131,Lepomis auritus (Redbreast Sunfish),1
+Optimized ImageNet-pretrained ResNet50,135,Perca flavescens (Yellow Perch),Percidae,Perca,10,8,0.8,211,Nycticorax nycticorax (Black-crowned Night Heron),1
+Optimized ImageNet-pretrained ResNet50,137,Aplodinotus grunniens (Freshwater Drum),Sciaenidae,Aplodinotus,10,8,0.8,219,Ginglymostoma cirratum (Nurse Shark),1
+Optimized ImageNet-pretrained ResNet50,141,Pristimantis achatinus (Cachabi Robber Frog),Craugastoridae,Pristimantis,10,8,0.8,143,Rana aurora (Northern Red-legged Frog),1
+Optimized ImageNet-pretrained ResNet50,142,Litoria fallax (Eastern Dwarf Treefrog),Pelodryadidae,Litoria,10,8,0.8,388,Vaccinium membranaceum (black huckleberry),1
+Optimized ImageNet-pretrained ResNet50,149,Cygnus olor (Mute Swan),Anatidae,Cygnus,10,8,0.8,212,Pelecanus crispus (Dalmatian Pelican),1
+Optimized ImageNet-pretrained ResNet50,152,Mergus merganser (Common Merganser),Anatidae,Mergus,10,8,0.8,230,Castor canadensis (American Beaver),1
+Optimized ImageNet-pretrained ResNet50,164,Numenius madagascariensis (Far Eastern Curlew),Scolopacidae,Numenius,10,8,0.8,148,Anas georgica (Yellow-billed Pintail),1
+Optimized ImageNet-pretrained ResNet50,169,Passerina ciris (Painted Bunting),Cardinalidae,Passerina,10,8,0.8,192,Vermivora chrysoptera (Golden-winged Warbler),1
+Optimized ImageNet-pretrained ResNet50,170,Pheucticus chrysopeplus (Yellow Grosbeak),Cardinalidae,Pheucticus,10,8,0.8,183,Ptilotula penicillata (White-plumed Honeyeater),1
+Optimized ImageNet-pretrained ResNet50,175,Taeniopygia bichenovii (Double-barred Finch),Estrildidae,Taeniopygia,10,8,0.8,316,Schefflera actinophylla (Octopus Tree),1
+Optimized ImageNet-pretrained ResNet50,179,Stelgidopteryx ruficollis (Southern Rough-winged Swallow),Hirundinidae,Stelgidopteryx,10,8,0.8,203,Contopus cooperi (Olive-sided Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,181,Agelaius tricolor (Tricolored Blackbird),Icteridae,Agelaius,10,8,0.8,230,Castor canadensis (American Beaver),1
+Optimized ImageNet-pretrained ResNet50,182,Quiscalus quiscula (Common Grackle),Icteridae,Quiscalus,10,8,0.8,137,Aplodinotus grunniens (Freshwater Drum),1
+Optimized ImageNet-pretrained ResNet50,183,Ptilotula penicillata (White-plumed Honeyeater),Meliphagidae,Ptilotula,10,8,0.8,209,Zosterops palpebrosus (Indian White-eye),1
+Optimized ImageNet-pretrained ResNet50,197,Petroica macrocephala (Tomtit),Petroicidae,Petroica,10,8,0.8,247,Crotalus oreganus (Western Rattlesnake),1
+Optimized ImageNet-pretrained ResNet50,198,Regulus ignicapilla (Common Firecrest),Regulidae,Regulus,10,8,0.8,191,Setophaga ruticilla (American Redstart),1
+Optimized ImageNet-pretrained ResNet50,200,Chamaea fasciata (Wrentit),Sylviidae,Chamaea,10,8,0.8,207,Myiarchus cinerascens (Ash-throated Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,226,Mephitis macroura (Hooded Skunk),Mephitidae,Mephitis,10,8,0.8,437,Manihot esculenta (Cassava),1
+Optimized ImageNet-pretrained ResNet50,239,Lampropeltis triangulum (Eastern Milksnake),Colubridae,Lampropeltis,10,8,0.8,248,Sistrurus catenatus (Massasauga),1
+Optimized ImageNet-pretrained ResNet50,244,Iguana iguana (Green Iguana),Iguanidae,Iguana,10,8,0.8,26,Leptoglossus clypealis (Western Leaf-footed Bug),1
+Optimized ImageNet-pretrained ResNet50,251,Aliger gigas (Queen Conch),Strombidae,Aliger,10,8,0.8,140,Hippocampus histrix (Spiny Seahorse),1
+Optimized ImageNet-pretrained ResNet50,254,Americoliva sayana (Lettered Olive),Olividae,Americoliva,10,8,0.8,253,Californiconus californicus (California Cone),1
+Optimized ImageNet-pretrained ResNet50,257,Rumina decollata (Decollate Snail),Achatinidae,Rumina,10,8,0.8,137,Aplodinotus grunniens (Freshwater Drum),1
+Optimized ImageNet-pretrained ResNet50,258,Cepaea hortensis (White-lipped Snail),Helicidae,Cepaea,10,8,0.8,141,Pristimantis achatinus (Cachabi Robber Frog),1
+Optimized ImageNet-pretrained ResNet50,263,Umbilicaria mammulata (Smooth Rock Tripe),Umbilicariaceae,Umbilicaria,10,8,0.8,261,Peltigera praetextata (scaly pelt lichen),1
+Optimized ImageNet-pretrained ResNet50,266,Amanita rubescens (blusher),Amanitaceae,Amanita,10,8,0.8,269,Chalciporus piperatus (Peppery Bolete),1
+Optimized ImageNet-pretrained ResNet50,268,Roridomyces austrororidus,Mycenaceae,Roridomyces,10,8,0.8,111,Epiblema otiosana (Bidens Borer Moth),1
+Optimized ImageNet-pretrained ResNet50,278,Radula complanata (Flat-leaved Scalewort),Radulaceae,Radula,10,8,0.8,496,Cystopteris fragilis (brittle bladderfern),1
+Optimized ImageNet-pretrained ResNet50,290,Cephalanthera rubra (Red Helleborine),Orchidaceae,Cephalanthera,10,8,0.8,344,Echium plantagineum (Salvation Jane),1
+Optimized ImageNet-pretrained ResNet50,296,Spiranthes lacera (Slender Ladies' Tresses),Orchidaceae,Spiranthes,10,8,0.8,292,Goodyera tesselata (checkered rattlesnake plantain),1
+Optimized ImageNet-pretrained ResNet50,301,Trillium nivale (snow trillium),Melanthiaceae,Trillium,10,8,0.8,237,Gerrhonotus infernalis (Texas Alligator Lizard),1
+Optimized ImageNet-pretrained ResNet50,302,Trillium undulatum (painted trillium),Melanthiaceae,Trillium,10,8,0.8,406,Frasera caroliniensis (American columbo),1
+Optimized ImageNet-pretrained ResNet50,305,Schoenoplectus pungens (common three-square),Cyperaceae,Schoenoplectus,10,8,0.8,139,Plotosus lineatus (Striped Eel Catfish),1
+Optimized ImageNet-pretrained ResNet50,311,Dendrolycopodium obscurum (princess pine),Lycopodiaceae,Dendrolycopodium,10,8,0.8,308,Setaria viridis (Green Bristle Grass),1
+Optimized ImageNet-pretrained ResNet50,321,Bidens aristosa (tickseed beggar-ticks),Asteraceae,Bidens,10,8,0.8,374,Mentzelia hispida (Streambank Stickleaf),1
+Optimized ImageNet-pretrained ResNet50,322,Cirsium texanum (Texas Thistle),Asteraceae,Cirsium,10,8,0.8,307,Poa annua (Annual Meadow-grass),1
+Optimized ImageNet-pretrained ResNet50,332,Nabalus albus (white rattlesnakeroot),Asteraceae,Nabalus,10,8,0.8,378,Viburnum acerifolium (mapleleaf viburnum),1
+Optimized ImageNet-pretrained ResNet50,334,Packera tampicana (Great Plains Ragwort),Asteraceae,Packera,10,8,0.8,341,Tithonia tubaeformis (tree marigold),1
+Optimized ImageNet-pretrained ResNet50,337,Silphium terebinthinaceum (prairie dock),Asteraceae,Silphium,10,8,0.8,305,Schoenoplectus pungens (common three-square),1
+Optimized ImageNet-pretrained ResNet50,347,Cakile maritima (European Searocket),Brassicaceae,Cakile,10,8,0.8,463,Prunus fasciculata (desert almond),1
+Optimized ImageNet-pretrained ResNet50,356,Echinocereus stramineus (strawberry hedgehog cactus),Cactaceae,Echinocereus,10,8,0.8,358,Ferocactus cylindraceus (California barrel cactus),1
+Optimized ImageNet-pretrained ResNet50,357,Escobaria vivipara (viviparous foxtail cactus),Cactaceae,Escobaria,10,8,0.8,322,Cirsium texanum (Texas Thistle),1
+Optimized ImageNet-pretrained ResNet50,359,Honckenya peploides (Sea Sandwort),Caryophyllaceae,Honckenya,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+Optimized ImageNet-pretrained ResNet50,364,Bistorta vivipara (alpine bistort),Polygonaceae,Bistorta,10,8,0.8,441,Salix nigra (black willow),1
+Optimized ImageNet-pretrained ResNet50,373,Cevallia sinuata (Stinging Serpent),Loasaceae,Cevallia,10,8,0.8,435,Croton glandulosus (Tropic Croton),1
+Optimized ImageNet-pretrained ResNet50,376,Ecballium elaterium (squirting cucumber),Cucurbitaceae,Ecballium,10,8,0.8,448,Banksia integrifolia (Coastal Banksia),1
+Optimized ImageNet-pretrained ResNet50,377,Symphoricarpos occidentalis (Western Snowberry),Caprifoliaceae,Symphoricarpos,10,8,0.8,439,Salix bebbiana (bebb's willow),1
+Optimized ImageNet-pretrained ResNet50,379,Arbutus unedo (strawberry tree),Ericaceae,Arbutus,10,8,0.8,336,Senecio glastifolius (Woad-leaved ragwort),1
+Optimized ImageNet-pretrained ResNet50,381,Calluna vulgaris (common heather),Ericaceae,Calluna,10,8,0.8,281,Allium cernuum (nodding onion),1
+Optimized ImageNet-pretrained ResNet50,385,Gaultheria antipoda,Ericaceae,Gaultheria,10,8,0.8,319,Ambrosia salsola (common burrobrush),1
+Optimized ImageNet-pretrained ResNet50,391,Phlox longifolia (longleaf phlox),Polemoniaceae,Phlox,10,8,0.8,295,Spathoglottis plicata (Philippine Ground Orchid),1
+Optimized ImageNet-pretrained ResNet50,397,Platylobium obtusangulum (Common Flat-pea),Fabaceae,Platylobium,10,8,0.8,388,Vaccinium membranaceum (black huckleberry),1
+Optimized ImageNet-pretrained ResNet50,408,Coprosma grandifolia (Kanono),Rubiaceae,Coprosma,10,8,0.8,353,Anredera cordifolia (Mignonette vine),1
+Optimized ImageNet-pretrained ResNet50,413,Salvia apiana (white sage),Lamiaceae,Salvia,10,8,0.8,223,Canis lupus (Gray Wolf),1
+Optimized ImageNet-pretrained ResNet50,421,Odontites vulgaris (Red Odontites),Orobanchaceae,Odontites,10,8,0.8,450,Mimetes cucullatus (red pagoda),1
+Optimized ImageNet-pretrained ResNet50,426,Veronica filiformis (Slender speedwell),Plantaginaceae,Veronica,10,8,0.8,359,Honckenya peploides (Sea Sandwort),1
+Optimized ImageNet-pretrained ResNet50,428,Verbascum nigrum (Dark Mullein),Scrophulariaceae,Verbascum,10,8,0.8,429,Verbascum virgatum (Wand Mullein),1
+Optimized ImageNet-pretrained ResNet50,431,Glandularia bipinnatifida (Dakota mock vervain),Verbenaceae,Glandularia,10,8,0.8,396,Melilotus albus (white sweet clover),1
+Optimized ImageNet-pretrained ResNet50,434,Acalypha rhomboidea (common copperleaf),Euphorbiaceae,Acalypha,10,8,0.8,424,Phryma leptostachya (American lopseed),1
+Optimized ImageNet-pretrained ResNet50,437,Manihot esculenta (Cassava),Euphorbiaceae,Manihot,10,8,0.8,314,Fatsia japonica (Japanese aralia),1
+Optimized ImageNet-pretrained ResNet50,448,Banksia integrifolia (Coastal Banksia),Proteaceae,Banksia,10,8,0.8,259,Helix lucorum (Turkish Snail),1
+Optimized ImageNet-pretrained ResNet50,451,Actaea racemosa (black cohosh),Ranunculaceae,Actaea,10,8,0.8,460,Crataegus marshallii (parsley hawthorn),1
+Optimized ImageNet-pretrained ResNet50,458,Ranunculus acris (meadow buttercup),Ranunculaceae,Ranunculus,10,8,0.8,457,Pulsatilla patens (eastern pasqueflower),1
+Optimized ImageNet-pretrained ResNet50,460,Crataegus marshallii (parsley hawthorn),Rosaceae,Crataegus,10,8,0.8,349,Cardamine impatiens (narrow-leaved bittercress),1
+Optimized ImageNet-pretrained ResNet50,462,Potentilla canadensis (dwarf cinquefoil),Rosaceae,Potentilla,10,8,0.8,471,Urtica urens (Dwarf Nettle),1
+Optimized ImageNet-pretrained ResNet50,470,Laportea canadensis (Canadian wood nettle),Urticaceae,Laportea,10,8,0.8,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Optimized ImageNet-pretrained ResNet50,472,Phoradendron californicum (desert mistletoe),Santalaceae,Phoradendron,10,8,0.8,380,Arctostaphylos glauca (Big Berry Manzanita),1
+Optimized ImageNet-pretrained ResNet50,493,Gleichenia dicarpa (tangle fern),Gleicheniaceae,Gleichenia,10,8,0.8,497,Dennstaedtia punctilobula (hay-scented fern),1
+Optimized ImageNet-pretrained ResNet50,499,Phegopteris hexagonoptera (broad beech fern),Thelypteridaceae,Phegopteris,10,8,0.8,329,Hymenopappus artemisiifolius (Old Plainsman),1
+Optimized ImageNet-pretrained ResNet50,0,Araneus diadematus (Cross Orbweaver),Araneidae,Araneus,10,9,0.9,99,Calephelis nemesis (Fatal Metalmark),1
+Optimized ImageNet-pretrained ResNet50,1,Trichonephila clavipes (Golden Silk Spider),Araneidae,Trichonephila,10,9,0.9,195,Pipilo erythrophthalmus (Eastern Towhee),1
+Optimized ImageNet-pretrained ResNet50,2,Dolomedes triton (Six-spotted Fishing Spider),Pisauridae,Dolomedes,10,9,0.9,26,Leptoglossus clypealis (Western Leaf-footed Bug),1
+Optimized ImageNet-pretrained ResNet50,3,Phidippus johnsoni (Johnson's Jumping Spider),Salticidae,Phidippus,10,9,0.9,14,Anoplotrupes stercorosus (Woodland Dor Beetle),1
+Optimized ImageNet-pretrained ResNet50,10,Trichocnemis spiculatus (Spined Woodborer),Cerambycidae,Trichocnemis,10,9,0.9,19,Exaireta spinigera (Garden soldier fly),1
+Optimized ImageNet-pretrained ResNet50,12,Henosepilachna vigintioctopunctata (Hadda Beetle),Coccinellidae,Henosepilachna,10,9,0.9,31,Nezara viridula (Southern Green Stink Bug),1
+Optimized ImageNet-pretrained ResNet50,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),Coccinellidae,Psyllobora,10,9,0.9,386,Kalmia procumbens (alpine azalea),1
+Optimized ImageNet-pretrained ResNet50,16,Euphoria kernii (Kern's Flower Scarab),Scarabaeidae,Euphoria,10,9,0.9,429,Verbascum virgatum (Wand Mullein),1
+Optimized ImageNet-pretrained ResNet50,19,Exaireta spinigera (Garden soldier fly),Stratiomyidae,Exaireta,10,9,0.9,17,Exomala orientalis (Oriental Beetle),1
+Optimized ImageNet-pretrained ResNet50,20,Copestylum mexicanum (Mexican Cactus Fly),Syrphidae,Copestylum,10,9,0.9,14,Anoplotrupes stercorosus (Woodland Dor Beetle),1
+Optimized ImageNet-pretrained ResNet50,24,Adelges tsugae (Hemlock Woolly Adelgid),Adelgidae,Adelges,10,9,0.9,490,Abies concolor (white fir),1
+Optimized ImageNet-pretrained ResNet50,29,Graphosoma italicum (European Striped Shield Bug),Pentatomidae,Graphosoma,10,9,0.9,11,Leptinotarsa juncta (False Potato Beetle),1
+Optimized ImageNet-pretrained ResNet50,34,Xylocopa micans (Southern Carpenter Bee),Apidae,Xylocopa,10,9,0.9,291,Dactylorhiza fuchsii (Common Spotted Orchid),1
+Optimized ImageNet-pretrained ResNet50,36,Amphibolips confluenta (Spongy Oak Apple Gall Wasp),Cynipidae,Amphibolips,10,9,0.9,475,Acer campestre (field maple),1
+Optimized ImageNet-pretrained ResNet50,37,Camponotus floridanus (Florida Carpenter Ant),Formicidae,Camponotus,10,9,0.9,143,Rana aurora (Northern Red-legged Frog),1
+Optimized ImageNet-pretrained ResNet50,42,Mischocyttarus flavitarsis (Western Paper Wasp),Vespidae,Mischocyttarus,10,9,0.9,37,Camponotus floridanus (Florida Carpenter Ant),1
+Optimized ImageNet-pretrained ResNet50,48,Urola nivalis (Snowy Urola Moth),Crambidae,Urola,10,9,0.9,28,Adelphocoris lineolatus (Alfalfa Plant Bug),1
+Optimized ImageNet-pretrained ResNet50,49,Bulia deducta (Deduced Graphic),Erebidae,Bulia,10,9,0.9,54,Pantydia sparsa,1
+Optimized ImageNet-pretrained ResNet50,50,Catocala grynea (Woody Underwing),Erebidae,Catocala,10,9,0.9,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),1
+Optimized ImageNet-pretrained ResNet50,53,Melipotis acontioides (Royal Poinciana Moth),Erebidae,Melipotis,10,9,0.9,110,Cydia latiferreana (Filbertworm Moth),1
+Optimized ImageNet-pretrained ResNet50,54,Pantydia sparsa,Erebidae,Pantydia,10,9,0.9,108,Sphinx pinastri (Pine Hawk-Moth),1
+Optimized ImageNet-pretrained ResNet50,56,Chlorochlamys chloroleucaria (Blackberry Looper),Geometridae,Chlorochlamys,10,9,0.9,54,Pantydia sparsa,1
+Optimized ImageNet-pretrained ResNet50,62,Tetracis crocallata (Yellow Slant-line),Geometridae,Tetracis,10,9,0.9,42,Mischocyttarus flavitarsis (Western Paper Wasp),1
+Optimized ImageNet-pretrained ResNet50,72,Euclea incisa (Green Oak-Slug Moth),Limacodidae,Euclea,10,9,0.9,140,Hippocampus histrix (Spiny Seahorse),1
+Optimized ImageNet-pretrained ResNet50,75,Celastrina ladon (Spring Azure),Lycaenidae,Celastrina,10,9,0.9,76,Cyaniris semiargus (Mazarine Blue),1
+Optimized ImageNet-pretrained ResNet50,76,Cyaniris semiargus (Mazarine Blue),Lycaenidae,Cyaniris,10,9,0.9,77,Icaricia icarioides (Boisduval's Blue),1
+Optimized ImageNet-pretrained ResNet50,78,Leptotes marina (Marine Blue),Lycaenidae,Leptotes,10,9,0.9,463,Prunus fasciculata (desert almond),1
+Optimized ImageNet-pretrained ResNet50,79,Satyrium titus (Coral Hairstreak),Lycaenidae,Satyrium,10,9,0.9,328,Helenium amarum (Bitterweed),1
+Optimized ImageNet-pretrained ResNet50,85,Peridea angulosa (Angulose Prominent Moth),Notodontidae,Peridea,10,9,0.9,35,Cimbex americanus (Elm Sawfly),1
+Optimized ImageNet-pretrained ResNet50,102,Hemileuca maia (Buck Moth),Saturniidae,Hemileuca,10,9,0.9,255,Phidiana hiltoni (Hilton's Aeolid),1
+Optimized ImageNet-pretrained ResNet50,103,Saturnia pavonia (Small Emperor Moth),Saturniidae,Saturnia,10,9,0.9,31,Nezara viridula (Southern Green Stink Bug),1
+Optimized ImageNet-pretrained ResNet50,105,Dolba hyloeus (Pawpaw Sphinx Moth),Sphingidae,Dolba,10,9,0.9,78,Leptotes marina (Marine Blue),1
+Optimized ImageNet-pretrained ResNet50,106,Hippotion scrofa,Sphingidae,Hippotion,10,9,0.9,32,Phymata americana (Jagged Ambush Bug),1
+Optimized ImageNet-pretrained ResNet50,113,Orthodera ministralis (Australian Green Mantis),Mantidae,Orthodera,10,9,0.9,310,Themeda triandra (Kangaroo Grass),1
+Optimized ImageNet-pretrained ResNet50,116,Calopteryx maculata (Ebony Jewelwing),Calopterygidae,Calopteryx,10,9,0.9,332,Nabalus albus (white rattlesnakeroot),1
+Optimized ImageNet-pretrained ResNet50,119,Erpetogomphus designatus (Eastern Ringtail),Gomphidae,Erpetogomphus,10,9,0.9,23,Toxomerus politus (Maize Calligrapher Fly),1
+Optimized ImageNet-pretrained ResNet50,121,Lestes virens (Small Spreadwing),Lestidae,Lestes,10,9,0.9,118,Enallagma geminatum (Skimming Bluet),1
+Optimized ImageNet-pretrained ResNet50,125,Conocephalus fuscus (Long-winged Conehead),Tettigoniidae,Conocephalus,10,9,0.9,309,Stenotaphrum secundatum (Saint Augustine grass),1
+Optimized ImageNet-pretrained ResNet50,126,Faxonius virilis (Virile Crayfish),Cambaridae,Faxonius,10,9,0.9,135,Perca flavescens (Yellow Perch),1
+Optimized ImageNet-pretrained ResNet50,129,Rhinichthys atratulus (Blacknose Dace),Cyprinidae,Rhinichthys,10,9,0.9,106,Hippotion scrofa,1
+Optimized ImageNet-pretrained ResNet50,131,Lepomis auritus (Redbreast Sunfish),Centrarchidae,Lepomis,10,9,0.9,132,Chaetodon capistratus (Four-eyed Butterflyfish),1
+Optimized ImageNet-pretrained ResNet50,134,Parupeneus spilurus (Blackspot Goatfish),Mullidae,Parupeneus,10,9,0.9,130,Squalius cephalus (Chub),1
+Optimized ImageNet-pretrained ResNet50,136,Abudefduf vaigiensis (Indo-Pacific Sergeant Major),Pomacentridae,Abudefduf,10,9,0.9,135,Perca flavescens (Yellow Perch),1
+Optimized ImageNet-pretrained ResNet50,148,Anas georgica (Yellow-billed Pintail),Anatidae,Anas,10,9,0.9,206,Fluvicola nengeta (Masked Water-Tyrant),1
+Optimized ImageNet-pretrained ResNet50,154,Heliodoxa jacula (Green-crowned Brilliant),Trochilidae,Heliodoxa,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Optimized ImageNet-pretrained ResNet50,157,Pluvialis dominica (American Golden-Plover),Charadriidae,Pluvialis,10,9,0.9,165,Tringa glareola (Wood Sandpiper),1
+Optimized ImageNet-pretrained ResNet50,159,Haematopus palliatus (American Oystercatcher),Haematopodidae,Haematopus,10,9,0.9,165,Tringa glareola (Wood Sandpiper),1
+Optimized ImageNet-pretrained ResNet50,184,Anthus pratensis (Meadow Pipit),Motacillidae,Anthus,10,9,0.9,194,Centronyx henslowii (Henslow's Sparrow),1
+Optimized ImageNet-pretrained ResNet50,185,Oenanthe familiaris (Familiar Chat),Muscicapidae,Oenanthe,10,9,0.9,207,Myiarchus cinerascens (Ash-throated Flycatcher),1
+Optimized ImageNet-pretrained ResNet50,195,Pipilo erythrophthalmus (Eastern Towhee),Passerellidae,Pipilo,10,9,0.9,266,Amanita rubescens (blusher),1
+Optimized ImageNet-pretrained ResNet50,196,Eopsaltria australis (Eastern Yellow Robin),Petroicidae,Eopsaltria,10,9,0.9,186,Poecile hudsonicus (Boreal Chickadee),1
+Optimized ImageNet-pretrained ResNet50,206,Fluvicola nengeta (Masked Water-Tyrant),Tyrannidae,Fluvicola,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Optimized ImageNet-pretrained ResNet50,211,Nycticorax nycticorax (Black-crowned Night Heron),Ardeidae,Nycticorax,10,9,0.9,457,Pulsatilla patens (eastern pasqueflower),1
+Optimized ImageNet-pretrained ResNet50,213,Phoenicopterus ruber (American Flamingo),Phoenicopteridae,Phoenicopterus,10,9,0.9,152,Mergus merganser (Common Merganser),1
+Optimized ImageNet-pretrained ResNet50,224,Lycalopex culpaeus (Culpeo),Canidae,Lycalopex,10,9,0.9,237,Gerrhonotus infernalis (Texas Alligator Lizard),1
+Optimized ImageNet-pretrained ResNet50,227,Phocarctos hookeri (New Zealand Sea Lion),Otariidae,Phocarctos,10,9,0.9,232,Marmota monax (Woodchuck),1
+Optimized ImageNet-pretrained ResNet50,232,Marmota monax (Woodchuck),Sciuridae,Marmota,10,9,0.9,224,Lycalopex culpaeus (Culpeo),1
+Optimized ImageNet-pretrained ResNet50,240,Tantilla gracilis (Flat-headed Snake),Colubridae,Tantilla,10,9,0.9,236,Anguis veronensis (Italian Slow Worm),1
+Optimized ImageNet-pretrained ResNet50,242,Basiliscus vittatus (Brown Basilisk),Corytophanidae,Basiliscus,10,9,0.9,237,Gerrhonotus infernalis (Texas Alligator Lizard),1
+Optimized ImageNet-pretrained ResNet50,249,Actinia equina (Beadlet anemone),Actiniidae,Actinia,10,9,0.9,29,Graphosoma italicum (European Striped Shield Bug),1
+Optimized ImageNet-pretrained ResNet50,250,Clinocardium nuttallii (Nuttall's Cockle),Cardiidae,Clinocardium,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+Optimized ImageNet-pretrained ResNet50,260,Tonicella lineata (Lined Chiton),Tonicellidae,Tonicella,10,9,0.9,259,Helix lucorum (Turkish Snail),1
+Optimized ImageNet-pretrained ResNet50,261,Peltigera praetextata (scaly pelt lichen),Peltigeraceae,Peltigera,10,9,0.9,276,Thuidium delicatulum (delicate fern moss),1
+Optimized ImageNet-pretrained ResNet50,265,Chlorophyllum molybdites (green-spored parasol),Agaricaceae,Chlorophyllum,10,9,0.9,268,Roridomyces austrororidus,1
+Optimized ImageNet-pretrained ResNet50,267,Lichenomphalia umbellifera (Lichen Agaric),Hygrophoraceae,Lichenomphalia,10,9,0.9,268,Roridomyces austrororidus,1
+Optimized ImageNet-pretrained ResNet50,270,Turbinellus floccosus (Scaly Chanterelle),Gomphaceae,Turbinellus,10,9,0.9,269,Chalciporus piperatus (Peppery Bolete),1
+Optimized ImageNet-pretrained ResNet50,272,Fomes fomentarius (Hoof Fungus),Polyporaceae,Fomes,10,9,0.9,223,Canis lupus (Gray Wolf),1
+Optimized ImageNet-pretrained ResNet50,275,Rhizomnium glabrescens (fan moss),Mniaceae,Rhizomnium,10,9,0.9,348,Cardamine hirsuta (hairy bittercress),1
+Optimized ImageNet-pretrained ResNet50,276,Thuidium delicatulum (delicate fern moss),Thuidiaceae,Thuidium,10,9,0.9,275,Rhizomnium glabrescens (fan moss),1
+Optimized ImageNet-pretrained ResNet50,277,Codium fragile (Sponge Weed),Codiaceae,Codium,10,9,0.9,255,Phidiana hiltoni (Hilton's Aeolid),1
+Optimized ImageNet-pretrained ResNet50,279,Ephedra trifurca (longleaf ephedra),Ephedraceae,Ephedra,10,9,0.9,365,Eriogonum deflexum (skeleton weed),1
+Optimized ImageNet-pretrained ResNet50,286,Muscari neglectum (Grape hyacinth),Asparagaceae,Muscari,10,9,0.9,405,Garrya elliptica (Coast silk tassel),1
+Optimized ImageNet-pretrained ResNet50,289,Crocus vernus (Spring Crocus),Iridaceae,Crocus,10,9,0.9,344,Echium plantagineum (Salvation Jane),1
+Optimized ImageNet-pretrained ResNet50,294,Ophrys insectifera (Fly Orchid),Orchidaceae,Ophrys,10,9,0.9,425,Veronica americana (American brooklime),1
+Optimized ImageNet-pretrained ResNet50,295,Spathoglottis plicata (Philippine Ground Orchid),Orchidaceae,Spathoglottis,10,9,0.9,290,Cephalanthera rubra (Red Helleborine),1
+Optimized ImageNet-pretrained ResNet50,297,Erythronium oregonum (giant white fawn lily),Liliaceae,Erythronium,10,9,0.9,303,Smilax glauca (sawbrier),1
+Optimized ImageNet-pretrained ResNet50,300,Lilium pardalinum (Leopard Lily),Liliaceae,Lilium,10,9,0.9,298,Fritillaria recurva (scarlet fritillary),1
+Optimized ImageNet-pretrained ResNet50,304,Carex digitata (Fingered Sedge),Cyperaceae,Carex,10,9,0.9,310,Themeda triandra (Kangaroo Grass),1
+Optimized ImageNet-pretrained ResNet50,315,Panax trifolius (dwarf ginseng),Araliaceae,Panax,10,9,0.9,467,Rubus schmidelioides,1
+Optimized ImageNet-pretrained ResNet50,319,Ambrosia salsola (common burrobrush),Asteraceae,Ambrosia,10,9,0.9,279,Ephedra trifurca (longleaf ephedra),1
+Optimized ImageNet-pretrained ResNet50,330,Leucanthemum vulgare (oxeye daisy),Asteraceae,Leucanthemum,10,9,0.9,361,Stellaria graminea (lesser stitchwort),1
+Optimized ImageNet-pretrained ResNet50,338,Solidago rugosa (common wrinkle-leaved goldenrod),Asteraceae,Solidago,10,9,0.9,428,Verbascum nigrum (Dark Mullein),1
+Optimized ImageNet-pretrained ResNet50,341,Tithonia tubaeformis (tree marigold),Asteraceae,Tithonia,10,9,0.9,262,Teloschistes flavicans (Golden Hair-lichen),1
+Optimized ImageNet-pretrained ResNet50,343,Jasione montana (Sheep's-bit),Campanulaceae,Jasione,10,9,0.9,425,Veronica americana (American brooklime),1
+Optimized ImageNet-pretrained ResNet50,344,Echium plantagineum (Salvation Jane),Boraginaceae,Echium,10,9,0.9,359,Honckenya peploides (Sea Sandwort),1
+Optimized ImageNet-pretrained ResNet50,350,Dithyrea californica (California shieldpod),Brassicaceae,Dithyrea,10,9,0.9,376,Ecballium elaterium (squirting cucumber),1
+Optimized ImageNet-pretrained ResNet50,355,Echinocereus pectinatus (Spiny Hedgehog Cactus),Cactaceae,Echinocereus,10,9,0.9,318,Achillea millefolium (common yarrow),1
+Optimized ImageNet-pretrained ResNet50,367,Persicaria maculosa (redshank),Polygonaceae,Persicaria,10,9,0.9,303,Smilax glauca (sawbrier),1
+Optimized ImageNet-pretrained ResNet50,369,Polygonum paronychia (beach knotweed),Polygonaceae,Polygonum,10,9,0.9,277,Codium fragile (Sponge Weed),1
+Optimized ImageNet-pretrained ResNet50,371,Rumex hymenosepalus (canaigre dock),Polygonaceae,Rumex,10,9,0.9,337,Silphium terebinthinaceum (prairie dock),1
+Optimized ImageNet-pretrained ResNet50,374,Mentzelia hispida (Streambank Stickleaf),Loasaceae,Mentzelia,10,9,0.9,447,Aristotelia serrata (Wineberry),1
+Optimized ImageNet-pretrained ResNet50,382,Ceratiola ericoides (sand heath),Ericaceae,Ceratiola,10,9,0.9,395,Cytisus scoparius (Scotch Broom),1
+Optimized ImageNet-pretrained ResNet50,389,Ipomopsis longiflora (flaxflowered ipomopsis),Polemoniaceae,Ipomopsis,10,9,0.9,297,Erythronium oregonum (giant white fawn lily),1
+Optimized ImageNet-pretrained ResNet50,396,Melilotus albus (white sweet clover),Fabaceae,Melilotus,10,9,0.9,296,Spiranthes lacera (Slender Ladies' Tresses),1
+Optimized ImageNet-pretrained ResNet50,399,Thermopsis californica (California goldenbanner),Fabaceae,Thermopsis,10,9,0.9,428,Verbascum nigrum (Dark Mullein),1
+Optimized ImageNet-pretrained ResNet50,401,Polygala rugelii (Yellow milkwort),Polygalaceae,Polygala,10,9,0.9,306,Paspalum dilatatum (Dallis grass),1
+Optimized ImageNet-pretrained ResNet50,406,Frasera caroliniensis (American columbo),Gentianaceae,Frasera,10,9,0.9,169,Passerina ciris (Painted Bunting),1
+Optimized ImageNet-pretrained ResNet50,409,Ajuga genevensis (Blue Bugle),Lamiaceae,Ajuga,10,9,0.9,410,Ajuga reptans (carpet bugle),1
+Optimized ImageNet-pretrained ResNet50,412,Monarda punctata (spotted horse mint),Lamiaceae,Monarda,10,9,0.9,291,Dactylorhiza fuchsii (Common Spotted Orchid),1
+Optimized ImageNet-pretrained ResNet50,415,Stachys palustris (Marsh Woundwort),Lamiaceae,Stachys,10,9,0.9,287,Asphodelus ramosus (Branched Asphodel),1
+Optimized ImageNet-pretrained ResNet50,416,Trichostema lanatum (woolly blue curls),Lamiaceae,Trichostema,10,9,0.9,381,Calluna vulgaris (common heather),1
+Optimized ImageNet-pretrained ResNet50,420,Epifagus virginiana (Beechdrops),Orobanchaceae,Epifagus,10,9,0.9,473,Toxicodendron rydbergii (poison ivy),1
+Optimized ImageNet-pretrained ResNet50,422,Pedicularis densiflora (Indian Warrior),Orobanchaceae,Pedicularis,10,9,0.9,371,Rumex hymenosepalus (canaigre dock),1
+Optimized ImageNet-pretrained ResNet50,423,Erythranthe cardinalis (scarlet monkeyflower),Phrymaceae,Erythranthe,10,9,0.9,446,Oenothera rosea (rose evening primrose),1
+Optimized ImageNet-pretrained ResNet50,435,Croton glandulosus (Tropic Croton),Euphorbiaceae,Croton,10,9,0.9,445,Muntingia calabura (Cherry Tree),1
+Optimized ImageNet-pretrained ResNet50,443,Abutilon theophrasti (velvetleaf),Malvaceae,Abutilon,10,9,0.9,481,Ipomoea coccinea (red morning glory),1
+Optimized ImageNet-pretrained ResNet50,444,Malva assurgentiflora (Island Mallow),Malvaceae,Malva,10,9,0.9,454,Aquilegia vulgaris (common columbine),1
+Optimized ImageNet-pretrained ResNet50,453,Anemonastrum canadense (meadow anemone),Ranunculaceae,Anemonastrum,10,9,0.9,324,Erigeron sumatrensis (tropical horseweed),1
+Optimized ImageNet-pretrained ResNet50,474,Bursera microphylla (elephant tree),Burseraceae,Bursera,10,9,0.9,448,Banksia integrifolia (Coastal Banksia),1
+Optimized ImageNet-pretrained ResNet50,475,Acer campestre (field maple),Sapindaceae,Acer,10,9,0.9,314,Fatsia japonica (Japanese aralia),1
+Optimized ImageNet-pretrained ResNet50,478,Rhodiola integrifolia (western roseroot),Crassulaceae,Rhodiola,10,9,0.9,363,Limonium perezii (Perez's sea lavender),1
+Optimized ImageNet-pretrained ResNet50,482,Ipomoea obscura (Obscure Morning Glory),Convolvulaceae,Ipomoea,10,9,0.9,366,Fallopia cilinodis (Fringed Bindweed),1
+Optimized ImageNet-pretrained ResNet50,485,Ampelopsis glandulosa (Porcelain Berry),Vitaceae,Ampelopsis,10,9,0.9,385,Gaultheria antipoda,1
+Optimized ImageNet-pretrained ResNet50,494,Asplenium bulbiferum (Hen and Chicks Fern),Aspleniaceae,Asplenium,10,9,0.9,496,Cystopteris fragilis (brittle bladderfern),1
+Optimized ImageNet-pretrained ResNet50,495,Lomaria discolor (Crown Fern),Blechnaceae,Lomaria,10,9,0.9,259,Helix lucorum (Turkish Snail),1
+Optimized ImageNet-pretrained ResNet50,4,Paravaejovis puritanus,Vaejovidae,Paravaejovis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,14,Anoplotrupes stercorosus (Woodland Dor Beetle),Geotrupidae,Anoplotrupes,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,18,Calliphora vicina (Blue Blowfly),Calliphoridae,Calliphora,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,23,Toxomerus politus (Maize Calligrapher Fly),Syrphidae,Toxomerus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,25,Acanthocephala femorata (Florida Leaf-footed Bug),Coreidae,Acanthocephala,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,26,Leptoglossus clypealis (Western Leaf-footed Bug),Coreidae,Leptoglossus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,28,Adelphocoris lineolatus (Alfalfa Plant Bug),Miridae,Adelphocoris,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,41,Ammophila procera (Common Thread-waisted Wasp),Sphecidae,Ammophila,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,45,Parapoynx diminutalis (Hydrilla Leafcutter Moth),Crambidae,Parapoynx,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,46,Perispasta caeculalis (Titian Peale's Crambid),Crambidae,Perispasta,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,47,Pyrausta volupialis (Volupial Pyrausta Moth),Crambidae,Pyrausta,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,55,Chiasmia clathrata (Latticed Heath),Geometridae,Chiasmia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,57,Colotois pennaria (Feathered Thorn),Geometridae,Colotois,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,59,Ilexia intractata (Black-dotted Ruddy Moth),Geometridae,Ilexia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,60,Probole amicaria (Alien Probole Moth),Geometridae,Probole,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,61,Tetracis cachexiata (White Slant-line),Geometridae,Tetracis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,64,Burnsius philetas (Desert Checkered-Skipper),Hesperiidae,Burnsius,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,66,Iambrix salsala (Chestnut Bob),Hesperiidae,Iambrix,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,69,Polites mystic (Long Dash Skipper),Hesperiidae,Polites,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,73,Anthene emolus (Common Ciliate Blue),Lycaenidae,Anthene,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,74,Catochrysops strabo (Forget-me-not),Lycaenidae,Catochrysops,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,81,Lithacodia musta (Small Mossy Lithacodia),Noctuidae,Lithacodia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,83,Ponometia semiflava (Half-yellow Moth),Noctuidae,Ponometia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,84,Pseudoips prasinana (Green Silver-lines),Nolidae,Pseudoips,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,86,Brenthis ino (Lesser Marbled Fritillary),Nymphalidae,Brenthis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,88,Dryas iulia (Julia Butterfly),Nymphalidae,Dryas,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,92,Smyrna blomfildia (Blomfild's Beauty),Nymphalidae,Smyrna,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,96,Glutophrissa drusilla (Florida White),Pieridae,Glutophrissa,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,99,Calephelis nemesis (Fatal Metalmark),Riodinidae,Calephelis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,100,Melanis pixe (Red-bordered Pixie),Riodinidae,Melanis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,101,Anisota senatoria (Orange-tipped Oakworm Moth),Saturniidae,Anisota,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,104,Saturnia pyri (Giant Peacock Moth),Saturniidae,Saturnia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,109,Argyrotaenia velutinana (Red-banded Leafroller),Tortricidae,Argyrotaenia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,110,Cydia latiferreana (Filbertworm Moth),Tortricidae,Cydia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,111,Epiblema otiosana (Bidens Borer Moth),Tortricidae,Epiblema,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,112,Platynota rostrana (Omnivorous Platynota Moth),Tortricidae,Platynota,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,114,Chrysopa oculata,Chrysopidae,Chrysopa,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,115,Libelloides coccajus (Owly Sulphur),Myrmeleontidae,Libelloides,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,122,Neurothemis taiwanensis,Libellulidae,Neurothemis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,127,Petrolisthes elongatus (New Zealand Half Crab),Porcellanidae,Petrolisthes,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,128,Pimephales notatus (Bluntnose Minnow),Cyprinidae,Pimephales,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,132,Chaetodon capistratus (Four-eyed Butterflyfish),Chaetodontidae,Chaetodon,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,138,Paralabrax clathratus (Kelp Bass),Serranidae,Paralabrax,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,140,Hippocampus histrix (Spiny Seahorse),Syngnathidae,Hippocampus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,144,Aneides aeneus (Green Salamander),Plethodontidae,Aneides,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,167,Pavo cristatus (Common Peafowl),Phasianidae,Pavo,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,168,Zapornia flavirostra (Black Crake),Rallidae,Zapornia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,189,Setophaga citrina (Hooded Warbler),Parulidae,Setophaga,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,218,Trogon rufus (Black-throated Trogon),Trogonidae,Trogon,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,219,Ginglymostoma cirratum (Nurse Shark),Ginglymostomatidae,Ginglymostoma,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,220,Oreotragus oreotragus (Klipspringer),Bovidae,Oreotragus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,228,Galeopterus variegatus (Sunda Flying Lemur),Cynocephalidae,Galeopterus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,229,Macropus fuliginosus (Western Grey Kangaroo),Macropodidae,Macropus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,231,Myodes glareolus (Bank Vole),Cricetidae,Myodes,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,246,Plestiodon obsoletus (Great Plains Skink),Scincidae,Plestiodon,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,255,Phidiana hiltoni (Hilton's Aeolid),Facelinidae,Phidiana,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,256,Phyllidia varicosa (Varicose Wart Slug),Phyllidiidae,Phyllidia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,259,Helix lucorum (Turkish Snail),Helicidae,Helix,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,262,Teloschistes flavicans (Golden Hair-lichen),Teloschistaceae,Teloschistes,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,269,Chalciporus piperatus (Peppery Bolete),Boletaceae,Chalciporus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,271,Phallus impudicus (stinkhorn),Phallaceae,Phallus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,273,Hericium americanum (Bear's Head Tooth),Hericiaceae,Hericium,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,274,Xylobolus frustulatus (ceramic parchment),Stereaceae,Xylobolus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,280,Cocos nucifera (coconut palm),Arecaceae,Cocos,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,282,Hymenocallis liriosme (spring spiderlily),Amaryllidaceae,Hymenocallis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,285,Camassia quamash (small camas),Asparagaceae,Camassia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,287,Asphodelus ramosus (Branched Asphodel),Asphodelaceae,Asphodelus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,291,Dactylorhiza fuchsii (Common Spotted Orchid),Orchidaceae,Dactylorhiza,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,293,Neottia nidus-avis (bird's-nest orchid),Orchidaceae,Neottia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,298,Fritillaria recurva (scarlet fritillary),Liliaceae,Fritillaria,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,299,Lilium bulbiferum (fire lily),Liliaceae,Lilium,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,308,Setaria viridis (Green Bristle Grass),Poaceae,Setaria,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,310,Themeda triandra (Kangaroo Grass),Poaceae,Themeda,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,327,Gaillardia aristata (great blanketflower),Asteraceae,Gaillardia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,329,Hymenopappus artemisiifolius (Old Plainsman),Asteraceae,Hymenopappus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,331,Melanthera nivea (Snow Squarestem),Asteraceae,Melanthera,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,342,Campanula prenanthoides (California Harebell),Campanulaceae,Campanula,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,358,Ferocactus cylindraceus (California barrel cactus),Cactaceae,Ferocactus,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,360,Silene flos-cuculi (ragged-Robin),Caryophyllaceae,Silene,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,363,Limonium perezii (Perez's sea lavender),Plumbaginaceae,Limonium,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,384,Erica coccinea (Red Heath),Ericaceae,Erica,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,386,Kalmia procumbens (alpine azalea),Ericaceae,Kalmia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,400,Polygala nana (candyroot),Polygalaceae,Polygala,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,411,Melissa officinalis (lemon balm),Lamiaceae,Melissa,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,418,Castilleja arvensis (field Indian paintbrush),Orobanchaceae,Castilleja,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,419,Castilleja purpurea (Purple paintbrush),Orobanchaceae,Castilleja,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,442,Viola rotundifolia (Round-leaved Violet),Violaceae,Viola,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,445,Muntingia calabura (Cherry Tree),Muntingiaceae,Muntingia,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,450,Mimetes cucullatus (red pagoda),Proteaceae,Mimetes,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,455,Clematis crispa (Swamp Leather Flower),Ranunculaceae,Clematis,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,471,Urtica urens (Dwarf Nettle),Urticaceae,Urtica,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,481,Ipomoea coccinea (red morning glory),Convolvulaceae,Ipomoea,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,483,Solanum dimidiatum (western horsenettle),Solanaceae,Solanum,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,487,Sequoiadendron giganteum (giant sequoia),Cupressaceae,Sequoiadendron,10,10,1.0,,,0
+Optimized ImageNet-pretrained ResNet50,497,Dennstaedtia punctilobula (hay-scented fern),Dennstaedtiaceae,Dennstaedtia,10,10,1.0,,,0

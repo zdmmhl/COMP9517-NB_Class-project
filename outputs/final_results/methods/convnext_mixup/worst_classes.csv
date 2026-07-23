@@ -1,0 +1,501 @@
+method,class_index,species,family,genus,test_images,correct,accuracy,most_common_wrong_class,most_common_wrong_species,most_common_wrong_count
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,469,Ulmus pumila (Siberian elm),Ulmaceae,Ulmus,10,2,0.2,468,Ulmus americana (American elm),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,362,Montia parvifolia (Small-leaved Blinks),Montiaceae,Montia,10,2,0.2,370,Pterostegia drymarioides (woodland pterostegia),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,68,Lon melane (Umber Skipper),Hesperiidae,Lon,10,3,0.3,69,Polites mystic (Long Dash Skipper),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,187,Poecile rufescens (Chestnut-backed Chickadee),Paridae,Poecile,10,3,0.3,348,Cardamine hirsuta (hairy bittercress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,312,Chaerophyllum aromaticum (Broad-leaved Chervil),Apiaceae,Chaerophyllum,10,3,0.3,306,Paspalum dilatatum (Dallis grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,317,Ilex opaca (American holly),Aquifoliaceae,Ilex,10,3,0.3,303,Smilax glauca (sawbrier),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,459,Morus indica (Korean mulberry),Moraceae,Morus,10,3,0.3,470,Laportea canadensis (Canadian wood nettle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,489,Taxodium mucronatum (Montezuma cypress),Cupressaceae,Taxodium,10,3,0.3,469,Ulmus pumila (Siberian elm),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,247,Crotalus oreganus (Western Rattlesnake),Viperidae,Crotalus,10,4,0.4,248,Sistrurus catenatus (Massasauga),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,402,Quercus michauxii (swamp chestnut oak),Fagaceae,Quercus,10,4,0.4,433,Magnolia tripetala (umbrella magnolia),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,466,Rubus bifrons (Himalayan-berry),Rosaceae,Rubus,10,4,0.4,470,Laportea canadensis (Canadian wood nettle),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,307,Poa annua (Annual Meadow-grass),Poaceae,Poa,10,4,0.4,339,Sonchus asper (prickly sowthistle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,398,Robinia pseudoacacia (black locust),Fabaceae,Robinia,10,4,0.4,469,Ulmus pumila (Siberian elm),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,432,Asimina triloba (common pawpaw),Annonaceae,Asimina,10,4,0.4,437,Manihot esculenta (Cassava),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,209,Zosterops palpebrosus (Indian White-eye),Zosteropidae,Zosterops,10,5,0.5,208,Zosterops japonicus (Warbling White-eye),5
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,162,Larus cachinnans (Caspian Gull),Laridae,Larus,10,5,0.5,163,Larus glaucescens (Glaucous-winged Gull),4
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,77,Icaricia icarioides (Boisduval's Blue),Lycaenidae,Icaricia,10,5,0.5,76,Cyaniris semiargus (Mazarine Blue),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,160,Chroicocephalus hartlaubii (Hartlaub's Gull),Laridae,Chroicocephalus,10,5,0.5,162,Larus cachinnans (Caspian Gull),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,407,Coprosma dumosa,Rubiaceae,Coprosma,10,5,0.5,463,Prunus fasciculata (desert almond),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,208,Zosterops japonicus (Warbling White-eye),Zosteropidae,Zosterops,10,5,0.5,209,Zosterops palpebrosus (Indian White-eye),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,283,Asparagus acutifolius (Spiny Asparagus),Asparagaceae,Asparagus,10,5,0.5,387,Leptecophylla juniperina (Prickly mingimingi),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,303,Smilax glauca (sawbrier),Smilacaceae,Smilax,10,5,0.5,353,Anredera cordifolia (Mignonette vine),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,192,Vermivora chrysoptera (Golden-winged Warbler),Parulidae,Vermivora,10,5,0.5,190,Setophaga dominica (Yellow-throated Warbler),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,222,Odocoileus virginianus (White-tailed Deer),Cervidae,Odocoileus,10,5,0.5,143,Rana aurora (Northern Red-legged Frog),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,281,Allium cernuum (nodding onion),Amaryllidaceae,Allium,10,5,0.5,392,Androsace septentrionalis (pygmy-flower rock-jasmine),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,314,Fatsia japonica (Japanese aralia),Araliaceae,Fatsia,10,5,0.5,404,Morella californica (California Wax Myrtle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,339,Sonchus asper (prickly sowthistle),Asteraceae,Sonchus,10,5,0.5,443,Abutilon theophrasti (velvetleaf),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,424,Phryma leptostachya (American lopseed),Phrymaceae,Phryma,10,5,0.5,411,Melissa officinalis (lemon balm),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,440,Salix cinerea (Grey Willow),Salicaceae,Salix,10,5,0.5,439,Salix bebbiana (bebb's willow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,441,Salix nigra (black willow),Salicaceae,Salix,10,5,0.5,214,Dryobates pubescens (Downy Woodpecker),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,464,Prunus pumila (sand cherry),Rosaceae,Prunus,10,5,0.5,318,Achillea millefolium (common yarrow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,473,Toxicodendron rydbergii (poison ivy),Anacardiaceae,Toxicodendron,10,5,0.5,359,Honckenya peploides (Sea Sandwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,245,Pseudaspis cana (Mole Snake),Lamprophiidae,Pseudaspis,10,6,0.6,241,Zamenis longissimus (Aesculapian Snake),4
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,234,Caiman crocodilus (Common Caiman),Alligatoridae,Caiman,10,6,0.6,235,Crocodylus moreletii (Belize Crocodile),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,414,Salvia columbariae (chia),Lamiaceae,Salvia,10,6,0.6,343,Jasione montana (Sheep's-bit),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,488,Taxodium distichum (baldcypress),Cupressaceae,Taxodium,10,6,0.6,489,Taxodium mucronatum (Montezuma cypress),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,67,Lerodea eufala (Eufala Skipper),Hesperiidae,Lerodea,10,6,0.6,68,Lon melane (Umber Skipper),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,117,Enallagma cyathigerum (Common Blue Damselfly),Coenagrionidae,Enallagma,10,6,0.6,118,Enallagma geminatum (Skimming Bluet),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,161,Chroicocephalus ridibundus (Black-headed Gull),Laridae,Chroicocephalus,10,6,0.6,162,Larus cachinnans (Caspian Gull),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,182,Quiscalus quiscula (Common Grackle),Icteridae,Quiscalus,10,6,0.6,181,Agelaius tricolor (Tricolored Blackbird),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,204,Contopus sordidulus (Western Wood-Pewee),Tyrannidae,Contopus,10,6,0.6,203,Contopus cooperi (Olive-sided Flycatcher),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,225,Lynx canadensis (Canada Lynx),Felidae,Lynx,10,6,0.6,223,Canis lupus (Gray Wolf),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,284,Asparagus officinalis (asparagus),Asparagaceae,Asparagus,10,6,0.6,326,Eupatorium capillifolium (dogfennel),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,306,Paspalum dilatatum (Dallis grass),Poaceae,Paspalum,10,6,0.6,309,Stenotaphrum secundatum (Saint Augustine grass),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,336,Senecio glastifolius (Woad-leaved ragwort),Asteraceae,Senecio,10,6,0.6,339,Sonchus asper (prickly sowthistle),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,358,Ferocactus cylindraceus (California barrel cactus),Cactaceae,Ferocactus,10,6,0.6,355,Echinocereus pectinatus (Spiny Hedgehog Cactus),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,395,Cytisus scoparius (Scotch Broom),Fabaceae,Cytisus,10,6,0.6,383,Dracophyllum longifolium (Inaka),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,405,Garrya elliptica (Coast silk tassel),Garryaceae,Garrya,10,6,0.6,353,Anredera cordifolia (Mignonette vine),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,408,Coprosma grandifolia (Kanono),Rubiaceae,Coprosma,10,6,0.6,353,Anredera cordifolia (Mignonette vine),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,410,Ajuga reptans (carpet bugle),Lamiaceae,Ajuga,10,6,0.6,409,Ajuga genevensis (Blue Bugle),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,91,Nymphalis antiopa (Mourning Cloak),Nymphalidae,Nymphalis,10,6,0.6,65,Erynnis juvenalis (Juvenal's Duskywing),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,163,Larus glaucescens (Glaucous-winged Gull),Laridae,Larus,10,6,0.6,161,Chroicocephalus ridibundus (Black-headed Gull),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,171,Certhia americana (Brown Creeper),Certhiidae,Certhia,10,6,0.6,214,Dryobates pubescens (Downy Woodpecker),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,173,Psilorhinus morio (Brown Jay),Corvidae,Psilorhinus,10,6,0.6,195,Pipilo erythrophthalmus (Eastern Towhee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,177,Hirundo rustica (Barn Swallow),Hirundinidae,Hirundo,10,6,0.6,202,Thraupis episcopus (Blue-gray Tanager),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,186,Poecile hudsonicus (Boreal Chickadee),Paridae,Poecile,10,6,0.6,199,Sitta pusilla (Brown-headed Nuthatch),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,207,Myiarchus cinerascens (Ash-throated Flycatcher),Tyrannidae,Myiarchus,10,6,0.6,204,Contopus sordidulus (Western Wood-Pewee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,223,Canis lupus (Gray Wolf),Canidae,Canis,10,6,0.6,488,Taxodium distichum (baldcypress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,292,Goodyera tesselata (checkered rattlesnake plantain),Orchidaceae,Goodyera,10,6,0.6,296,Spiranthes lacera (Slender Ladies' Tresses),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,304,Carex digitata (Fingered Sedge),Cyperaceae,Carex,10,6,0.6,310,Themeda triandra (Kangaroo Grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,323,Crepis tectorum (narrow-leaved hawksbeard),Asteraceae,Crepis,10,6,0.6,457,Pulsatilla patens (eastern pasqueflower),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,348,Cardamine hirsuta (hairy bittercress),Brassicaceae,Cardamine,10,6,0.6,307,Poa annua (Annual Meadow-grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,351,Pseudowintera colorata (Mountain Horopito),Winteraceae,Pseudowintera,10,6,0.6,385,Gaultheria antipoda,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,368,Polygonum aviculare (prostrate knotweed),Polygonaceae,Polygonum,10,6,0.6,369,Polygonum paronychia (beach knotweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,383,Dracophyllum longifolium (Inaka),Ericaceae,Dracophyllum,10,6,0.6,464,Prunus pumila (sand cherry),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,417,Vitex agnus-castus (Lilac chaste tree),Lamiaceae,Vitex,10,6,0.6,437,Manihot esculenta (Cassava),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,436,Euphorbia ophthalmica (Florida Hammock Sandmat),Euphorbiaceae,Euphorbia,10,6,0.6,369,Polygonum paronychia (beach knotweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,439,Salix bebbiana (bebb's willow),Salicaceae,Salix,10,6,0.6,398,Robinia pseudoacacia (black locust),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,449,Leucadendron laureolum (Golden Sunshinebush),Proteaceae,Leucadendron,10,6,0.6,261,Peltigera praetextata (scaly pelt lichen),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,461,Eriobotrya japonica (Loquat),Rosaceae,Eriobotrya,10,6,0.6,439,Salix bebbiana (bebb's willow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,467,Rubus schmidelioides,Rosaceae,Rubus,10,6,0.6,435,Croton glandulosus (Tropic Croton),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,468,Ulmus americana (American elm),Ulmaceae,Ulmus,10,6,0.6,102,Hemileuca maia (Buck Moth),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,492,Pinus ponderosa (ponderosa pine),Pinaceae,Pinus,10,6,0.6,488,Taxodium distichum (baldcypress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,217,Phalacrocorax penicillatus (Brandt's Cormorant),Phalacrocoracidae,Phalacrocorax,10,7,0.7,216,Phalacrocorax pelagicus (Pelagic Cormorant),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,345,Myosotis latifolia (broadleaf forget-me-not),Boraginaceae,Myosotis,10,7,0.7,346,Myosotis scorpioides (water forget-me-not),3
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,5,Hemiscolopendra marginata (Eastern Bark Centipede),Scolopendridae,Hemiscolopendra,10,7,0.7,6,Scolopendra heros (Giant Desert Centipede),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,146,Aquila heliaca (Imperial Eagle),Accipitridae,Aquila,10,7,0.7,147,Pernis apivorus (European Honey-buzzard),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,151,Mergellus albellus (Smew),Anatidae,Mergellus,10,7,0.7,150,Melanitta perspicillata (Surf Scoter),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,199,Sitta pusilla (Brown-headed Nuthatch),Sittidae,Sitta,10,7,0.7,186,Poecile hudsonicus (Boreal Chickadee),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,216,Phalacrocorax pelagicus (Pelagic Cormorant),Phalacrocoracidae,Phalacrocorax,10,7,0.7,217,Phalacrocorax penicillatus (Brandt's Cormorant),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,241,Zamenis longissimus (Aesculapian Snake),Colubridae,Zamenis,10,7,0.7,236,Anguis veronensis (Italian Slow Worm),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,263,Umbilicaria mammulata (Smooth Rock Tripe),Umbilicariaceae,Umbilicaria,10,7,0.7,261,Peltigera praetextata (scaly pelt lichen),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,288,Phormium cookianum (Mountain flax),Asphodelaceae,Phormium,10,7,0.7,383,Dracophyllum longifolium (Inaka),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,346,Myosotis scorpioides (water forget-me-not),Boraginaceae,Myosotis,10,7,0.7,345,Myosotis latifolia (broadleaf forget-me-not),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,354,Echinocereus enneacanthus (Strawberry Cactus),Cactaceae,Echinocereus,10,7,0.7,356,Echinocereus stramineus (strawberry hedgehog cactus),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,380,Arctostaphylos glauca (Big Berry Manzanita),Ericaceae,Arctostaphylos,10,7,0.7,474,Bursera microphylla (elephant tree),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,438,Hypericum perforatum (Klamath weed),Hypericaceae,Hypericum,10,7,0.7,338,Solidago rugosa (common wrinkle-leaved goldenrod),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,486,Krameria erecta (Pima Rhatany),Krameriaceae,Krameria,10,7,0.7,463,Prunus fasciculata (desert almond),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,490,Abies concolor (white fir),Pinaceae,Abies,10,7,0.7,493,Gleichenia dicarpa (tangle fern),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,15,Oedemera femorata,Oedemeridae,Oedemera,10,7,0.7,456,Clematis virginiana (Virginia virgin's-bower),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,32,Phymata americana (Jagged Ambush Bug),Reduviidae,Phymata,10,7,0.7,443,Abutilon theophrasti (velvetleaf),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,34,Xylocopa micans (Southern Carpenter Bee),Apidae,Xylocopa,10,7,0.7,22,Eristalis transversa (Transverse-banded Flower Fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,39,Augochlora pura (Pure Green Sweat Bee),Halictidae,Augochlora,10,7,0.7,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,44,Agriphila straminella (Pearl Veneer),Crambidae,Agriphila,10,7,0.7,24,Adelges tsugae (Hemlock Woolly Adelgid),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,71,Urbanus dorantes (Dorantes Longtail),Hesperiidae,Urbanus,10,7,0.7,172,Corvus ossifragus (Fish Crow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,79,Satyrium titus (Coral Hairstreak),Lycaenidae,Satyrium,10,7,0.7,74,Catochrysops strabo (Forget-me-not),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,93,Papilio anactus (Dainty Swallowtail),Papilionidae,Papilio,10,7,0.7,89,Euphydryas phaeton (Baltimore Checkerspot),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,135,Perca flavescens (Yellow Perch),Percidae,Perca,10,7,0.7,128,Pimephales notatus (Bluntnose Minnow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,137,Aplodinotus grunniens (Freshwater Drum),Sciaenidae,Aplodinotus,10,7,0.7,131,Lepomis auritus (Redbreast Sunfish),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,170,Pheucticus chrysopeplus (Yellow Grosbeak),Cardinalidae,Pheucticus,10,7,0.7,183,Ptilotula penicillata (White-plumed Honeyeater),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,176,Loxia curvirostra (Red Crossbill),Fringillidae,Loxia,10,7,0.7,186,Poecile hudsonicus (Boreal Chickadee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,181,Agelaius tricolor (Tricolored Blackbird),Icteridae,Agelaius,10,7,0.7,149,Cygnus olor (Mute Swan),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,190,Setophaga dominica (Yellow-throated Warbler),Parulidae,Setophaga,10,7,0.7,214,Dryobates pubescens (Downy Woodpecker),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,191,Setophaga ruticilla (American Redstart),Parulidae,Setophaga,10,7,0.7,198,Regulus ignicapilla (Common Firecrest),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,193,Calamospiza melanocorys (Lark Bunting),Passerellidae,Calamospiza,10,7,0.7,203,Contopus cooperi (Olive-sided Flycatcher),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,195,Pipilo erythrophthalmus (Eastern Towhee),Passerellidae,Pipilo,10,7,0.7,191,Setophaga ruticilla (American Redstart),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,197,Petroica macrocephala (Tomtit),Petroicidae,Petroica,10,7,0.7,223,Canis lupus (Gray Wolf),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,203,Contopus cooperi (Olive-sided Flycatcher),Tyrannidae,Contopus,10,7,0.7,172,Corvus ossifragus (Fish Crow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,214,Dryobates pubescens (Downy Woodpecker),Picidae,Dryobates,10,7,0.7,222,Odocoileus virginianus (White-tailed Deer),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,215,Megascops asio (Eastern Screech-Owl),Strigidae,Megascops,10,7,0.7,398,Robinia pseudoacacia (black locust),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,230,Castor canadensis (American Beaver),Castoridae,Castor,10,7,0.7,232,Marmota monax (Woodchuck),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,237,Gerrhonotus infernalis (Texas Alligator Lizard),Anguidae,Gerrhonotus,10,7,0.7,7,Agrilus planipennis (Emerald Ash Borer),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,248,Sistrurus catenatus (Massasauga),Viperidae,Sistrurus,10,7,0.7,247,Crotalus oreganus (Western Rattlesnake),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,279,Ephedra trifurca (longleaf ephedra),Ephedraceae,Ephedra,10,7,0.7,305,Schoenoplectus pungens (common three-square),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,290,Cephalanthera rubra (Red Helleborine),Orchidaceae,Cephalanthera,10,7,0.7,446,Oenothera rosea (rose evening primrose),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,309,Stenotaphrum secundatum (Saint Augustine grass),Poaceae,Stenotaphrum,10,7,0.7,383,Dracophyllum longifolium (Inaka),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,313,Torilis japonica (upright hedge-parsley),Apiaceae,Torilis,10,7,0.7,460,Crataegus marshallii (parsley hawthorn),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,324,Erigeron sumatrensis (tropical horseweed),Asteraceae,Erigeron,10,7,0.7,68,Lon melane (Umber Skipper),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,325,Eupatorium altissimum (tall boneset),Asteraceae,Eupatorium,10,7,0.7,435,Croton glandulosus (Tropic Croton),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,326,Eupatorium capillifolium (dogfennel),Asteraceae,Eupatorium,10,7,0.7,307,Poa annua (Annual Meadow-grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,333,Ozothamnus leptophyllus (Tauhinu),Asteraceae,Ozothamnus,10,7,0.7,319,Ambrosia salsola (common burrobrush),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,340,Taraxacum officinale (common dandelion),Asteraceae,Taraxacum,10,7,0.7,401,Polygala rugelii (Yellow milkwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,356,Echinocereus stramineus (strawberry hedgehog cactus),Cactaceae,Echinocereus,10,7,0.7,358,Ferocactus cylindraceus (California barrel cactus),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,357,Escobaria vivipara (viviparous foxtail cactus),Cactaceae,Escobaria,10,7,0.7,327,Gaillardia aristata (great blanketflower),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,365,Eriogonum deflexum (skeleton weed),Polygonaceae,Eriogonum,10,7,0.7,117,Enallagma cyathigerum (Common Blue Damselfly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,377,Symphoricarpos occidentalis (Western Snowberry),Caprifoliaceae,Symphoricarpos,10,7,0.7,335,Polymnia canadensis (leafcup),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,378,Viburnum acerifolium (mapleleaf viburnum),Viburnaceae,Viburnum,10,7,0.7,470,Laportea canadensis (Canadian wood nettle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,381,Calluna vulgaris (common heather),Ericaceae,Calluna,10,7,0.7,281,Allium cernuum (nodding onion),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,393,Acacia confusa (Taiwan Acacia),Fabaceae,Acacia,10,7,0.7,490,Abies concolor (white fir),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,394,Acacia longifolia (longleaf wattle),Fabaceae,Acacia,10,7,0.7,393,Acacia confusa (Taiwan Acacia),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,403,Quercus phellos (willow oak),Fagaceae,Quercus,10,7,0.7,420,Epifagus virginiana (Beechdrops),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,413,Salvia apiana (white sage),Lamiaceae,Salvia,10,7,0.7,439,Salix bebbiana (bebb's willow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,426,Veronica filiformis (Slender speedwell),Plantaginaceae,Veronica,10,7,0.7,330,Leucanthemum vulgare (oxeye daisy),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,427,Buddleja davidii (Butterfly bush),Scrophulariaceae,Buddleja,10,7,0.7,431,Glandularia bipinnatifida (Dakota mock vervain),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,430,Duranta erecta (golden dewdrop),Verbenaceae,Duranta,10,7,0.7,445,Muntingia calabura (Cherry Tree),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,447,Aristotelia serrata (Wineberry),Elaeocarpaceae,Aristotelia,10,7,0.7,469,Ulmus pumila (Siberian elm),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,448,Banksia integrifolia (Coastal Banksia),Proteaceae,Banksia,10,7,0.7,404,Morella californica (California Wax Myrtle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,451,Actaea racemosa (black cohosh),Ranunculaceae,Actaea,10,7,0.7,428,Verbascum nigrum (Dark Mullein),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,454,Aquilegia vulgaris (common columbine),Ranunculaceae,Aquilegia,10,7,0.7,482,Ipomoea obscura (Obscure Morning Glory),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,456,Clematis virginiana (Virginia virgin's-bower),Ranunculaceae,Clematis,10,7,0.7,116,Calopteryx maculata (Ebony Jewelwing),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,457,Pulsatilla patens (eastern pasqueflower),Ranunculaceae,Pulsatilla,10,7,0.7,289,Crocus vernus (Spring Crocus),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,458,Ranunculus acris (meadow buttercup),Ranunculaceae,Ranunculus,10,7,0.7,452,Adonis vernalis (Spring Adonis),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,477,Crassula ovata (jade plant),Crassulaceae,Crassula,10,7,0.7,333,Ozothamnus leptophyllus (Tauhinu),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,491,Pinus contorta (lodgepole pine),Pinaceae,Pinus,10,7,0.7,492,Pinus ponderosa (ponderosa pine),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,498,Pteris vittata (ladder fern),Pteridaceae,Pteris,10,7,0.7,354,Echinocereus enneacanthus (Strawberry Cactus),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),Halictidae,Augochloropsis,10,8,0.8,39,Augochlora pura (Pure Green Sweat Bee),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,139,Plotosus lineatus (Striped Eel Catfish),Plotosidae,Plotosus,10,8,0.8,138,Paralabrax clathratus (Kelp Bass),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,221,Tragelaphus oryx (Eland),Bovidae,Tragelaphus,10,8,0.8,222,Odocoileus virginianus (White-tailed Deer),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,265,Chlorophyllum molybdites (green-spored parasol),Agaricaceae,Chlorophyllum,10,8,0.8,264,Agaricus xanthodermus (Yellow Stainer),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,268,Roridomyces austrororidus,Mycenaceae,Roridomyces,10,8,0.8,267,Lichenomphalia umbellifera (Lichen Agaric),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,270,Turbinellus floccosus (Scaly Chanterelle),Gomphaceae,Turbinellus,10,8,0.8,269,Chalciporus piperatus (Peppery Bolete),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,352,Dysphania ambrosioides (Mexican tea),Amaranthaceae,Dysphania,10,8,0.8,320,Artemisia vulgaris (common mugwort),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,387,Leptecophylla juniperina (Prickly mingimingi),Ericaceae,Leptecophylla,10,8,0.8,460,Crataegus marshallii (parsley hawthorn),2
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),Cantharidae,Chauliognathus,10,8,0.8,9,Rutpela maculata (Spotted Longhorn),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,11,Leptinotarsa juncta (False Potato Beetle),Chrysomelidae,Leptinotarsa,10,8,0.8,12,Henosepilachna vigintioctopunctata (Hadda Beetle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,12,Henosepilachna vigintioctopunctata (Hadda Beetle),Coccinellidae,Henosepilachna,10,8,0.8,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,17,Exomala orientalis (Oriental Beetle),Scarabaeidae,Exomala,10,8,0.8,19,Exaireta spinigera (Garden soldier fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,20,Copestylum mexicanum (Mexican Cactus Fly),Syrphidae,Copestylum,10,8,0.8,22,Eristalis transversa (Transverse-banded Flower Fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,30,Halyomorpha halys (Brown Marmorated Stink Bug),Pentatomidae,Halyomorpha,10,8,0.8,26,Leptoglossus clypealis (Western Leaf-footed Bug),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,35,Cimbex americanus (Elm Sawfly),Cimbicidae,Cimbex,10,8,0.8,20,Copestylum mexicanum (Mexican Cactus Fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,37,Camponotus floridanus (Florida Carpenter Ant),Formicidae,Camponotus,10,8,0.8,274,Xylobolus frustulatus (ceramic parchment),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,38,Camponotus novaeboracensis (New York Carpenter Ant),Formicidae,Camponotus,10,8,0.8,37,Camponotus floridanus (Florida Carpenter Ant),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,65,Erynnis juvenalis (Juvenal's Duskywing),Hesperiidae,Erynnis,10,8,0.8,239,Lampropeltis triangulum (Eastern Milksnake),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,70,Thymelicus lineola (European Skipper),Hesperiidae,Thymelicus,10,8,0.8,15,Oedemera femorata,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,75,Celastrina ladon (Spring Azure),Lycaenidae,Celastrina,10,8,0.8,76,Cyaniris semiargus (Mazarine Blue),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,82,Maliattha synochitis (Black-dotted Maliattha),Noctuidae,Maliattha,10,8,0.8,53,Melipotis acontioides (Royal Poinciana Moth),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,89,Euphydryas phaeton (Baltimore Checkerspot),Nymphalidae,Euphydryas,10,8,0.8,91,Nymphalis antiopa (Mourning Cloak),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,105,Dolba hyloeus (Pawpaw Sphinx Moth),Sphingidae,Dolba,10,8,0.8,99,Calephelis nemesis (Fatal Metalmark),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,106,Hippotion scrofa,Sphingidae,Hippotion,10,8,0.8,54,Pantydia sparsa,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,120,Hagenius brevistylus (Dragonhunter),Gomphidae,Hagenius,10,8,0.8,119,Erpetogomphus designatus (Eastern Ringtail),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,133,Eupetrichthys angustipes (Snakeskin Wrasse),Labridae,Eupetrichthys,10,8,0.8,136,Abudefduf vaigiensis (Indo-Pacific Sergeant Major),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,134,Parupeneus spilurus (Blackspot Goatfish),Mullidae,Parupeneus,10,8,0.8,133,Eupetrichthys angustipes (Snakeskin Wrasse),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,143,Rana aurora (Northern Red-legged Frog),Ranidae,Rana,10,8,0.8,480,Tolmiea menziesii (youth on age),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,145,Triturus carnifex (Italian Crested Newt),Salamandridae,Triturus,10,8,0.8,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,150,Melanitta perspicillata (Surf Scoter),Anatidae,Melanitta,10,8,0.8,151,Mergellus albellus (Smew),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,155,Charadrius obscurus (Red-breasted Dotterel),Charadriidae,Charadrius,10,8,0.8,156,Charadrius wilsonia (Wilson's Plover),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,166,Patagioenas flavirostris (Red-billed Pigeon),Columbidae,Patagioenas,10,8,0.8,69,Polites mystic (Long Dash Skipper),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,174,Pyrrhocorax graculus (Alpine Chough),Corvidae,Pyrrhocorax,10,8,0.8,181,Agelaius tricolor (Tricolored Blackbird),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,175,Taeniopygia bichenovii (Double-barred Finch),Estrildidae,Taeniopygia,10,8,0.8,353,Anredera cordifolia (Mignonette vine),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,178,Riparia riparia (Bank Swallow),Hirundinidae,Riparia,10,8,0.8,146,Aquila heliaca (Imperial Eagle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,180,Tachycineta thalassina (Violet-green Swallow),Hirundinidae,Tachycineta,10,8,0.8,178,Riparia riparia (Bank Swallow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,183,Ptilotula penicillata (White-plumed Honeyeater),Meliphagidae,Ptilotula,10,8,0.8,207,Myiarchus cinerascens (Ash-throated Flycatcher),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,200,Chamaea fasciata (Wrentit),Sylviidae,Chamaea,10,8,0.8,201,Saltator coerulescens (Grayish Saltator),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,201,Saltator coerulescens (Grayish Saltator),Thraupidae,Saltator,10,8,0.8,170,Pheucticus chrysopeplus (Yellow Grosbeak),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,202,Thraupis episcopus (Blue-gray Tanager),Thraupidae,Thraupis,10,8,0.8,201,Saltator coerulescens (Grayish Saltator),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,210,Cochlearius cochlearius (Boat-billed Heron),Ardeidae,Cochlearius,10,8,0.8,211,Nycticorax nycticorax (Black-crowned Night Heron),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,233,Sciurus aureogaster (Red-bellied Squirrel),Sciuridae,Sciurus,10,8,0.8,228,Galeopterus variegatus (Sunda Flying Lemur),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,236,Anguis veronensis (Italian Slow Worm),Anguidae,Anguis,10,8,0.8,240,Tantilla gracilis (Flat-headed Snake),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,238,Dendrelaphis pictus (Common Bronze-back),Colubridae,Dendrelaphis,10,8,0.8,467,Rubus schmidelioides,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,239,Lampropeltis triangulum (Eastern Milksnake),Colubridae,Lampropeltis,10,8,0.8,248,Sistrurus catenatus (Massasauga),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,240,Tantilla gracilis (Flat-headed Snake),Colubridae,Tantilla,10,8,0.8,241,Zamenis longissimus (Aesculapian Snake),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,243,Micrurus tener (Texas Coralsnake),Elapidae,Micrurus,10,8,0.8,4,Paravaejovis puritanus,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,254,Americoliva sayana (Lettered Olive),Olividae,Americoliva,10,8,0.8,253,Californiconus californicus (California Cone),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,266,Amanita rubescens (blusher),Amanitaceae,Amanita,10,8,0.8,269,Chalciporus piperatus (Peppery Bolete),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,272,Fomes fomentarius (Hoof Fungus),Polyporaceae,Fomes,10,8,0.8,456,Clematis virginiana (Virginia virgin's-bower),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,278,Radula complanata (Flat-leaved Scalewort),Radulaceae,Radula,10,8,0.8,394,Acacia longifolia (longleaf wattle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,302,Trillium undulatum (painted trillium),Melanthiaceae,Trillium,10,8,0.8,294,Ophrys insectifera (Fly Orchid),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,305,Schoenoplectus pungens (common three-square),Cyperaceae,Schoenoplectus,10,8,0.8,139,Plotosus lineatus (Striped Eel Catfish),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,316,Schefflera actinophylla (Octopus Tree),Araliaceae,Schefflera,10,8,0.8,433,Magnolia tripetala (umbrella magnolia),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,318,Achillea millefolium (common yarrow),Asteraceae,Achillea,10,8,0.8,320,Artemisia vulgaris (common mugwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,328,Helenium amarum (Bitterweed),Asteraceae,Helenium,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,332,Nabalus albus (white rattlesnakeroot),Asteraceae,Nabalus,10,8,0.8,378,Viburnum acerifolium (mapleleaf viburnum),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,335,Polymnia canadensis (leafcup),Asteraceae,Polymnia,10,8,0.8,366,Fallopia cilinodis (Fringed Bindweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,349,Cardamine impatiens (narrow-leaved bittercress),Brassicaceae,Cardamine,10,8,0.8,284,Asparagus officinalis (asparagus),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,353,Anredera cordifolia (Mignonette vine),Basellaceae,Anredera,10,8,0.8,408,Coprosma grandifolia (Kanono),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,359,Honckenya peploides (Sea Sandwort),Caryophyllaceae,Honckenya,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,367,Persicaria maculosa (redshank),Polygonaceae,Persicaria,10,8,0.8,434,Acalypha rhomboidea (common copperleaf),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,370,Pterostegia drymarioides (woodland pterostegia),Polygonaceae,Pterostegia,10,8,0.8,140,Hippocampus histrix (Spiny Seahorse),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,372,Canotia holacantha (crucifixion thorn),Celastraceae,Canotia,10,8,0.8,463,Prunus fasciculata (desert almond),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,375,Coriaria arborea (Tree Tutu),Coriariaceae,Coriaria,10,8,0.8,473,Toxicodendron rydbergii (poison ivy),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,382,Ceratiola ericoides (sand heath),Ericaceae,Ceratiola,10,8,0.8,359,Honckenya peploides (Sea Sandwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,385,Gaultheria antipoda,Ericaceae,Gaultheria,10,8,0.8,387,Leptecophylla juniperina (Prickly mingimingi),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,388,Vaccinium membranaceum (black huckleberry),Ericaceae,Vaccinium,10,8,0.8,465,Prunus spinosa (Blackthorn),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,392,Androsace septentrionalis (pygmy-flower rock-jasmine),Primulaceae,Androsace,10,8,0.8,362,Montia parvifolia (Small-leaved Blinks),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,404,Morella californica (California Wax Myrtle),Myricaceae,Morella,10,8,0.8,280,Cocos nucifera (coconut palm),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,406,Frasera caroliniensis (American columbo),Gentianaceae,Frasera,10,8,0.8,282,Hymenocallis liriosme (spring spiderlily),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,409,Ajuga genevensis (Blue Bugle),Lamiaceae,Ajuga,10,8,0.8,410,Ajuga reptans (carpet bugle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,415,Stachys palustris (Marsh Woundwort),Lamiaceae,Stachys,10,8,0.8,412,Monarda punctata (spotted horse mint),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,416,Trichostema lanatum (woolly blue curls),Lamiaceae,Trichostema,10,8,0.8,381,Calluna vulgaris (common heather),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,421,Odontites vulgaris (Red Odontites),Orobanchaceae,Odontites,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,429,Verbascum virgatum (Wand Mullein),Scrophulariaceae,Verbascum,10,8,0.8,428,Verbascum nigrum (Dark Mullein),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,433,Magnolia tripetala (umbrella magnolia),Magnoliaceae,Magnolia,10,8,0.8,402,Quercus michauxii (swamp chestnut oak),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,446,Oenothera rosea (rose evening primrose),Onagraceae,Oenothera,10,8,0.8,435,Croton glandulosus (Tropic Croton),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,452,Adonis vernalis (Spring Adonis),Ranunculaceae,Adonis,10,8,0.8,334,Packera tampicana (Great Plains Ragwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,460,Crataegus marshallii (parsley hawthorn),Rosaceae,Crataegus,10,8,0.8,349,Cardamine impatiens (narrow-leaved bittercress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,465,Prunus spinosa (Blackthorn),Rosaceae,Prunus,10,8,0.8,362,Montia parvifolia (Small-leaved Blinks),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,472,Phoradendron californicum (desert mistletoe),Santalaceae,Phoradendron,10,8,0.8,380,Arctostaphylos glauca (Big Berry Manzanita),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,476,Aesculus pavia (Red Buckeye),Sapindaceae,Aesculus,10,8,0.8,420,Epifagus virginiana (Beechdrops),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,479,Ribes uva-crispa (Goose-berry),Grossulariaceae,Ribes,10,8,0.8,378,Viburnum acerifolium (mapleleaf viburnum),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,480,Tolmiea menziesii (youth on age),Saxifragaceae,Tolmiea,10,8,0.8,462,Potentilla canadensis (dwarf cinquefoil),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,484,Solanum elaeagnifolium (White Horse-nettle),Solanaceae,Solanum,10,8,0.8,368,Polygonum aviculare (prostrate knotweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,485,Ampelopsis glandulosa (Porcelain Berry),Vitaceae,Ampelopsis,10,8,0.8,447,Aristotelia serrata (Wineberry),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,494,Asplenium bulbiferum (Hen and Chicks Fern),Aspleniaceae,Asplenium,10,8,0.8,334,Packera tampicana (Great Plains Ragwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,496,Cystopteris fragilis (brittle bladderfern),Cystopteridaceae,Cystopteris,10,8,0.8,349,Cardamine impatiens (narrow-leaved bittercress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,0,Araneus diadematus (Cross Orbweaver),Araneidae,Araneus,10,9,0.9,120,Hagenius brevistylus (Dragonhunter),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,1,Trichonephila clavipes (Golden Silk Spider),Araneidae,Trichonephila,10,9,0.9,187,Poecile rufescens (Chestnut-backed Chickadee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,3,Phidippus johnsoni (Johnson's Jumping Spider),Salticidae,Phidippus,10,9,0.9,127,Petrolisthes elongatus (New Zealand Half Crab),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,6,Scolopendra heros (Giant Desert Centipede),Scolopendridae,Scolopendra,10,9,0.9,5,Hemiscolopendra marginata (Eastern Bark Centipede),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,7,Agrilus planipennis (Emerald Ash Borer),Buprestidae,Agrilus,10,9,0.9,215,Megascops asio (Eastern Screech-Owl),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,9,Rutpela maculata (Spotted Longhorn),Cerambycidae,Rutpela,10,9,0.9,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,10,Trichocnemis spiculatus (Spined Woodborer),Cerambycidae,Trichocnemis,10,9,0.9,19,Exaireta spinigera (Garden soldier fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,16,Euphoria kernii (Kern's Flower Scarab),Scarabaeidae,Euphoria,10,9,0.9,32,Phymata americana (Jagged Ambush Bug),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,19,Exaireta spinigera (Garden soldier fly),Stratiomyidae,Exaireta,10,9,0.9,31,Nezara viridula (Southern Green Stink Bug),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,21,Eristalis stipator (Yellow-shouldered Drone Fly),Syrphidae,Eristalis,10,9,0.9,464,Prunus pumila (sand cherry),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,22,Eristalis transversa (Transverse-banded Flower Fly),Syrphidae,Eristalis,10,9,0.9,20,Copestylum mexicanum (Mexican Cactus Fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,31,Nezara viridula (Southern Green Stink Bug),Pentatomidae,Nezara,10,9,0.9,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,36,Amphibolips confluenta (Spongy Oak Apple Gall Wasp),Cynipidae,Amphibolips,10,9,0.9,335,Polymnia canadensis (leafcup),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,41,Ammophila procera (Common Thread-waisted Wasp),Sphecidae,Ammophila,10,9,0.9,19,Exaireta spinigera (Garden soldier fly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,43,Achyra rantalis (Garden Webworm Moth),Crambidae,Achyra,10,9,0.9,44,Agriphila straminella (Pearl Veneer),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,47,Pyrausta volupialis (Volupial Pyrausta Moth),Crambidae,Pyrausta,10,9,0.9,43,Achyra rantalis (Garden Webworm Moth),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,49,Bulia deducta (Deduced Graphic),Erebidae,Bulia,10,9,0.9,54,Pantydia sparsa,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,52,Hypena bijugalis (Dimorphic Bomolocha Moth),Erebidae,Hypena,10,9,0.9,142,Litoria fallax (Eastern Dwarf Treefrog),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,54,Pantydia sparsa,Erebidae,Pantydia,10,9,0.9,53,Melipotis acontioides (Royal Poinciana Moth),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,56,Chlorochlamys chloroleucaria (Blackberry Looper),Geometridae,Chlorochlamys,10,9,0.9,72,Euclea incisa (Green Oak-Slug Moth),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,63,Ancyloxypha numitor (Least Skipper),Hesperiidae,Ancyloxypha,10,9,0.9,77,Icaricia icarioides (Boisduval's Blue),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,69,Polites mystic (Long Dash Skipper),Hesperiidae,Polites,10,9,0.9,71,Urbanus dorantes (Dorantes Longtail),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,78,Leptotes marina (Marine Blue),Lycaenidae,Leptotes,10,9,0.9,77,Icaricia icarioides (Boisduval's Blue),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,80,Autographa californica (Alfalfa Looper),Noctuidae,Autographa,10,9,0.9,71,Urbanus dorantes (Dorantes Longtail),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,85,Peridea angulosa (Angulose Prominent Moth),Notodontidae,Peridea,10,9,0.9,35,Cimbex americanus (Elm Sawfly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,87,Doxocopa laure (Silver Emperor),Nymphalidae,Doxocopa,10,9,0.9,371,Rumex hymenosepalus (canaigre dock),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,90,Limenitis arthemis (Red-spotted Admiral),Nymphalidae,Limenitis,10,9,0.9,89,Euphydryas phaeton (Baltimore Checkerspot),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,94,Papilio thoas (Thoas Swallowtail),Papilionidae,Papilio,10,9,0.9,440,Salix cinerea (Grey Willow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,95,Eurema daira (Barred Yellow),Pieridae,Eurema,10,9,0.9,258,Cepaea hortensis (White-lipped Snail),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,96,Glutophrissa drusilla (Florida White),Pieridae,Glutophrissa,10,9,0.9,97,Pieris brassicae (Large White Butterfly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,107,Paonias excaecata (Blinded Sphinx Moth),Sphingidae,Paonias,10,9,0.9,68,Lon melane (Umber Skipper),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,108,Sphinx pinastri (Pine Hawk-Moth),Sphingidae,Sphinx,10,9,0.9,242,Basiliscus vittatus (Brown Basilisk),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,113,Orthodera ministralis (Australian Green Mantis),Mantidae,Orthodera,10,9,0.9,24,Adelges tsugae (Hemlock Woolly Adelgid),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,118,Enallagma geminatum (Skimming Bluet),Coenagrionidae,Enallagma,10,9,0.9,117,Enallagma cyathigerum (Common Blue Damselfly),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),Acrididae,Pseudochorthippus,10,9,0.9,42,Mischocyttarus flavitarsis (Western Paper Wasp),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,124,Schistocerca obscura (Obscure Bird Grasshopper),Acrididae,Schistocerca,10,9,0.9,7,Agrilus planipennis (Emerald Ash Borer),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,125,Conocephalus fuscus (Long-winged Conehead),Tettigoniidae,Conocephalus,10,9,0.9,309,Stenotaphrum secundatum (Saint Augustine grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,126,Faxonius virilis (Virile Crayfish),Cambaridae,Faxonius,10,9,0.9,257,Rumina decollata (Decollate Snail),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,129,Rhinichthys atratulus (Blacknose Dace),Cyprinidae,Rhinichthys,10,9,0.9,145,Triturus carnifex (Italian Crested Newt),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,130,Squalius cephalus (Chub),Cyprinidae,Squalius,10,9,0.9,128,Pimephales notatus (Bluntnose Minnow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,141,Pristimantis achatinus (Cachabi Robber Frog),Craugastoridae,Pristimantis,10,9,0.9,143,Rana aurora (Northern Red-legged Frog),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,147,Pernis apivorus (European Honey-buzzard),Accipitridae,Pernis,10,9,0.9,182,Quiscalus quiscula (Common Grackle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,148,Anas georgica (Yellow-billed Pintail),Anatidae,Anas,10,9,0.9,193,Calamospiza melanocorys (Lark Bunting),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,149,Cygnus olor (Mute Swan),Anatidae,Cygnus,10,9,0.9,212,Pelecanus crispus (Dalmatian Pelican),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,152,Mergus merganser (Common Merganser),Anatidae,Mergus,10,9,0.9,212,Pelecanus crispus (Dalmatian Pelican),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,153,Archilochus alexandri (Black-chinned Hummingbird),Trochilidae,Archilochus,10,9,0.9,154,Heliodoxa jacula (Green-crowned Brilliant),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,154,Heliodoxa jacula (Green-crowned Brilliant),Trochilidae,Heliodoxa,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,158,Vanellus coronatus (Crowned Lapwing),Charadriidae,Vanellus,10,9,0.9,160,Chroicocephalus hartlaubii (Hartlaub's Gull),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,159,Haematopus palliatus (American Oystercatcher),Haematopodidae,Haematopus,10,9,0.9,164,Numenius madagascariensis (Far Eastern Curlew),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,165,Tringa glareola (Wood Sandpiper),Scolopacidae,Tringa,10,9,0.9,157,Pluvialis dominica (American Golden-Plover),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,172,Corvus ossifragus (Fish Crow),Corvidae,Corvus,10,9,0.9,177,Hirundo rustica (Barn Swallow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,179,Stelgidopteryx ruficollis (Southern Rough-winged Swallow),Hirundinidae,Stelgidopteryx,10,9,0.9,203,Contopus cooperi (Olive-sided Flycatcher),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,185,Oenanthe familiaris (Familiar Chat),Muscicapidae,Oenanthe,10,9,0.9,207,Myiarchus cinerascens (Ash-throated Flycatcher),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,188,Setophaga cerulea (Cerulean Warbler),Parulidae,Setophaga,10,9,0.9,432,Asimina triloba (common pawpaw),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,189,Setophaga citrina (Hooded Warbler),Parulidae,Setophaga,10,9,0.9,196,Eopsaltria australis (Eastern Yellow Robin),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,194,Centronyx henslowii (Henslow's Sparrow),Passerellidae,Centronyx,10,9,0.9,184,Anthus pratensis (Meadow Pipit),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,196,Eopsaltria australis (Eastern Yellow Robin),Petroicidae,Eopsaltria,10,9,0.9,191,Setophaga ruticilla (American Redstart),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,198,Regulus ignicapilla (Common Firecrest),Regulidae,Regulus,10,9,0.9,170,Pheucticus chrysopeplus (Yellow Grosbeak),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,205,Empidonax hammondii (Hammond's Flycatcher),Tyrannidae,Empidonax,10,9,0.9,204,Contopus sordidulus (Western Wood-Pewee),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,206,Fluvicola nengeta (Masked Water-Tyrant),Tyrannidae,Fluvicola,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,211,Nycticorax nycticorax (Black-crowned Night Heron),Ardeidae,Nycticorax,10,9,0.9,206,Fluvicola nengeta (Masked Water-Tyrant),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,212,Pelecanus crispus (Dalmatian Pelican),Pelecanidae,Pelecanus,10,9,0.9,213,Phoenicopterus ruber (American Flamingo),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,224,Lycalopex culpaeus (Culpeo),Canidae,Lycalopex,10,9,0.9,178,Riparia riparia (Bank Swallow),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,226,Mephitis macroura (Hooded Skunk),Mephitidae,Mephitis,10,9,0.9,223,Canis lupus (Gray Wolf),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,235,Crocodylus moreletii (Belize Crocodile),Crocodylidae,Crocodylus,10,9,0.9,149,Cygnus olor (Mute Swan),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,244,Iguana iguana (Green Iguana),Iguanidae,Iguana,10,9,0.9,243,Micrurus tener (Texas Coralsnake),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,250,Clinocardium nuttallii (Nuttall's Cockle),Cardiidae,Clinocardium,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,251,Aliger gigas (Queen Conch),Strombidae,Aliger,10,9,0.9,140,Hippocampus histrix (Spiny Seahorse),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,252,Buccinum undatum (Common Whelk),Buccinidae,Buccinum,10,9,0.9,253,Californiconus californicus (California Cone),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,253,Californiconus californicus (California Cone),Conidae,Californiconus,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,257,Rumina decollata (Decollate Snail),Achatinidae,Rumina,10,9,0.9,253,Californiconus californicus (California Cone),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,259,Helix lucorum (Turkish Snail),Helicidae,Helix,10,9,0.9,246,Plestiodon obsoletus (Great Plains Skink),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,260,Tonicella lineata (Lined Chiton),Tonicellidae,Tonicella,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,261,Peltigera praetextata (scaly pelt lichen),Peltigeraceae,Peltigera,10,9,0.9,276,Thuidium delicatulum (delicate fern moss),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,264,Agaricus xanthodermus (Yellow Stainer),Agaricaceae,Agaricus,10,9,0.9,250,Clinocardium nuttallii (Nuttall's Cockle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,267,Lichenomphalia umbellifera (Lichen Agaric),Hygrophoraceae,Lichenomphalia,10,9,0.9,265,Chlorophyllum molybdites (green-spored parasol),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,275,Rhizomnium glabrescens (fan moss),Mniaceae,Rhizomnium,10,9,0.9,348,Cardamine hirsuta (hairy bittercress),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,276,Thuidium delicatulum (delicate fern moss),Thuidiaceae,Thuidium,10,9,0.9,480,Tolmiea menziesii (youth on age),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,286,Muscari neglectum (Grape hyacinth),Asparagaceae,Muscari,10,9,0.9,376,Ecballium elaterium (squirting cucumber),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,287,Asphodelus ramosus (Branched Asphodel),Asphodelaceae,Asphodelus,10,9,0.9,312,Chaerophyllum aromaticum (Broad-leaved Chervil),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,294,Ophrys insectifera (Fly Orchid),Orchidaceae,Ophrys,10,9,0.9,305,Schoenoplectus pungens (common three-square),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,296,Spiranthes lacera (Slender Ladies' Tresses),Orchidaceae,Spiranthes,10,9,0.9,306,Paspalum dilatatum (Dallis grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,297,Erythronium oregonum (giant white fawn lily),Liliaceae,Erythronium,10,9,0.9,303,Smilax glauca (sawbrier),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,300,Lilium pardalinum (Leopard Lily),Liliaceae,Lilium,10,9,0.9,298,Fritillaria recurva (scarlet fritillary),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,301,Trillium nivale (snow trillium),Melanthiaceae,Trillium,10,9,0.9,237,Gerrhonotus infernalis (Texas Alligator Lizard),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,308,Setaria viridis (Green Bristle Grass),Poaceae,Setaria,10,9,0.9,304,Carex digitata (Fingered Sedge),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,311,Dendrolycopodium obscurum (princess pine),Lycopodiaceae,Dendrolycopodium,10,9,0.9,276,Thuidium delicatulum (delicate fern moss),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,320,Artemisia vulgaris (common mugwort),Asteraceae,Artemisia,10,9,0.9,173,Psilorhinus morio (Brown Jay),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,322,Cirsium texanum (Texas Thistle),Asteraceae,Cirsium,10,9,0.9,305,Schoenoplectus pungens (common three-square),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,330,Leucanthemum vulgare (oxeye daisy),Asteraceae,Leucanthemum,10,9,0.9,281,Allium cernuum (nodding onion),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,334,Packera tampicana (Great Plains Ragwort),Asteraceae,Packera,10,9,0.9,306,Paspalum dilatatum (Dallis grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,338,Solidago rugosa (common wrinkle-leaved goldenrod),Asteraceae,Solidago,10,9,0.9,394,Acacia longifolia (longleaf wattle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,343,Jasione montana (Sheep's-bit),Campanulaceae,Jasione,10,9,0.9,431,Glandularia bipinnatifida (Dakota mock vervain),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,344,Echium plantagineum (Salvation Jane),Boraginaceae,Echium,10,9,0.9,333,Ozothamnus leptophyllus (Tauhinu),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,347,Cakile maritima (European Searocket),Brassicaceae,Cakile,10,9,0.9,386,Kalmia procumbens (alpine azalea),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,350,Dithyrea californica (California shieldpod),Brassicaceae,Dithyrea,10,9,0.9,376,Ecballium elaterium (squirting cucumber),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,361,Stellaria graminea (lesser stitchwort),Caryophyllaceae,Stellaria,10,9,0.9,362,Montia parvifolia (Small-leaved Blinks),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,366,Fallopia cilinodis (Fringed Bindweed),Polygonaceae,Fallopia,10,9,0.9,473,Toxicodendron rydbergii (poison ivy),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,369,Polygonum paronychia (beach knotweed),Polygonaceae,Polygonum,10,9,0.9,308,Setaria viridis (Green Bristle Grass),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,371,Rumex hymenosepalus (canaigre dock),Polygonaceae,Rumex,10,9,0.9,433,Magnolia tripetala (umbrella magnolia),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,374,Mentzelia hispida (Streambank Stickleaf),Loasaceae,Mentzelia,10,9,0.9,475,Acer campestre (field maple),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,379,Arbutus unedo (strawberry tree),Ericaceae,Arbutus,10,9,0.9,336,Senecio glastifolius (Woad-leaved ragwort),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,390,Phlox drummondii (Drummond's phlox),Polemoniaceae,Phlox,10,9,0.9,431,Glandularia bipinnatifida (Dakota mock vervain),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,391,Phlox longifolia (longleaf phlox),Polemoniaceae,Phlox,10,9,0.9,390,Phlox drummondii (Drummond's phlox),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,399,Thermopsis californica (California goldenbanner),Fabaceae,Thermopsis,10,9,0.9,428,Verbascum nigrum (Dark Mullein),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,401,Polygala rugelii (Yellow milkwort),Polygalaceae,Polygala,10,9,0.9,304,Carex digitata (Fingered Sedge),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,418,Castilleja arvensis (field Indian paintbrush),Orobanchaceae,Castilleja,10,9,0.9,422,Pedicularis densiflora (Indian Warrior),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,420,Epifagus virginiana (Beechdrops),Orobanchaceae,Epifagus,10,9,0.9,473,Toxicodendron rydbergii (poison ivy),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,423,Erythranthe cardinalis (scarlet monkeyflower),Phrymaceae,Erythranthe,10,9,0.9,418,Castilleja arvensis (field Indian paintbrush),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,425,Veronica americana (American brooklime),Plantaginaceae,Veronica,10,9,0.9,324,Erigeron sumatrensis (tropical horseweed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,428,Verbascum nigrum (Dark Mullein),Scrophulariaceae,Verbascum,10,9,0.9,429,Verbascum virgatum (Wand Mullein),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,431,Glandularia bipinnatifida (Dakota mock vervain),Verbenaceae,Glandularia,10,9,0.9,390,Phlox drummondii (Drummond's phlox),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,434,Acalypha rhomboidea (common copperleaf),Euphorbiaceae,Acalypha,10,9,0.9,435,Croton glandulosus (Tropic Croton),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,435,Croton glandulosus (Tropic Croton),Euphorbiaceae,Croton,10,9,0.9,467,Rubus schmidelioides,1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,443,Abutilon theophrasti (velvetleaf),Malvaceae,Abutilon,10,9,0.9,481,Ipomoea coccinea (red morning glory),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,453,Anemonastrum canadense (meadow anemone),Ranunculaceae,Anemonastrum,10,9,0.9,457,Pulsatilla patens (eastern pasqueflower),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,470,Laportea canadensis (Canadian wood nettle),Urticaceae,Laportea,10,9,0.9,424,Phryma leptostachya (American lopseed),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,475,Acer campestre (field maple),Sapindaceae,Acer,10,9,0.9,353,Anredera cordifolia (Mignonette vine),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,478,Rhodiola integrifolia (western roseroot),Crassulaceae,Rhodiola,10,9,0.9,363,Limonium perezii (Perez's sea lavender),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,483,Solanum dimidiatum (western horsenettle),Solanaceae,Solanum,10,9,0.9,484,Solanum elaeagnifolium (White Horse-nettle),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,493,Gleichenia dicarpa (tangle fern),Gleicheniaceae,Gleichenia,10,9,0.9,125,Conocephalus fuscus (Long-winged Conehead),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,499,Phegopteris hexagonoptera (broad beech fern),Thelypteridaceae,Phegopteris,10,9,0.9,352,Dysphania ambrosioides (Mexican tea),1
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,2,Dolomedes triton (Six-spotted Fishing Spider),Pisauridae,Dolomedes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,4,Paravaejovis puritanus,Vaejovidae,Paravaejovis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),Coccinellidae,Psyllobora,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,14,Anoplotrupes stercorosus (Woodland Dor Beetle),Geotrupidae,Anoplotrupes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,18,Calliphora vicina (Blue Blowfly),Calliphoridae,Calliphora,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,23,Toxomerus politus (Maize Calligrapher Fly),Syrphidae,Toxomerus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,24,Adelges tsugae (Hemlock Woolly Adelgid),Adelgidae,Adelges,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,25,Acanthocephala femorata (Florida Leaf-footed Bug),Coreidae,Acanthocephala,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,26,Leptoglossus clypealis (Western Leaf-footed Bug),Coreidae,Leptoglossus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,27,Leptoglossus occidentalis (Western Conifer Seed Bug),Coreidae,Leptoglossus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,28,Adelphocoris lineolatus (Alfalfa Plant Bug),Miridae,Adelphocoris,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,29,Graphosoma italicum (European Striped Shield Bug),Pentatomidae,Graphosoma,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,33,Andrena cineraria (Ashy Mining Bee),Andrenidae,Andrena,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,42,Mischocyttarus flavitarsis (Western Paper Wasp),Vespidae,Mischocyttarus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,45,Parapoynx diminutalis (Hydrilla Leafcutter Moth),Crambidae,Parapoynx,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,46,Perispasta caeculalis (Titian Peale's Crambid),Crambidae,Perispasta,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,48,Urola nivalis (Snowy Urola Moth),Crambidae,Urola,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,50,Catocala grynea (Woody Underwing),Erebidae,Catocala,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,51,Catocala ilia (Ilia Underwing),Erebidae,Catocala,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,53,Melipotis acontioides (Royal Poinciana Moth),Erebidae,Melipotis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,55,Chiasmia clathrata (Latticed Heath),Geometridae,Chiasmia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,57,Colotois pennaria (Feathered Thorn),Geometridae,Colotois,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,58,Idaea aversata (Riband Wave),Geometridae,Idaea,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,59,Ilexia intractata (Black-dotted Ruddy Moth),Geometridae,Ilexia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,60,Probole amicaria (Alien Probole Moth),Geometridae,Probole,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,61,Tetracis cachexiata (White Slant-line),Geometridae,Tetracis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,62,Tetracis crocallata (Yellow Slant-line),Geometridae,Tetracis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,64,Burnsius philetas (Desert Checkered-Skipper),Hesperiidae,Burnsius,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,66,Iambrix salsala (Chestnut Bob),Hesperiidae,Iambrix,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,72,Euclea incisa (Green Oak-Slug Moth),Limacodidae,Euclea,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,73,Anthene emolus (Common Ciliate Blue),Lycaenidae,Anthene,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,74,Catochrysops strabo (Forget-me-not),Lycaenidae,Catochrysops,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,76,Cyaniris semiargus (Mazarine Blue),Lycaenidae,Cyaniris,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,81,Lithacodia musta (Small Mossy Lithacodia),Noctuidae,Lithacodia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,83,Ponometia semiflava (Half-yellow Moth),Noctuidae,Ponometia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,84,Pseudoips prasinana (Green Silver-lines),Nolidae,Pseudoips,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,86,Brenthis ino (Lesser Marbled Fritillary),Nymphalidae,Brenthis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,88,Dryas iulia (Julia Butterfly),Nymphalidae,Dryas,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,92,Smyrna blomfildia (Blomfild's Beauty),Nymphalidae,Smyrna,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,97,Pieris brassicae (Large White Butterfly),Pieridae,Pieris,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,98,Moodna ostrinella (Darker Moodna Moth),Pyralidae,Moodna,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,99,Calephelis nemesis (Fatal Metalmark),Riodinidae,Calephelis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,100,Melanis pixe (Red-bordered Pixie),Riodinidae,Melanis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,101,Anisota senatoria (Orange-tipped Oakworm Moth),Saturniidae,Anisota,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,102,Hemileuca maia (Buck Moth),Saturniidae,Hemileuca,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,103,Saturnia pavonia (Small Emperor Moth),Saturniidae,Saturnia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,104,Saturnia pyri (Giant Peacock Moth),Saturniidae,Saturnia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,109,Argyrotaenia velutinana (Red-banded Leafroller),Tortricidae,Argyrotaenia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,110,Cydia latiferreana (Filbertworm Moth),Tortricidae,Cydia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,111,Epiblema otiosana (Bidens Borer Moth),Tortricidae,Epiblema,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,112,Platynota rostrana (Omnivorous Platynota Moth),Tortricidae,Platynota,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,114,Chrysopa oculata,Chrysopidae,Chrysopa,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,115,Libelloides coccajus (Owly Sulphur),Myrmeleontidae,Libelloides,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,116,Calopteryx maculata (Ebony Jewelwing),Calopterygidae,Calopteryx,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,119,Erpetogomphus designatus (Eastern Ringtail),Gomphidae,Erpetogomphus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,121,Lestes virens (Small Spreadwing),Lestidae,Lestes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,122,Neurothemis taiwanensis,Libellulidae,Neurothemis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,127,Petrolisthes elongatus (New Zealand Half Crab),Porcellanidae,Petrolisthes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,128,Pimephales notatus (Bluntnose Minnow),Cyprinidae,Pimephales,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,131,Lepomis auritus (Redbreast Sunfish),Centrarchidae,Lepomis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,132,Chaetodon capistratus (Four-eyed Butterflyfish),Chaetodontidae,Chaetodon,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,136,Abudefduf vaigiensis (Indo-Pacific Sergeant Major),Pomacentridae,Abudefduf,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,138,Paralabrax clathratus (Kelp Bass),Serranidae,Paralabrax,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,140,Hippocampus histrix (Spiny Seahorse),Syngnathidae,Hippocampus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,142,Litoria fallax (Eastern Dwarf Treefrog),Pelodryadidae,Litoria,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,144,Aneides aeneus (Green Salamander),Plethodontidae,Aneides,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,156,Charadrius wilsonia (Wilson's Plover),Charadriidae,Charadrius,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,157,Pluvialis dominica (American Golden-Plover),Charadriidae,Pluvialis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,164,Numenius madagascariensis (Far Eastern Curlew),Scolopacidae,Numenius,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,167,Pavo cristatus (Common Peafowl),Phasianidae,Pavo,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,168,Zapornia flavirostra (Black Crake),Rallidae,Zapornia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,169,Passerina ciris (Painted Bunting),Cardinalidae,Passerina,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,184,Anthus pratensis (Meadow Pipit),Motacillidae,Anthus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,213,Phoenicopterus ruber (American Flamingo),Phoenicopteridae,Phoenicopterus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,218,Trogon rufus (Black-throated Trogon),Trogonidae,Trogon,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,219,Ginglymostoma cirratum (Nurse Shark),Ginglymostomatidae,Ginglymostoma,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,220,Oreotragus oreotragus (Klipspringer),Bovidae,Oreotragus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,227,Phocarctos hookeri (New Zealand Sea Lion),Otariidae,Phocarctos,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,228,Galeopterus variegatus (Sunda Flying Lemur),Cynocephalidae,Galeopterus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,229,Macropus fuliginosus (Western Grey Kangaroo),Macropodidae,Macropus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,231,Myodes glareolus (Bank Vole),Cricetidae,Myodes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,232,Marmota monax (Woodchuck),Sciuridae,Marmota,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,242,Basiliscus vittatus (Brown Basilisk),Corytophanidae,Basiliscus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,246,Plestiodon obsoletus (Great Plains Skink),Scincidae,Plestiodon,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,249,Actinia equina (Beadlet anemone),Actiniidae,Actinia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,255,Phidiana hiltoni (Hilton's Aeolid),Facelinidae,Phidiana,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,256,Phyllidia varicosa (Varicose Wart Slug),Phyllidiidae,Phyllidia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,258,Cepaea hortensis (White-lipped Snail),Helicidae,Cepaea,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,262,Teloschistes flavicans (Golden Hair-lichen),Teloschistaceae,Teloschistes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,269,Chalciporus piperatus (Peppery Bolete),Boletaceae,Chalciporus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,271,Phallus impudicus (stinkhorn),Phallaceae,Phallus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,273,Hericium americanum (Bear's Head Tooth),Hericiaceae,Hericium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,274,Xylobolus frustulatus (ceramic parchment),Stereaceae,Xylobolus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,277,Codium fragile (Sponge Weed),Codiaceae,Codium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,280,Cocos nucifera (coconut palm),Arecaceae,Cocos,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,282,Hymenocallis liriosme (spring spiderlily),Amaryllidaceae,Hymenocallis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,285,Camassia quamash (small camas),Asparagaceae,Camassia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,289,Crocus vernus (Spring Crocus),Iridaceae,Crocus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,291,Dactylorhiza fuchsii (Common Spotted Orchid),Orchidaceae,Dactylorhiza,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,293,Neottia nidus-avis (bird's-nest orchid),Orchidaceae,Neottia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,295,Spathoglottis plicata (Philippine Ground Orchid),Orchidaceae,Spathoglottis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,298,Fritillaria recurva (scarlet fritillary),Liliaceae,Fritillaria,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,299,Lilium bulbiferum (fire lily),Liliaceae,Lilium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,310,Themeda triandra (Kangaroo Grass),Poaceae,Themeda,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,315,Panax trifolius (dwarf ginseng),Araliaceae,Panax,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,319,Ambrosia salsola (common burrobrush),Asteraceae,Ambrosia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,321,Bidens aristosa (tickseed beggar-ticks),Asteraceae,Bidens,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,327,Gaillardia aristata (great blanketflower),Asteraceae,Gaillardia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,329,Hymenopappus artemisiifolius (Old Plainsman),Asteraceae,Hymenopappus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,331,Melanthera nivea (Snow Squarestem),Asteraceae,Melanthera,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,337,Silphium terebinthinaceum (prairie dock),Asteraceae,Silphium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,341,Tithonia tubaeformis (tree marigold),Asteraceae,Tithonia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,342,Campanula prenanthoides (California Harebell),Campanulaceae,Campanula,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,355,Echinocereus pectinatus (Spiny Hedgehog Cactus),Cactaceae,Echinocereus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,360,Silene flos-cuculi (ragged-Robin),Caryophyllaceae,Silene,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,363,Limonium perezii (Perez's sea lavender),Plumbaginaceae,Limonium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,364,Bistorta vivipara (alpine bistort),Polygonaceae,Bistorta,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,373,Cevallia sinuata (Stinging Serpent),Loasaceae,Cevallia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,376,Ecballium elaterium (squirting cucumber),Cucurbitaceae,Ecballium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,384,Erica coccinea (Red Heath),Ericaceae,Erica,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,386,Kalmia procumbens (alpine azalea),Ericaceae,Kalmia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,389,Ipomopsis longiflora (flaxflowered ipomopsis),Polemoniaceae,Ipomopsis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,396,Melilotus albus (white sweet clover),Fabaceae,Melilotus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,397,Platylobium obtusangulum (Common Flat-pea),Fabaceae,Platylobium,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,400,Polygala nana (candyroot),Polygalaceae,Polygala,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,411,Melissa officinalis (lemon balm),Lamiaceae,Melissa,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,412,Monarda punctata (spotted horse mint),Lamiaceae,Monarda,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,419,Castilleja purpurea (Purple paintbrush),Orobanchaceae,Castilleja,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,422,Pedicularis densiflora (Indian Warrior),Orobanchaceae,Pedicularis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,437,Manihot esculenta (Cassava),Euphorbiaceae,Manihot,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,442,Viola rotundifolia (Round-leaved Violet),Violaceae,Viola,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,444,Malva assurgentiflora (Island Mallow),Malvaceae,Malva,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,445,Muntingia calabura (Cherry Tree),Muntingiaceae,Muntingia,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,450,Mimetes cucullatus (red pagoda),Proteaceae,Mimetes,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,455,Clematis crispa (Swamp Leather Flower),Ranunculaceae,Clematis,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,462,Potentilla canadensis (dwarf cinquefoil),Rosaceae,Potentilla,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,463,Prunus fasciculata (desert almond),Rosaceae,Prunus,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,471,Urtica urens (Dwarf Nettle),Urticaceae,Urtica,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,474,Bursera microphylla (elephant tree),Burseraceae,Bursera,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,481,Ipomoea coccinea (red morning glory),Convolvulaceae,Ipomoea,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,482,Ipomoea obscura (Obscure Morning Glory),Convolvulaceae,Ipomoea,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,487,Sequoiadendron giganteum (giant sequoia),Cupressaceae,Sequoiadendron,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,495,Lomaria discolor (Crown Fern),Blechnaceae,Lomaria,10,10,1.0,,,0
+ImageNet-pretrained ConvNeXt-Tiny with MixUp,497,Dennstaedtia punctilobula (hay-scented fern),Dennstaedtiaceae,Dennstaedtia,10,10,1.0,,,0

@@ -1,0 +1,4 @@
+parameter,value
+method_key,deep_ensemble
+method_name,Validation-selected ResNet50/ConvNeXt ensemble
+initialization,ensemble

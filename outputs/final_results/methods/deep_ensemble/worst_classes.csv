@@ -1,0 +1,501 @@
+method,class_index,species,family,genus,test_images,correct,accuracy,most_common_wrong_class,most_common_wrong_species,most_common_wrong_count
+Validation-selected ResNet50/ConvNeXt ensemble,469,Ulmus pumila (Siberian elm),Ulmaceae,Ulmus,10,2,0.2,468,Ulmus americana (American elm),2
+Validation-selected ResNet50/ConvNeXt ensemble,402,Quercus michauxii (swamp chestnut oak),Fagaceae,Quercus,10,3,0.3,433,Magnolia tripetala (umbrella magnolia),2
+Validation-selected ResNet50/ConvNeXt ensemble,187,Poecile rufescens (Chestnut-backed Chickadee),Paridae,Poecile,10,3,0.3,348,Cardamine hirsuta (hairy bittercress),1
+Validation-selected ResNet50/ConvNeXt ensemble,312,Chaerophyllum aromaticum (Broad-leaved Chervil),Apiaceae,Chaerophyllum,10,3,0.3,306,Paspalum dilatatum (Dallis grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,459,Morus indica (Korean mulberry),Moraceae,Morus,10,4,0.4,470,Laportea canadensis (Canadian wood nettle),2
+Validation-selected ResNet50/ConvNeXt ensemble,466,Rubus bifrons (Himalayan-berry),Rosaceae,Rubus,10,4,0.4,470,Laportea canadensis (Canadian wood nettle),2
+Validation-selected ResNet50/ConvNeXt ensemble,489,Taxodium mucronatum (Montezuma cypress),Cupressaceae,Taxodium,10,4,0.4,488,Taxodium distichum (baldcypress),2
+Validation-selected ResNet50/ConvNeXt ensemble,441,Salix nigra (black willow),Salicaceae,Salix,10,4,0.4,82,Maliattha synochitis (Black-dotted Maliattha),1
+Validation-selected ResNet50/ConvNeXt ensemble,160,Chroicocephalus hartlaubii (Hartlaub's Gull),Laridae,Chroicocephalus,10,5,0.5,162,Larus cachinnans (Caspian Gull),3
+Validation-selected ResNet50/ConvNeXt ensemble,407,Coprosma dumosa,Rubiaceae,Coprosma,10,5,0.5,463,Prunus fasciculata (desert almond),3
+Validation-selected ResNet50/ConvNeXt ensemble,68,Lon melane (Umber Skipper),Hesperiidae,Lon,10,5,0.5,69,Polites mystic (Long Dash Skipper),2
+Validation-selected ResNet50/ConvNeXt ensemble,192,Vermivora chrysoptera (Golden-winged Warbler),Parulidae,Vermivora,10,5,0.5,170,Pheucticus chrysopeplus (Yellow Grosbeak),2
+Validation-selected ResNet50/ConvNeXt ensemble,247,Crotalus oreganus (Western Rattlesnake),Viperidae,Crotalus,10,5,0.5,248,Sistrurus catenatus (Massasauga),2
+Validation-selected ResNet50/ConvNeXt ensemble,283,Asparagus acutifolius (Spiny Asparagus),Asparagaceae,Asparagus,10,5,0.5,387,Leptecophylla juniperina (Prickly mingimingi),2
+Validation-selected ResNet50/ConvNeXt ensemble,306,Paspalum dilatatum (Dallis grass),Poaceae,Paspalum,10,5,0.5,309,Stenotaphrum secundatum (Saint Augustine grass),2
+Validation-selected ResNet50/ConvNeXt ensemble,281,Allium cernuum (nodding onion),Amaryllidaceae,Allium,10,5,0.5,392,Androsace septentrionalis (pygmy-flower rock-jasmine),1
+Validation-selected ResNet50/ConvNeXt ensemble,307,Poa annua (Annual Meadow-grass),Poaceae,Poa,10,5,0.5,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Validation-selected ResNet50/ConvNeXt ensemble,317,Ilex opaca (American holly),Aquifoliaceae,Ilex,10,5,0.5,475,Acer campestre (field maple),1
+Validation-selected ResNet50/ConvNeXt ensemble,336,Senecio glastifolius (Woad-leaved ragwort),Asteraceae,Senecio,10,5,0.5,330,Leucanthemum vulgare (oxeye daisy),1
+Validation-selected ResNet50/ConvNeXt ensemble,339,Sonchus asper (prickly sowthistle),Asteraceae,Sonchus,10,5,0.5,443,Abutilon theophrasti (velvetleaf),1
+Validation-selected ResNet50/ConvNeXt ensemble,362,Montia parvifolia (Small-leaved Blinks),Montiaceae,Montia,10,5,0.5,370,Pterostegia drymarioides (woodland pterostegia),1
+Validation-selected ResNet50/ConvNeXt ensemble,395,Cytisus scoparius (Scotch Broom),Fabaceae,Cytisus,10,5,0.5,194,Centronyx henslowii (Henslow's Sparrow),1
+Validation-selected ResNet50/ConvNeXt ensemble,398,Robinia pseudoacacia (black locust),Fabaceae,Robinia,10,5,0.5,402,Quercus michauxii (swamp chestnut oak),1
+Validation-selected ResNet50/ConvNeXt ensemble,440,Salix cinerea (Grey Willow),Salicaceae,Salix,10,5,0.5,439,Salix bebbiana (bebb's willow),1
+Validation-selected ResNet50/ConvNeXt ensemble,464,Prunus pumila (sand cherry),Rosaceae,Prunus,10,5,0.5,318,Achillea millefolium (common yarrow),1
+Validation-selected ResNet50/ConvNeXt ensemble,473,Toxicodendron rydbergii (poison ivy),Anacardiaceae,Toxicodendron,10,5,0.5,359,Honckenya peploides (Sea Sandwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,209,Zosterops palpebrosus (Indian White-eye),Zosteropidae,Zosterops,10,6,0.6,208,Zosterops japonicus (Warbling White-eye),4
+Validation-selected ResNet50/ConvNeXt ensemble,77,Icaricia icarioides (Boisduval's Blue),Lycaenidae,Icaricia,10,6,0.6,76,Cyaniris semiargus (Mazarine Blue),3
+Validation-selected ResNet50/ConvNeXt ensemble,234,Caiman crocodilus (Common Caiman),Alligatoridae,Caiman,10,6,0.6,235,Crocodylus moreletii (Belize Crocodile),3
+Validation-selected ResNet50/ConvNeXt ensemble,414,Salvia columbariae (chia),Lamiaceae,Salvia,10,6,0.6,343,Jasione montana (Sheep's-bit),3
+Validation-selected ResNet50/ConvNeXt ensemble,117,Enallagma cyathigerum (Common Blue Damselfly),Coenagrionidae,Enallagma,10,6,0.6,118,Enallagma geminatum (Skimming Bluet),2
+Validation-selected ResNet50/ConvNeXt ensemble,161,Chroicocephalus ridibundus (Black-headed Gull),Laridae,Chroicocephalus,10,6,0.6,163,Larus glaucescens (Glaucous-winged Gull),2
+Validation-selected ResNet50/ConvNeXt ensemble,163,Larus glaucescens (Glaucous-winged Gull),Laridae,Larus,10,6,0.6,160,Chroicocephalus hartlaubii (Hartlaub's Gull),2
+Validation-selected ResNet50/ConvNeXt ensemble,204,Contopus sordidulus (Western Wood-Pewee),Tyrannidae,Contopus,10,6,0.6,203,Contopus cooperi (Olive-sided Flycatcher),2
+Validation-selected ResNet50/ConvNeXt ensemble,208,Zosterops japonicus (Warbling White-eye),Zosteropidae,Zosterops,10,6,0.6,209,Zosterops palpebrosus (Indian White-eye),2
+Validation-selected ResNet50/ConvNeXt ensemble,225,Lynx canadensis (Canada Lynx),Felidae,Lynx,10,6,0.6,223,Canis lupus (Gray Wolf),2
+Validation-selected ResNet50/ConvNeXt ensemble,492,Pinus ponderosa (ponderosa pine),Pinaceae,Pinus,10,6,0.6,491,Pinus contorta (lodgepole pine),2
+Validation-selected ResNet50/ConvNeXt ensemble,91,Nymphalis antiopa (Mourning Cloak),Nymphalidae,Nymphalis,10,6,0.6,430,Duranta erecta (golden dewdrop),1
+Validation-selected ResNet50/ConvNeXt ensemble,173,Psilorhinus morio (Brown Jay),Corvidae,Psilorhinus,10,6,0.6,195,Pipilo erythrophthalmus (Eastern Towhee),1
+Validation-selected ResNet50/ConvNeXt ensemble,177,Hirundo rustica (Barn Swallow),Hirundinidae,Hirundo,10,6,0.6,202,Thraupis episcopus (Blue-gray Tanager),1
+Validation-selected ResNet50/ConvNeXt ensemble,186,Poecile hudsonicus (Boreal Chickadee),Paridae,Poecile,10,6,0.6,199,Sitta pusilla (Brown-headed Nuthatch),1
+Validation-selected ResNet50/ConvNeXt ensemble,191,Setophaga ruticilla (American Redstart),Parulidae,Setophaga,10,6,0.6,198,Regulus ignicapilla (Common Firecrest),1
+Validation-selected ResNet50/ConvNeXt ensemble,215,Megascops asio (Eastern Screech-Owl),Strigidae,Megascops,10,6,0.6,85,Peridea angulosa (Angulose Prominent Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,222,Odocoileus virginianus (White-tailed Deer),Cervidae,Odocoileus,10,6,0.6,143,Rana aurora (Northern Red-legged Frog),1
+Validation-selected ResNet50/ConvNeXt ensemble,223,Canis lupus (Gray Wolf),Canidae,Canis,10,6,0.6,219,Ginglymostoma cirratum (Nurse Shark),1
+Validation-selected ResNet50/ConvNeXt ensemble,292,Goodyera tesselata (checkered rattlesnake plantain),Orchidaceae,Goodyera,10,6,0.6,296,Spiranthes lacera (Slender Ladies' Tresses),1
+Validation-selected ResNet50/ConvNeXt ensemble,314,Fatsia japonica (Japanese aralia),Araliaceae,Fatsia,10,6,0.6,324,Erigeron sumatrensis (tropical horseweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,323,Crepis tectorum (narrow-leaved hawksbeard),Asteraceae,Crepis,10,6,0.6,457,Pulsatilla patens (eastern pasqueflower),1
+Validation-selected ResNet50/ConvNeXt ensemble,324,Erigeron sumatrensis (tropical horseweed),Asteraceae,Erigeron,10,6,0.6,68,Lon melane (Umber Skipper),1
+Validation-selected ResNet50/ConvNeXt ensemble,348,Cardamine hirsuta (hairy bittercress),Brassicaceae,Cardamine,10,6,0.6,307,Poa annua (Annual Meadow-grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,351,Pseudowintera colorata (Mountain Horopito),Winteraceae,Pseudowintera,10,6,0.6,385,Gaultheria antipoda,1
+Validation-selected ResNet50/ConvNeXt ensemble,368,Polygonum aviculare (prostrate knotweed),Polygonaceae,Polygonum,10,6,0.6,369,Polygonum paronychia (beach knotweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,383,Dracophyllum longifolium (Inaka),Ericaceae,Dracophyllum,10,6,0.6,449,Leucadendron laureolum (Golden Sunshinebush),1
+Validation-selected ResNet50/ConvNeXt ensemble,393,Acacia confusa (Taiwan Acacia),Fabaceae,Acacia,10,6,0.6,394,Acacia longifolia (longleaf wattle),1
+Validation-selected ResNet50/ConvNeXt ensemble,417,Vitex agnus-castus (Lilac chaste tree),Lamiaceae,Vitex,10,6,0.6,437,Manihot esculenta (Cassava),1
+Validation-selected ResNet50/ConvNeXt ensemble,424,Phryma leptostachya (American lopseed),Phrymaceae,Phryma,10,6,0.6,290,Cephalanthera rubra (Red Helleborine),1
+Validation-selected ResNet50/ConvNeXt ensemble,427,Buddleja davidii (Butterfly bush),Scrophulariaceae,Buddleja,10,6,0.6,431,Glandularia bipinnatifida (Dakota mock vervain),1
+Validation-selected ResNet50/ConvNeXt ensemble,432,Asimina triloba (common pawpaw),Annonaceae,Asimina,10,6,0.6,437,Manihot esculenta (Cassava),1
+Validation-selected ResNet50/ConvNeXt ensemble,449,Leucadendron laureolum (Golden Sunshinebush),Proteaceae,Leucadendron,10,6,0.6,261,Peltigera praetextata (scaly pelt lichen),1
+Validation-selected ResNet50/ConvNeXt ensemble,451,Actaea racemosa (black cohosh),Ranunculaceae,Actaea,10,6,0.6,460,Crataegus marshallii (parsley hawthorn),1
+Validation-selected ResNet50/ConvNeXt ensemble,461,Eriobotrya japonica (Loquat),Rosaceae,Eriobotrya,10,6,0.6,439,Salix bebbiana (bebb's willow),1
+Validation-selected ResNet50/ConvNeXt ensemble,467,Rubus schmidelioides,Rosaceae,Rubus,10,6,0.6,435,Croton glandulosus (Tropic Croton),1
+Validation-selected ResNet50/ConvNeXt ensemble,468,Ulmus americana (American elm),Ulmaceae,Ulmus,10,6,0.6,319,Ambrosia salsola (common burrobrush),1
+Validation-selected ResNet50/ConvNeXt ensemble,491,Pinus contorta (lodgepole pine),Pinaceae,Pinus,10,6,0.6,492,Pinus ponderosa (ponderosa pine),1
+Validation-selected ResNet50/ConvNeXt ensemble,199,Sitta pusilla (Brown-headed Nuthatch),Sittidae,Sitta,10,7,0.7,186,Poecile hudsonicus (Boreal Chickadee),3
+Validation-selected ResNet50/ConvNeXt ensemble,217,Phalacrocorax penicillatus (Brandt's Cormorant),Phalacrocoracidae,Phalacrocorax,10,7,0.7,216,Phalacrocorax pelagicus (Pelagic Cormorant),3
+Validation-selected ResNet50/ConvNeXt ensemble,241,Zamenis longissimus (Aesculapian Snake),Colubridae,Zamenis,10,7,0.7,236,Anguis veronensis (Italian Slow Worm),3
+Validation-selected ResNet50/ConvNeXt ensemble,245,Pseudaspis cana (Mole Snake),Lamprophiidae,Pseudaspis,10,7,0.7,241,Zamenis longissimus (Aesculapian Snake),3
+Validation-selected ResNet50/ConvNeXt ensemble,345,Myosotis latifolia (broadleaf forget-me-not),Boraginaceae,Myosotis,10,7,0.7,346,Myosotis scorpioides (water forget-me-not),3
+Validation-selected ResNet50/ConvNeXt ensemble,380,Arctostaphylos glauca (Big Berry Manzanita),Ericaceae,Arctostaphylos,10,7,0.7,474,Bursera microphylla (elephant tree),3
+Validation-selected ResNet50/ConvNeXt ensemble,5,Hemiscolopendra marginata (Eastern Bark Centipede),Scolopendridae,Hemiscolopendra,10,7,0.7,6,Scolopendra heros (Giant Desert Centipede),2
+Validation-selected ResNet50/ConvNeXt ensemble,146,Aquila heliaca (Imperial Eagle),Accipitridae,Aquila,10,7,0.7,147,Pernis apivorus (European Honey-buzzard),2
+Validation-selected ResNet50/ConvNeXt ensemble,162,Larus cachinnans (Caspian Gull),Laridae,Larus,10,7,0.7,163,Larus glaucescens (Glaucous-winged Gull),2
+Validation-selected ResNet50/ConvNeXt ensemble,182,Quiscalus quiscula (Common Grackle),Icteridae,Quiscalus,10,7,0.7,181,Agelaius tricolor (Tricolored Blackbird),2
+Validation-selected ResNet50/ConvNeXt ensemble,263,Umbilicaria mammulata (Smooth Rock Tripe),Umbilicariaceae,Umbilicaria,10,7,0.7,261,Peltigera praetextata (scaly pelt lichen),2
+Validation-selected ResNet50/ConvNeXt ensemble,288,Phormium cookianum (Mountain flax),Asphodelaceae,Phormium,10,7,0.7,383,Dracophyllum longifolium (Inaka),2
+Validation-selected ResNet50/ConvNeXt ensemble,346,Myosotis scorpioides (water forget-me-not),Boraginaceae,Myosotis,10,7,0.7,345,Myosotis latifolia (broadleaf forget-me-not),2
+Validation-selected ResNet50/ConvNeXt ensemble,486,Krameria erecta (Pima Rhatany),Krameriaceae,Krameria,10,7,0.7,463,Prunus fasciculata (desert almond),2
+Validation-selected ResNet50/ConvNeXt ensemble,488,Taxodium distichum (baldcypress),Cupressaceae,Taxodium,10,7,0.7,489,Taxodium mucronatum (Montezuma cypress),2
+Validation-selected ResNet50/ConvNeXt ensemble,15,Oedemera femorata,Oedemeridae,Oedemera,10,7,0.7,297,Erythronium oregonum (giant white fawn lily),1
+Validation-selected ResNet50/ConvNeXt ensemble,44,Agriphila straminella (Pearl Veneer),Crambidae,Agriphila,10,7,0.7,24,Adelges tsugae (Hemlock Woolly Adelgid),1
+Validation-selected ResNet50/ConvNeXt ensemble,67,Lerodea eufala (Eufala Skipper),Hesperiidae,Lerodea,10,7,0.7,43,Achyra rantalis (Garden Webworm Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,70,Thymelicus lineola (European Skipper),Hesperiidae,Thymelicus,10,7,0.7,63,Ancyloxypha numitor (Least Skipper),1
+Validation-selected ResNet50/ConvNeXt ensemble,71,Urbanus dorantes (Dorantes Longtail),Hesperiidae,Urbanus,10,7,0.7,172,Corvus ossifragus (Fish Crow),1
+Validation-selected ResNet50/ConvNeXt ensemble,79,Satyrium titus (Coral Hairstreak),Lycaenidae,Satyrium,10,7,0.7,74,Catochrysops strabo (Forget-me-not),1
+Validation-selected ResNet50/ConvNeXt ensemble,93,Papilio anactus (Dainty Swallowtail),Papilionidae,Papilio,10,7,0.7,89,Euphydryas phaeton (Baltimore Checkerspot),1
+Validation-selected ResNet50/ConvNeXt ensemble,135,Perca flavescens (Yellow Perch),Percidae,Perca,10,7,0.7,128,Pimephales notatus (Bluntnose Minnow),1
+Validation-selected ResNet50/ConvNeXt ensemble,145,Triturus carnifex (Italian Crested Newt),Salamandridae,Triturus,10,7,0.7,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),1
+Validation-selected ResNet50/ConvNeXt ensemble,155,Charadrius obscurus (Red-breasted Dotterel),Charadriidae,Charadrius,10,7,0.7,156,Charadrius wilsonia (Wilson's Plover),1
+Validation-selected ResNet50/ConvNeXt ensemble,170,Pheucticus chrysopeplus (Yellow Grosbeak),Cardinalidae,Pheucticus,10,7,0.7,183,Ptilotula penicillata (White-plumed Honeyeater),1
+Validation-selected ResNet50/ConvNeXt ensemble,171,Certhia americana (Brown Creeper),Certhiidae,Certhia,10,7,0.7,214,Dryobates pubescens (Downy Woodpecker),1
+Validation-selected ResNet50/ConvNeXt ensemble,176,Loxia curvirostra (Red Crossbill),Fringillidae,Loxia,10,7,0.7,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Validation-selected ResNet50/ConvNeXt ensemble,178,Riparia riparia (Bank Swallow),Hirundinidae,Riparia,10,7,0.7,146,Aquila heliaca (Imperial Eagle),1
+Validation-selected ResNet50/ConvNeXt ensemble,190,Setophaga dominica (Yellow-throated Warbler),Parulidae,Setophaga,10,7,0.7,214,Dryobates pubescens (Downy Woodpecker),1
+Validation-selected ResNet50/ConvNeXt ensemble,193,Calamospiza melanocorys (Lark Bunting),Passerellidae,Calamospiza,10,7,0.7,203,Contopus cooperi (Olive-sided Flycatcher),1
+Validation-selected ResNet50/ConvNeXt ensemble,202,Thraupis episcopus (Blue-gray Tanager),Thraupidae,Thraupis,10,7,0.7,201,Saltator coerulescens (Grayish Saltator),1
+Validation-selected ResNet50/ConvNeXt ensemble,203,Contopus cooperi (Olive-sided Flycatcher),Tyrannidae,Contopus,10,7,0.7,172,Corvus ossifragus (Fish Crow),1
+Validation-selected ResNet50/ConvNeXt ensemble,207,Myiarchus cinerascens (Ash-throated Flycatcher),Tyrannidae,Myiarchus,10,7,0.7,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Validation-selected ResNet50/ConvNeXt ensemble,214,Dryobates pubescens (Downy Woodpecker),Picidae,Dryobates,10,7,0.7,403,Quercus phellos (willow oak),1
+Validation-selected ResNet50/ConvNeXt ensemble,230,Castor canadensis (American Beaver),Castoridae,Castor,10,7,0.7,232,Marmota monax (Woodchuck),1
+Validation-selected ResNet50/ConvNeXt ensemble,235,Crocodylus moreletii (Belize Crocodile),Crocodylidae,Crocodylus,10,7,0.7,145,Triturus carnifex (Italian Crested Newt),1
+Validation-selected ResNet50/ConvNeXt ensemble,236,Anguis veronensis (Italian Slow Worm),Anguidae,Anguis,10,7,0.7,240,Tantilla gracilis (Flat-headed Snake),1
+Validation-selected ResNet50/ConvNeXt ensemble,237,Gerrhonotus infernalis (Texas Alligator Lizard),Anguidae,Gerrhonotus,10,7,0.7,7,Agrilus planipennis (Emerald Ash Borer),1
+Validation-selected ResNet50/ConvNeXt ensemble,248,Sistrurus catenatus (Massasauga),Viperidae,Sistrurus,10,7,0.7,247,Crotalus oreganus (Western Rattlesnake),1
+Validation-selected ResNet50/ConvNeXt ensemble,284,Asparagus officinalis (asparagus),Asparagaceae,Asparagus,10,7,0.7,451,Actaea racemosa (black cohosh),1
+Validation-selected ResNet50/ConvNeXt ensemble,290,Cephalanthera rubra (Red Helleborine),Orchidaceae,Cephalanthera,10,7,0.7,446,Oenothera rosea (rose evening primrose),1
+Validation-selected ResNet50/ConvNeXt ensemble,303,Smilax glauca (sawbrier),Smilacaceae,Smilax,10,7,0.7,37,Camponotus floridanus (Florida Carpenter Ant),1
+Validation-selected ResNet50/ConvNeXt ensemble,309,Stenotaphrum secundatum (Saint Augustine grass),Poaceae,Stenotaphrum,10,7,0.7,383,Dracophyllum longifolium (Inaka),1
+Validation-selected ResNet50/ConvNeXt ensemble,313,Torilis japonica (upright hedge-parsley),Apiaceae,Torilis,10,7,0.7,460,Crataegus marshallii (parsley hawthorn),1
+Validation-selected ResNet50/ConvNeXt ensemble,325,Eupatorium altissimum (tall boneset),Asteraceae,Eupatorium,10,7,0.7,435,Croton glandulosus (Tropic Croton),1
+Validation-selected ResNet50/ConvNeXt ensemble,333,Ozothamnus leptophyllus (Tauhinu),Asteraceae,Ozothamnus,10,7,0.7,319,Ambrosia salsola (common burrobrush),1
+Validation-selected ResNet50/ConvNeXt ensemble,340,Taraxacum officinale (common dandelion),Asteraceae,Taraxacum,10,7,0.7,401,Polygala rugelii (Yellow milkwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,365,Eriogonum deflexum (skeleton weed),Polygonaceae,Eriogonum,10,7,0.7,175,Taeniopygia bichenovii (Double-barred Finch),1
+Validation-selected ResNet50/ConvNeXt ensemble,375,Coriaria arborea (Tree Tutu),Coriariaceae,Coriaria,10,7,0.7,293,Neottia nidus-avis (bird's-nest orchid),1
+Validation-selected ResNet50/ConvNeXt ensemble,378,Viburnum acerifolium (mapleleaf viburnum),Viburnaceae,Viburnum,10,7,0.7,470,Laportea canadensis (Canadian wood nettle),1
+Validation-selected ResNet50/ConvNeXt ensemble,392,Androsace septentrionalis (pygmy-flower rock-jasmine),Primulaceae,Androsace,10,7,0.7,362,Montia parvifolia (Small-leaved Blinks),1
+Validation-selected ResNet50/ConvNeXt ensemble,394,Acacia longifolia (longleaf wattle),Fabaceae,Acacia,10,7,0.7,383,Dracophyllum longifolium (Inaka),1
+Validation-selected ResNet50/ConvNeXt ensemble,403,Quercus phellos (willow oak),Fagaceae,Quercus,10,7,0.7,420,Epifagus virginiana (Beechdrops),1
+Validation-selected ResNet50/ConvNeXt ensemble,405,Garrya elliptica (Coast silk tassel),Garryaceae,Garrya,10,7,0.7,404,Morella californica (California Wax Myrtle),1
+Validation-selected ResNet50/ConvNeXt ensemble,426,Veronica filiformis (Slender speedwell),Plantaginaceae,Veronica,10,7,0.7,330,Leucanthemum vulgare (oxeye daisy),1
+Validation-selected ResNet50/ConvNeXt ensemble,436,Euphorbia ophthalmica (Florida Hammock Sandmat),Euphorbiaceae,Euphorbia,10,7,0.7,369,Polygonum paronychia (beach knotweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,438,Hypericum perforatum (Klamath weed),Hypericaceae,Hypericum,10,7,0.7,324,Erigeron sumatrensis (tropical horseweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,439,Salix bebbiana (bebb's willow),Salicaceae,Salix,10,7,0.7,398,Robinia pseudoacacia (black locust),1
+Validation-selected ResNet50/ConvNeXt ensemble,446,Oenothera rosea (rose evening primrose),Onagraceae,Oenothera,10,7,0.7,435,Croton glandulosus (Tropic Croton),1
+Validation-selected ResNet50/ConvNeXt ensemble,448,Banksia integrifolia (Coastal Banksia),Proteaceae,Banksia,10,7,0.7,404,Morella californica (California Wax Myrtle),1
+Validation-selected ResNet50/ConvNeXt ensemble,454,Aquilegia vulgaris (common columbine),Ranunculaceae,Aquilegia,10,7,0.7,378,Viburnum acerifolium (mapleleaf viburnum),1
+Validation-selected ResNet50/ConvNeXt ensemble,456,Clematis virginiana (Virginia virgin's-bower),Ranunculaceae,Clematis,10,7,0.7,367,Persicaria maculosa (redshank),1
+Validation-selected ResNet50/ConvNeXt ensemble,458,Ranunculus acris (meadow buttercup),Ranunculaceae,Ranunculus,10,7,0.7,452,Adonis vernalis (Spring Adonis),1
+Validation-selected ResNet50/ConvNeXt ensemble,477,Crassula ovata (jade plant),Crassulaceae,Crassula,10,7,0.7,333,Ozothamnus leptophyllus (Tauhinu),1
+Validation-selected ResNet50/ConvNeXt ensemble,498,Pteris vittata (ladder fern),Pteridaceae,Pteris,10,7,0.7,354,Echinocereus enneacanthus (Strawberry Cactus),1
+Validation-selected ResNet50/ConvNeXt ensemble,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),Halictidae,Augochloropsis,10,8,0.8,39,Augochlora pura (Pure Green Sweat Bee),2
+Validation-selected ResNet50/ConvNeXt ensemble,139,Plotosus lineatus (Striped Eel Catfish),Plotosidae,Plotosus,10,8,0.8,138,Paralabrax clathratus (Kelp Bass),2
+Validation-selected ResNet50/ConvNeXt ensemble,216,Phalacrocorax pelagicus (Pelagic Cormorant),Phalacrocoracidae,Phalacrocorax,10,8,0.8,217,Phalacrocorax penicillatus (Brandt's Cormorant),2
+Validation-selected ResNet50/ConvNeXt ensemble,221,Tragelaphus oryx (Eland),Bovidae,Tragelaphus,10,8,0.8,222,Odocoileus virginianus (White-tailed Deer),2
+Validation-selected ResNet50/ConvNeXt ensemble,387,Leptecophylla juniperina (Prickly mingimingi),Ericaceae,Leptecophylla,10,8,0.8,460,Crataegus marshallii (parsley hawthorn),2
+Validation-selected ResNet50/ConvNeXt ensemble,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),Cantharidae,Chauliognathus,10,8,0.8,9,Rutpela maculata (Spotted Longhorn),1
+Validation-selected ResNet50/ConvNeXt ensemble,11,Leptinotarsa juncta (False Potato Beetle),Chrysomelidae,Leptinotarsa,10,8,0.8,12,Henosepilachna vigintioctopunctata (Hadda Beetle),1
+Validation-selected ResNet50/ConvNeXt ensemble,17,Exomala orientalis (Oriental Beetle),Scarabaeidae,Exomala,10,8,0.8,19,Exaireta spinigera (Garden soldier fly),1
+Validation-selected ResNet50/ConvNeXt ensemble,30,Halyomorpha halys (Brown Marmorated Stink Bug),Pentatomidae,Halyomorpha,10,8,0.8,25,Acanthocephala femorata (Florida Leaf-footed Bug),1
+Validation-selected ResNet50/ConvNeXt ensemble,32,Phymata americana (Jagged Ambush Bug),Reduviidae,Phymata,10,8,0.8,436,Euphorbia ophthalmica (Florida Hammock Sandmat),1
+Validation-selected ResNet50/ConvNeXt ensemble,35,Cimbex americanus (Elm Sawfly),Cimbicidae,Cimbex,10,8,0.8,20,Copestylum mexicanum (Mexican Cactus Fly),1
+Validation-selected ResNet50/ConvNeXt ensemble,39,Augochlora pura (Pure Green Sweat Bee),Halictidae,Augochlora,10,8,0.8,40,Augochloropsis metallica (Metallic Epauletted-Sweat Bee),1
+Validation-selected ResNet50/ConvNeXt ensemble,65,Erynnis juvenalis (Juvenal's Duskywing),Hesperiidae,Erynnis,10,8,0.8,243,Micrurus tener (Texas Coralsnake),1
+Validation-selected ResNet50/ConvNeXt ensemble,75,Celastrina ladon (Spring Azure),Lycaenidae,Celastrina,10,8,0.8,76,Cyaniris semiargus (Mazarine Blue),1
+Validation-selected ResNet50/ConvNeXt ensemble,82,Maliattha synochitis (Black-dotted Maliattha),Noctuidae,Maliattha,10,8,0.8,53,Melipotis acontioides (Royal Poinciana Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,89,Euphydryas phaeton (Baltimore Checkerspot),Nymphalidae,Euphydryas,10,8,0.8,91,Nymphalis antiopa (Mourning Cloak),1
+Validation-selected ResNet50/ConvNeXt ensemble,106,Hippotion scrofa,Sphingidae,Hippotion,10,8,0.8,54,Pantydia sparsa,1
+Validation-selected ResNet50/ConvNeXt ensemble,133,Eupetrichthys angustipes (Snakeskin Wrasse),Labridae,Eupetrichthys,10,8,0.8,132,Chaetodon capistratus (Four-eyed Butterflyfish),1
+Validation-selected ResNet50/ConvNeXt ensemble,137,Aplodinotus grunniens (Freshwater Drum),Sciaenidae,Aplodinotus,10,8,0.8,219,Ginglymostoma cirratum (Nurse Shark),1
+Validation-selected ResNet50/ConvNeXt ensemble,143,Rana aurora (Northern Red-legged Frog),Ranidae,Rana,10,8,0.8,220,Oreotragus oreotragus (Klipspringer),1
+Validation-selected ResNet50/ConvNeXt ensemble,147,Pernis apivorus (European Honey-buzzard),Accipitridae,Pernis,10,8,0.8,146,Aquila heliaca (Imperial Eagle),1
+Validation-selected ResNet50/ConvNeXt ensemble,149,Cygnus olor (Mute Swan),Anatidae,Cygnus,10,8,0.8,212,Pelecanus crispus (Dalmatian Pelican),1
+Validation-selected ResNet50/ConvNeXt ensemble,150,Melanitta perspicillata (Surf Scoter),Anatidae,Melanitta,10,8,0.8,151,Mergellus albellus (Smew),1
+Validation-selected ResNet50/ConvNeXt ensemble,158,Vanellus coronatus (Crowned Lapwing),Charadriidae,Vanellus,10,8,0.8,160,Chroicocephalus hartlaubii (Hartlaub's Gull),1
+Validation-selected ResNet50/ConvNeXt ensemble,166,Patagioenas flavirostris (Red-billed Pigeon),Columbidae,Patagioenas,10,8,0.8,176,Loxia curvirostra (Red Crossbill),1
+Validation-selected ResNet50/ConvNeXt ensemble,174,Pyrrhocorax graculus (Alpine Chough),Corvidae,Pyrrhocorax,10,8,0.8,181,Agelaius tricolor (Tricolored Blackbird),1
+Validation-selected ResNet50/ConvNeXt ensemble,175,Taeniopygia bichenovii (Double-barred Finch),Estrildidae,Taeniopygia,10,8,0.8,353,Anredera cordifolia (Mignonette vine),1
+Validation-selected ResNet50/ConvNeXt ensemble,180,Tachycineta thalassina (Violet-green Swallow),Hirundinidae,Tachycineta,10,8,0.8,178,Riparia riparia (Bank Swallow),1
+Validation-selected ResNet50/ConvNeXt ensemble,181,Agelaius tricolor (Tricolored Blackbird),Icteridae,Agelaius,10,8,0.8,230,Castor canadensis (American Beaver),1
+Validation-selected ResNet50/ConvNeXt ensemble,195,Pipilo erythrophthalmus (Eastern Towhee),Passerellidae,Pipilo,10,8,0.8,191,Setophaga ruticilla (American Redstart),1
+Validation-selected ResNet50/ConvNeXt ensemble,197,Petroica macrocephala (Tomtit),Petroicidae,Petroica,10,8,0.8,223,Canis lupus (Gray Wolf),1
+Validation-selected ResNet50/ConvNeXt ensemble,200,Chamaea fasciata (Wrentit),Sylviidae,Chamaea,10,8,0.8,201,Saltator coerulescens (Grayish Saltator),1
+Validation-selected ResNet50/ConvNeXt ensemble,201,Saltator coerulescens (Grayish Saltator),Thraupidae,Saltator,10,8,0.8,170,Pheucticus chrysopeplus (Yellow Grosbeak),1
+Validation-selected ResNet50/ConvNeXt ensemble,233,Sciurus aureogaster (Red-bellied Squirrel),Sciuridae,Sciurus,10,8,0.8,228,Galeopterus variegatus (Sunda Flying Lemur),1
+Validation-selected ResNet50/ConvNeXt ensemble,238,Dendrelaphis pictus (Common Bronze-back),Colubridae,Dendrelaphis,10,8,0.8,467,Rubus schmidelioides,1
+Validation-selected ResNet50/ConvNeXt ensemble,239,Lampropeltis triangulum (Eastern Milksnake),Colubridae,Lampropeltis,10,8,0.8,248,Sistrurus catenatus (Massasauga),1
+Validation-selected ResNet50/ConvNeXt ensemble,240,Tantilla gracilis (Flat-headed Snake),Colubridae,Tantilla,10,8,0.8,241,Zamenis longissimus (Aesculapian Snake),1
+Validation-selected ResNet50/ConvNeXt ensemble,243,Micrurus tener (Texas Coralsnake),Elapidae,Micrurus,10,8,0.8,4,Paravaejovis puritanus,1
+Validation-selected ResNet50/ConvNeXt ensemble,251,Aliger gigas (Queen Conch),Strombidae,Aliger,10,8,0.8,140,Hippocampus histrix (Spiny Seahorse),1
+Validation-selected ResNet50/ConvNeXt ensemble,254,Americoliva sayana (Lettered Olive),Olividae,Americoliva,10,8,0.8,253,Californiconus californicus (California Cone),1
+Validation-selected ResNet50/ConvNeXt ensemble,264,Agaricus xanthodermus (Yellow Stainer),Agaricaceae,Agaricus,10,8,0.8,340,Taraxacum officinale (common dandelion),1
+Validation-selected ResNet50/ConvNeXt ensemble,266,Amanita rubescens (blusher),Amanitaceae,Amanita,10,8,0.8,269,Chalciporus piperatus (Peppery Bolete),1
+Validation-selected ResNet50/ConvNeXt ensemble,272,Fomes fomentarius (Hoof Fungus),Polyporaceae,Fomes,10,8,0.8,223,Canis lupus (Gray Wolf),1
+Validation-selected ResNet50/ConvNeXt ensemble,279,Ephedra trifurca (longleaf ephedra),Ephedraceae,Ephedra,10,8,0.8,465,Prunus spinosa (Blackthorn),1
+Validation-selected ResNet50/ConvNeXt ensemble,294,Ophrys insectifera (Fly Orchid),Orchidaceae,Ophrys,10,8,0.8,305,Schoenoplectus pungens (common three-square),1
+Validation-selected ResNet50/ConvNeXt ensemble,296,Spiranthes lacera (Slender Ladies' Tresses),Orchidaceae,Spiranthes,10,8,0.8,306,Paspalum dilatatum (Dallis grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,304,Carex digitata (Fingered Sedge),Cyperaceae,Carex,10,8,0.8,310,Themeda triandra (Kangaroo Grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,305,Schoenoplectus pungens (common three-square),Cyperaceae,Schoenoplectus,10,8,0.8,139,Plotosus lineatus (Striped Eel Catfish),1
+Validation-selected ResNet50/ConvNeXt ensemble,316,Schefflera actinophylla (Octopus Tree),Araliaceae,Schefflera,10,8,0.8,432,Asimina triloba (common pawpaw),1
+Validation-selected ResNet50/ConvNeXt ensemble,318,Achillea millefolium (common yarrow),Asteraceae,Achillea,10,8,0.8,320,Artemisia vulgaris (common mugwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,326,Eupatorium capillifolium (dogfennel),Asteraceae,Eupatorium,10,8,0.8,307,Poa annua (Annual Meadow-grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,328,Helenium amarum (Bitterweed),Asteraceae,Helenium,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,332,Nabalus albus (white rattlesnakeroot),Asteraceae,Nabalus,10,8,0.8,378,Viburnum acerifolium (mapleleaf viburnum),1
+Validation-selected ResNet50/ConvNeXt ensemble,335,Polymnia canadensis (leafcup),Asteraceae,Polymnia,10,8,0.8,366,Fallopia cilinodis (Fringed Bindweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,338,Solidago rugosa (common wrinkle-leaved goldenrod),Asteraceae,Solidago,10,8,0.8,428,Verbascum nigrum (Dark Mullein),1
+Validation-selected ResNet50/ConvNeXt ensemble,349,Cardamine impatiens (narrow-leaved bittercress),Brassicaceae,Cardamine,10,8,0.8,284,Asparagus officinalis (asparagus),1
+Validation-selected ResNet50/ConvNeXt ensemble,353,Anredera cordifolia (Mignonette vine),Basellaceae,Anredera,10,8,0.8,408,Coprosma grandifolia (Kanono),1
+Validation-selected ResNet50/ConvNeXt ensemble,354,Echinocereus enneacanthus (Strawberry Cactus),Cactaceae,Echinocereus,10,8,0.8,356,Echinocereus stramineus (strawberry hedgehog cactus),1
+Validation-selected ResNet50/ConvNeXt ensemble,356,Echinocereus stramineus (strawberry hedgehog cactus),Cactaceae,Echinocereus,10,8,0.8,358,Ferocactus cylindraceus (California barrel cactus),1
+Validation-selected ResNet50/ConvNeXt ensemble,359,Honckenya peploides (Sea Sandwort),Caryophyllaceae,Honckenya,10,8,0.8,324,Erigeron sumatrensis (tropical horseweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,366,Fallopia cilinodis (Fringed Bindweed),Polygonaceae,Fallopia,10,8,0.8,459,Morus indica (Korean mulberry),1
+Validation-selected ResNet50/ConvNeXt ensemble,370,Pterostegia drymarioides (woodland pterostegia),Polygonaceae,Pterostegia,10,8,0.8,140,Hippocampus histrix (Spiny Seahorse),1
+Validation-selected ResNet50/ConvNeXt ensemble,372,Canotia holacantha (crucifixion thorn),Celastraceae,Canotia,10,8,0.8,463,Prunus fasciculata (desert almond),1
+Validation-selected ResNet50/ConvNeXt ensemble,377,Symphoricarpos occidentalis (Western Snowberry),Caprifoliaceae,Symphoricarpos,10,8,0.8,368,Polygonum aviculare (prostrate knotweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,381,Calluna vulgaris (common heather),Ericaceae,Calluna,10,8,0.8,281,Allium cernuum (nodding onion),1
+Validation-selected ResNet50/ConvNeXt ensemble,385,Gaultheria antipoda,Ericaceae,Gaultheria,10,8,0.8,319,Ambrosia salsola (common burrobrush),1
+Validation-selected ResNet50/ConvNeXt ensemble,388,Vaccinium membranaceum (black huckleberry),Ericaceae,Vaccinium,10,8,0.8,439,Salix bebbiana (bebb's willow),1
+Validation-selected ResNet50/ConvNeXt ensemble,391,Phlox longifolia (longleaf phlox),Polemoniaceae,Phlox,10,8,0.8,295,Spathoglottis plicata (Philippine Ground Orchid),1
+Validation-selected ResNet50/ConvNeXt ensemble,404,Morella californica (California Wax Myrtle),Myricaceae,Morella,10,8,0.8,280,Cocos nucifera (coconut palm),1
+Validation-selected ResNet50/ConvNeXt ensemble,406,Frasera caroliniensis (American columbo),Gentianaceae,Frasera,10,8,0.8,282,Hymenocallis liriosme (spring spiderlily),1
+Validation-selected ResNet50/ConvNeXt ensemble,408,Coprosma grandifolia (Kanono),Rubiaceae,Coprosma,10,8,0.8,353,Anredera cordifolia (Mignonette vine),1
+Validation-selected ResNet50/ConvNeXt ensemble,410,Ajuga reptans (carpet bugle),Lamiaceae,Ajuga,10,8,0.8,409,Ajuga genevensis (Blue Bugle),1
+Validation-selected ResNet50/ConvNeXt ensemble,413,Salvia apiana (white sage),Lamiaceae,Salvia,10,8,0.8,223,Canis lupus (Gray Wolf),1
+Validation-selected ResNet50/ConvNeXt ensemble,415,Stachys palustris (Marsh Woundwort),Lamiaceae,Stachys,10,8,0.8,287,Asphodelus ramosus (Branched Asphodel),1
+Validation-selected ResNet50/ConvNeXt ensemble,416,Trichostema lanatum (woolly blue curls),Lamiaceae,Trichostema,10,8,0.8,381,Calluna vulgaris (common heather),1
+Validation-selected ResNet50/ConvNeXt ensemble,425,Veronica americana (American brooklime),Plantaginaceae,Veronica,10,8,0.8,426,Veronica filiformis (Slender speedwell),1
+Validation-selected ResNet50/ConvNeXt ensemble,429,Verbascum virgatum (Wand Mullein),Scrophulariaceae,Verbascum,10,8,0.8,428,Verbascum nigrum (Dark Mullein),1
+Validation-selected ResNet50/ConvNeXt ensemble,430,Duranta erecta (golden dewdrop),Verbenaceae,Duranta,10,8,0.8,445,Muntingia calabura (Cherry Tree),1
+Validation-selected ResNet50/ConvNeXt ensemble,433,Magnolia tripetala (umbrella magnolia),Magnoliaceae,Magnolia,10,8,0.8,495,Lomaria discolor (Crown Fern),1
+Validation-selected ResNet50/ConvNeXt ensemble,447,Aristotelia serrata (Wineberry),Elaeocarpaceae,Aristotelia,10,8,0.8,398,Robinia pseudoacacia (black locust),1
+Validation-selected ResNet50/ConvNeXt ensemble,452,Adonis vernalis (Spring Adonis),Ranunculaceae,Adonis,10,8,0.8,334,Packera tampicana (Great Plains Ragwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,457,Pulsatilla patens (eastern pasqueflower),Ranunculaceae,Pulsatilla,10,8,0.8,289,Crocus vernus (Spring Crocus),1
+Validation-selected ResNet50/ConvNeXt ensemble,460,Crataegus marshallii (parsley hawthorn),Rosaceae,Crataegus,10,8,0.8,349,Cardamine impatiens (narrow-leaved bittercress),1
+Validation-selected ResNet50/ConvNeXt ensemble,465,Prunus spinosa (Blackthorn),Rosaceae,Prunus,10,8,0.8,362,Montia parvifolia (Small-leaved Blinks),1
+Validation-selected ResNet50/ConvNeXt ensemble,472,Phoradendron californicum (desert mistletoe),Santalaceae,Phoradendron,10,8,0.8,380,Arctostaphylos glauca (Big Berry Manzanita),1
+Validation-selected ResNet50/ConvNeXt ensemble,476,Aesculus pavia (Red Buckeye),Sapindaceae,Aesculus,10,8,0.8,420,Epifagus virginiana (Beechdrops),1
+Validation-selected ResNet50/ConvNeXt ensemble,479,Ribes uva-crispa (Goose-berry),Grossulariaceae,Ribes,10,8,0.8,378,Viburnum acerifolium (mapleleaf viburnum),1
+Validation-selected ResNet50/ConvNeXt ensemble,484,Solanum elaeagnifolium (White Horse-nettle),Solanaceae,Solanum,10,8,0.8,368,Polygonum aviculare (prostrate knotweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,490,Abies concolor (white fir),Pinaceae,Abies,10,8,0.8,493,Gleichenia dicarpa (tangle fern),1
+Validation-selected ResNet50/ConvNeXt ensemble,494,Asplenium bulbiferum (Hen and Chicks Fern),Aspleniaceae,Asplenium,10,8,0.8,334,Packera tampicana (Great Plains Ragwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,496,Cystopteris fragilis (brittle bladderfern),Cystopteridaceae,Cystopteris,10,8,0.8,349,Cardamine impatiens (narrow-leaved bittercress),1
+Validation-selected ResNet50/ConvNeXt ensemble,499,Phegopteris hexagonoptera (broad beech fern),Thelypteridaceae,Phegopteris,10,8,0.8,352,Dysphania ambrosioides (Mexican tea),1
+Validation-selected ResNet50/ConvNeXt ensemble,0,Araneus diadematus (Cross Orbweaver),Araneidae,Araneus,10,9,0.9,87,Doxocopa laure (Silver Emperor),1
+Validation-selected ResNet50/ConvNeXt ensemble,1,Trichonephila clavipes (Golden Silk Spider),Araneidae,Trichonephila,10,9,0.9,187,Poecile rufescens (Chestnut-backed Chickadee),1
+Validation-selected ResNet50/ConvNeXt ensemble,3,Phidippus johnsoni (Johnson's Jumping Spider),Salticidae,Phidippus,10,9,0.9,127,Petrolisthes elongatus (New Zealand Half Crab),1
+Validation-selected ResNet50/ConvNeXt ensemble,6,Scolopendra heros (Giant Desert Centipede),Scolopendridae,Scolopendra,10,9,0.9,5,Hemiscolopendra marginata (Eastern Bark Centipede),1
+Validation-selected ResNet50/ConvNeXt ensemble,7,Agrilus planipennis (Emerald Ash Borer),Buprestidae,Agrilus,10,9,0.9,402,Quercus michauxii (swamp chestnut oak),1
+Validation-selected ResNet50/ConvNeXt ensemble,9,Rutpela maculata (Spotted Longhorn),Cerambycidae,Rutpela,10,9,0.9,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),1
+Validation-selected ResNet50/ConvNeXt ensemble,10,Trichocnemis spiculatus (Spined Woodborer),Cerambycidae,Trichocnemis,10,9,0.9,19,Exaireta spinigera (Garden soldier fly),1
+Validation-selected ResNet50/ConvNeXt ensemble,12,Henosepilachna vigintioctopunctata (Hadda Beetle),Coccinellidae,Henosepilachna,10,9,0.9,102,Hemileuca maia (Buck Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,19,Exaireta spinigera (Garden soldier fly),Stratiomyidae,Exaireta,10,9,0.9,31,Nezara viridula (Southern Green Stink Bug),1
+Validation-selected ResNet50/ConvNeXt ensemble,20,Copestylum mexicanum (Mexican Cactus Fly),Syrphidae,Copestylum,10,9,0.9,14,Anoplotrupes stercorosus (Woodland Dor Beetle),1
+Validation-selected ResNet50/ConvNeXt ensemble,21,Eristalis stipator (Yellow-shouldered Drone Fly),Syrphidae,Eristalis,10,9,0.9,464,Prunus pumila (sand cherry),1
+Validation-selected ResNet50/ConvNeXt ensemble,22,Eristalis transversa (Transverse-banded Flower Fly),Syrphidae,Eristalis,10,9,0.9,20,Copestylum mexicanum (Mexican Cactus Fly),1
+Validation-selected ResNet50/ConvNeXt ensemble,31,Nezara viridula (Southern Green Stink Bug),Pentatomidae,Nezara,10,9,0.9,8,Chauliognathus pensylvanicus (Goldenrod Soldier Beetle),1
+Validation-selected ResNet50/ConvNeXt ensemble,34,Xylocopa micans (Southern Carpenter Bee),Apidae,Xylocopa,10,9,0.9,417,Vitex agnus-castus (Lilac chaste tree),1
+Validation-selected ResNet50/ConvNeXt ensemble,36,Amphibolips confluenta (Spongy Oak Apple Gall Wasp),Cynipidae,Amphibolips,10,9,0.9,335,Polymnia canadensis (leafcup),1
+Validation-selected ResNet50/ConvNeXt ensemble,37,Camponotus floridanus (Florida Carpenter Ant),Formicidae,Camponotus,10,9,0.9,143,Rana aurora (Northern Red-legged Frog),1
+Validation-selected ResNet50/ConvNeXt ensemble,38,Camponotus novaeboracensis (New York Carpenter Ant),Formicidae,Camponotus,10,9,0.9,37,Camponotus floridanus (Florida Carpenter Ant),1
+Validation-selected ResNet50/ConvNeXt ensemble,41,Ammophila procera (Common Thread-waisted Wasp),Sphecidae,Ammophila,10,9,0.9,19,Exaireta spinigera (Garden soldier fly),1
+Validation-selected ResNet50/ConvNeXt ensemble,43,Achyra rantalis (Garden Webworm Moth),Crambidae,Achyra,10,9,0.9,44,Agriphila straminella (Pearl Veneer),1
+Validation-selected ResNet50/ConvNeXt ensemble,47,Pyrausta volupialis (Volupial Pyrausta Moth),Crambidae,Pyrausta,10,9,0.9,43,Achyra rantalis (Garden Webworm Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,49,Bulia deducta (Deduced Graphic),Erebidae,Bulia,10,9,0.9,54,Pantydia sparsa,1
+Validation-selected ResNet50/ConvNeXt ensemble,50,Catocala grynea (Woody Underwing),Erebidae,Catocala,10,9,0.9,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),1
+Validation-selected ResNet50/ConvNeXt ensemble,52,Hypena bijugalis (Dimorphic Bomolocha Moth),Erebidae,Hypena,10,9,0.9,142,Litoria fallax (Eastern Dwarf Treefrog),1
+Validation-selected ResNet50/ConvNeXt ensemble,54,Pantydia sparsa,Erebidae,Pantydia,10,9,0.9,108,Sphinx pinastri (Pine Hawk-Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,56,Chlorochlamys chloroleucaria (Blackberry Looper),Geometridae,Chlorochlamys,10,9,0.9,72,Euclea incisa (Green Oak-Slug Moth),1
+Validation-selected ResNet50/ConvNeXt ensemble,63,Ancyloxypha numitor (Least Skipper),Hesperiidae,Ancyloxypha,10,9,0.9,96,Glutophrissa drusilla (Florida White),1
+Validation-selected ResNet50/ConvNeXt ensemble,78,Leptotes marina (Marine Blue),Lycaenidae,Leptotes,10,9,0.9,77,Icaricia icarioides (Boisduval's Blue),1
+Validation-selected ResNet50/ConvNeXt ensemble,80,Autographa californica (Alfalfa Looper),Noctuidae,Autographa,10,9,0.9,71,Urbanus dorantes (Dorantes Longtail),1
+Validation-selected ResNet50/ConvNeXt ensemble,85,Peridea angulosa (Angulose Prominent Moth),Notodontidae,Peridea,10,9,0.9,35,Cimbex americanus (Elm Sawfly),1
+Validation-selected ResNet50/ConvNeXt ensemble,87,Doxocopa laure (Silver Emperor),Nymphalidae,Doxocopa,10,9,0.9,371,Rumex hymenosepalus (canaigre dock),1
+Validation-selected ResNet50/ConvNeXt ensemble,90,Limenitis arthemis (Red-spotted Admiral),Nymphalidae,Limenitis,10,9,0.9,89,Euphydryas phaeton (Baltimore Checkerspot),1
+Validation-selected ResNet50/ConvNeXt ensemble,94,Papilio thoas (Thoas Swallowtail),Papilionidae,Papilio,10,9,0.9,413,Salvia apiana (white sage),1
+Validation-selected ResNet50/ConvNeXt ensemble,95,Eurema daira (Barred Yellow),Pieridae,Eurema,10,9,0.9,258,Cepaea hortensis (White-lipped Snail),1
+Validation-selected ResNet50/ConvNeXt ensemble,96,Glutophrissa drusilla (Florida White),Pieridae,Glutophrissa,10,9,0.9,97,Pieris brassicae (Large White Butterfly),1
+Validation-selected ResNet50/ConvNeXt ensemble,98,Moodna ostrinella (Darker Moodna Moth),Pyralidae,Moodna,10,9,0.9,109,Argyrotaenia velutinana (Red-banded Leafroller),1
+Validation-selected ResNet50/ConvNeXt ensemble,105,Dolba hyloeus (Pawpaw Sphinx Moth),Sphingidae,Dolba,10,9,0.9,99,Calephelis nemesis (Fatal Metalmark),1
+Validation-selected ResNet50/ConvNeXt ensemble,107,Paonias excaecata (Blinded Sphinx Moth),Sphingidae,Paonias,10,9,0.9,68,Lon melane (Umber Skipper),1
+Validation-selected ResNet50/ConvNeXt ensemble,113,Orthodera ministralis (Australian Green Mantis),Mantidae,Orthodera,10,9,0.9,24,Adelges tsugae (Hemlock Woolly Adelgid),1
+Validation-selected ResNet50/ConvNeXt ensemble,118,Enallagma geminatum (Skimming Bluet),Coenagrionidae,Enallagma,10,9,0.9,117,Enallagma cyathigerum (Common Blue Damselfly),1
+Validation-selected ResNet50/ConvNeXt ensemble,120,Hagenius brevistylus (Dragonhunter),Gomphidae,Hagenius,10,9,0.9,119,Erpetogomphus designatus (Eastern Ringtail),1
+Validation-selected ResNet50/ConvNeXt ensemble,123,Pseudochorthippus curtipennis (Marsh meadow grasshopper),Acrididae,Pseudochorthippus,10,9,0.9,42,Mischocyttarus flavitarsis (Western Paper Wasp),1
+Validation-selected ResNet50/ConvNeXt ensemble,125,Conocephalus fuscus (Long-winged Conehead),Tettigoniidae,Conocephalus,10,9,0.9,309,Stenotaphrum secundatum (Saint Augustine grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,126,Faxonius virilis (Virile Crayfish),Cambaridae,Faxonius,10,9,0.9,135,Perca flavescens (Yellow Perch),1
+Validation-selected ResNet50/ConvNeXt ensemble,129,Rhinichthys atratulus (Blacknose Dace),Cyprinidae,Rhinichthys,10,9,0.9,145,Triturus carnifex (Italian Crested Newt),1
+Validation-selected ResNet50/ConvNeXt ensemble,130,Squalius cephalus (Chub),Cyprinidae,Squalius,10,9,0.9,128,Pimephales notatus (Bluntnose Minnow),1
+Validation-selected ResNet50/ConvNeXt ensemble,134,Parupeneus spilurus (Blackspot Goatfish),Mullidae,Parupeneus,10,9,0.9,133,Eupetrichthys angustipes (Snakeskin Wrasse),1
+Validation-selected ResNet50/ConvNeXt ensemble,141,Pristimantis achatinus (Cachabi Robber Frog),Craugastoridae,Pristimantis,10,9,0.9,143,Rana aurora (Northern Red-legged Frog),1
+Validation-selected ResNet50/ConvNeXt ensemble,148,Anas georgica (Yellow-billed Pintail),Anatidae,Anas,10,9,0.9,193,Calamospiza melanocorys (Lark Bunting),1
+Validation-selected ResNet50/ConvNeXt ensemble,151,Mergellus albellus (Smew),Anatidae,Mergellus,10,9,0.9,152,Mergus merganser (Common Merganser),1
+Validation-selected ResNet50/ConvNeXt ensemble,152,Mergus merganser (Common Merganser),Anatidae,Mergus,10,9,0.9,212,Pelecanus crispus (Dalmatian Pelican),1
+Validation-selected ResNet50/ConvNeXt ensemble,153,Archilochus alexandri (Black-chinned Hummingbird),Trochilidae,Archilochus,10,9,0.9,154,Heliodoxa jacula (Green-crowned Brilliant),1
+Validation-selected ResNet50/ConvNeXt ensemble,154,Heliodoxa jacula (Green-crowned Brilliant),Trochilidae,Heliodoxa,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Validation-selected ResNet50/ConvNeXt ensemble,159,Haematopus palliatus (American Oystercatcher),Haematopodidae,Haematopus,10,9,0.9,164,Numenius madagascariensis (Far Eastern Curlew),1
+Validation-selected ResNet50/ConvNeXt ensemble,165,Tringa glareola (Wood Sandpiper),Scolopacidae,Tringa,10,9,0.9,157,Pluvialis dominica (American Golden-Plover),1
+Validation-selected ResNet50/ConvNeXt ensemble,172,Corvus ossifragus (Fish Crow),Corvidae,Corvus,10,9,0.9,177,Hirundo rustica (Barn Swallow),1
+Validation-selected ResNet50/ConvNeXt ensemble,179,Stelgidopteryx ruficollis (Southern Rough-winged Swallow),Hirundinidae,Stelgidopteryx,10,9,0.9,203,Contopus cooperi (Olive-sided Flycatcher),1
+Validation-selected ResNet50/ConvNeXt ensemble,183,Ptilotula penicillata (White-plumed Honeyeater),Meliphagidae,Ptilotula,10,9,0.9,186,Poecile hudsonicus (Boreal Chickadee),1
+Validation-selected ResNet50/ConvNeXt ensemble,188,Setophaga cerulea (Cerulean Warbler),Parulidae,Setophaga,10,9,0.9,432,Asimina triloba (common pawpaw),1
+Validation-selected ResNet50/ConvNeXt ensemble,189,Setophaga citrina (Hooded Warbler),Parulidae,Setophaga,10,9,0.9,196,Eopsaltria australis (Eastern Yellow Robin),1
+Validation-selected ResNet50/ConvNeXt ensemble,194,Centronyx henslowii (Henslow's Sparrow),Passerellidae,Centronyx,10,9,0.9,184,Anthus pratensis (Meadow Pipit),1
+Validation-selected ResNet50/ConvNeXt ensemble,196,Eopsaltria australis (Eastern Yellow Robin),Petroicidae,Eopsaltria,10,9,0.9,186,Poecile hudsonicus (Boreal Chickadee),1
+Validation-selected ResNet50/ConvNeXt ensemble,198,Regulus ignicapilla (Common Firecrest),Regulidae,Regulus,10,9,0.9,170,Pheucticus chrysopeplus (Yellow Grosbeak),1
+Validation-selected ResNet50/ConvNeXt ensemble,205,Empidonax hammondii (Hammond's Flycatcher),Tyrannidae,Empidonax,10,9,0.9,207,Myiarchus cinerascens (Ash-throated Flycatcher),1
+Validation-selected ResNet50/ConvNeXt ensemble,206,Fluvicola nengeta (Masked Water-Tyrant),Tyrannidae,Fluvicola,10,9,0.9,153,Archilochus alexandri (Black-chinned Hummingbird),1
+Validation-selected ResNet50/ConvNeXt ensemble,210,Cochlearius cochlearius (Boat-billed Heron),Ardeidae,Cochlearius,10,9,0.9,233,Sciurus aureogaster (Red-bellied Squirrel),1
+Validation-selected ResNet50/ConvNeXt ensemble,211,Nycticorax nycticorax (Black-crowned Night Heron),Ardeidae,Nycticorax,10,9,0.9,206,Fluvicola nengeta (Masked Water-Tyrant),1
+Validation-selected ResNet50/ConvNeXt ensemble,212,Pelecanus crispus (Dalmatian Pelican),Pelecanidae,Pelecanus,10,9,0.9,213,Phoenicopterus ruber (American Flamingo),1
+Validation-selected ResNet50/ConvNeXt ensemble,224,Lycalopex culpaeus (Culpeo),Canidae,Lycalopex,10,9,0.9,178,Riparia riparia (Bank Swallow),1
+Validation-selected ResNet50/ConvNeXt ensemble,226,Mephitis macroura (Hooded Skunk),Mephitidae,Mephitis,10,9,0.9,223,Canis lupus (Gray Wolf),1
+Validation-selected ResNet50/ConvNeXt ensemble,227,Phocarctos hookeri (New Zealand Sea Lion),Otariidae,Phocarctos,10,9,0.9,232,Marmota monax (Woodchuck),1
+Validation-selected ResNet50/ConvNeXt ensemble,244,Iguana iguana (Green Iguana),Iguanidae,Iguana,10,9,0.9,243,Micrurus tener (Texas Coralsnake),1
+Validation-selected ResNet50/ConvNeXt ensemble,250,Clinocardium nuttallii (Nuttall's Cockle),Cardiidae,Clinocardium,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+Validation-selected ResNet50/ConvNeXt ensemble,252,Buccinum undatum (Common Whelk),Buccinidae,Buccinum,10,9,0.9,253,Californiconus californicus (California Cone),1
+Validation-selected ResNet50/ConvNeXt ensemble,253,Californiconus californicus (California Cone),Conidae,Californiconus,10,9,0.9,252,Buccinum undatum (Common Whelk),1
+Validation-selected ResNet50/ConvNeXt ensemble,257,Rumina decollata (Decollate Snail),Achatinidae,Rumina,10,9,0.9,253,Californiconus californicus (California Cone),1
+Validation-selected ResNet50/ConvNeXt ensemble,259,Helix lucorum (Turkish Snail),Helicidae,Helix,10,9,0.9,246,Plestiodon obsoletus (Great Plains Skink),1
+Validation-selected ResNet50/ConvNeXt ensemble,260,Tonicella lineata (Lined Chiton),Tonicellidae,Tonicella,10,9,0.9,259,Helix lucorum (Turkish Snail),1
+Validation-selected ResNet50/ConvNeXt ensemble,261,Peltigera praetextata (scaly pelt lichen),Peltigeraceae,Peltigera,10,9,0.9,276,Thuidium delicatulum (delicate fern moss),1
+Validation-selected ResNet50/ConvNeXt ensemble,265,Chlorophyllum molybdites (green-spored parasol),Agaricaceae,Chlorophyllum,10,9,0.9,264,Agaricus xanthodermus (Yellow Stainer),1
+Validation-selected ResNet50/ConvNeXt ensemble,267,Lichenomphalia umbellifera (Lichen Agaric),Hygrophoraceae,Lichenomphalia,10,9,0.9,265,Chlorophyllum molybdites (green-spored parasol),1
+Validation-selected ResNet50/ConvNeXt ensemble,268,Roridomyces austrororidus,Mycenaceae,Roridomyces,10,9,0.9,267,Lichenomphalia umbellifera (Lichen Agaric),1
+Validation-selected ResNet50/ConvNeXt ensemble,270,Turbinellus floccosus (Scaly Chanterelle),Gomphaceae,Turbinellus,10,9,0.9,269,Chalciporus piperatus (Peppery Bolete),1
+Validation-selected ResNet50/ConvNeXt ensemble,275,Rhizomnium glabrescens (fan moss),Mniaceae,Rhizomnium,10,9,0.9,348,Cardamine hirsuta (hairy bittercress),1
+Validation-selected ResNet50/ConvNeXt ensemble,276,Thuidium delicatulum (delicate fern moss),Thuidiaceae,Thuidium,10,9,0.9,480,Tolmiea menziesii (youth on age),1
+Validation-selected ResNet50/ConvNeXt ensemble,278,Radula complanata (Flat-leaved Scalewort),Radulaceae,Radula,10,9,0.9,496,Cystopteris fragilis (brittle bladderfern),1
+Validation-selected ResNet50/ConvNeXt ensemble,286,Muscari neglectum (Grape hyacinth),Asparagaceae,Muscari,10,9,0.9,376,Ecballium elaterium (squirting cucumber),1
+Validation-selected ResNet50/ConvNeXt ensemble,287,Asphodelus ramosus (Branched Asphodel),Asphodelaceae,Asphodelus,10,9,0.9,308,Setaria viridis (Green Bristle Grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,297,Erythronium oregonum (giant white fawn lily),Liliaceae,Erythronium,10,9,0.9,303,Smilax glauca (sawbrier),1
+Validation-selected ResNet50/ConvNeXt ensemble,300,Lilium pardalinum (Leopard Lily),Liliaceae,Lilium,10,9,0.9,298,Fritillaria recurva (scarlet fritillary),1
+Validation-selected ResNet50/ConvNeXt ensemble,301,Trillium nivale (snow trillium),Melanthiaceae,Trillium,10,9,0.9,237,Gerrhonotus infernalis (Texas Alligator Lizard),1
+Validation-selected ResNet50/ConvNeXt ensemble,302,Trillium undulatum (painted trillium),Melanthiaceae,Trillium,10,9,0.9,406,Frasera caroliniensis (American columbo),1
+Validation-selected ResNet50/ConvNeXt ensemble,308,Setaria viridis (Green Bristle Grass),Poaceae,Setaria,10,9,0.9,304,Carex digitata (Fingered Sedge),1
+Validation-selected ResNet50/ConvNeXt ensemble,311,Dendrolycopodium obscurum (princess pine),Lycopodiaceae,Dendrolycopodium,10,9,0.9,276,Thuidium delicatulum (delicate fern moss),1
+Validation-selected ResNet50/ConvNeXt ensemble,320,Artemisia vulgaris (common mugwort),Asteraceae,Artemisia,10,9,0.9,469,Ulmus pumila (Siberian elm),1
+Validation-selected ResNet50/ConvNeXt ensemble,321,Bidens aristosa (tickseed beggar-ticks),Asteraceae,Bidens,10,9,0.9,394,Acacia longifolia (longleaf wattle),1
+Validation-selected ResNet50/ConvNeXt ensemble,322,Cirsium texanum (Texas Thistle),Asteraceae,Cirsium,10,9,0.9,372,Canotia holacantha (crucifixion thorn),1
+Validation-selected ResNet50/ConvNeXt ensemble,334,Packera tampicana (Great Plains Ragwort),Asteraceae,Packera,10,9,0.9,396,Melilotus albus (white sweet clover),1
+Validation-selected ResNet50/ConvNeXt ensemble,337,Silphium terebinthinaceum (prairie dock),Asteraceae,Silphium,10,9,0.9,305,Schoenoplectus pungens (common three-square),1
+Validation-selected ResNet50/ConvNeXt ensemble,344,Echium plantagineum (Salvation Jane),Boraginaceae,Echium,10,9,0.9,359,Honckenya peploides (Sea Sandwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,347,Cakile maritima (European Searocket),Brassicaceae,Cakile,10,9,0.9,386,Kalmia procumbens (alpine azalea),1
+Validation-selected ResNet50/ConvNeXt ensemble,350,Dithyrea californica (California shieldpod),Brassicaceae,Dithyrea,10,9,0.9,376,Ecballium elaterium (squirting cucumber),1
+Validation-selected ResNet50/ConvNeXt ensemble,352,Dysphania ambrosioides (Mexican tea),Amaranthaceae,Dysphania,10,9,0.9,320,Artemisia vulgaris (common mugwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,357,Escobaria vivipara (viviparous foxtail cactus),Cactaceae,Escobaria,10,9,0.9,477,Crassula ovata (jade plant),1
+Validation-selected ResNet50/ConvNeXt ensemble,358,Ferocactus cylindraceus (California barrel cactus),Cactaceae,Ferocactus,10,9,0.9,355,Echinocereus pectinatus (Spiny Hedgehog Cactus),1
+Validation-selected ResNet50/ConvNeXt ensemble,361,Stellaria graminea (lesser stitchwort),Caryophyllaceae,Stellaria,10,9,0.9,362,Montia parvifolia (Small-leaved Blinks),1
+Validation-selected ResNet50/ConvNeXt ensemble,367,Persicaria maculosa (redshank),Polygonaceae,Persicaria,10,9,0.9,427,Buddleja davidii (Butterfly bush),1
+Validation-selected ResNet50/ConvNeXt ensemble,369,Polygonum paronychia (beach knotweed),Polygonaceae,Polygonum,10,9,0.9,308,Setaria viridis (Green Bristle Grass),1
+Validation-selected ResNet50/ConvNeXt ensemble,371,Rumex hymenosepalus (canaigre dock),Polygonaceae,Rumex,10,9,0.9,433,Magnolia tripetala (umbrella magnolia),1
+Validation-selected ResNet50/ConvNeXt ensemble,374,Mentzelia hispida (Streambank Stickleaf),Loasaceae,Mentzelia,10,9,0.9,475,Acer campestre (field maple),1
+Validation-selected ResNet50/ConvNeXt ensemble,379,Arbutus unedo (strawberry tree),Ericaceae,Arbutus,10,9,0.9,336,Senecio glastifolius (Woad-leaved ragwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,382,Ceratiola ericoides (sand heath),Ericaceae,Ceratiola,10,9,0.9,359,Honckenya peploides (Sea Sandwort),1
+Validation-selected ResNet50/ConvNeXt ensemble,390,Phlox drummondii (Drummond's phlox),Polemoniaceae,Phlox,10,9,0.9,431,Glandularia bipinnatifida (Dakota mock vervain),1
+Validation-selected ResNet50/ConvNeXt ensemble,399,Thermopsis californica (California goldenbanner),Fabaceae,Thermopsis,10,9,0.9,428,Verbascum nigrum (Dark Mullein),1
+Validation-selected ResNet50/ConvNeXt ensemble,401,Polygala rugelii (Yellow milkwort),Polygalaceae,Polygala,10,9,0.9,304,Carex digitata (Fingered Sedge),1
+Validation-selected ResNet50/ConvNeXt ensemble,409,Ajuga genevensis (Blue Bugle),Lamiaceae,Ajuga,10,9,0.9,410,Ajuga reptans (carpet bugle),1
+Validation-selected ResNet50/ConvNeXt ensemble,412,Monarda punctata (spotted horse mint),Lamiaceae,Monarda,10,9,0.9,291,Dactylorhiza fuchsii (Common Spotted Orchid),1
+Validation-selected ResNet50/ConvNeXt ensemble,420,Epifagus virginiana (Beechdrops),Orobanchaceae,Epifagus,10,9,0.9,473,Toxicodendron rydbergii (poison ivy),1
+Validation-selected ResNet50/ConvNeXt ensemble,423,Erythranthe cardinalis (scarlet monkeyflower),Phrymaceae,Erythranthe,10,9,0.9,418,Castilleja arvensis (field Indian paintbrush),1
+Validation-selected ResNet50/ConvNeXt ensemble,428,Verbascum nigrum (Dark Mullein),Scrophulariaceae,Verbascum,10,9,0.9,429,Verbascum virgatum (Wand Mullein),1
+Validation-selected ResNet50/ConvNeXt ensemble,431,Glandularia bipinnatifida (Dakota mock vervain),Verbenaceae,Glandularia,10,9,0.9,295,Spathoglottis plicata (Philippine Ground Orchid),1
+Validation-selected ResNet50/ConvNeXt ensemble,434,Acalypha rhomboidea (common copperleaf),Euphorbiaceae,Acalypha,10,9,0.9,435,Croton glandulosus (Tropic Croton),1
+Validation-selected ResNet50/ConvNeXt ensemble,435,Croton glandulosus (Tropic Croton),Euphorbiaceae,Croton,10,9,0.9,467,Rubus schmidelioides,1
+Validation-selected ResNet50/ConvNeXt ensemble,437,Manihot esculenta (Cassava),Euphorbiaceae,Manihot,10,9,0.9,476,Aesculus pavia (Red Buckeye),1
+Validation-selected ResNet50/ConvNeXt ensemble,443,Abutilon theophrasti (velvetleaf),Malvaceae,Abutilon,10,9,0.9,481,Ipomoea coccinea (red morning glory),1
+Validation-selected ResNet50/ConvNeXt ensemble,453,Anemonastrum canadense (meadow anemone),Ranunculaceae,Anemonastrum,10,9,0.9,457,Pulsatilla patens (eastern pasqueflower),1
+Validation-selected ResNet50/ConvNeXt ensemble,463,Prunus fasciculata (desert almond),Rosaceae,Prunus,10,9,0.9,319,Ambrosia salsola (common burrobrush),1
+Validation-selected ResNet50/ConvNeXt ensemble,470,Laportea canadensis (Canadian wood nettle),Urticaceae,Laportea,10,9,0.9,424,Phryma leptostachya (American lopseed),1
+Validation-selected ResNet50/ConvNeXt ensemble,474,Bursera microphylla (elephant tree),Burseraceae,Bursera,10,9,0.9,448,Banksia integrifolia (Coastal Banksia),1
+Validation-selected ResNet50/ConvNeXt ensemble,475,Acer campestre (field maple),Sapindaceae,Acer,10,9,0.9,314,Fatsia japonica (Japanese aralia),1
+Validation-selected ResNet50/ConvNeXt ensemble,478,Rhodiola integrifolia (western roseroot),Crassulaceae,Rhodiola,10,9,0.9,363,Limonium perezii (Perez's sea lavender),1
+Validation-selected ResNet50/ConvNeXt ensemble,480,Tolmiea menziesii (youth on age),Saxifragaceae,Tolmiea,10,9,0.9,462,Potentilla canadensis (dwarf cinquefoil),1
+Validation-selected ResNet50/ConvNeXt ensemble,482,Ipomoea obscura (Obscure Morning Glory),Convolvulaceae,Ipomoea,10,9,0.9,366,Fallopia cilinodis (Fringed Bindweed),1
+Validation-selected ResNet50/ConvNeXt ensemble,485,Ampelopsis glandulosa (Porcelain Berry),Vitaceae,Ampelopsis,10,9,0.9,36,Amphibolips confluenta (Spongy Oak Apple Gall Wasp),1
+Validation-selected ResNet50/ConvNeXt ensemble,493,Gleichenia dicarpa (tangle fern),Gleicheniaceae,Gleichenia,10,9,0.9,125,Conocephalus fuscus (Long-winged Conehead),1
+Validation-selected ResNet50/ConvNeXt ensemble,2,Dolomedes triton (Six-spotted Fishing Spider),Pisauridae,Dolomedes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,4,Paravaejovis puritanus,Vaejovidae,Paravaejovis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,13,Psyllobora vigintiduopunctata (22-spot Ladybird Beetle),Coccinellidae,Psyllobora,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,14,Anoplotrupes stercorosus (Woodland Dor Beetle),Geotrupidae,Anoplotrupes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,16,Euphoria kernii (Kern's Flower Scarab),Scarabaeidae,Euphoria,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,18,Calliphora vicina (Blue Blowfly),Calliphoridae,Calliphora,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,23,Toxomerus politus (Maize Calligrapher Fly),Syrphidae,Toxomerus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,24,Adelges tsugae (Hemlock Woolly Adelgid),Adelgidae,Adelges,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,25,Acanthocephala femorata (Florida Leaf-footed Bug),Coreidae,Acanthocephala,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,26,Leptoglossus clypealis (Western Leaf-footed Bug),Coreidae,Leptoglossus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,27,Leptoglossus occidentalis (Western Conifer Seed Bug),Coreidae,Leptoglossus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,28,Adelphocoris lineolatus (Alfalfa Plant Bug),Miridae,Adelphocoris,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,29,Graphosoma italicum (European Striped Shield Bug),Pentatomidae,Graphosoma,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,33,Andrena cineraria (Ashy Mining Bee),Andrenidae,Andrena,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,42,Mischocyttarus flavitarsis (Western Paper Wasp),Vespidae,Mischocyttarus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,45,Parapoynx diminutalis (Hydrilla Leafcutter Moth),Crambidae,Parapoynx,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,46,Perispasta caeculalis (Titian Peale's Crambid),Crambidae,Perispasta,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,48,Urola nivalis (Snowy Urola Moth),Crambidae,Urola,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,51,Catocala ilia (Ilia Underwing),Erebidae,Catocala,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,53,Melipotis acontioides (Royal Poinciana Moth),Erebidae,Melipotis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,55,Chiasmia clathrata (Latticed Heath),Geometridae,Chiasmia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,57,Colotois pennaria (Feathered Thorn),Geometridae,Colotois,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,58,Idaea aversata (Riband Wave),Geometridae,Idaea,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,59,Ilexia intractata (Black-dotted Ruddy Moth),Geometridae,Ilexia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,60,Probole amicaria (Alien Probole Moth),Geometridae,Probole,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,61,Tetracis cachexiata (White Slant-line),Geometridae,Tetracis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,62,Tetracis crocallata (Yellow Slant-line),Geometridae,Tetracis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,64,Burnsius philetas (Desert Checkered-Skipper),Hesperiidae,Burnsius,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,66,Iambrix salsala (Chestnut Bob),Hesperiidae,Iambrix,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,69,Polites mystic (Long Dash Skipper),Hesperiidae,Polites,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,72,Euclea incisa (Green Oak-Slug Moth),Limacodidae,Euclea,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,73,Anthene emolus (Common Ciliate Blue),Lycaenidae,Anthene,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,74,Catochrysops strabo (Forget-me-not),Lycaenidae,Catochrysops,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,76,Cyaniris semiargus (Mazarine Blue),Lycaenidae,Cyaniris,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,81,Lithacodia musta (Small Mossy Lithacodia),Noctuidae,Lithacodia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,83,Ponometia semiflava (Half-yellow Moth),Noctuidae,Ponometia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,84,Pseudoips prasinana (Green Silver-lines),Nolidae,Pseudoips,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,86,Brenthis ino (Lesser Marbled Fritillary),Nymphalidae,Brenthis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,88,Dryas iulia (Julia Butterfly),Nymphalidae,Dryas,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,92,Smyrna blomfildia (Blomfild's Beauty),Nymphalidae,Smyrna,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,97,Pieris brassicae (Large White Butterfly),Pieridae,Pieris,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,99,Calephelis nemesis (Fatal Metalmark),Riodinidae,Calephelis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,100,Melanis pixe (Red-bordered Pixie),Riodinidae,Melanis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,101,Anisota senatoria (Orange-tipped Oakworm Moth),Saturniidae,Anisota,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,102,Hemileuca maia (Buck Moth),Saturniidae,Hemileuca,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,103,Saturnia pavonia (Small Emperor Moth),Saturniidae,Saturnia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,104,Saturnia pyri (Giant Peacock Moth),Saturniidae,Saturnia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,108,Sphinx pinastri (Pine Hawk-Moth),Sphingidae,Sphinx,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,109,Argyrotaenia velutinana (Red-banded Leafroller),Tortricidae,Argyrotaenia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,110,Cydia latiferreana (Filbertworm Moth),Tortricidae,Cydia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,111,Epiblema otiosana (Bidens Borer Moth),Tortricidae,Epiblema,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,112,Platynota rostrana (Omnivorous Platynota Moth),Tortricidae,Platynota,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,114,Chrysopa oculata,Chrysopidae,Chrysopa,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,115,Libelloides coccajus (Owly Sulphur),Myrmeleontidae,Libelloides,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,116,Calopteryx maculata (Ebony Jewelwing),Calopterygidae,Calopteryx,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,119,Erpetogomphus designatus (Eastern Ringtail),Gomphidae,Erpetogomphus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,121,Lestes virens (Small Spreadwing),Lestidae,Lestes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,122,Neurothemis taiwanensis,Libellulidae,Neurothemis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,124,Schistocerca obscura (Obscure Bird Grasshopper),Acrididae,Schistocerca,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,127,Petrolisthes elongatus (New Zealand Half Crab),Porcellanidae,Petrolisthes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,128,Pimephales notatus (Bluntnose Minnow),Cyprinidae,Pimephales,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,131,Lepomis auritus (Redbreast Sunfish),Centrarchidae,Lepomis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,132,Chaetodon capistratus (Four-eyed Butterflyfish),Chaetodontidae,Chaetodon,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,136,Abudefduf vaigiensis (Indo-Pacific Sergeant Major),Pomacentridae,Abudefduf,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,138,Paralabrax clathratus (Kelp Bass),Serranidae,Paralabrax,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,140,Hippocampus histrix (Spiny Seahorse),Syngnathidae,Hippocampus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,142,Litoria fallax (Eastern Dwarf Treefrog),Pelodryadidae,Litoria,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,144,Aneides aeneus (Green Salamander),Plethodontidae,Aneides,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,156,Charadrius wilsonia (Wilson's Plover),Charadriidae,Charadrius,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,157,Pluvialis dominica (American Golden-Plover),Charadriidae,Pluvialis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,164,Numenius madagascariensis (Far Eastern Curlew),Scolopacidae,Numenius,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,167,Pavo cristatus (Common Peafowl),Phasianidae,Pavo,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,168,Zapornia flavirostra (Black Crake),Rallidae,Zapornia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,169,Passerina ciris (Painted Bunting),Cardinalidae,Passerina,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,184,Anthus pratensis (Meadow Pipit),Motacillidae,Anthus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,185,Oenanthe familiaris (Familiar Chat),Muscicapidae,Oenanthe,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,213,Phoenicopterus ruber (American Flamingo),Phoenicopteridae,Phoenicopterus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,218,Trogon rufus (Black-throated Trogon),Trogonidae,Trogon,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,219,Ginglymostoma cirratum (Nurse Shark),Ginglymostomatidae,Ginglymostoma,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,220,Oreotragus oreotragus (Klipspringer),Bovidae,Oreotragus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,228,Galeopterus variegatus (Sunda Flying Lemur),Cynocephalidae,Galeopterus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,229,Macropus fuliginosus (Western Grey Kangaroo),Macropodidae,Macropus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,231,Myodes glareolus (Bank Vole),Cricetidae,Myodes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,232,Marmota monax (Woodchuck),Sciuridae,Marmota,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,242,Basiliscus vittatus (Brown Basilisk),Corytophanidae,Basiliscus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,246,Plestiodon obsoletus (Great Plains Skink),Scincidae,Plestiodon,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,249,Actinia equina (Beadlet anemone),Actiniidae,Actinia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,255,Phidiana hiltoni (Hilton's Aeolid),Facelinidae,Phidiana,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,256,Phyllidia varicosa (Varicose Wart Slug),Phyllidiidae,Phyllidia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,258,Cepaea hortensis (White-lipped Snail),Helicidae,Cepaea,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,262,Teloschistes flavicans (Golden Hair-lichen),Teloschistaceae,Teloschistes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,269,Chalciporus piperatus (Peppery Bolete),Boletaceae,Chalciporus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,271,Phallus impudicus (stinkhorn),Phallaceae,Phallus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,273,Hericium americanum (Bear's Head Tooth),Hericiaceae,Hericium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,274,Xylobolus frustulatus (ceramic parchment),Stereaceae,Xylobolus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,277,Codium fragile (Sponge Weed),Codiaceae,Codium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,280,Cocos nucifera (coconut palm),Arecaceae,Cocos,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,282,Hymenocallis liriosme (spring spiderlily),Amaryllidaceae,Hymenocallis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,285,Camassia quamash (small camas),Asparagaceae,Camassia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,289,Crocus vernus (Spring Crocus),Iridaceae,Crocus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,291,Dactylorhiza fuchsii (Common Spotted Orchid),Orchidaceae,Dactylorhiza,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,293,Neottia nidus-avis (bird's-nest orchid),Orchidaceae,Neottia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,295,Spathoglottis plicata (Philippine Ground Orchid),Orchidaceae,Spathoglottis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,298,Fritillaria recurva (scarlet fritillary),Liliaceae,Fritillaria,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,299,Lilium bulbiferum (fire lily),Liliaceae,Lilium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,310,Themeda triandra (Kangaroo Grass),Poaceae,Themeda,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,315,Panax trifolius (dwarf ginseng),Araliaceae,Panax,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,319,Ambrosia salsola (common burrobrush),Asteraceae,Ambrosia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,327,Gaillardia aristata (great blanketflower),Asteraceae,Gaillardia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,329,Hymenopappus artemisiifolius (Old Plainsman),Asteraceae,Hymenopappus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,330,Leucanthemum vulgare (oxeye daisy),Asteraceae,Leucanthemum,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,331,Melanthera nivea (Snow Squarestem),Asteraceae,Melanthera,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,341,Tithonia tubaeformis (tree marigold),Asteraceae,Tithonia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,342,Campanula prenanthoides (California Harebell),Campanulaceae,Campanula,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,343,Jasione montana (Sheep's-bit),Campanulaceae,Jasione,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,355,Echinocereus pectinatus (Spiny Hedgehog Cactus),Cactaceae,Echinocereus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,360,Silene flos-cuculi (ragged-Robin),Caryophyllaceae,Silene,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,363,Limonium perezii (Perez's sea lavender),Plumbaginaceae,Limonium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,364,Bistorta vivipara (alpine bistort),Polygonaceae,Bistorta,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,373,Cevallia sinuata (Stinging Serpent),Loasaceae,Cevallia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,376,Ecballium elaterium (squirting cucumber),Cucurbitaceae,Ecballium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,384,Erica coccinea (Red Heath),Ericaceae,Erica,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,386,Kalmia procumbens (alpine azalea),Ericaceae,Kalmia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,389,Ipomopsis longiflora (flaxflowered ipomopsis),Polemoniaceae,Ipomopsis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,396,Melilotus albus (white sweet clover),Fabaceae,Melilotus,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,397,Platylobium obtusangulum (Common Flat-pea),Fabaceae,Platylobium,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,400,Polygala nana (candyroot),Polygalaceae,Polygala,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,411,Melissa officinalis (lemon balm),Lamiaceae,Melissa,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,418,Castilleja arvensis (field Indian paintbrush),Orobanchaceae,Castilleja,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,419,Castilleja purpurea (Purple paintbrush),Orobanchaceae,Castilleja,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,421,Odontites vulgaris (Red Odontites),Orobanchaceae,Odontites,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,422,Pedicularis densiflora (Indian Warrior),Orobanchaceae,Pedicularis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,442,Viola rotundifolia (Round-leaved Violet),Violaceae,Viola,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,444,Malva assurgentiflora (Island Mallow),Malvaceae,Malva,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,445,Muntingia calabura (Cherry Tree),Muntingiaceae,Muntingia,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,450,Mimetes cucullatus (red pagoda),Proteaceae,Mimetes,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,455,Clematis crispa (Swamp Leather Flower),Ranunculaceae,Clematis,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,462,Potentilla canadensis (dwarf cinquefoil),Rosaceae,Potentilla,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,471,Urtica urens (Dwarf Nettle),Urticaceae,Urtica,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,481,Ipomoea coccinea (red morning glory),Convolvulaceae,Ipomoea,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,483,Solanum dimidiatum (western horsenettle),Solanaceae,Solanum,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,487,Sequoiadendron giganteum (giant sequoia),Cupressaceae,Sequoiadendron,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,495,Lomaria discolor (Crown Fern),Blechnaceae,Lomaria,10,10,1.0,,,0
+Validation-selected ResNet50/ConvNeXt ensemble,497,Dennstaedtia punctilobula (hay-scented fern),Dennstaedtiaceae,Dennstaedtia,10,10,1.0,,,0

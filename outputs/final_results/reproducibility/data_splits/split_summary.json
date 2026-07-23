@@ -1,0 +1,28 @@
+{
+  "data_root": "datasets/inat2021",
+  "train_annotations": "train_mini.json",
+  "test_annotations": "val.json",
+  "seed": 9517,
+  "num_classes": 500,
+  "eligible_classes": 10000,
+  "train_per_class": 40,
+  "val_per_class": 10,
+  "test_per_class": 10,
+  "rows": {
+    "train": 20000,
+    "val": 5000,
+    "test": 5000
+  },
+  "expected_rows": {
+    "train": 20000,
+    "val": 5000,
+    "test": 5000
+  },
+  "split_files": {
+    "train": "data_splits/train.csv",
+    "val": "data_splits/val.csv",
+    "test": "data_splits/test.csv",
+    "selected_classes": "data_splits/selected_classes.csv",
+    "class_mapping": "data_splits/class_mapping.json"
+  }
+}

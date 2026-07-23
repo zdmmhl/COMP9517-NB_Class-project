@@ -1,0 +1,7 @@
+method_key,method_name,device,training_time_seconds,inference_time_seconds,num_test_samples,inference_images_per_second,timing_note
+hog_svm,HOG + Linear SVM,,55.10368559999915,0.135974000004353,5000,36771.73577183824,Training time covers the classifier fit; HOG extraction is excluded.
+simple_cnn,SimpleCNN from scratch,cuda,74.62924310003291,14.691507100011222,5000,340.332681049188,Recorded directly from the experiment.
+resnet18_pretrained,ImageNet-pretrained ResNet18,cuda,71.10720640004729,13.819255799986422,5000,361.81398422373167,Recorded directly from the experiment.
+resnet50_optimized,Optimized ImageNet-pretrained ResNet50,cuda,,28.571324799995637,5000,175.00063560233522,Original per-epoch training time was not recorded; left blank.
+convnext_mixup,ImageNet-pretrained ConvNeXt-Tiny + MixUp,cuda,616.5057166999613,21.480488300003344,5000,232.76938262149383,Recorded directly from the experiment.
+deep_ensemble,Validation-selected ResNet50/ConvNeXt ensemble,,,35.86225160001777,5000,139.42236688779246,No training time; inference sums both component model test passes.
