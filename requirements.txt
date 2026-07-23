@@ -1,11 +1,12 @@
-torch
-torchvision
+joblib
+matplotlib
 numpy
 pandas
-Pillow
+pillow
+pyyaml
 scikit-image
 scikit-learn
-matplotlib
 seaborn
+torch
+torchvision
 tqdm
-PyYAML
