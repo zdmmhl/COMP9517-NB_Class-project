@@ -1,0 +1,14 @@
+parameter,value
+method_key,resnet18_basic
+model,resnet18-pretrained
+initialization,imagenet
+image_size,128
+epochs,3
+batch_size,64
+lr,0.0003
+weight_decay,0.0001
+scheduler,none
+augmentation,basic
+mixup_alpha,0
+tta,False
+seed,42

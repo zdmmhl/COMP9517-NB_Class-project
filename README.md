@@ -121,6 +121,27 @@ Run the evaluation contract and pipeline tests with:
 python -m pytest
 ```
 
+## Plot Controlled Ablations
+
+Ablation implementation lives in `evaluation/ablation.py`; the command-line
+entry point is `scripts/plot_ablations.py`. The evaluator only reads saved run
+artifacts and does not import or modify model-training code.
+
+Each study directory contains `study.json` plus one directory per variant.
+Repeated seeds are stored below each variant. See
+`tests/fixtures/mock_ablation/` for a complete example.
+
+```powershell
+python scripts\plot_ablations.py `
+  --study-dir tests\fixtures\mock_ablation `
+  --output-dir outputs\ablations\mock_augmentation
+```
+
+The command verifies that all variants use the same split, class count, seed
+set, and controlled configuration. It rejects runs that change parameters not
+declared in `allowed_config_differences`. It then writes aggregate metrics,
+baseline deltas, validation details, error-bar charts, and training curves.
+
 ## Generated Files
 
 Training and evaluation write checkpoints, histories, metrics, predictions,

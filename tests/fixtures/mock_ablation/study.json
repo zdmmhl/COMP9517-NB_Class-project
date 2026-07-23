@@ -1,0 +1,16 @@
+{
+  "study_name": "Mock augmentation ablation",
+  "factor": "augmentation",
+  "baseline_variant": "basic",
+  "variant_order": [
+    "basic",
+    "strong"
+  ],
+  "display_names": {
+    "basic": "Basic augmentation",
+    "strong": "Strong augmentation"
+  },
+  "allowed_config_differences": [
+    "augmentation"
+  ]
+}

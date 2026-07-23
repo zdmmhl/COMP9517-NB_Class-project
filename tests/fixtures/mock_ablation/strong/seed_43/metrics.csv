@@ -1,0 +1,2 @@
+method_key,split_id,random_seed,num_classes,num_test_samples,top1_accuracy,top5_accuracy,macro_precision,macro_recall,macro_f1,balanced_accuracy,training_time_seconds,inference_time_seconds
+resnet18_strong,mock6_seedset,43,6,30,0.58,0.88,0.57,0.58,0.56,0.58,11.2,0.31
