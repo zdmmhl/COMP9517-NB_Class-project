@@ -495,15 +495,22 @@ def parse_args():
     )
     parser.add_argument("--split-dir", type=Path, default=Path("data_splits"))
     parser.add_argument(
-        "--output-dir", type=Path, default=Path("outputs/final_results")
+        "--output-dir",
+        type=Path,
+        help=(
+            "Destination package. Defaults to "
+            "outputs/final_results/inat<num_classes>."
+        ),
     )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-    args.output_dir.mkdir(parents=True, exist_ok=True)
     classes = load_classes(args.split_dir / "selected_classes.csv")
+    if args.output_dir is None:
+        args.output_dir = Path("outputs/final_results") / f"inat{len(classes)}"
+    args.output_dir.mkdir(parents=True, exist_ok=True)
     summaries = []
     per_class_by_method = {}
 
