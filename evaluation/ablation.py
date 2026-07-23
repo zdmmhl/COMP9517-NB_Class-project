@@ -376,11 +376,13 @@ def _plot_metric_bars(
     ]
     width = 0.24
     fig, ax = plt.subplots(figsize=(max(8, len(labels) * 2.2), 5.5))
+    upper_bound = 0.0
     for index, (metric, label) in enumerate(metrics):
         means = summary[f"{metric}_mean"].to_numpy(dtype=float)
         stds = summary[f"{metric}_std"].to_numpy(dtype=float)
+        upper_bound = max(upper_bound, float(np.max(means + stds)))
         offset = (index - 1) * width
-        ax.bar(
+        bars = ax.bar(
             x + offset,
             means,
             width,
@@ -388,9 +390,10 @@ def _plot_metric_bars(
             capsize=4,
             label=label,
         )
+        ax.bar_label(bars, fmt="%.3f", fontsize=8, padding=3)
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
-    ax.set_ylim(0, 1)
+    ax.set_ylim(0, 1 if upper_bound >= 0.2 else max(0.05, upper_bound * 1.3))
     ax.set_ylabel("Score")
     ax.set_title(f"Ablation Performance: {study_name}")
     ax.legend()

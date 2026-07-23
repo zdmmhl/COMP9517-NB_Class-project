@@ -231,25 +231,47 @@ def plot_training_history(history, output_path, method_name):
 
 def plot_metric_comparison(summary, output_path):
     """Plot the main classification metrics for evaluated methods."""
-    metric_columns = [
-        "top1_accuracy",
-        "top5_accuracy",
-        "macro_precision",
-        "macro_recall",
-        "macro_f1",
-    ]
-    long = summary[["method_name", *metric_columns]].melt(
-        id_vars="method_name",
+    metric_labels = {
+        "top1_accuracy": "Top-1",
+        "top5_accuracy": "Top-5",
+        "macro_precision": "Macro Precision",
+        "macro_recall": "Macro Recall",
+        "macro_f1": "Macro-F1",
+    }
+    label_column = "method_key" if len(summary) > 6 else "method_name"
+    long = summary[[label_column, *metric_labels]].melt(
+        id_vars=label_column,
         var_name="metric",
         value_name="value",
     )
-    fig, ax = plt.subplots(figsize=(max(9, len(summary) * 2.5), 6))
-    sns.barplot(data=long, x="method_name", y="value", hue="metric", ax=ax)
-    ax.set_ylim(0, 1)
-    ax.set_xlabel("Method")
-    ax.set_ylabel("Score")
+    long["metric"] = long["metric"].map(metric_labels)
+    if len(summary) > 6:
+        fig, ax = plt.subplots(figsize=(11, max(6, len(summary) * 0.65)))
+        sns.barplot(
+            data=long,
+            y=label_column,
+            x="value",
+            hue="metric",
+            orient="h",
+            ax=ax,
+        )
+        ax.set_xlim(0, 1)
+        ax.set_xlabel("Score")
+        ax.set_ylabel("Method")
+    else:
+        fig, ax = plt.subplots(figsize=(max(9, len(summary) * 2.5), 6))
+        sns.barplot(
+            data=long,
+            x=label_column,
+            y="value",
+            hue="metric",
+            ax=ax,
+        )
+        ax.set_ylim(0, 1)
+        ax.set_xlabel("Method")
+        ax.set_ylabel("Score")
+        ax.tick_params(axis="x", rotation=20)
     ax.set_title("Model Performance Comparison")
-    ax.tick_params(axis="x", rotation=20)
     ax.legend(title="Metric", bbox_to_anchor=(1.02, 1), loc="upper left")
     fig.tight_layout()
     fig.savefig(_prepare_output(output_path), dpi=180, bbox_inches="tight")
@@ -258,29 +280,32 @@ def plot_metric_comparison(summary, output_path):
 
 def plot_runtime_vs_performance(summary, output_path):
     """Plot inference runtime against Macro-F1."""
-    fig, ax = plt.subplots(figsize=(8, 6))
+    valid = summary.dropna(
+        subset=["inference_time_seconds", "macro_f1"]
+    ).copy()
+    valid = valid[valid["inference_time_seconds"] > 0]
+    label_column = "method_key" if "method_key" in valid else "method_name"
+    fig, ax = plt.subplots(figsize=(9, 6))
     sns.scatterplot(
-        data=summary,
+        data=valid,
         x="inference_time_seconds",
         y="macro_f1",
-        hue="method_name",
+        hue=label_column,
         s=120,
         ax=ax,
     )
-    for row in summary.itertuples(index=False):
-        ax.annotate(
-            row.method_name,
-            (row.inference_time_seconds, row.macro_f1),
-            xytext=(5, 5),
-            textcoords="offset points",
-        )
+    if (
+        not valid.empty
+        and valid["inference_time_seconds"].max()
+        / valid["inference_time_seconds"].min()
+        > 10
+    ):
+        ax.set_xscale("log")
     ax.set_ylim(0, 1)
-    ax.set_xlabel("Inference time (seconds)")
+    ax.set_xlabel("Inference time (seconds, log scale)")
     ax.set_ylabel("Macro-F1")
     ax.set_title("Runtime versus Performance")
-    legend = ax.get_legend()
-    if legend is not None:
-        legend.remove()
+    ax.legend(title="Method", bbox_to_anchor=(1.02, 1), loc="upper left")
     fig.tight_layout()
     fig.savefig(_prepare_output(output_path), dpi=180, bbox_inches="tight")
     plt.close(fig)
@@ -288,24 +313,42 @@ def plot_runtime_vs_performance(summary, output_path):
 
 def plot_per_class_f1_distribution(per_class, output_path):
     """Compare per-class F1 distributions across methods."""
-    fig, ax = plt.subplots(
-        figsize=(max(9, per_class["method_name"].nunique() * 2), 6)
-    )
-    sns.boxplot(data=per_class, x="method_name", y="f1", ax=ax)
-    sns.stripplot(
-        data=per_class,
-        x="method_name",
-        y="f1",
-        color="black",
-        alpha=0.25,
-        size=2,
-        ax=ax,
-    )
-    ax.set_ylim(0, 1)
-    ax.set_xlabel("Method")
-    ax.set_ylabel("Per-class F1")
+    method_count = per_class["method_name"].nunique()
+    if method_count > 6:
+        label_column = (
+            "method_key" if "method_key" in per_class else "method_name"
+        )
+        fig, ax = plt.subplots(figsize=(11, max(6, method_count * 0.6)))
+        sns.boxplot(data=per_class, y=label_column, x="f1", ax=ax)
+        sns.stripplot(
+            data=per_class,
+            y=label_column,
+            x="f1",
+            color="black",
+            alpha=0.2,
+            size=2,
+            ax=ax,
+        )
+        ax.set_xlim(0, 1)
+        ax.set_xlabel("Per-class F1")
+        ax.set_ylabel("Method")
+    else:
+        fig, ax = plt.subplots(figsize=(max(9, method_count * 2), 6))
+        sns.boxplot(data=per_class, x="method_name", y="f1", ax=ax)
+        sns.stripplot(
+            data=per_class,
+            x="method_name",
+            y="f1",
+            color="black",
+            alpha=0.25,
+            size=2,
+            ax=ax,
+        )
+        ax.set_ylim(0, 1)
+        ax.set_xlabel("Method")
+        ax.set_ylabel("Per-class F1")
+        ax.tick_params(axis="x", rotation=20)
     ax.set_title("Per-class F1 Distribution")
-    ax.tick_params(axis="x", rotation=20)
     fig.tight_layout()
     fig.savefig(_prepare_output(output_path), dpi=180, bbox_inches="tight")
     plt.close(fig)

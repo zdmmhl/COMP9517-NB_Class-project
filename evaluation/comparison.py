@@ -106,9 +106,11 @@ def load_evaluation_results(evaluation_root):
         if not metrics_path.is_file() or not per_class_path.is_file():
             continue
         metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+        metrics.setdefault("method_key", method_dir.name)
         summary_rows.append(metrics)
         per_class = pd.read_csv(per_class_path)
         per_class["method_name"] = metrics["method_name"]
+        per_class["method_key"] = metrics["method_key"]
         per_class_frames.append(per_class)
 
     if not summary_rows:
