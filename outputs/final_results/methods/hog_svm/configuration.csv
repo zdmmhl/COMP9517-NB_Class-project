@@ -1,6 +1,6 @@
 parameter,value
 method_key,hog_svm
-method_name,HOG + Linear SVM
+method_name,Legacy HOG + SGD linear SVM (20 iterations)
 initialization,handcrafted
 classifier,sgd-svm
 image_size,128

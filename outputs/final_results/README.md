@@ -21,7 +21,7 @@
 
 | 方法 | Top-1 | Top-5 | Macro Precision | Macro Recall | Macro F1 |
 |---|---:|---:|---:|---:|---:|
-| HOG + Linear SVM | 2.80% | 8.66% | 2.56% | 2.80% | 2.11% |
+| 旧版 HOG + SGD linear SVM（20 次迭代） | 2.80% | 8.66% | 2.56% | 2.80% | 2.11% |
 | SimpleCNN（从零训练） | 3.94% | 12.86% | 2.57% | 3.94% | 2.17% |
 | ImageNet 预训练 ResNet18 | 37.26% | 64.16% | 44.33% | 37.26% | 36.09% |
 | 优化后的 ImageNet 预训练 ResNet50 | 78.26% | 91.80% | 79.24% | 78.26% | 77.99% |
@@ -34,20 +34,37 @@
 comparison/summary_metrics.csv
 ```
 
+补充的 Color / LBP / HOG / SIFT-BoVW 与分类器对比请阅读：
+
+```text
+TRADITIONAL_EXPERIMENTS.md
+comparison/traditional_summary_metrics.csv
+comparison/traditional_methods_comparison.png
+```
+
 ## 3. 文件夹结构
 
 ```text
 final_results/
 |-- README.md
+|-- TRADITIONAL_EXPERIMENTS.md
 |-- artifact_manifest.csv
 |-- comparison/
 |   |-- summary_metrics.csv
+|   |-- traditional_summary_metrics.csv
+|   |-- traditional_methods_comparison.png
 |   |-- runtime_comparison.csv
 |   |-- model_comparison.png
 |   |-- runtime_vs_performance.png
 |   `-- per_class_f1_distribution.png
 |-- methods/
 |   |-- hog_svm/
+|   |-- color_sgd_svm/
+|   |-- lbp_sgd_svm/
+|   |-- hog_sgd_svm/
+|   |-- sift_bovw_sgd_svm/
+|   |-- color_linear_svc/
+|   |-- hog_random_forest/
 |   |-- simple_cnn/
 |   |-- resnet18_pretrained/
 |   |-- resnet50_optimized/
@@ -65,6 +82,7 @@ final_results/
 | `configuration.csv` | 模型及训练超参数 |
 | `history.csv` | 每个 epoch 的训练和验证历史；无训练过程的方法没有此文件 |
 | `test_predictions_top1.csv` | 5,000 张测试图片的真实类别和 Top-1 预测 |
+| `test_predictions_top5.csv` | 新增传统实验的逐图片 Top-5 类别和分数 |
 | `per_class_metrics.csv` | 500 类各自的 Precision、Recall、F1 和 support |
 | `confusion_matrix.csv` | 500 x 500 原始混淆计数 |
 | `confusion_matrix_full.png` | 完整 500 类归一化混淆矩阵 |
@@ -115,10 +133,10 @@ methods/<方法名>/confusion_matrix.csv
 
 1. 本任务是单标签多分类，因此 `overall_accuracy` 与 `top1_accuracy` 数学上相同。
 2. `balanced_accuracy` 等于 500 个类别 recall 的宏平均，即表中的 `macro_recall`。
-3. HOG 的 `training_time_seconds` 只包含分类器拟合，不包含 HOG 特征提取时间。
+3. 旧版 HOG 的 `training_time_seconds` 只包含分类器拟合；新增传统实验将首次特征提取时间单独记录在 `feature_extraction_time_seconds`。
 4. ResNet50 原始运行没有保存每个 epoch 的时间，因此训练时间字段为空，未进行猜测或补造。
 5. 集成模型本身不重新训练，因此训练时间为空；推理时间是两个组成模型测试推理时间之和。
-6. 原始实验只保存了每张图片的 Top-1 预测，没有保存所有模型逐图片的 Top-5 类别和分数。因此本目录提供聚合 Top-5 指标，但不伪造逐图片 Top-5 数据。
+6. 原始深度学习与旧版 HOG 实验只保存了逐图片 Top-1，因此这些方法只提供聚合 Top-5。新增的 6 个传统实验真实保存了各 5,000 行逐图片 Top-5 类别和分数。
 7. SimpleCNN 当前只训练了 3 个 epoch，结果可以作为第一版 scratch baseline，但后续仍应增加训练轮数证明合理收敛。
 8. `history.csv` 仅写入原实验真实记录的字段。ResNet50 未记录的 validation loss 和 epoch 时间保持为空。
 

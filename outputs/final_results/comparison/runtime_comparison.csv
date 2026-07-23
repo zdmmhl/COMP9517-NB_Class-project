@@ -1,5 +1,11 @@
 method_key,method_name,device,training_time_seconds,inference_time_seconds,num_test_samples,inference_images_per_second,timing_note
-hog_svm,HOG + Linear SVM,,55.10368559999915,0.135974000004353,5000,36771.73577183824,Training time covers the classifier fit; HOG extraction is excluded.
+hog_svm,Legacy HOG + SGD linear SVM (20 iterations),,55.10368559999915,0.135974000004353,5000,36771.73577183824,"Legacy result: classifier fit only; HOG extraction was not recorded. The estimator was SGDClassifier with hinge loss, not LinearSVC."
+color_sgd_svm,HSV colour histogram + SGD linear SVM,,3.8868972000000213,0.024849400000675814,5000,201212.10169517243,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
+lbp_sgd_svm,Uniform LBP + SGD linear SVM,,1.5329041000004509,0.018848699999580276,5000,265270.28389816487,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
+hog_sgd_svm,HOG + SGD linear SVM,,75.18292709999969,0.04603489999954036,5000,108613.24777614209,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
+sift_bovw_sgd_svm,SIFT Bag-of-Visual-Words + SGD linear SVM,,4.165196800000558,0.027035199999772885,5000,184944.07291390497,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
+color_linear_svc,HSV colour histogram + LinearSVC,,329.6594492000004,0.055155300000478746,5000,90653.11946370703,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
+hog_random_forest,HOG + Random Forest (300 trees),,1531.3217622999991,1.6595312999997986,5000,3012.898882956053,Classifier fit time is separate from first-pass feature extraction; see feature_extraction_time_seconds.
 simple_cnn,SimpleCNN from scratch,cuda,74.62924310003291,14.691507100011222,5000,340.332681049188,Recorded directly from the experiment.
 resnet18_pretrained,ImageNet-pretrained ResNet18,cuda,71.10720640004729,13.819255799986422,5000,361.81398422373167,Recorded directly from the experiment.
 resnet50_optimized,Optimized ImageNet-pretrained ResNet50,cuda,,28.571324799995637,5000,175.00063560233522,Original per-epoch training time was not recorded; left blank.

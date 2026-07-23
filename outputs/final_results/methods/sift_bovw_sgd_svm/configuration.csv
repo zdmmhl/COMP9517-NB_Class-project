@@ -1,0 +1,9 @@
+parameter,value
+method_key,sift_bovw_sgd_svm
+method_name,SIFT Bag-of-Visual-Words + SGD linear SVM
+initialization,handcrafted
+feature,"{""image_size"": 128, ""vocabulary_size"": 128, ""max_descriptors_per_image"": 64, ""vocabulary_images"": 5000, ""vocabulary_descriptor_limit"": 100000}"
+classifier,"{""name"": ""sgd-svm"", ""svm_c"": null, ""sgd_alpha"": 0.0001, ""max_iter"": 1000, ""rf_estimators"": null, ""rf_max_features"": null, ""rf_min_samples_leaf"": null, ""rf_class_weight"": null}"
+workers,12
+max_classes,
+max_per_class,

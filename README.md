@@ -5,7 +5,8 @@ a reproducible 500-class subset of iNaturalist 2021.
 
 ## Implemented Methods
 
-- HOG features with a linear SVM classifier.
+- Colour histogram, LBP, HOG, and SIFT Bag-of-Visual-Words features.
+- SGD linear SVM, LinearSVC, and Random Forest classifier comparisons.
 - A small CNN trained from random initialization.
 - ResNet18 trained from scratch.
 - ImageNet-pretrained ResNet18, ResNet50, EfficientNet-B0, and ConvNeXt-Tiny.
@@ -27,7 +28,7 @@ notebooks/        Optional exploration notebooks
 outputs/          Generated predictions and figures; not committed
 report/           CVPR report source (not implemented yet)
 scripts/          Thin command-line entry points
-traditional/      HOG feature extraction and linear SVM pipeline
+traditional/      Handcrafted feature extraction and classical classifiers
 training/         Deep-learning orchestration, epoch loops, and optimizers
 utils/            Reproducibility and serialization helpers
 ```

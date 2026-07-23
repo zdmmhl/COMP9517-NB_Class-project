@@ -20,9 +20,51 @@ from utils.serialization import save_rows_csv
 METHODS = [
     {
         "key": "hog_svm",
-        "name": "HOG + Linear SVM",
+        "name": "Legacy HOG + SGD linear SVM (20 iterations)",
         "result_dir": "hog_svm_full",
         "analysis_dir": "hog_svm",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "color_sgd_svm",
+        "name": "HSV colour histogram + SGD linear SVM",
+        "result_dir": "traditional_color_sgd_svm_full",
+        "analysis_dir": "",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "lbp_sgd_svm",
+        "name": "Uniform LBP + SGD linear SVM",
+        "result_dir": "traditional_lbp_sgd_svm_full",
+        "analysis_dir": "",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "hog_sgd_svm",
+        "name": "HOG + SGD linear SVM",
+        "result_dir": "traditional_hog_sgd_svm_full",
+        "analysis_dir": "",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "sift_bovw_sgd_svm",
+        "name": "SIFT Bag-of-Visual-Words + SGD linear SVM",
+        "result_dir": "traditional_sift_bovw_sgd_svm_full",
+        "analysis_dir": "",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "color_linear_svc",
+        "name": "HSV colour histogram + LinearSVC",
+        "result_dir": "traditional_color_linear_svc_full",
+        "analysis_dir": "",
+        "initialization": "handcrafted",
+    },
+    {
+        "key": "hog_random_forest",
+        "name": "HOG + Random Forest (300 trees)",
+        "result_dir": "traditional_hog_random_forest_full",
+        "analysis_dir": "",
         "initialization": "handcrafted",
     },
     {
@@ -129,11 +171,29 @@ def build_summary(method, metrics, history):
     )
     timing_note = "Recorded directly from the experiment."
     if method["key"] == "hog_svm":
-        timing_note = "Training time covers the classifier fit; HOG extraction is excluded."
+        timing_note = (
+            "Legacy result: classifier fit only; HOG extraction was not recorded. "
+            "The estimator was SGDClassifier with hinge loss, not LinearSVC."
+        )
+    elif method["initialization"] == "handcrafted":
+        timing_note = (
+            "Classifier fit time is separate from first-pass feature extraction; "
+            "see feature_extraction_time_seconds."
+        )
     elif method["key"] == "resnet50_optimized":
         timing_note = "Original per-epoch training time was not recorded; left blank."
     elif method["key"] == "deep_ensemble":
         timing_note = "No training time; inference sums both component model test passes."
+
+    feature_extraction = metrics.get("feature_extraction", {})
+    feature_extraction_seconds = sum(
+        float(item.get("seconds", 0.0)) for item in feature_extraction.values()
+    )
+    vocabulary = metrics.get("vocabulary", {})
+    vocabulary_seconds = sum(
+        float(vocabulary.get(key, 0.0))
+        for key in ["descriptor_extraction_seconds", "fit_seconds"]
+    )
 
     return {
         "method_key": method["key"],
@@ -156,6 +216,10 @@ def build_summary(method, metrics, history):
         "test_loss": test.get("loss", ""),
         "best_epoch": metrics.get("best_epoch", ""),
         "training_time_seconds": training_seconds,
+        "feature_extraction_time_seconds": (
+            feature_extraction_seconds if feature_extraction else ""
+        ),
+        "vocabulary_time_seconds": vocabulary_seconds if vocabulary else "",
         "inference_time_seconds": infer_seconds,
         "inference_images_per_second": images_per_second,
         "recorded_total_run_seconds": metrics.get("total_seconds", ""),
@@ -362,6 +426,36 @@ def plot_f1_distribution(path, per_class_by_method):
     plt.close(fig)
 
 
+def plot_traditional_comparison(path, summaries):
+    rows = [
+        row
+        for row in summaries
+        if row["initialization"] == "handcrafted"
+        and not row["method_key"].startswith("hog_svm")
+    ]
+    labels = [row["method_name"] for row in rows]
+    x = np.arange(len(labels))
+    width = 0.27
+    fig, axis = plt.subplots(figsize=(14, 7))
+    for offset, key, name in [
+        (-width, "top1_accuracy", "Top-1"),
+        (0, "top5_accuracy", "Top-5"),
+        (width, "macro_f1", "Macro-F1"),
+    ]:
+        bars = axis.bar(x + offset, [row[key] for row in rows], width, label=name)
+        axis.bar_label(bars, fmt="%.3f", fontsize=8, padding=2)
+    axis.set_xticks(x)
+    axis.set_xticklabels(labels, rotation=18, ha="right")
+    axis.set_ylim(0, max(0.12, max(row["top5_accuracy"] for row in rows) * 1.25))
+    axis.set_ylabel("Score")
+    axis.set_title("Traditional Methods on the Fixed 500-Class Test Split")
+    axis.grid(axis="y", linestyle="--", alpha=0.3)
+    axis.legend()
+    fig.tight_layout()
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+
+
 def artifact_category(relative_path):
     first = relative_path.parts[0] if relative_path.parts else ""
     return {
@@ -438,6 +532,10 @@ def main():
             prediction_rows,
             ["file_name", "true_class_index", "pred_class_index", "correct"],
         )
+        copy_if_exists(
+            result_dir / "test_predictions_top5.csv",
+            method_dir / "test_predictions_top5.csv",
+        )
         num_classes = int(summary["num_classes"])
         per_class_rows = write_per_class(
             method_dir / "per_class_metrics.csv",
@@ -462,26 +560,36 @@ def main():
         copy_if_exists(
             result_dir / "learning_rate.png", method_dir / "learning_rate.png"
         )
-        analysis_dir = args.analysis_dir / method["analysis_dir"]
-        copy_if_exists(
-            analysis_dir / "top_confusions.csv", method_dir / "top_confusions.csv"
-        )
-        copy_if_exists(
-            analysis_dir / "worst_classes.csv", method_dir / "worst_classes.csv"
-        )
-        copy_if_exists(
-            analysis_dir / "top_confusions.png", method_dir / "top_confusions.png"
-        )
-        resize_grid(
-            analysis_dir / "correct_examples.png", method_dir / "correct_examples.jpg"
-        )
-        resize_grid(
-            analysis_dir / "failure_examples.png", method_dir / "failure_examples.jpg"
-        )
+        if method["analysis_dir"]:
+            analysis_dir = args.analysis_dir / method["analysis_dir"]
+            copy_if_exists(
+                analysis_dir / "top_confusions.csv", method_dir / "top_confusions.csv"
+            )
+            copy_if_exists(
+                analysis_dir / "worst_classes.csv", method_dir / "worst_classes.csv"
+            )
+            copy_if_exists(
+                analysis_dir / "top_confusions.png", method_dir / "top_confusions.png"
+            )
+            resize_grid(
+                analysis_dir / "correct_examples.png",
+                method_dir / "correct_examples.jpg",
+            )
+            resize_grid(
+                analysis_dir / "failure_examples.png",
+                method_dir / "failure_examples.jpg",
+            )
 
     comparison_dir = args.output_dir / "comparison"
     comparison_dir.mkdir(parents=True, exist_ok=True)
     save_rows_csv(comparison_dir / "summary_metrics.csv", summaries)
+    traditional_summaries = [
+        row for row in summaries if row["initialization"] == "handcrafted"
+    ]
+    save_rows_csv(
+        comparison_dir / "traditional_summary_metrics.csv",
+        traditional_summaries,
+    )
     runtime_fields = [
         "method_key",
         "method_name",
@@ -499,6 +607,10 @@ def main():
     plot_runtime(comparison_dir / "runtime_vs_performance.png", summaries)
     plot_f1_distribution(
         comparison_dir / "per_class_f1_distribution.png", per_class_by_method
+    )
+    plot_traditional_comparison(
+        comparison_dir / "traditional_methods_comparison.png",
+        summaries,
     )
 
     reproducibility_dir = args.output_dir / "reproducibility" / "data_splits"
