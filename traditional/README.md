@@ -64,4 +64,5 @@ python scripts/run_traditional_experiment.py `
 - `*_confusion_matrix.npy`：500 x 500 混淆矩阵；
 - `model.joblib`：本地模型文件，不上传 GitHub。
 
-GitHub 中的精简结果位于 `outputs/final_results/`，不包含模型、特征缓存和原始图片。
+GitHub 中当前 500 类实验的精简结果位于
+`outputs/final_results/inat500/`，不包含模型、特征缓存和原始图片。

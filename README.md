@@ -1,7 +1,8 @@
 # COMP9517 iNaturalist Species Classification
 
 This project compares handcrafted computer-vision and deep-learning methods on
-a reproducible 500-class subset of iNaturalist 2021.
+reproducible iNaturalist 2021 subsets. The current completed experiment uses
+500 classes; additional 800-class or larger experiments use separate run IDs.
 
 ## Implemented Methods
 
@@ -25,7 +26,7 @@ demo/             Software demonstration code (not implemented yet)
 evaluation/       Metrics, plots, ensembling, comparison, and error analysis
 models/           Scratch and torchvision model definitions
 notebooks/        Optional exploration notebooks
-outputs/          Generated predictions and figures; not committed
+outputs/          Local runs plus compact report-ready result packages
 report/           CVPR report source (not implemented yet)
 scripts/          Thin command-line entry points
 traditional/      Handcrafted feature extraction and classical classifiers
@@ -103,12 +104,12 @@ python scripts\evaluate_artifacts.py `
   --test-manifest tests\fixtures\mock_small\test.csv `
   --history tests\fixtures\mock_small\history.csv `
   --image-root tests\fixtures\mock_small `
-  --output-dir outputs\evaluation\mock_classifier `
-  --examples-dir outputs\examples\mock_classifier
+  --output-dir outputs\runs\mock_evaluation\methods\mock_classifier `
+  --examples-dir outputs\runs\mock_evaluation\examples\mock_classifier
 
 python scripts\compare_models.py `
-  --evaluation-root outputs\evaluation `
-  --output-dir outputs\comparison
+  --evaluation-root outputs\runs\mock_evaluation\methods `
+  --output-dir outputs\runs\mock_evaluation\comparison
 ```
 
 `scripts/evaluate.py` remains the compatibility entry point for checkpoint-based
@@ -134,7 +135,7 @@ Repeated seeds are stored below each variant. See
 ```powershell
 python scripts\plot_ablations.py `
   --study-dir tests\fixtures\mock_ablation `
-  --output-dir outputs\ablations\mock_augmentation
+  --output-dir outputs\runs\mock_evaluation\ablations\mock_augmentation
 ```
 
 The command verifies that all variants use the same split, class count, seed
@@ -144,23 +145,42 @@ baseline deltas, validation details, error-bar charts, and training curves.
 
 ## Generated Files
 
-Training and evaluation write checkpoints, histories, metrics, predictions,
-confusion matrices, plots, and example images to the selected output
-directory. Datasets, model weights, caches, and generated outputs must not be
-committed to GitHub or included in the final code ZIP.
+Generated evaluation artifacts are grouped by split identity:
+
+```text
+outputs/runs/inat500_seed9517/
+outputs/runs/inat800_seed9517/
+```
+
+Each run is self-contained and may include standardized inputs, per-method
+metrics, comparisons, examples, ablations, and `run_manifest.json`. Local runs,
+datasets, model weights, and caches must not be committed to GitHub or included
+in the final code ZIP.
+
+Re-evaluate the current compact 500-class result package with:
+
+```powershell
+python scripts\evaluate_recorded_results.py
+```
+
+The script reads the class count and seed from `split_summary.json` and writes
+to `outputs/runs/<split_id>/`. For another completed setup, pass its package
+with `--final-results-root`.
 
 ## Shared Final Results
 
 The compact, report-ready results package is tracked under:
 
 ```text
-outputs/final_results/
+outputs/final_results/inat500/
+outputs/final_results/inat800/
 ```
 
 It contains standardized CSV metrics, training histories, per-class metrics,
-confusion matrices, selected result figures, and the fixed 500-class split
-manifests. It excludes datasets, model weights, caches, probability arrays,
-and smoke-test artifacts.
+confusion matrices, selected result figures, and the matching fixed split
+manifests. Different class selections remain in separate directories. It
+excludes datasets, model weights, caches, probability arrays, and smoke-test
+artifacts.
 
 Regenerate the package from completed local experiments with:
 
@@ -168,5 +188,6 @@ Regenerate the package from completed local experiments with:
 python scripts/export_final_results.py
 ```
 
-See `outputs/final_results/README.md` for the Chinese result guide, metric
-definitions, known timing limitations, and file descriptions.
+See `outputs/final_results/README.md` for the experiment index. Each experiment
+directory contains its own result guide, metric definitions, timing
+limitations, and file descriptions.

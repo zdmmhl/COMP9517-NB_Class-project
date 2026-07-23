@@ -28,5 +28,5 @@ Generate the report outputs from the repository root:
 ```powershell
 python scripts\plot_ablations.py `
   --study-dir tests\fixtures\mock_ablation `
-  --output-dir outputs\ablations\mock_augmentation
+  --output-dir outputs\runs\mock_evaluation\ablations\mock_augmentation
 ```
