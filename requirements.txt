@@ -3,6 +3,7 @@ matplotlib
 numpy
 pandas
 pillow
+pytest
 pyyaml
 scikit-image
 scikit-learn
