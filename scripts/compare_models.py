@@ -21,13 +21,25 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--evaluation-root",
         type=Path,
-        default=PROJECT_ROOT / "outputs" / "evaluation",
+        default=(
+            PROJECT_ROOT
+            / "outputs"
+            / "runs"
+            / "mock_evaluation"
+            / "methods"
+        ),
         help="Directory containing one evaluated subdirectory per method.",
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=PROJECT_ROOT / "outputs" / "comparison",
+        default=(
+            PROJECT_ROOT
+            / "outputs"
+            / "runs"
+            / "mock_evaluation"
+            / "comparison"
+        ),
         help="Directory for comparison tables and figures.",
     )
     return parser

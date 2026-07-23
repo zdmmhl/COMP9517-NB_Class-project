@@ -165,9 +165,7 @@ def run_evaluation(args: argparse.Namespace) -> dict[str, object]:
         artifacts.predictions,
         limit=args.example_count,
     )
-    examples_dir = args.examples_dir or (
-        PROJECT_ROOT / "outputs" / "examples" / artifacts.method_name
-    )
+    examples_dir = args.examples_dir or output_dir / "examples"
     examples_dir.mkdir(parents=True, exist_ok=True)
     for group_name, group in examples.items():
         group.to_csv(examples_dir / f"{group_name}.csv", index=False)
