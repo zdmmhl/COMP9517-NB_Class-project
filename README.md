@@ -68,7 +68,7 @@ python scripts\verify_splits.py `
 This produces 20,000 training, 5,000 validation, and 5,000 held-out test
 samples with no image overlap.
 
-## Run The Baselines
+## Run The Experiments
 
 ```powershell
 python scripts\train_hog_svm.py `
@@ -80,16 +80,36 @@ python scripts\train_deep.py `
   --model simple-cnn `
   --data-root datasets\inat2021 `
   --split-dir data_splits `
-  --output-dir results\simple_cnn_full
+  --output-dir results\simple_cnn_converged_full `
+  --image-size 128 --epochs 50 `
+  --batch-size 512 --eval-batch-size 1024 `
+  --lr 0.002 --weight-decay 0.0001 `
+  --scheduler cosine --min-lr-ratio 0.01 `
+  --label-smoothing 0.1 --augmentation basic `
+  --grad-clip 1.0 `
+  --early-stopping-patience 8 `
+  --early-stopping-min-delta 0.0005
 
 python scripts\train_deep.py `
   --model resnet18-pretrained `
   --data-root datasets\inat2021 `
   --split-dir data_splits `
-  --output-dir results\resnet18_pretrained_full
+  --output-dir results\resnet18_pretrained_converged_full `
+  --image-size 224 --epochs 30 `
+  --batch-size 512 --eval-batch-size 1024 `
+  --lr 0.001 --backbone-lr-multiplier 0.1 `
+  --weight-decay 0.0001 `
+  --scheduler cosine --min-lr-ratio 0.01 `
+  --label-smoothing 0.1 --augmentation strong `
+  --grad-clip 1.0 --tta `
+  --early-stopping-patience 6 `
+  --early-stopping-min-delta 0.0005 `
+  --num-workers 4 --eval-num-workers 0
 ```
 
-Use `--help` on any entry point for all optimization and evaluation options.
+Use `--resume-checkpoint results\<run>\last_checkpoint.pt` to recover an
+interrupted training run. Use `--help` on any entry point for all optimization
+and evaluation options.
 
 ## Evaluate Standardized Prediction Artifacts
 

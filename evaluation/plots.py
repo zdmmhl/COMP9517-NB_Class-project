@@ -16,7 +16,7 @@ from data.transforms import IMAGENET_MEAN, IMAGENET_STD
 
 def plot_history(path, history):
     epochs = [item["epoch"] for item in history]
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+    fig, axes = plt.subplots(1, 3, figsize=(16, 4.5))
     axes[0].plot(epochs, [item["train_loss"] for item in history], label="train")
     if all("val_loss" in item for item in history):
         axes[0].plot(epochs, [item["val_loss"] for item in history], label="val")
@@ -36,6 +36,27 @@ def plot_history(path, history):
     axes[1].set_title("Top-1 Accuracy")
     axes[1].set_xlabel("Epoch")
     axes[1].legend()
+    axes[2].plot(
+        epochs,
+        [item["val_macro_f1"] for item in history],
+        label="validation macro-F1",
+    )
+    axes[2].plot(
+        epochs,
+        [item["val_top5_accuracy"] for item in history],
+        label="validation top-5",
+    )
+    peak = max(history, key=lambda item: item["val_macro_f1"])
+    axes[2].axvline(
+        peak["epoch"],
+        color="black",
+        linestyle="--",
+        alpha=0.45,
+        label=f"peak val F1 epoch {peak['epoch']}",
+    )
+    axes[2].set_title("Validation Metrics")
+    axes[2].set_xlabel("Epoch")
+    axes[2].legend()
     fig.tight_layout()
     fig.savefig(path, dpi=160)
     plt.close(fig)

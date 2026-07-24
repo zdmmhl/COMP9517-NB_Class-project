@@ -69,16 +69,16 @@ METHODS = [
     },
     {
         "key": "simple_cnn",
-        "name": "SimpleCNN from scratch",
-        "result_dir": "simple_cnn_full",
-        "analysis_dir": "simple_cnn",
+        "name": "SimpleCNN from scratch (50-epoch convergence run)",
+        "result_dir": "simple_cnn_converged_full",
+        "analysis_dir": "",
         "initialization": "random",
     },
     {
         "key": "resnet18_pretrained",
-        "name": "ImageNet-pretrained ResNet18",
-        "result_dir": "resnet18_pretrained_full",
-        "analysis_dir": "resnet18",
+        "name": "ImageNet-pretrained ResNet18 (30-epoch convergence run)",
+        "result_dir": "resnet18_pretrained_converged_full",
+        "analysis_dir": "",
         "initialization": "imagenet",
     },
     {
@@ -160,6 +160,8 @@ def build_summary(method, metrics, history):
     training_seconds = (
         float(metrics["train_seconds"])
         if "train_seconds" in metrics
+        else float(metrics["training_seconds"])
+        if "training_seconds" in metrics
         else history_training_seconds(history)
     )
     test_rows = metrics.get("rows", {}).get("test")
@@ -184,6 +186,11 @@ def build_summary(method, metrics, history):
         timing_note = "Original per-epoch training time was not recorded; left blank."
     elif method["key"] == "deep_ensemble":
         timing_note = "No training time; inference sums both component model test passes."
+    elif method["result_dir"].endswith("_converged_full"):
+        timing_note = (
+            "Training time sums the recorded training phase of every epoch; "
+            "validation and final evaluation are reported separately."
+        )
 
     feature_extraction = metrics.get("feature_extraction", {})
     feature_extraction_seconds = sum(
@@ -222,7 +229,11 @@ def build_summary(method, metrics, history):
         "vocabulary_time_seconds": vocabulary_seconds if vocabulary else "",
         "inference_time_seconds": infer_seconds,
         "inference_images_per_second": images_per_second,
-        "recorded_total_run_seconds": metrics.get("total_seconds", ""),
+        "recorded_total_run_seconds": (
+            metrics.get("total_seconds", "")
+            if metrics.get("run_mode") != "evaluation"
+            else ""
+        ),
         "timing_note": timing_note,
     }
 
@@ -566,6 +577,10 @@ def main():
         )
         copy_if_exists(
             result_dir / "learning_rate.png", method_dir / "learning_rate.png"
+        )
+        copy_if_exists(
+            result_dir / "test_prediction_examples.png",
+            method_dir / "prediction_examples.png",
         )
         if method["analysis_dir"]:
             analysis_dir = args.analysis_dir / method["analysis_dir"]

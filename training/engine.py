@@ -22,9 +22,12 @@ def train_one_epoch(
     use_amp,
     grad_clip,
     mixup_alpha,
+    scaler=None,
+    channels_last=False,
 ):
     model.train()
-    scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+    if scaler is None:
+        scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
     running_loss = 0.0
     top1_sum = 0.0
     total = 0
@@ -32,6 +35,8 @@ def train_one_epoch(
 
     for images, labels, _ in loader:
         images = images.to(device, non_blocking=True)
+        if channels_last:
+            images = images.contiguous(memory_format=torch.channels_last)
         labels = labels.to(device, non_blocking=True)
         mixed_labels = labels
         mixup_lambda = 1.0
@@ -65,15 +70,26 @@ def train_one_epoch(
         top1_sum += batch_top1 * batch_size
         total += batch_size
 
+    elapsed = time.perf_counter() - started
     return {
         "loss": running_loss / total,
         "top1_accuracy": top1_sum / total,
-        "seconds": time.perf_counter() - started,
+        "seconds": elapsed,
+        "images_per_second": total / max(elapsed, 1e-9),
     }
 
 
 @torch.no_grad()
-def evaluate(model, loader, criterion, device, num_classes, use_amp, tta=False):
+def evaluate(
+    model,
+    loader,
+    criterion,
+    device,
+    num_classes,
+    use_amp,
+    tta=False,
+    channels_last=False,
+):
     model.eval()
     running_loss = 0.0
     top1_sum = 0.0
@@ -86,6 +102,8 @@ def evaluate(model, loader, criterion, device, num_classes, use_amp, tta=False):
 
     for images, labels, paths in loader:
         images = images.to(device, non_blocking=True)
+        if channels_last:
+            images = images.contiguous(memory_format=torch.channels_last)
         labels = labels.to(device, non_blocking=True)
         with torch.amp.autocast("cuda", enabled=use_amp):
             logits = model(images)
@@ -111,6 +129,7 @@ def evaluate(model, loader, criterion, device, num_classes, use_amp, tta=False):
         zero_division=0,
     )
     top1 = top1_sum / total
+    elapsed = time.perf_counter() - started
     return {
         "loss": running_loss / total,
         "top1_accuracy": top1,
@@ -119,7 +138,8 @@ def evaluate(model, loader, criterion, device, num_classes, use_amp, tta=False):
         "macro_precision": float(precision),
         "macro_recall": float(recall),
         "macro_f1": float(f1),
-        "seconds": time.perf_counter() - started,
+        "seconds": elapsed,
+        "images_per_second": total / max(elapsed, 1e-9),
         "labels": all_labels,
         "preds": all_preds,
         "paths": all_paths,

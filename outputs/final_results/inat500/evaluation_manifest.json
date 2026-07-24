@@ -1,5 +1,5 @@
 {
-  "source": "D:/9517/COMP9517-NB_Class-project/outputs/final_results/inat500",
+  "source": "outputs/final_results/inat500",
   "split_id": "inat500_seed9517",
   "num_classes": 500,
   "num_test_samples": 5000,

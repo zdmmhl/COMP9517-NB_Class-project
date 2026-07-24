@@ -17,4 +17,6 @@ final_results/
 本地评价过程保存在 `outputs/runs/<run_id>/`，不应直接混入本目录。只有经过检查、
 准备用于报告的精简 CSV、JSON 和图片才导出到 `final_results/`。
 
-当前 500 类结果说明见 [`inat500/README.md`](inat500/README.md)。
+当前 500 类结果说明见 [`inat500/README.md`](inat500/README.md)，SimpleCNN
+与 ResNet18 的充分训练和收敛证据见
+[`inat500/CONVERGENCE_EXPERIMENTS.md`](inat500/CONVERGENCE_EXPERIMENTS.md)。

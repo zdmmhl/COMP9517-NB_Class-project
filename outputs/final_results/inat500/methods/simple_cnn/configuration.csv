@@ -1,12 +1,29 @@
 parameter,value
 method_key,simple_cnn
-method_name,SimpleCNN from scratch
+method_name,SimpleCNN from scratch (50-epoch convergence run)
 initialization,random
 image_size,128
-epochs,3
-batch_size,128
-lr,0.001
+epochs,50
+batch_size,512
+eval_batch_size,1024
+num_workers,8
+eval_num_workers,0
+prefetch_factor,2
+lr,0.002
 weight_decay,0.0001
+backbone_lr_multiplier,1.0
+scheduler,cosine
+min_lr_ratio,0.01
+label_smoothing,0.1
+augmentation,basic
+grad_clip,1.0
+mixup_alpha,0.0
+tta,False
+channels_last,True
+cudnn_benchmark,True
+early_stopping_patience,8
+early_stopping_min_delta,0.0005
+resume_checkpoint,
 seed,9517
 max_classes,
 max_train_per_class,
