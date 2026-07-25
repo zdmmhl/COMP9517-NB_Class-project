@@ -1,8 +1,8 @@
 # COMP9517 iNaturalist Species Classification
 
 This project compares handcrafted computer-vision and deep-learning methods on
-reproducible iNaturalist 2021 subsets. The current completed experiment uses
-500 classes; additional 800-class or larger experiments use separate run IDs.
+a fixed, reproducible 500-class subset of iNaturalist 2021. All reported
+experiments use the same class selection and train/validation/test split.
 
 ## Implemented Methods
 
@@ -169,7 +169,6 @@ Generated evaluation artifacts are grouped by split identity:
 
 ```text
 outputs/runs/inat500_seed9517/
-outputs/runs/inat800_seed9517/
 ```
 
 Each run is self-contained and may include standardized inputs, per-method
@@ -193,14 +192,12 @@ The compact, report-ready results package is tracked under:
 
 ```text
 outputs/final_results/inat500/
-outputs/final_results/inat800/
 ```
 
 It contains standardized CSV metrics, training histories, per-class metrics,
 confusion matrices, selected result figures, and the matching fixed split
-manifests. Different class selections remain in separate directories. It
-excludes datasets, model weights, caches, probability arrays, and smoke-test
-artifacts.
+manifests. It excludes datasets, model weights, caches, probability arrays,
+and smoke-test artifacts.
 
 Regenerate the package from completed local experiments with:
 

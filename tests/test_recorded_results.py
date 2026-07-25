@@ -10,11 +10,11 @@ def test_load_split_identity_uses_recorded_class_count_and_seed(tmp_path):
     split_root = tmp_path / "reproducibility" / "data_splits"
     split_root.mkdir(parents=True)
     (split_root / "split_summary.json").write_text(
-        json.dumps({"num_classes": 800, "seed": 42}),
+        json.dumps({"num_classes": 500, "seed": 42}),
         encoding="utf-8",
     )
 
-    assert load_split_identity(tmp_path) == ("inat800_seed42", 800, 42)
+    assert load_split_identity(tmp_path) == ("inat500_seed42", 500, 42)
 
 
 def test_prepare_shared_manifests_converts_recorded_split(tmp_path):

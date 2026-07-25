@@ -5,17 +5,13 @@
 ```text
 outputs/
 |-- runs/
-|   |-- inat500_seed9517/
-|   `-- inat800_seed9517/
+|   `-- inat500_seed9517/
 `-- final_results/
-    |-- inat500/
-    |-- inat800/
-    `-- cross_setup_comparison/
+    `-- inat500/
 ```
 
 - `runs/<run_id>/`：评价过程产生的完整中间结果，不提交到 Git。
-- `final_results/<实验规模>/`：经过检查、用于报告和组内共享的精简结果。
-- `final_results/cross_setup_comparison/`：比较不同类别规模时使用。
+- `final_results/inat500/`：经过检查、用于报告和组内共享的500类正式结果。
 
 当前 500 类传统手工特征与分类器补充实验请查看
 [`final_results/inat500/TRADITIONAL_EXPERIMENTS.md`](final_results/inat500/TRADITIONAL_EXPERIMENTS.md)，
@@ -39,5 +35,5 @@ outputs/
 python scripts/export_final_results.py
 ```
 
-脚本根据当前 `selected_classes.csv` 的类别数，默认导出到
-`outputs/final_results/inat<类别数>/`。
+当前固定划分包含500类，因此脚本默认导出到
+`outputs/final_results/inat500/`。
