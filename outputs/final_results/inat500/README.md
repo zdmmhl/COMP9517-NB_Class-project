@@ -57,7 +57,14 @@ inat500/
 |   |-- summary_metrics.csv
 |   |-- runtime_comparison.csv
 |   |-- model_comparison.png
-|   `-- per_class_f1_distribution.png
+|   |-- per_class_f1_distribution.png
+|   `-- runtime_vs_performance.png
+|-- ablations/
+|   |-- handcrafted_features/
+|   |-- hog_classifiers/
+|   `-- color_classifiers/
+|-- examples/
+|   `-- <传统方法>/
 |-- methods/
 |   |-- simple_cnn/
 |   |-- resnet18_pretrained/
@@ -83,9 +90,15 @@ inat500/
 | `confusion_matrix.csv` | 500 x 500 原始混淆计数 |
 | `confusion_matrix_full.png` | 完整归一化混淆矩阵 |
 | `confusion_matrix_subset.png` | 最低 F1 类别的局部混淆矩阵 |
+| `top_confusions.csv` | 混淆次数最多的类别对 |
 | `prediction_examples.png` | 测试集预测示例 |
 
 不同方法可能没有训练历史、学习率或预测示例，因此对应文件可能不存在。
+
+`examples/<传统方法>/` 保存从逐图片 Top-5 记录中筛选出的
+`successes.csv`、`failures.csv`、`top5_only.csv` 和
+`high_confidence_errors.csv`。当前仓库不包含原始图片，所以这些文件只保存
+图片相对路径、标签和分类器分数，不生成新的案例图片网格。
 
 ## 5. 可复现数据
 
