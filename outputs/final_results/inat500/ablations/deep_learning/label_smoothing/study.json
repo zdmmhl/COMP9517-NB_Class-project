@@ -1,0 +1,17 @@
+{
+  "study_name": "ResNet18 label smoothing",
+  "factor": "label_smoothing",
+  "baseline_variant": "smoothing_0",
+  "variant_order": [
+    "smoothing_0",
+    "smoothing_01"
+  ],
+  "display_names": {
+    "smoothing_0": "Label smoothing = 0",
+    "smoothing_01": "Label smoothing = 0.1"
+  },
+  "allowed_config_differences": [
+    "label_smoothing"
+  ],
+  "ignored_config_keys": []
+}

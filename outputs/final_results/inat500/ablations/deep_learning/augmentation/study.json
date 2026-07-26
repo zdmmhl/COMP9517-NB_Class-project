@@ -1,0 +1,17 @@
+{
+  "study_name": "ResNet18 training augmentation",
+  "factor": "augmentation",
+  "baseline_variant": "basic",
+  "variant_order": [
+    "basic",
+    "strong"
+  ],
+  "display_names": {
+    "basic": "Basic augmentation",
+    "strong": "Strong augmentation"
+  },
+  "allowed_config_differences": [
+    "augmentation"
+  ],
+  "ignored_config_keys": []
+}

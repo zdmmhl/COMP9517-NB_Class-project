@@ -69,6 +69,12 @@ def parse_args(argv=None):
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--no-amp", action="store_true")
     parser.add_argument(
+        "--cuda-memory-fraction",
+        type=float,
+        default=1.0,
+        help="Maximum fraction of CUDA memory available to the PyTorch allocator.",
+    )
+    parser.add_argument(
         "--channels-last",
         action=argparse.BooleanOptionalAction,
         default=True,
@@ -398,6 +404,15 @@ def main(argv=None):
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     device = torch.device(args.device)
+    if not 0 < args.cuda_memory_fraction <= 1:
+        raise ValueError("--cuda-memory-fraction must be in the interval (0, 1].")
+    if device.type == "cuda":
+        torch.cuda.set_per_process_memory_fraction(
+            args.cuda_memory_fraction,
+            device=device.index
+            if device.index is not None
+            else torch.cuda.current_device(),
+        )
     use_amp = device.type == "cuda" and not args.no_amp
     if device.type == "cuda":
         torch.backends.cudnn.benchmark = args.cudnn_benchmark
@@ -544,6 +559,7 @@ def main(argv=None):
     metrics = {
         "method": args.model,
         "run_mode": run_mode,
+        "evaluated_checkpoint": str(best_path),
         "initialization": initialization,
         "device": str(device),
         "num_classes": num_classes,
@@ -556,6 +572,7 @@ def main(argv=None):
             "num_workers": args.num_workers,
             "eval_num_workers": args.eval_num_workers,
             "prefetch_factor": args.prefetch_factor,
+            "cuda_memory_fraction": args.cuda_memory_fraction,
             "lr": args.lr,
             "weight_decay": args.weight_decay,
             "backbone_lr_multiplier": args.backbone_lr_multiplier,

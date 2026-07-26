@@ -1,0 +1,17 @@
+{
+  "study_name": "ResNet18 MixUp",
+  "factor": "mixup_alpha",
+  "baseline_variant": "mixup_off",
+  "variant_order": [
+    "mixup_off",
+    "mixup_02"
+  ],
+  "display_names": {
+    "mixup_off": "MixUp off",
+    "mixup_02": "MixUp alpha = 0.2"
+  },
+  "allowed_config_differences": [
+    "mixup_alpha"
+  ],
+  "ignored_config_keys": []
+}

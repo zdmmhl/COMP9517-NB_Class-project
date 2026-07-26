@@ -1,0 +1,8 @@
+{
+  "num_predictions": 5000,
+  "recomputed_top1_accuracy": 0.6522,
+  "recorded_top1_accuracy": 0.6522000042915345,
+  "recomputed_macro_f1": 0.6463767208826136,
+  "recorded_macro_f1": 0.6463767208826136,
+  "metrics_match_predictions": true
+}

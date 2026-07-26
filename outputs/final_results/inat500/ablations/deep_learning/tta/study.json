@@ -1,0 +1,19 @@
+{
+  "study_name": "ResNet18 test-time augmentation",
+  "factor": "tta",
+  "baseline_variant": "tta_off",
+  "variant_order": [
+    "tta_off",
+    "tta_on"
+  ],
+  "display_names": {
+    "tta_off": "TTA off",
+    "tta_on": "Horizontal-flip TTA"
+  },
+  "allowed_config_differences": [
+    "tta"
+  ],
+  "ignored_config_keys": [
+    "total_seconds"
+  ]
+}

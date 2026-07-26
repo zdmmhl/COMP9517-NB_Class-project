@@ -1,0 +1,12 @@
+{
+  "max_epochs": 50,
+  "completed_epochs": 50,
+  "best_epoch": 47,
+  "best_val_macro_f1": 0.2638237356788062,
+  "epochs_without_improvement": 3,
+  "early_stopping_patience": 8,
+  "early_stopping_min_delta": 0.0005,
+  "stopped_early": false,
+  "last_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\deep_ablations\\scratch\\last_checkpoint.pt",
+  "best_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\deep_ablations\\scratch\\best_model.pt"
+}

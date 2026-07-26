@@ -1,0 +1,3 @@
+variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
+basic,Basic augmentation,0,0.0,0.0,0.0
+strong,Strong augmentation,1,-0.014400001431,-0.0012,-0.014990235921

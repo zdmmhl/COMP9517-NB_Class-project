@@ -45,6 +45,13 @@ comparison/traditional_summary_metrics.csv
 comparison/traditional_methods_comparison.png
 ```
 
+ResNet18 的初始化、数据增强、Label Smoothing、MixUp 和 TTA
+控制变量消融见：
+
+```text
+ablations/deep_learning/深度学习消融实验说明.md
+```
+
 ## 3. 文件夹结构
 
 ```text
@@ -62,7 +69,8 @@ inat500/
 |-- ablations/
 |   |-- handcrafted_features/
 |   |-- hog_classifiers/
-|   `-- color_classifiers/
+|   |-- color_classifiers/
+|   `-- deep_learning/
 |-- examples/
 |   `-- <传统方法>/
 |-- methods/

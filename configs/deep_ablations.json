@@ -1,0 +1,140 @@
+{
+  "study_name": "ResNet18 controlled deep-learning ablations",
+  "data_root": "E:/9517group/inat2021",
+  "split_dir": "data_splits",
+  "results_root": "results/deep_ablations",
+  "seed": 9517,
+  "common": {
+    "image_size": 224,
+    "epochs": 50,
+    "batch_size": 512,
+    "eval_batch_size": 1024,
+    "cuda_memory_fraction": 1.0,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "backbone_lr_multiplier": 1.0,
+    "scheduler": "cosine",
+    "min_lr_ratio": 0.01,
+    "augmentation": "strong",
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.0,
+    "grad_clip": 1.0,
+    "tta": false,
+    "num_workers": 4,
+    "eval_num_workers": 0,
+    "prefetch_factor": 2,
+    "channels_last": true,
+    "cudnn_benchmark": true,
+    "early_stopping_patience": 8,
+    "early_stopping_min_delta": 0.0005
+  },
+  "training_runs": {
+    "pretrained_reference": {
+      "model": "resnet18-pretrained"
+    },
+    "scratch": {
+      "model": "resnet18-scratch"
+    },
+    "basic_augmentation": {
+      "model": "resnet18-pretrained",
+      "augmentation": "basic"
+    },
+    "no_label_smoothing": {
+      "model": "resnet18-pretrained",
+      "label_smoothing": 0.0
+    },
+    "mixup_02": {
+      "model": "resnet18-pretrained",
+      "mixup_alpha": 0.2
+    }
+  },
+  "evaluation_runs": {
+    "tta_on": {
+      "source_run": "pretrained_reference",
+      "tta": true
+    }
+  },
+  "studies": [
+    {
+      "key": "initialization",
+      "study_name": "ResNet18 initialization",
+      "factor": "initialization",
+      "baseline_variant": "scratch",
+      "variant_order": ["scratch", "pretrained"],
+      "variants": {
+        "scratch": "scratch",
+        "pretrained": "pretrained_reference"
+      },
+      "display_names": {
+        "scratch": "Scratch",
+        "pretrained": "ImageNet pretrained"
+      },
+      "allowed_config_differences": ["model", "initialization"]
+    },
+    {
+      "key": "augmentation",
+      "study_name": "ResNet18 training augmentation",
+      "factor": "augmentation",
+      "baseline_variant": "basic",
+      "variant_order": ["basic", "strong"],
+      "variants": {
+        "basic": "basic_augmentation",
+        "strong": "pretrained_reference"
+      },
+      "display_names": {
+        "basic": "Basic augmentation",
+        "strong": "Strong augmentation"
+      },
+      "allowed_config_differences": ["augmentation"]
+    },
+    {
+      "key": "label_smoothing",
+      "study_name": "ResNet18 label smoothing",
+      "factor": "label_smoothing",
+      "baseline_variant": "smoothing_0",
+      "variant_order": ["smoothing_0", "smoothing_01"],
+      "variants": {
+        "smoothing_0": "no_label_smoothing",
+        "smoothing_01": "pretrained_reference"
+      },
+      "display_names": {
+        "smoothing_0": "Label smoothing = 0",
+        "smoothing_01": "Label smoothing = 0.1"
+      },
+      "allowed_config_differences": ["label_smoothing"]
+    },
+    {
+      "key": "mixup",
+      "study_name": "ResNet18 MixUp",
+      "factor": "mixup_alpha",
+      "baseline_variant": "mixup_off",
+      "variant_order": ["mixup_off", "mixup_02"],
+      "variants": {
+        "mixup_off": "pretrained_reference",
+        "mixup_02": "mixup_02"
+      },
+      "display_names": {
+        "mixup_off": "MixUp off",
+        "mixup_02": "MixUp alpha = 0.2"
+      },
+      "allowed_config_differences": ["mixup_alpha"]
+    },
+    {
+      "key": "tta",
+      "study_name": "ResNet18 test-time augmentation",
+      "factor": "tta",
+      "baseline_variant": "tta_off",
+      "variant_order": ["tta_off", "tta_on"],
+      "variants": {
+        "tta_off": "pretrained_reference",
+        "tta_on": "tta_on"
+      },
+      "display_names": {
+        "tta_off": "TTA off",
+        "tta_on": "Horizontal-flip TTA"
+      },
+      "allowed_config_differences": ["tta"],
+      "ignored_config_keys": ["total_seconds"]
+    }
+  ]
+}

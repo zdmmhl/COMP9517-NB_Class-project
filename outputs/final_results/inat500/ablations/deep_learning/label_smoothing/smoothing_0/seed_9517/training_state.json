@@ -1,0 +1,12 @@
+{
+  "max_epochs": 50,
+  "completed_epochs": 50,
+  "best_epoch": 43,
+  "best_val_macro_f1": 0.6406055778298874,
+  "epochs_without_improvement": 7,
+  "early_stopping_patience": 8,
+  "early_stopping_min_delta": 0.0005,
+  "stopped_early": false,
+  "last_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\deep_ablations\\no_label_smoothing\\last_checkpoint.pt",
+  "best_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\deep_ablations\\no_label_smoothing\\best_model.pt"
+}
