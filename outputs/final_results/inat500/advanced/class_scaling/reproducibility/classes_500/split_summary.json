@@ -1,0 +1,33 @@
+{
+  "study": "Effect of the number of classes",
+  "split_key": "classes_500",
+  "kind": "main",
+  "data_root": "E:/9517group/inat2021",
+  "train_annotations": "train_mini.json",
+  "test_annotations": "val.json",
+  "seed": 9517,
+  "num_classes": 500,
+  "train_per_class": 40,
+  "val_per_class": 10,
+  "test_per_class": 10,
+  "rows": {
+    "train": 20000,
+    "val": 5000,
+    "test": 5000
+  },
+  "base_classes_preserved": true,
+  "checks": {
+    "train_rows": 20000,
+    "val_rows": 5000,
+    "test_rows": 5000,
+    "cross_split_overlap": 0,
+    "missing_image_files": 0,
+    "valid": true
+  },
+  "sha256": {
+    "train.csv": "6e0b03cc69b2146ab77ccc12c0ddb24f7a43da79e0f06f091ecc31b68a9a84da",
+    "val.csv": "53a6777a1f81e88daf47d7cdfab2030130497f0269cca78acfdcefdb14becb4f",
+    "test.csv": "71118625d7ed4cc2455d4ab5ce9bc66951ce229e8acea59416e236573f5477e9",
+    "selected_classes.csv": "a63bae2ca6f86cc7dec7c0b7a4bfcd4fbfcb7af9fa7834215fbaebc17b59d8d9"
+  }
+}

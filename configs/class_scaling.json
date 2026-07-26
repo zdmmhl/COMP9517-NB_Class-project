@@ -1,0 +1,73 @@
+{
+  "study_name": "Effect of the number of classes",
+  "data_root": "E:/9517group/inat2021",
+  "base_split_dir": "data_splits",
+  "split_root": "data_splits/scaling",
+  "results_root": "results/class_scaling",
+  "deep_ablation_results_root": "results/deep_ablations",
+  "output_dir": "outputs/final_results/inat500/advanced/class_scaling",
+  "seed": 9517,
+  "split_specs": {
+    "classes_500": {
+      "num_classes": 500,
+      "train_per_class": 40,
+      "val_per_class": 10,
+      "test_per_class": 10,
+      "kind": "main"
+    },
+    "classes_1000": {
+      "num_classes": 1000,
+      "train_per_class": 20,
+      "val_per_class": 5,
+      "test_per_class": 5,
+      "kind": "main"
+    },
+    "classes_2500": {
+      "num_classes": 2500,
+      "train_per_class": 8,
+      "val_per_class": 2,
+      "test_per_class": 2,
+      "kind": "main"
+    },
+    "control_500x20": {
+      "num_classes": 500,
+      "train_per_class": 20,
+      "val_per_class": 5,
+      "test_per_class": 10,
+      "kind": "sample_control"
+    },
+    "control_500x8": {
+      "num_classes": 500,
+      "train_per_class": 8,
+      "val_per_class": 2,
+      "test_per_class": 10,
+      "kind": "sample_control"
+    }
+  },
+  "base_result_run": "pretrained_reference",
+  "common_training": {
+    "model": "resnet18-pretrained",
+    "image_size": 224,
+    "epochs": 50,
+    "batch_size": 512,
+    "eval_batch_size": 1024,
+    "cuda_memory_fraction": 1.0,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "backbone_lr_multiplier": 1.0,
+    "scheduler": "cosine",
+    "min_lr_ratio": 0.01,
+    "augmentation": "strong",
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.0,
+    "grad_clip": 1.0,
+    "tta": false,
+    "num_workers": 4,
+    "eval_num_workers": 0,
+    "prefetch_factor": 2,
+    "channels_last": true,
+    "cudnn_benchmark": true,
+    "early_stopping_patience": 8,
+    "early_stopping_min_delta": 0.0005
+  }
+}

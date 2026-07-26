@@ -1,0 +1,56 @@
+{
+  "valid": true,
+  "nested_classes": {
+    "base_500_in_1000": true,
+    "classes_1000_in_2500": true
+  },
+  "nested_samples": {
+    "train": {
+      "classes_1000_samples_nested_in_500_for_base_classes": true,
+      "classes_2500_samples_nested_in_1000_for_first_1000_classes": true,
+      "control_500x20_samples_nested_in_base": true,
+      "control_500x8_samples_nested_in_base": true
+    },
+    "val": {
+      "classes_1000_samples_nested_in_500_for_base_classes": true,
+      "classes_2500_samples_nested_in_1000_for_first_1000_classes": true,
+      "control_500x20_samples_nested_in_base": true,
+      "control_500x8_samples_nested_in_base": true
+    },
+    "test": {
+      "classes_1000_samples_nested_in_500_for_base_classes": true,
+      "classes_2500_samples_nested_in_1000_for_first_1000_classes": true,
+      "control_500x20_samples_nested_in_base": true,
+      "control_500x8_samples_nested_in_base": true
+    }
+  },
+  "prediction_metrics_recomputed": true,
+  "controlled_training_parameters": [
+    "augmentation",
+    "backbone_lr_multiplier",
+    "batch_size",
+    "channels_last",
+    "cuda_memory_fraction",
+    "cudnn_benchmark",
+    "early_stopping_min_delta",
+    "early_stopping_patience",
+    "epochs",
+    "eval_batch_size",
+    "eval_num_workers",
+    "grad_clip",
+    "image_size",
+    "initialization",
+    "label_smoothing",
+    "lr",
+    "min_lr_ratio",
+    "mixup_alpha",
+    "model",
+    "num_workers",
+    "prefetch_factor",
+    "scheduler",
+    "seed",
+    "tta",
+    "weight_decay"
+  ],
+  "num_runs": 5
+}

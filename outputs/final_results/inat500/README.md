@@ -52,6 +52,15 @@ ResNet18 的初始化、数据增强、Label Smoothing、MixUp 和 TTA
 ablations/deep_learning/深度学习消融实验说明.md
 ```
 
+Advanced 第3项“类别数量影响”实验使用嵌套的500、1,000和2,500类子集，
+并增加两个固定500类的样本量控制实验，见：
+
+```text
+advanced/class_scaling/类别规模Advanced实验说明.md
+advanced/class_scaling/scaling_summary.csv
+advanced/class_scaling/class_scaling_metrics.png
+```
+
 ## 3. 文件夹结构
 
 ```text
@@ -71,6 +80,8 @@ inat500/
 |   |-- hog_classifiers/
 |   |-- color_classifiers/
 |   `-- deep_learning/
+|-- advanced/
+|   `-- class_scaling/
 |-- examples/
 |   `-- <传统方法>/
 |-- methods/
