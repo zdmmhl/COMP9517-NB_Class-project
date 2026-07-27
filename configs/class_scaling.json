@@ -1,6 +1,6 @@
 {
   "study_name": "Effect of the number of classes",
-  "data_root": "E:/9517group/inat2021",
+  "data_root": "datasets/inat2021",
   "base_split_dir": "data_splits",
   "split_root": "data_splits/scaling",
   "results_root": "results/class_scaling",

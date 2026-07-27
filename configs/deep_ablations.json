@@ -1,6 +1,6 @@
 {
   "study_name": "ResNet18 controlled deep-learning ablations",
-  "data_root": "E:/9517group/inat2021",
+  "data_root": "datasets/inat2021",
   "split_dir": "data_splits",
   "results_root": "results/deep_ablations",
   "seed": 9517,

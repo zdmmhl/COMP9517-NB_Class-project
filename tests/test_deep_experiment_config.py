@@ -54,3 +54,14 @@ def test_all_training_runs_have_the_same_budget_and_seed():
         assert merged["batch_size"] == 512
         assert merged["eval_batch_size"] == 1024
         assert merged["cuda_memory_fraction"] == 1.0
+
+
+def test_deep_ablation_paths_are_repository_relative():
+    config = json.loads(
+        (PROJECT_ROOT / "configs" / "deep_ablations.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert not Path(config["data_root"]).is_absolute()
+    assert not Path(config["split_dir"]).is_absolute()
+    assert not Path(config["results_root"]).is_absolute()

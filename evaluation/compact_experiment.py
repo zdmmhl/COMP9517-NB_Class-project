@@ -29,6 +29,18 @@ def _copy_if_exists(source: Path, destination: Path) -> None:
         shutil.copy2(source, destination)
 
 
+def _copy_sanitized_training_state(source: Path, destination: Path) -> None:
+    if not source.is_file():
+        return
+    state = _read_json(source)
+    for key in ("last_checkpoint", "best_checkpoint"):
+        if state.get(key):
+            state[key] = Path(state[key]).name
+    destination.write_bytes(
+        (json.dumps(state, indent=2) + "\n").encode("utf-8")
+    )
+
+
 def _checkpoint_sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as file:
@@ -205,7 +217,10 @@ def export_deep_run(
         "test_confusion_matrix.png",
         "test_prediction_examples.png",
         "test_classification_report.json",
-        "training_state.json",
     ]:
         _copy_if_exists(raw_dir / name, output_dir / name)
+    _copy_sanitized_training_state(
+        raw_dir / "training_state.json",
+        output_dir / "training_state.json",
+    )
     return summary

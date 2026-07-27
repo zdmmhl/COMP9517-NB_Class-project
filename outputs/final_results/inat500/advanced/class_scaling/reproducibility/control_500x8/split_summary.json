@@ -2,7 +2,7 @@
   "study": "Effect of the number of classes",
   "split_key": "control_500x8",
   "kind": "sample_control",
-  "data_root": "E:/9517group/inat2021",
+  "data_root": "datasets/inat2021",
   "train_annotations": "train_mini.json",
   "test_annotations": "val.json",
   "seed": 9517,

@@ -7,6 +7,6 @@
   "early_stopping_patience": 8,
   "early_stopping_min_delta": 0.0005,
   "stopped_early": true,
-  "last_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\class_scaling\\control_500x8\\last_checkpoint.pt",
-  "best_checkpoint": "C:\\Users\\Administrator\\Desktop\\9517\\results\\class_scaling\\control_500x8\\best_model.pt"
+  "last_checkpoint": "last_checkpoint.pt",
+  "best_checkpoint": "best_model.pt"
 }

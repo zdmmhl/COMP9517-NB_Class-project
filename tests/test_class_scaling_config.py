@@ -49,3 +49,11 @@ def test_advanced_training_matches_deep_reference():
         **deep["training_runs"][scaling["base_result_run"]],
     }
     assert scaling["common_training"] == reference
+
+
+def test_class_scaling_paths_are_repository_relative():
+    config = load_config()
+    assert not Path(config["data_root"]).is_absolute()
+    assert not Path(config["split_root"]).is_absolute()
+    assert not Path(config["results_root"]).is_absolute()
+    assert not Path(config["output_dir"]).is_absolute()

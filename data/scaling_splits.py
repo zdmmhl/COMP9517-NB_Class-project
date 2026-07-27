@@ -150,7 +150,10 @@ def validate_split(
 
 
 def build_scaling_splits(config: dict, project_root: Path) -> dict:
-    data_root = Path(config["data_root"])
+    configured_data_root = Path(config["data_root"])
+    data_root = configured_data_root
+    if not data_root.is_absolute():
+        data_root = project_root / data_root
     base_dir = project_root / config["base_split_dir"]
     output_root = project_root / config["split_root"]
     seed = int(config["seed"])
@@ -291,7 +294,7 @@ def build_scaling_splits(config: dict, project_root: Path) -> dict:
             "study": config["study_name"],
             "split_key": split_key,
             "kind": spec["kind"],
-            "data_root": str(data_root).replace("\\", "/"),
+            "data_root": configured_data_root.as_posix(),
             "train_annotations": "train_mini.json",
             "test_annotations": "val.json",
             "seed": seed,

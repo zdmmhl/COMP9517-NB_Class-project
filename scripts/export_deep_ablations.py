@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import shutil
 import sys
@@ -46,6 +47,19 @@ def reset_run_directory(path: Path, root: Path) -> None:
         shutil.rmtree(path)
 
 
+def make_run_paths_relative(path: Path) -> None:
+    with path.open("r", encoding="utf-8", newline="") as file:
+        rows = list(csv.DictReader(file))
+        fieldnames = list(rows[0]) if rows else []
+    for row in rows:
+        run_dir = Path(row["run_dir"]).resolve()
+        row["run_dir"] = run_dir.relative_to(path.parent.resolve()).as_posix()
+    with path.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> None:
     args = parse_args()
     config = json.loads(args.config.read_text(encoding="utf-8"))
@@ -87,6 +101,7 @@ def main() -> None:
                 split_id="inat500_seed9517",
             )
         write_ablation_outputs(study_dir, study_dir)
+        make_run_paths_relative(study_dir / "ablation_runs.csv")
         print(f"Exported {study['key']} to {study_dir}")
 
 

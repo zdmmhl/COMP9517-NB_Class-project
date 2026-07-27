@@ -1,8 +1,10 @@
 # COMP9517 iNaturalist Species Classification
 
 This project compares handcrafted computer-vision and deep-learning methods on
-a fixed, reproducible 500-class subset of iNaturalist 2021. All reported
-experiments use the same class selection and train/validation/test split.
+a fixed, reproducible 500-class subset of iNaturalist 2021. The 500-class split
+is the primary benchmark for all headline comparisons. A separate Advanced
+study uses nested 500-, 1,000-, and 2,500-class subsets to measure class-scaling
+effects without replacing the primary benchmark.
 
 ## Implemented Methods
 
@@ -13,6 +15,10 @@ experiments use the same class selection and train/validation/test split.
 - ImageNet-pretrained ResNet18, ResNet50, EfficientNet-B0, and ConvNeXt-Tiny.
 - MixUp, strong augmentation, label smoothing, cosine scheduling, TTA, and
   validation-selected probability ensembling.
+- Controlled ResNet18 ablations for initialization, augmentation, label
+  smoothing, MixUp, and test-time augmentation.
+- An Advanced class-scaling study with fixed-total-image and fixed-class
+  sample-count controls.
 - Top-1/overall accuracy, Top-5 accuracy, macro precision, macro recall,
   macro F1, confusion matrices, runtime tracking, and error analysis.
 
@@ -163,6 +169,34 @@ set, and controlled configuration. It rejects runs that change parameters not
 declared in `allowed_config_differences`. It then writes aggregate metrics,
 baseline deltas, validation details, error-bar charts, and training curves.
 
+The completed deep-learning ablations are driven by
+`configs/deep_ablations.json`:
+
+```powershell
+python scripts/run_deep_ablations.py
+python scripts/export_deep_ablations.py
+python scripts/write_experiment_docs.py
+```
+
+## Run The Advanced Class-Scaling Study
+
+The primary benchmark remains the fixed 500-class split. The Advanced study
+constructs nested 500-, 1,000-, and 2,500-class subsets while keeping the main
+training-image budget at 20,000. Two additional 500-class controls isolate the
+effect of reducing images per class.
+
+```powershell
+python scripts/prepare_scaling_splits.py
+python scripts/run_class_scaling.py
+python scripts/export_class_scaling.py
+python scripts/write_experiment_docs.py
+```
+
+The complete specification is in `configs/class_scaling.json`. Report-ready
+outputs are stored below
+`outputs/final_results/inat500/advanced/class_scaling/`; they are not mixed into
+the primary 500-class model comparison.
+
 ## Generated Files
 
 Generated evaluation artifacts are grouped by split identity:
@@ -192,12 +226,20 @@ The compact, report-ready results package is tracked under:
 
 ```text
 outputs/final_results/inat500/
+|-- methods/                    Primary 500-class method records
+|-- comparison/                 Primary 500-class comparisons
+|-- ablations/
+|   |-- deep_learning/          Controlled ResNet18 ablations
+|   `-- <traditional studies>/
+`-- advanced/
+    `-- class_scaling/          Nested 500/1,000/2,500-class study
 ```
 
 It contains standardized CSV metrics, training histories, per-class metrics,
 confusion matrices, selected result figures, and the matching fixed split
-manifests. It excludes datasets, model weights, caches, probability arrays,
-and smoke-test artifacts.
+manifests. The primary and Advanced results remain separated inside the package.
+It excludes datasets, model weights, caches, probability arrays, and smoke-test
+artifacts.
 
 Regenerate the package from completed local experiments with:
 
@@ -208,3 +250,29 @@ python scripts/export_final_results.py
 See `outputs/final_results/README.md` for the experiment index. Each experiment
 directory contains its own result guide, metric definitions, timing
 limitations, and file descriptions.
+
+## Third-Party Libraries
+
+The implementation uses PyTorch and torchvision for deep models, scikit-learn
+and scikit-image for classical methods and features, and NumPy, pandas,
+Matplotlib, Seaborn, and Pillow for data handling and visualisation. Exact
+dependencies are listed in `requirements.txt`. Pretrained model definitions and
+weights are provided through torchvision; the project-specific training,
+evaluation, ablation, and class-scaling orchestration is implemented in this
+repository.
+
+## Build The Code Submission ZIP
+
+Do not submit a ZIP of the whole repository: the tracked report-ready results
+contain images and make a full archive exceed the 40 MB code limit. Build the
+source-only archive from the repository root:
+
+```powershell
+git archive --format=zip --output COMP9517_code.zip HEAD `
+  README.md requirements.txt configs data data_splits demo evaluation models `
+  notebooks scripts tests traditional training utils DATASET_SETUP_GUIDE.md `
+  模型输出格式指南.md 评估模块文件结构指南.md
+```
+
+This intentionally excludes datasets, checkpoints, report files, and all
+generated result images under `outputs/`.
