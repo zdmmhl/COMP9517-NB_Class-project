@@ -196,7 +196,11 @@ def write_class_scaling_outputs(
     checked_parameters = validate_training_controls(configurations)
     summary = pd.DataFrame(rows)
     output_dir.mkdir(parents=True, exist_ok=True)
-    summary.to_csv(output_dir / "scaling_summary.csv", index=False)
+    summary.to_csv(
+        output_dir / "scaling_summary.csv",
+        index=False,
+        lineterminator="\n",
+    )
     plot_main_scaling(summary, output_dir / "class_scaling_metrics.png")
     plot_sample_controls(summary, output_dir / "sample_size_control.png")
     plot_runtime(summary, output_dir / "runtime_comparison.png")
@@ -219,5 +223,6 @@ def write_class_scaling_outputs(
         )
         + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     return summary

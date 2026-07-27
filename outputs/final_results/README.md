@@ -29,3 +29,8 @@ final_results/
 
 深度模型的逐图片 Top-5 类别、概率、独立复算记录和
 “Top-1 错但 Top-5 对”案例均保存在各自方法或实验运行目录中。
+
+主对比指标或逐图片记录更新后，运行
+`python scripts/refresh_final_comparison.py`，可从已跟踪的方法 CSV 重新生成
+全部 comparison 表格和图片，刷新深度消融及类别规模汇总图，并从各实验的
+当前 Top-1 预测重新生成紧凑混淆矩阵，最后更新 artifact manifest。

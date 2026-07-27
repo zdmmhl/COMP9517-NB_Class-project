@@ -99,6 +99,14 @@ def plot_confusion_matrix(path, labels, predictions, num_classes, max_classes_to
     fig.savefig(path.with_name(f"{path.stem}_full.png"), dpi=200)
     plt.close(fig)
 
+    plot_confusion_matrix_subset(path, matrix, max_classes_to_plot)
+
+
+def plot_confusion_matrix_subset(path, matrix, max_classes_to_plot=30):
+    """Plot the same compact first-classes view used by raw deep runs."""
+    path = Path(path)
+    matrix = np.asarray(matrix)
+    num_classes = matrix.shape[0]
     show_n = min(max_classes_to_plot, num_classes)
     fig, ax = plt.subplots(figsize=(8, 7))
     image = ax.imshow(matrix[:show_n, :show_n], cmap="Blues")

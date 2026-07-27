@@ -12,7 +12,12 @@ def save_rows_csv(path, rows, fieldnames=None):
                 if key not in fieldnames:
                     fieldnames.append(key)
     with path.open("w", encoding="utf-8", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames, extrasaction="ignore")
+        writer = csv.DictWriter(
+            file,
+            fieldnames=fieldnames,
+            extrasaction="ignore",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 

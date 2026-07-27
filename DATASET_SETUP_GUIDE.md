@@ -172,13 +172,17 @@ starting extraction.
 
 ## 7. Configuring the Dataset Path
 
-The shared project configuration is stored in:
+The repository records the primary 500-class defaults in:
 
 ```text
 configs/baseline.yaml
 ```
 
-The data-related settings are:
+This YAML file is a human-readable reference for the agreed split. The current
+Python entry points do **not** load it automatically. Changing `data.root` in
+this file alone does not change a training or data-preparation run.
+
+The recorded defaults are:
 
 ```yaml
 data:
@@ -186,6 +190,7 @@ data:
   train_annotations: train_mini.json
   test_annotations: val.json
   split_dir: data_splits
+  seed: 9517
   num_classes: 500
   train_per_class: 40
   val_per_class: 10
@@ -205,45 +210,61 @@ The fields have the following meanings:
 - `val_per_class`: number of validation images per species.
 - `test_per_class`: number of test images per species.
 
-### Windows Example
+Pass the dataset location to the standard scripts with `--data-root`. For
+example:
 
-```yaml
-data:
-  root: F:/COMP9517_data/inat2021
+```powershell
+python scripts\prepare_splits.py `
+  --data-root F:\COMP9517_data\inat2021 `
+  --output-dir data_splits `
+  --seed 9517 `
+  --num-classes 500 `
+  --train-per-class 40 `
+  --val-per-class 10 `
+  --test-per-class 10
+
+python scripts\train_deep.py `
+  --model resnet18-pretrained `
+  --data-root F:\COMP9517_data\inat2021 `
+  --split-dir data_splits `
+  --output-dir results\resnet18_pretrained_run
 ```
 
-Forward slashes are recommended in YAML paths on Windows to avoid backslash
-escaping issues.
+On Linux or a server, use the corresponding absolute path:
 
-### Linux Server Example
-
-```yaml
-data:
-  root: /data/COMP9517/inat2021
+```bash
+python scripts/prepare_splits.py \
+  --data-root /data/COMP9517/inat2021 \
+  --output-dir data_splits \
+  --seed 9517 \
+  --num-classes 500 \
+  --train-per-class 40 \
+  --val-per-class 10 \
+  --test-per-class 10
 ```
 
-### Google Colab and Google Drive Example
+For Colab, pass either the Drive path or the temporary runtime path:
 
-```yaml
-data:
-  root: /content/drive/MyDrive/COMP9517/inat2021
-```
-
-If the data is copied to the faster temporary Colab disk, use:
-
-```yaml
-data:
-  root: /content/inat2021
+```bash
+python scripts/prepare_splits.py \
+  --data-root /content/drive/MyDrive/COMP9517/inat2021 \
+  --output-dir data_splits
 ```
 
 The temporary runtime disk is usually faster, but the data must be copied or
 downloaded again after the Colab runtime is reset.
 
+The controlled deep-ablation and Advanced class-scaling workflows read
+`configs/deep_ablations.json` and `configs/class_scaling.json`. Their
+`data_root` values are repository-relative by default and may be changed in a
+local, uncommitted configuration copy when the dataset is stored elsewhere.
+
 ## 8. Files Shared by the Team
 
 The image files and large archives must not be uploaded to GitHub. Each team
-member can store the dataset in a different location and configure their own
-`data.root` value.
+member can store the dataset in a different location and pass that location
+through `--data-root`, or through a local JSON configuration for the controlled
+experiment runners.
 
 To ensure that every experiment uses exactly the same data, the team should
 share these small files:
@@ -253,7 +274,8 @@ share these small files:
 - The train, validation, and test split manifests.
 - The mapping from original category IDs to model class indices.
 
-Image paths in manifests should be relative to `data.root`, for example:
+Image paths in manifests should be relative to the selected dataset root, for
+example:
 
 ```text
 train_mini/species_directory/image.jpg

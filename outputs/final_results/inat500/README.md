@@ -27,6 +27,11 @@
 | ImageNet 预训练 ConvNeXt-Tiny + MixUp | - | - | 82.72% | 94.56% | 82.52% |
 | ResNet50/ConvNeXt 验证集选择集成 | - | - | 83.78% | 94.90% | 83.63% |
 
+ResNet50 原始运行没有记录逐 epoch 训练时间，因此其
+`training_time_seconds` 保持为空；集成模型没有独立训练阶段。所有 runtime
+比较只使用实际记录值，缺失值不估算，具体见
+`comparison/runtime_comparison.csv` 的 `timing_note`。
+
 完整机器可读结果位于：
 
 ```text
@@ -152,6 +157,17 @@ python scripts/export_final_results.py
 导出器从 `results/`、`analysis/error_analysis/` 和 `data_splits/` 读取结果，
 并重新生成本目录中的结构化文件。SimpleCNN 和 ResNet18 默认读取新的
 `simple_cnn_converged_full` 与 `resnet18_pretrained_converged_full` 原始运行。
+
+如果原始运行不在当前机器，但已跟踪方法的指标或预测已经更新，可以直接运行：
+
+```powershell
+python scripts/refresh_final_comparison.py
+```
+
+该命令从 `methods/` 中的当前 CSV 同步生成全部 comparison CSV 和对比图片，
+从当前指标刷新深度消融及类别规模汇总图，并从各实验的当前 Top-1 预测重新
+生成紧凑混淆矩阵，最后更新 `artifact_manifest.csv`。整个过程不读取数据集或
+checkpoint。
 
 ## 7. 未上传内容
 

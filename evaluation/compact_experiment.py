@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 
+from evaluation.plots import plot_confusion_matrix_subset
 from evaluation.top5_evidence import write_top5_evidence
 from utils.serialization import save_rows_csv
 
@@ -226,11 +227,14 @@ def export_deep_run(
             matrix_rows,
             ["true_class_index", *[str(index) for index in class_indices]],
         )
+        plot_confusion_matrix_subset(
+            output_dir / "test_confusion_matrix.png",
+            matrix,
+        )
 
     for name in [
         "training_curves.png",
         "learning_rate.png",
-        "test_confusion_matrix.png",
         "test_prediction_examples.png",
         "test_classification_report.json",
     ]:

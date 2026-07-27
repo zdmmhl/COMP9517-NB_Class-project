@@ -515,12 +515,25 @@ def write_ablation_outputs(
 
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    study.runs.to_csv(output_dir / "ablation_runs.csv", index=False)
-    summary.to_csv(output_dir / "ablation_summary.csv", index=False)
-    deltas.to_csv(output_dir / "ablation_deltas.csv", index=False)
+    study.runs.to_csv(
+        output_dir / "ablation_runs.csv",
+        index=False,
+        lineterminator="\n",
+    )
+    summary.to_csv(
+        output_dir / "ablation_summary.csv",
+        index=False,
+        lineterminator="\n",
+    )
+    deltas.to_csv(
+        output_dir / "ablation_deltas.csv",
+        index=False,
+        lineterminator="\n",
+    )
     (output_dir / "validation_report.json").write_text(
         json.dumps(report, indent=2) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     study_name = str(study.spec["study_name"])
     _plot_metric_bars(

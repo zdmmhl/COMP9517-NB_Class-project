@@ -36,7 +36,8 @@ outputs/
 深度模型目录同时保存逐图 Top-5 类别和概率、独立复算结果，以及
 “Top-1 错但 Top-5 对”的 CSV 与案例图。
 
-该目录只跟踪体积较小的 CSV、JSON 和可视化图片，不包含：
+该目录跟踪精简 CSV、JSON 和报告用可视化图片。部分案例图可能达到数 MB，因此
+整个 `final_results/` 只用于组内共享，不放入最终 code ZIP。该目录不包含：
 
 - iNaturalist 原始图片；
 - 模型权重；
@@ -54,7 +55,12 @@ python scripts/export_final_results.py
 python scripts/export_deep_ablations.py
 python scripts/export_class_scaling.py
 python scripts/write_experiment_docs.py
+python scripts/refresh_final_comparison.py
 ```
 
 主结果、消融和Advanced结果分别由上述导出脚本维护，但统一收纳在
 `outputs/final_results/inat500/` 项目结果包中。
+`refresh_final_comparison.py` 只读取已跟踪的 `methods/*/metrics.csv` 和
+`per_class_metrics.csv` 生成主对比结果，同时从正式消融、类别规模指标和各实验
+当前的 `test_predictions_top1.csv` 重画汇总图及紧凑混淆矩阵，保证正式图片与
+最新 CSV 一致。

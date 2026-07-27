@@ -12,7 +12,7 @@ effects without replacing the primary benchmark.
 - SGD linear SVM, LinearSVC, and Random Forest classifier comparisons.
 - A small CNN trained from random initialization.
 - ResNet18 trained from scratch.
-- ImageNet-pretrained ResNet18, ResNet50, EfficientNet-B0, and ConvNeXt-Tiny.
+- ImageNet-pretrained ResNet18, ResNet50, and ConvNeXt-Tiny.
 - MixUp, strong augmentation, label smoothing, cosine scheduling, TTA, and
   validation-selected probability ensembling.
 - Controlled ResNet18 ablations for initialization, augmentation, label
@@ -20,7 +20,8 @@ effects without replacing the primary benchmark.
 - An Advanced class-scaling study with fixed-total-image and fixed-class
   sample-count controls.
 - Top-1/overall accuracy, Top-5 accuracy, macro precision, macro recall,
-  macro F1, confusion matrices, runtime tracking, and error analysis.
+  macro F1, confusion matrices, recorded runtime comparison, and error analysis.
+  Missing historical timings are left blank and identified by `timing_note`.
 
 ## Repository Structure
 
@@ -40,9 +41,9 @@ training/         Deep-learning orchestration, epoch loops, and optimizers
 utils/            Reproducibility and serialization helpers
 ```
 
-The files in `scripts/` contain only command-line entry points. Reusable
-implementation belongs to the corresponding package so training, evaluation,
-and future demo code can share the same behavior.
+The files in `scripts/` provide command-line entry points and experiment
+orchestration. Reusable metrics, plotting, model, data, and training logic lives
+in the corresponding packages.
 
 ## Environment
 
@@ -50,8 +51,9 @@ and future demo code can share the same behavior.
 python -m pip install -r requirements.txt
 ```
 
-All commands below are run from the repository root. Dataset and output paths
-can be overridden through command-line arguments.
+All commands below are run from the repository root. Standard data, training,
+and evaluation entry points accept path arguments; controlled ablation and
+class-scaling runners read their paths from the referenced JSON configuration.
 
 ## Reproduce The Data Split
 
@@ -114,8 +116,8 @@ python scripts\train_deep.py `
 ```
 
 Use `--resume-checkpoint results\<run>\last_checkpoint.pt` to recover an
-interrupted training run. Use `--help` on any entry point for all optimization
-and evaluation options.
+interrupted training run. Training and evaluation entry points implemented with
+`argparse` expose their available options through `--help`.
 
 ## Evaluate Standardized Prediction Artifacts
 
@@ -247,9 +249,15 @@ Regenerate the package from completed local experiments with:
 python scripts/export_final_results.py
 ```
 
-See `outputs/final_results/README.md` for the experiment index. Each experiment
-directory contains its own result guide, metric definitions, timing
-limitations, and file descriptions.
+If the tracked per-method metrics or predictions have been refreshed, rebuild
+all primary comparison CSVs and figures without datasets or checkpoints:
+
+```powershell
+python scripts/refresh_final_comparison.py
+```
+
+See `outputs/final_results/README.md` for the experiment index, metric
+definitions, timing limitations, and file descriptions.
 
 ## Third-Party Libraries
 

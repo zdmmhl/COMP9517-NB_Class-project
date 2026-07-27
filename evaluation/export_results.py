@@ -105,6 +105,47 @@ METHODS = [
     },
 ]
 
+INTEGER_SUMMARY_FIELDS = {
+    "random_seed",
+    "num_classes",
+    "num_test_samples",
+    "best_epoch",
+}
+FLOAT_SUMMARY_FIELDS = {
+    "top1_accuracy",
+    "top5_accuracy",
+    "overall_accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "balanced_accuracy",
+    "test_loss",
+    "training_time_seconds",
+    "feature_extraction_time_seconds",
+    "vocabulary_time_seconds",
+    "inference_time_seconds",
+    "inference_images_per_second",
+    "recorded_total_run_seconds",
+}
+RUNTIME_FIELDS = [
+    "method_key",
+    "method_name",
+    "device",
+    "training_time_seconds",
+    "inference_time_seconds",
+    "num_test_samples",
+    "inference_images_per_second",
+    "timing_note",
+]
+CANONICAL_TEXT_SUFFIXES = {
+    ".csv",
+    ".json",
+    ".md",
+    ".txt",
+    ".yaml",
+    ".yml",
+}
+
 
 def load_json(path):
     with path.open("r", encoding="utf-8") as file:
@@ -114,6 +155,46 @@ def load_json(path):
 def read_csv(path):
     with path.open("r", encoding="utf-8", newline="") as file:
         return list(csv.DictReader(file))
+
+
+def coerce_summary_types(row):
+    row = dict(row)
+    for key in INTEGER_SUMMARY_FIELDS:
+        if key in row and row[key] != "":
+            row[key] = int(row[key])
+    for key in FLOAT_SUMMARY_FIELDS:
+        if key in row and row[key] != "":
+            row[key] = float(row[key])
+    return row
+
+
+def load_exported_comparison_inputs(output_dir):
+    """Load the latest report-ready metrics without requiring raw runs."""
+    summaries = []
+    per_class_by_method = {}
+    for method in METHODS:
+        method_dir = output_dir / "methods" / method["key"]
+        metric_rows = read_csv(method_dir / "metrics.csv")
+        if len(metric_rows) != 1:
+            raise ValueError(
+                f"Expected one metrics row for {method['key']}, got {len(metric_rows)}"
+            )
+        summary = coerce_summary_types(metric_rows[0])
+        if summary["method_key"] != method["key"]:
+            raise ValueError(
+                f"Method key mismatch in {method_dir / 'metrics.csv'}"
+            )
+        per_class_rows = read_csv(method_dir / "per_class_metrics.csv")
+        if len(per_class_rows) != int(summary["num_classes"]):
+            raise ValueError(
+                f"Expected {summary['num_classes']} per-class rows for "
+                f"{method['key']}, got {len(per_class_rows)}"
+            )
+        for row in per_class_rows:
+            row["f1"] = float(row["f1"])
+        summaries.append(summary)
+        per_class_by_method[method["key"]] = per_class_rows
+    return summaries, per_class_by_method
 
 
 def load_classes(path):
@@ -399,21 +480,50 @@ def plot_model_comparison(path, summaries):
 
 def plot_runtime(path, summaries):
     rows = [row for row in summaries if row["inference_time_seconds"] != ""]
+    traditional_handles = []
+    traditional_labels = []
     fig, axis = plt.subplots(figsize=(9, 6))
     for row in rows:
-        axis.scatter(
+        point = axis.scatter(
             row["inference_time_seconds"],
             row["top1_accuracy"],
             s=75,
         )
-        axis.annotate(
-            row["method_key"],
-            (row["inference_time_seconds"], row["top1_accuracy"]),
-            xytext=(5, 5),
-            textcoords="offset points",
-            fontsize=8,
+        if row["initialization"] == "handcrafted":
+            traditional_handles.append(point)
+            traditional_labels.append(row["method_key"])
+        else:
+            offset = (5, 5)
+            horizontal_alignment = "left"
+            vertical_alignment = "bottom"
+            if row["method_key"] == "resnet50_optimized":
+                offset = (5, -8)
+                vertical_alignment = "top"
+            elif row["method_key"] == "deep_ensemble":
+                offset = (-5, 10)
+                horizontal_alignment = "right"
+            axis.annotate(
+                row["method_key"],
+                (row["inference_time_seconds"], row["top1_accuracy"]),
+                xytext=offset,
+                textcoords="offset points",
+                fontsize=8,
+                ha=horizontal_alignment,
+                va=vertical_alignment,
+            )
+    if traditional_handles:
+        axis.legend(
+            traditional_handles,
+            traditional_labels,
+            title="Traditional methods",
+            loc="center left",
+            bbox_to_anchor=(0.01, 0.55),
+            fontsize=7,
+            title_fontsize=8,
         )
-    axis.set_xlabel("Recorded test inference time (seconds)")
+    axis.set_xscale("log")
+    axis.margins(x=0.12)
+    axis.set_xlabel("Recorded test inference time in seconds (log scale)")
     axis.set_ylabel("Top-1 accuracy")
     axis.set_title("Runtime vs Test Performance")
     axis.grid(linestyle="--", alpha=0.3)
@@ -468,6 +578,35 @@ def plot_traditional_comparison(path, summaries):
     plt.close(fig)
 
 
+def write_comparison_outputs(output_dir, summaries, per_class_by_method):
+    """Write all primary comparison tables and figures from one data snapshot."""
+    comparison_dir = output_dir / "comparison"
+    comparison_dir.mkdir(parents=True, exist_ok=True)
+    save_rows_csv(comparison_dir / "summary_metrics.csv", summaries)
+    traditional_summaries = [
+        row for row in summaries if row["initialization"] == "handcrafted"
+    ]
+    save_rows_csv(
+        comparison_dir / "traditional_summary_metrics.csv",
+        traditional_summaries,
+    )
+    save_rows_csv(
+        comparison_dir / "runtime_comparison.csv",
+        summaries,
+        RUNTIME_FIELDS,
+    )
+    plot_model_comparison(comparison_dir / "model_comparison.png", summaries)
+    plot_runtime(comparison_dir / "runtime_vs_performance.png", summaries)
+    plot_f1_distribution(
+        comparison_dir / "per_class_f1_distribution.png",
+        per_class_by_method,
+    )
+    plot_traditional_comparison(
+        comparison_dir / "traditional_methods_comparison.png",
+        summaries,
+    )
+
+
 def artifact_category(relative_path):
     first = relative_path.parts[0] if relative_path.parts else ""
     return {
@@ -483,11 +622,14 @@ def write_manifest(output_dir):
         if not path.is_file() or path.name == "artifact_manifest.csv":
             continue
         relative = path.relative_to(output_dir)
+        data = path.read_bytes()
+        if path.suffix.lower() in CANONICAL_TEXT_SUFFIXES:
+            data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
         rows.append(
             {
                 "relative_path": relative.as_posix(),
                 "category": artifact_category(relative),
-                "size_bytes": path.stat().st_size,
+                "size_bytes": len(data),
             }
         )
     save_rows_csv(
@@ -614,38 +756,7 @@ def main():
                 method_dir / "failure_examples.jpg",
             )
 
-    comparison_dir = args.output_dir / "comparison"
-    comparison_dir.mkdir(parents=True, exist_ok=True)
-    save_rows_csv(comparison_dir / "summary_metrics.csv", summaries)
-    traditional_summaries = [
-        row for row in summaries if row["initialization"] == "handcrafted"
-    ]
-    save_rows_csv(
-        comparison_dir / "traditional_summary_metrics.csv",
-        traditional_summaries,
-    )
-    runtime_fields = [
-        "method_key",
-        "method_name",
-        "device",
-        "training_time_seconds",
-        "inference_time_seconds",
-        "num_test_samples",
-        "inference_images_per_second",
-        "timing_note",
-    ]
-    save_rows_csv(
-        comparison_dir / "runtime_comparison.csv", summaries, runtime_fields
-    )
-    plot_model_comparison(comparison_dir / "model_comparison.png", summaries)
-    plot_runtime(comparison_dir / "runtime_vs_performance.png", summaries)
-    plot_f1_distribution(
-        comparison_dir / "per_class_f1_distribution.png", per_class_by_method
-    )
-    plot_traditional_comparison(
-        comparison_dir / "traditional_methods_comparison.png",
-        summaries,
-    )
+    write_comparison_outputs(args.output_dir, summaries, per_class_by_method)
 
     reproducibility_dir = args.output_dir / "reproducibility" / "data_splits"
     for name in [
