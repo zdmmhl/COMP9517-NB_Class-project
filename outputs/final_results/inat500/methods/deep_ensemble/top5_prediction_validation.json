@@ -1,0 +1,16 @@
+{
+  "num_predictions": 5000,
+  "recomputed_top1_accuracy": 0.8378,
+  "recorded_top1_accuracy": 0.8378,
+  "recomputed_top5_accuracy": 0.949,
+  "recorded_top5_accuracy": 0.949,
+  "top1_wrong_top5_correct_count": 556,
+  "true_label_rank_counts": {
+    "1": 4189,
+    "2": 329,
+    "3": 126,
+    "4": 59,
+    "5": 42
+  },
+  "metrics_match_predictions": true
+}

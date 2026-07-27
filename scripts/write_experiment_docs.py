@@ -138,6 +138,18 @@ def write_deep_ablation_doc() -> None:
             "- `ablation_summary.csv` 与 `ablation_deltas.csv` 用于报告制表。",
             "- 每个方案目录保存配置、训练历史、预测、每类指标和必要图表。",
             "",
+            "## Top-5逐图证据",
+            "",
+            "每个方案现在都保存5,000张测试图片各自的前五个预测类别及概率，"
+            "不再只保存汇总Top-5。`test_predictions_top5.csv` 中的 "
+            "`pred_1` 至 `pred_5` 和 `score_1` 至 `score_5` 可用于独立复算"
+            "Top-5 accuracy。",
+            "",
+            "- `top5_prediction_validation.json`：逐图重新计算Top-1和Top-5，并与汇总值核对。",
+            "- `top1_wrong_top5_correct.csv`：完整列出Top-1错误但真实类别位于Top-5的样本。",
+            "- `top1_wrong_top5_correct.png`：展示这类样本的图片、真实类别、Top-1类别和真实类别排名。",
+            "- `prediction_validation.json`：同时核对Top-1、Top-5和Macro-F1。",
+            "",
             "## 限制",
             "",
             "受计算预算限制，每个配置当前使用一个固定随机种子，因此这里展示的是"
@@ -266,8 +278,13 @@ def write_scaling_doc() -> None:
             "`split_summary.json` 记录数量、随机种子和SHA-256；"
             "`reproducibility/validation_report.json` 记录嵌套与数据交叉检查。",
             "",
-            "所有测试指标均与 `test_predictions_top1.csv` 重新计算的Top-1和"
-            "Macro-F1核对，结果见各运行目录的 `prediction_validation.json`。",
+            "每个运行目录均保存 `test_predictions_top5.csv`，其中包含每张测试图片的"
+            "`pred_1` 至 `pred_5` 及对应概率。Top-1、Top-5和Macro-F1均从逐图预测"
+            "独立复算，结果见 `prediction_validation.json` 和"
+            "`top5_prediction_validation.json`。",
+            "",
+            "`top1_wrong_top5_correct.csv` 完整列出Top-1预测错误但真实类别仍位于Top-5"
+            "的样本；`top1_wrong_top5_correct.png` 提供可直接用于报告的案例图。",
             "",
             "本实验使用一个固定随机种子，结论适合作为严格可复现的受控趋势，"
             "但不等同于多随机种子的统计显著性分析。",

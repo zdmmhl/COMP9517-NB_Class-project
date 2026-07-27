@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 
+from evaluation.top5_evidence import write_top5_evidence
 from utils.serialization import save_rows_csv
 
 
@@ -147,6 +148,14 @@ def export_deep_run(
         prediction_rows,
         ["file_name", "true_class_index", "pred_class_index", "correct"],
     )
+    top5_validation = write_top5_evidence(
+        output_dir,
+        prediction_rows,
+        summary["top1_accuracy"],
+        summary["top5_accuracy"],
+        classes,
+        metrics["data_root"],
+    )
 
     class_indices = list(range(num_classes))
     precision, recall, f1, support = precision_recall_fscore_support(
@@ -173,6 +182,13 @@ def export_deep_run(
                 "num_predictions": len(prediction_rows),
                 "recomputed_top1_accuracy": recomputed_top1,
                 "recorded_top1_accuracy": summary["top1_accuracy"],
+                "recomputed_top5_accuracy": top5_validation[
+                    "recomputed_top5_accuracy"
+                ],
+                "recorded_top5_accuracy": summary["top5_accuracy"],
+                "top1_wrong_top5_correct_count": top5_validation[
+                    "top1_wrong_top5_correct_count"
+                ],
                 "recomputed_macro_f1": recomputed_macro_f1,
                 "recorded_macro_f1": summary["macro_f1"],
                 "metrics_match_predictions": True,

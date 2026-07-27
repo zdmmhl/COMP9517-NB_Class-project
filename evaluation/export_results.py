@@ -14,6 +14,7 @@ import numpy as np
 from PIL import Image
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 
+from evaluation.top5_evidence import write_top5_evidence
 from utils.serialization import save_rows_csv
 
 
@@ -550,10 +551,21 @@ def main():
             prediction_rows,
             ["file_name", "true_class_index", "pred_class_index", "correct"],
         )
-        copy_if_exists(
-            result_dir / "test_predictions_top5.csv",
-            method_dir / "test_predictions_top5.csv",
-        )
+        if method["initialization"] != "handcrafted":
+            test = test_metrics(metrics)
+            write_top5_evidence(
+                method_dir,
+                prediction_rows,
+                float(test["top1_accuracy"]),
+                float(test["top5_accuracy"]),
+                classes,
+                metrics.get("data_root", "datasets/inat2021"),
+            )
+        else:
+            copy_if_exists(
+                result_dir / "test_predictions_top5.csv",
+                method_dir / "test_predictions_top5.csv",
+            )
         num_classes = int(summary["num_classes"])
         per_class_rows = write_per_class(
             method_dir / "per_class_metrics.csv",

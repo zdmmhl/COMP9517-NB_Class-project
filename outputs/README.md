@@ -33,6 +33,9 @@ outputs/
 类别规模Advanced实验说明位于
 `final_results/inat500/advanced/class_scaling/类别规模Advanced实验说明.md`。
 
+深度模型目录同时保存逐图 Top-5 类别和概率、独立复算结果，以及
+“Top-1 错但 Top-5 对”的 CSV 与案例图。
+
 该目录只跟踪体积较小的 CSV、JSON 和可视化图片，不包含：
 
 - iNaturalist 原始图片；

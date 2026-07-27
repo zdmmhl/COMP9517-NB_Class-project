@@ -537,6 +537,8 @@ def main(argv=None):
         test_metrics["paths"],
         test_metrics["labels"],
         test_metrics["preds"],
+        test_metrics["top5_preds"],
+        test_metrics["top5_scores"],
     )
     if history:
         plot_history(args.output_dir / "training_curves.png", history)

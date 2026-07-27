@@ -97,6 +97,8 @@ def evaluate(
     total = 0
     all_labels = []
     all_preds = []
+    all_top5_preds = []
+    all_top5_scores = []
     all_paths = []
     started = time.perf_counter()
 
@@ -110,15 +112,21 @@ def evaluate(
             if tta:
                 logits = (logits + model(torch.flip(images, dims=[3]))) / 2
             loss = criterion(logits, labels)
-        predictions = logits.argmax(dim=1)
+        probabilities = logits.softmax(dim=1)
+        top5_scores, top5_predictions = probabilities.topk(5, dim=1)
+        predictions = top5_predictions[:, 0]
 
         batch_size = labels.size(0)
         running_loss += loss.item() * batch_size
-        top1_sum += topk_accuracy(logits, labels, 1) * batch_size
-        top5_sum += topk_accuracy(logits, labels, 5) * batch_size
+        top1_sum += (top5_predictions[:, 0] == labels).sum().item()
+        top5_sum += (
+            (top5_predictions == labels[:, None]).any(dim=1).sum().item()
+        )
         total += batch_size
         all_labels.extend(labels.cpu().numpy().tolist())
         all_preds.extend(predictions.cpu().numpy().tolist())
+        all_top5_preds.extend(top5_predictions.cpu().numpy().tolist())
+        all_top5_scores.extend(top5_scores.cpu().numpy().tolist())
         all_paths.extend(paths)
 
     precision, recall, f1, _ = precision_recall_fscore_support(
@@ -142,5 +150,7 @@ def evaluate(
         "images_per_second": total / max(elapsed, 1e-9),
         "labels": all_labels,
         "preds": all_preds,
+        "top5_preds": all_top5_preds,
+        "top5_scores": all_top5_scores,
         "paths": all_paths,
     }

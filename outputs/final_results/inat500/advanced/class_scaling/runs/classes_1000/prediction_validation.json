@@ -1,7 +1,10 @@
 {
   "num_predictions": 5000,
   "recomputed_top1_accuracy": 0.5032,
-  "recorded_top1_accuracy": 0.5031999973297119,
+  "recorded_top1_accuracy": 0.5032,
+  "recomputed_top5_accuracy": 0.7286,
+  "recorded_top5_accuracy": 0.7286,
+  "top1_wrong_top5_correct_count": 1127,
   "recomputed_macro_f1": 0.4898294555118084,
   "recorded_macro_f1": 0.4898294555118084,
   "metrics_match_predictions": true

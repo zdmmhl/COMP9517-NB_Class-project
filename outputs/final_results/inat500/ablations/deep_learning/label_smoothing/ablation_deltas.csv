@@ -1,3 +1,3 @@
 variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
 smoothing_0,Label smoothing = 0,0,0.0,0.0,0.0
-smoothing_01,Label smoothing = 0.1,1,0.003999996376,-0.007000002861,0.002507612957
+smoothing_01,Label smoothing = 0.1,1,0.0042,-0.007,0.002723406286

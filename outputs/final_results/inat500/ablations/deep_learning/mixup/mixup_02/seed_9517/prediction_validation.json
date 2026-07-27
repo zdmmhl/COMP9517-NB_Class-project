@@ -1,8 +1,11 @@
 {
   "num_predictions": 5000,
-  "recomputed_top1_accuracy": 0.6522,
-  "recorded_top1_accuracy": 0.6522000042915345,
-  "recomputed_macro_f1": 0.6463767208826136,
-  "recorded_macro_f1": 0.6463767208826136,
+  "recomputed_top1_accuracy": 0.652,
+  "recorded_top1_accuracy": 0.652,
+  "recomputed_top5_accuracy": 0.8432,
+  "recorded_top5_accuracy": 0.8432,
+  "top1_wrong_top5_correct_count": 956,
+  "recomputed_macro_f1": 0.6461603466136077,
+  "recorded_macro_f1": 0.6461603466136077,
   "metrics_match_predictions": true
 }

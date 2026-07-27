@@ -26,3 +26,6 @@ final_results/
 与 ResNet18 的充分训练和收敛证据见
 [`inat500/CONVERGENCE_EXPERIMENTS.md`](inat500/CONVERGENCE_EXPERIMENTS.md)。
 深度学习消融与类别规模研究也由该README统一索引。
+
+深度模型的逐图片 Top-5 类别、概率、独立复算记录和
+“Top-1 错但 Top-5 对”案例均保存在各自方法或实验运行目录中。

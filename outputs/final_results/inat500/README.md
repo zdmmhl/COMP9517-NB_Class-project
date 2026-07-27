@@ -22,7 +22,7 @@
 |---|---:|---:|---:|---:|---:|
 | 旧版 HOG + SGD linear SVM（20 次迭代） | - | - | 2.80% | 8.66% | 2.11% |
 | SimpleCNN（从零训练） | 50 | 44 | **18.76%** | **40.04%** | **16.70%** |
-| ImageNet 预训练 ResNet18 | 30 | 28 | **66.08%** | **85.78%** | **65.52%** |
+| ImageNet 预训练 ResNet18 | 30 | 28 | **66.08%** | **85.76%** | **65.52%** |
 | 优化后的 ImageNet 预训练 ResNet50 | - | - | 78.26% | 91.80% | 77.99% |
 | ImageNet 预训练 ConvNeXt-Tiny + MixUp | - | - | 82.72% | 94.56% | 82.52% |
 | ResNet50/ConvNeXt 验证集选择集成 | - | - | 83.78% | 94.90% | 83.63% |
@@ -107,6 +107,10 @@ inat500/
 | `training_curves.png` | Loss、Top-1、Top-5 和 Macro-F1 收敛曲线 |
 | `learning_rate.png` | 学习率变化 |
 | `test_predictions_top1.csv` | 5,000 张测试图片的真实类别和预测类别 |
+| `test_predictions_top5.csv` | 每张测试图片的 Top-5 类别及对应概率，可独立复算 Top-5 |
+| `top5_prediction_validation.json` | 逐图复算 Top-1、Top-5，并与汇总结果核对 |
+| `top1_wrong_top5_correct.csv` | Top-1 错误但真实类别位于 Top-5 的完整案例 |
+| `top1_wrong_top5_correct.png` | 均衡展示真实类别位于第 2、3、4、5 名的图片案例 |
 | `per_class_metrics.csv` | 500 类各自的 Precision、Recall、F1 和 support |
 | `confusion_matrix.csv` | 500 x 500 原始混淆计数 |
 | `confusion_matrix_full.png` | 完整归一化混淆矩阵 |
@@ -115,6 +119,11 @@ inat500/
 | `prediction_examples.png` | 测试集预测示例 |
 
 不同方法可能没有训练历史、学习率或预测示例，因此对应文件可能不存在。
+
+所有深度模型都保存上述逐图 Top-5 证据。Top-5 汇总值以
+`test_predictions_top5.csv` 的独立复算结果为准；重新推理时若极少数第五名
+候选因 GPU 浮点排序发生变化，刷新前后的数值和差异会记录在原始运行的
+`metrics.json.top5_evidence` 中。
 
 `examples/<传统方法>/` 保存从逐图片 Top-5 记录中筛选出的
 `successes.csv`、`failures.csv`、`top5_only.csv` 和
