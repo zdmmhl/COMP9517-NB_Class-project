@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 
-ROOT = Path(__file__).resolve().parent
+DEFAULT_ROOT = Path(__file__).resolve().parent
 NUM_CLASSES = 6
 SAMPLES_PER_CLASS = 5
 SCORES = [0.95, 0.80, 0.65, 0.50, 0.35]
@@ -129,7 +129,8 @@ def compute_expected_metrics(
     }
 
 
-def main() -> None:
+def generate_fixture(root: Path) -> None:
+    root.mkdir(parents=True, exist_ok=True)
     class_rows = [
         {
             "class_index": class_index,
@@ -139,7 +140,7 @@ def main() -> None:
         for class_index in range(NUM_CLASSES)
     ]
     write_csv(
-        ROOT / "class_mapping.csv",
+        root / "class_mapping.csv",
         ["class_index", "category_id", "species_name"],
         class_rows,
     )
@@ -158,7 +159,7 @@ def main() -> None:
             predictions = ranked_predictions(class_index, sample_index)
 
             write_image(
-                ROOT / image_path,
+                root / image_path,
                 class_index=class_index,
                 sample_index=sample_index,
             )
@@ -187,14 +188,14 @@ def main() -> None:
             confusion[class_index][predictions[0]] += 1
 
     write_csv(
-        ROOT / "test.csv",
+        root / "test.csv",
         ["sample_id", "image_path", "true_label"],
         test_rows,
     )
     prediction_fields = ["sample_id", "image_path", "true_label"]
     prediction_fields.extend(f"pred_{rank}" for rank in range(1, 6))
     prediction_fields.extend(f"score_{rank}" for rank in range(1, 6))
-    write_csv(ROOT / "predictions.csv", prediction_fields, prediction_rows)
+    write_csv(root / "predictions.csv", prediction_fields, prediction_rows)
 
     metadata = {
         "method_name": "mock_classifier",
@@ -212,7 +213,7 @@ def main() -> None:
         "batch_size": 10,
         "image_size": 96,
     }
-    (ROOT / "metadata.json").write_text(
+    (root / "metadata.json").write_text(
         json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
     )
 
@@ -238,7 +239,7 @@ def main() -> None:
         "epoch_seconds",
     ]
     write_csv(
-        ROOT / "history.csv",
+        root / "history.csv",
         history_fields,
         [dict(zip(history_fields, row, strict=True)) for row in history_rows],
     )
@@ -248,11 +249,11 @@ def main() -> None:
         y_pred,
         top5_predictions,
     )
-    (ROOT / "expected_metrics.json").write_text(
+    (root / "expected_metrics.json").write_text(
         json.dumps(expected_metrics, indent=2) + "\n", encoding="utf-8"
     )
     write_csv(
-        ROOT / "expected_confusion_matrix.csv",
+        root / "expected_confusion_matrix.csv",
         ["true_label", *[f"pred_{index}" for index in range(NUM_CLASSES)]],
         [
             {"true_label": index, **{
@@ -262,6 +263,10 @@ def main() -> None:
             for index in range(NUM_CLASSES)
         ],
     )
+
+
+def main() -> None:
+    generate_fixture(DEFAULT_ROOT)
 
 
 if __name__ == "__main__":

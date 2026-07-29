@@ -1,3 +1,0 @@
-variant,display_name,variant_order,top1_accuracy_mean,top1_accuracy_std,top5_accuracy_mean,top5_accuracy_std,macro_f1_mean,macro_f1_std,macro_precision_mean,macro_precision_std,macro_recall_mean,macro_recall_std,balanced_accuracy_mean,balanced_accuracy_std,training_time_seconds_mean,training_time_seconds_std,inference_time_seconds_mean,inference_time_seconds_std,n_runs
-sgd_svm,SGD linear SVM,0,0.0298,0.0,0.0834,0.0,0.023453008971,0.0,0.025560635591,0.0,0.0298,0.0,0.0298,0.0,75.1829271,0.0,0.0460349,0.0,1
-random_forest,Random Forest,1,0.0248,0.0,0.0672,0.0,0.019184096466,0.0,0.018218427617,0.0,0.0248,0.0,0.0248,0.0,1531.321762299999,0.0,1.6595313,0.0,1

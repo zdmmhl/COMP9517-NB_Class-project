@@ -1,3 +1,0 @@
-variant,display_name,variant_order,top1_accuracy_mean,top1_accuracy_std,top5_accuracy_mean,top5_accuracy_std,macro_f1_mean,macro_f1_std,macro_precision_mean,macro_precision_std,macro_recall_mean,macro_recall_std,balanced_accuracy_mean,balanced_accuracy_std,training_time_seconds_mean,training_time_seconds_std,inference_time_seconds_mean,inference_time_seconds_std,n_runs
-mixup_off,MixUp off,0,0.6456,0.0,0.8352,0.0,0.637117883872,0.0,0.650063395102,0.0,0.6456,0.0,0.6456,0.0,3555.286316000005,0.0,14.414848200002,0.0,1
-mixup_02,MixUp alpha = 0.2,1,0.652,0.0,0.8432,0.0,0.646160346614,0.0,0.662663030666,0.0,0.652,0.0,0.652,0.0,3307.133313800004,0.0,14.516318200003,0.0,1

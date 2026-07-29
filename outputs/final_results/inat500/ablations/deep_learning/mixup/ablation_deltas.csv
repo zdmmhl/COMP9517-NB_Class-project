@@ -1,3 +1,0 @@
-variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
-mixup_off,MixUp off,0,0.0,0.0,0.0
-mixup_02,MixUp alpha = 0.2,1,0.0064,0.008,0.009042462742

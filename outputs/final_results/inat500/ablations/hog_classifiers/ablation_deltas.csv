@@ -1,3 +1,0 @@
-variant,display_name,variant_order,delta_top1_accuracy,delta_top5_accuracy,delta_macro_f1
-sgd_svm,SGD linear SVM,0,0.0,0.0,0.0
-random_forest,Random Forest,1,-0.005,-0.0162,-0.004268912505

@@ -1,3 +1,0 @@
-variant,display_name,variant_order,top1_accuracy_mean,top1_accuracy_std,top5_accuracy_mean,top5_accuracy_std,macro_f1_mean,macro_f1_std,macro_precision_mean,macro_precision_std,macro_recall_mean,macro_recall_std,balanced_accuracy_mean,balanced_accuracy_std,training_time_seconds_mean,training_time_seconds_std,inference_time_seconds_mean,inference_time_seconds_std,n_runs
-basic,Basic augmentation,0,0.6598,0.0,0.8362,0.0,0.651892326464,0.0,0.664956769108,0.0,0.6598,0.0,0.6598,0.0,3293.217974699992,0.0,14.647821800005,0.0,1
-strong,Strong augmentation,1,0.6456,0.0,0.8352,0.0,0.637117883872,0.0,0.650063395102,0.0,0.6456,0.0,0.6456,0.0,3555.286316000005,0.0,14.414848200002,0.0,1

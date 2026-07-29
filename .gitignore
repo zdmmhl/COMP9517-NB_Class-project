@@ -18,24 +18,22 @@ env/
 
 # Local datasets and downloaded weights
 datasets/
+*.tar
+*.tar.gz
 *.pth
 *.pt
 *.ckpt
 
-# Generated split manifests
-data_splits/*.csv
-data_splits/*.json
-!data_splits/README.md
-
-# Experiment artifacts
+# Generated data and experiment artifacts
+data_splits/
+feature_cache/
 checkpoints/
 logs/
-outputs/*
-!outputs/README.md
-!outputs/final_results/
-!outputs/final_results/**
+results/
+outputs/
+analysis/
 
-# Report build artifacts
+# Report and archive build artifacts
 report/*.aux
 report/*.bbl
 report/*.blg
@@ -44,6 +42,7 @@ report/*.fls
 report/*.log
 report/*.out
 report/*.synctex.gz
+*.zip
 
 # OS files
 .DS_Store

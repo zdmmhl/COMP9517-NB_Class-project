@@ -1,286 +1,388 @@
 # COMP9517 iNaturalist Species Classification
 
-This project compares handcrafted computer-vision and deep-learning methods on
-a fixed, reproducible 500-class subset of iNaturalist 2021. The 500-class split
-is the primary benchmark for all headline comparisons. A separate Advanced
-study uses nested 500-, 1,000-, and 2,500-class subsets to measure class-scaling
-effects without replacing the primary benchmark.
+This repository contains the source code for the COMP9517 2026 Term 2 group
+project. The project classifies iNaturalist-2021 images into species and
+compares handcrafted computer-vision pipelines with deep-learning models.
+
+This submission contains source code, configuration files, and tests only.
+Datasets, generated split manifests, model checkpoints, feature caches,
+experimental outputs, and result images are intentionally excluded, as required
+by the project specification.
 
 ## Implemented Methods
 
-- Colour histogram, LBP, HOG, and SIFT Bag-of-Visual-Words features.
-- SGD linear SVM, LinearSVC, and Random Forest classifier comparisons.
-- A small CNN trained from random initialization.
-- ResNet18 trained from scratch.
-- ImageNet-pretrained ResNet18, ResNet50, and ConvNeXt-Tiny.
-- MixUp, strong augmentation, label smoothing, cosine scheduling, TTA, and
-  validation-selected probability ensembling.
-- Controlled ResNet18 ablations for initialization, augmentation, label
-  smoothing, MixUp, and test-time augmentation.
-- An Advanced class-scaling study with fixed-total-image and fixed-class
-  sample-count controls.
-- Top-1/overall accuracy, Top-5 accuracy, macro precision, macro recall,
-  macro F1, confusion matrices, recorded runtime comparison, and error analysis.
-  Missing historical timings are left blank and identified by `timing_note`.
+### Traditional computer vision
+
+- HSV colour histograms
+- Uniform Local Binary Patterns (LBP)
+- Histogram of Oriented Gradients (HOG)
+- SIFT Bag-of-Visual-Words
+- SGD linear SVM, LinearSVC, and Random Forest classifiers
+
+### Deep learning
+
+- SimpleCNN trained from random initialization
+- ResNet18 trained from random initialization
+- ImageNet-pretrained ResNet18
+- ImageNet-pretrained ResNet50
+- ImageNet-pretrained ConvNeXt-Tiny
+- Validation-selected ResNet50 and ConvNeXt probability ensemble
+
+### Controlled studies
+
+- Initialization: scratch versus ImageNet pretraining
+- Basic versus strong augmentation
+- Label smoothing off versus 0.1
+- MixUp off versus MixUp alpha 0.2
+- Test-time augmentation off versus horizontal-flip TTA
+- Advanced class-scaling study with 500, 1,000, and 2,500 classes
 
 ## Repository Structure
 
 ```text
-configs/          Reproducible experiment settings
-data/             Downloading, manifests, datasets, and image transforms
-data_splits/      Generated fixed class and split manifests
-demo/             Software demonstration code (not implemented yet)
-evaluation/       Metrics, plots, ensembling, comparison, and error analysis
-models/           Scratch and torchvision model definitions
-notebooks/        Optional exploration notebooks
-outputs/          Local runs plus compact report-ready result packages
-report/           CVPR report source (not implemented yet)
-scripts/          Thin command-line entry points
-traditional/      Handcrafted feature extraction and classical classifiers
-training/         Deep-learning orchestration, epoch loops, and optimizers
-utils/            Reproducibility and serialization helpers
+configs/       Controlled ablation and class-scaling configurations
+data/          Dataset download, split generation, transforms, and loaders
+evaluation/    Metrics, plots, comparisons, ablations, and error analysis
+models/        SimpleCNN and torchvision model construction
+scripts/       Command-line entry points
+tests/         Unit and integration tests with generated synthetic fixtures
+traditional/   Handcrafted features and classical classifiers
+training/      Deep-learning training and evaluation loops
+utils/         Reproducibility and serialization helpers
 ```
 
-The files in `scripts/` provide command-line entry points and experiment
-orchestration. Reusable metrics, plotting, model, data, and training logic lives
-in the corresponding packages.
+The following directories are created locally when commands are run and are
+not included in the submission:
+
+```text
+datasets/       Extracted iNaturalist data and downloaded archives
+data_splits/    Generated train, validation, and test manifests
+feature_cache/  Cached handcrafted features and SIFT vocabularies
+results/        Checkpoints and complete local experiment records
+outputs/        Compact evaluation tables and report figures
+analysis/       Error-analysis tables and selected examples
+```
 
 ## Environment
 
-```powershell
+Python 3.10 or later is recommended. A CUDA-capable GPU is recommended for deep
+learning, but the traditional methods can run on CPU.
+
+Install the dependencies from the repository root:
+
+```bash
 python -m pip install -r requirements.txt
 ```
 
-All commands below are run from the repository root. Standard data, training,
-and evaluation entry points accept path arguments; controlled ablation and
-class-scaling runners read their paths from the referenced JSON configuration.
+The main dependencies are PyTorch, torchvision, scikit-learn, scikit-image,
+NumPy, pandas, Matplotlib, seaborn, Pillow, joblib, tqdm, and pytest.
 
-## Reproduce The Data Split
+## Dataset
 
-```powershell
-python scripts\prepare_splits.py `
-  --data-root datasets\inat2021 `
-  --output-dir data_splits `
-  --seed 9517 `
-  --num-classes 500 `
-  --train-per-class 40 `
-  --val-per-class 10 `
+The graded experiments use the official iNaturalist-2021 data:
+
+- `train_mini.tar.gz`
+- `train_mini.json.tar.gz`
+- `val.tar.gz`
+- `val.json.tar.gz`
+
+Download and verify all four archives:
+
+```bash
+python scripts/download_inat2021.py --root datasets/inat2021
+```
+
+The downloader stores archives in `datasets/inat2021/archives/` and verifies
+their official MD5 hashes. Extract each archive into `datasets/inat2021/`.
+After extraction, the dataset root must contain the `train_mini/` and `val/`
+image directories and the `train_mini.json` and `val.json` annotation files.
+
+The base experiment uses:
+
+- 500 randomly selected eligible species
+- random seed 9517
+- 40 training images per species
+- 10 validation images per species from `train_mini`
+- 10 held-out test images per species from the official validation split
+
+Generate the split manifests:
+
+```bash
+python scripts/prepare_splits.py \
+  --data-root datasets/inat2021 \
+  --output-dir data_splits \
+  --seed 9517 \
+  --num-classes 500 \
+  --train-per-class 40 \
+  --val-per-class 10 \
   --test-per-class 10
-
-python scripts\verify_splits.py `
-  --data-root datasets\inat2021 `
-  --split-dir data_splits `
-  --check-all-paths
 ```
 
-This produces 20,000 training, 5,000 validation, and 5,000 held-out test
-samples with no image overlap.
+On PowerShell, place the command on one line or replace `\` with the PowerShell
+continuation character.
 
-## Run The Experiments
+Validate the generated manifests and image paths:
 
-```powershell
-python scripts\train_hog_svm.py `
-  --data-root datasets\inat2021 `
-  --split-dir data_splits `
-  --output-dir results\hog_svm_full
-
-python scripts\train_deep.py `
-  --model simple-cnn `
-  --data-root datasets\inat2021 `
-  --split-dir data_splits `
-  --output-dir results\simple_cnn_converged_full `
-  --image-size 128 --epochs 50 `
-  --batch-size 512 --eval-batch-size 1024 `
-  --lr 0.002 --weight-decay 0.0001 `
-  --scheduler cosine --min-lr-ratio 0.01 `
-  --label-smoothing 0.1 --augmentation basic `
-  --grad-clip 1.0 `
-  --early-stopping-patience 8 `
-  --early-stopping-min-delta 0.0005
-
-python scripts\train_deep.py `
-  --model resnet18-pretrained `
-  --data-root datasets\inat2021 `
-  --split-dir data_splits `
-  --output-dir results\resnet18_pretrained_converged_full `
-  --image-size 224 --epochs 30 `
-  --batch-size 512 --eval-batch-size 1024 `
-  --lr 0.001 --backbone-lr-multiplier 0.1 `
-  --weight-decay 0.0001 `
-  --scheduler cosine --min-lr-ratio 0.01 `
-  --label-smoothing 0.1 --augmentation strong `
-  --grad-clip 1.0 --tta `
-  --early-stopping-patience 6 `
-  --early-stopping-min-delta 0.0005 `
-  --num-workers 4 --eval-num-workers 0
+```bash
+python scripts/verify_splits.py \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits
 ```
 
-Use `--resume-checkpoint results\<run>\last_checkpoint.pt` to recover an
-interrupted training run. Training and evaluation entry points implemented with
-`argparse` expose their available options through `--help`.
+The generated class list and manifests must be shared between all experiments.
+Do not regenerate them with a different seed when comparing methods.
 
-## Evaluate Standardized Prediction Artifacts
+## Traditional Experiments
 
-The repository also supports model-independent evaluation from the shared
-`predictions.csv` and `metadata.json` contract documented in
-`模型输出格式指南.md`. This path does not load a model checkpoint:
+Run one feature and classifier combination with
+`scripts/run_traditional_experiment.py`.
 
-```powershell
-python scripts\evaluate_artifacts.py `
-  --prediction-dir tests\fixtures\mock_small `
-  --class-mapping tests\fixtures\mock_small\class_mapping.csv `
-  --test-manifest tests\fixtures\mock_small\test.csv `
-  --history tests\fixtures\mock_small\history.csv `
-  --image-root tests\fixtures\mock_small `
-  --output-dir outputs\runs\mock_evaluation\methods\mock_classifier `
-  --examples-dir outputs\runs\mock_evaluation\examples\mock_classifier
+HOG with an SGD linear SVM:
 
-python scripts\compare_models.py `
-  --evaluation-root outputs\runs\mock_evaluation\methods `
-  --output-dir outputs\runs\mock_evaluation\comparison
+```bash
+python scripts/run_traditional_experiment.py \
+  --feature hog \
+  --classifier sgd-svm \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/traditional_hog_sgd_svm_full
 ```
 
-`scripts/evaluate.py` remains the compatibility entry point for checkpoint-based
-deep-model evaluation. `scripts/evaluate_artifacts.py` is the generic evaluator
-for saved outputs from traditional or deep-learning methods.
+SIFT Bag-of-Visual-Words with an SGD linear SVM:
 
-Run the evaluation contract and pipeline tests with:
-
-```powershell
-python -m pytest
+```bash
+python scripts/run_traditional_experiment.py \
+  --feature sift-bovw \
+  --classifier sgd-svm \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/traditional_sift_bovw_sgd_svm_full
 ```
 
-## Plot Controlled Ablations
+The `--feature` choices are `color`, `lbp`, `hog`, and `sift-bovw`. The
+`--classifier` choices are `linear-svc`, `sgd-svm`, and `random-forest`.
+Use `--help` to inspect all feature and classifier parameters.
 
-Ablation implementation lives in `evaluation/ablation.py`; the command-line
-entry point is `scripts/plot_ablations.py`. The evaluator only reads saved run
-artifacts and does not import or modify model-training code.
+## Deep-Learning Experiments
 
-Each study directory contains `study.json` plus one directory per variant.
-Repeated seeds are stored below each variant. See
-`tests/fixtures/mock_ablation/` for a complete example.
+Train the scratch CNN:
 
-```powershell
-python scripts\plot_ablations.py `
-  --study-dir tests\fixtures\mock_ablation `
-  --output-dir outputs\runs\mock_evaluation\ablations\mock_augmentation
+```bash
+python scripts/train_deep.py \
+  --model simple-cnn \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/simple_cnn_converged_full \
+  --epochs 50 \
+  --augmentation basic
 ```
 
-The command verifies that all variants use the same split, class count, seed
-set, and controlled configuration. It rejects runs that change parameters not
-declared in `allowed_config_differences`. It then writes aggregate metrics,
-baseline deltas, validation details, error-bar charts, and training curves.
+Train an ImageNet-pretrained ResNet18:
 
-The completed deep-learning ablations are driven by
-`configs/deep_ablations.json`:
+```bash
+python scripts/train_deep.py \
+  --model resnet18-pretrained \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/resnet18_pretrained_converged_full \
+  --epochs 50 \
+  --augmentation strong \
+  --label-smoothing 0.1 \
+  --scheduler cosine \
+  --early-stopping-patience 8
+```
 
-```powershell
+Available model names are:
+
+```text
+simple-cnn
+resnet18-scratch
+resnet18-pretrained
+resnet50-pretrained
+convnext-tiny-pretrained
+```
+
+Training writes metrics, per-epoch history, per-image Top-1 and Top-5
+predictions, confusion matrices, plots, and resumable checkpoints to the chosen
+`results/` directory. Use `--resume-checkpoint` to resume an interrupted run.
+
+Run the validation-selected two-model ensemble after training its component
+models:
+
+```bash
+python scripts/train_deep.py \
+  --model resnet50-pretrained \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/resnet50_pretrained_optimized_full
+
+python scripts/train_deep.py \
+  --model convnext-tiny-pretrained \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/convnext_tiny_mixup_full \
+  --mixup-alpha 0.2
+```
+
+The ensemble script reads `best_model.pt` from these two exact result
+directories:
+
+```bash
+python scripts/ensemble_deep_models.py \
+  --data-root datasets/inat2021 \
+  --split-dir data_splits \
+  --output-dir results/deep_ensemble
+```
+
+Ensemble weights are selected using validation macro-F1. The test set is
+evaluated only after the weights are fixed.
+
+## Controlled Deep Ablations
+
+The complete one-factor-at-a-time design is recorded in
+`configs/deep_ablations.json`. Preview the required runs:
+
+```bash
+python scripts/run_deep_ablations.py --dry-run
+```
+
+Run all controlled experiments:
+
+```bash
 python scripts/run_deep_ablations.py
+```
+
+Export compact tables and figures after all runs finish:
+
+```bash
 python scripts/export_deep_ablations.py
-python scripts/write_experiment_docs.py
 ```
 
-## Run The Advanced Class-Scaling Study
+The validation code rejects an ablation if an undeclared training setting
+changes relative to its baseline.
 
-The primary benchmark remains the fixed 500-class split. The Advanced study
-constructs nested 500-, 1,000-, and 2,500-class subsets while keeping the main
-training-image budget at 20,000. Two additional 500-class controls isolate the
-effect of reducing images per class.
+## Advanced Class-Scaling Study
 
-```powershell
+The class-scaling design is recorded in `configs/class_scaling.json`. It keeps
+the total training-image budget fixed for the main 500, 1,000, and 2,500-class
+experiments and includes 500-class sample-count controls.
+
+Generate the nested splits:
+
+```bash
 python scripts/prepare_scaling_splits.py
+```
+
+Preview or run the experiments:
+
+```bash
+python scripts/run_class_scaling.py --dry-run
 python scripts/run_class_scaling.py
+```
+
+Export the compact comparison:
+
+```bash
 python scripts/export_class_scaling.py
-python scripts/write_experiment_docs.py
 ```
 
-The complete specification is in `configs/class_scaling.json`. Report-ready
-outputs are stored below
-`outputs/final_results/inat500/advanced/class_scaling/`; they are not mixed into
-the primary 500-class model comparison.
+## Evaluation and Report Figures
 
-## Generated Files
+Each training pipeline saves per-image predictions and aggregate metrics.
+The evaluation modules compute:
 
-Generated evaluation artifacts are grouped by split identity:
+- Top-1 and Top-5 accuracy
+- overall and balanced accuracy
+- macro precision, recall, and F1
+- per-class precision, recall, F1, and support
+- full and selected-class confusion matrices
+- training and inference time
+- successful, failed, and Top-5-only examples
 
-```text
-outputs/runs/inat500_seed9517/
-```
+Export the completed base experiments into a compact local result package:
 
-Each run is self-contained and may include standardized inputs, per-method
-metrics, comparisons, examples, ablations, and `run_manifest.json`. Local runs,
-datasets, model weights, and caches must not be committed to GitHub or included
-in the final code ZIP.
-
-Re-evaluate the current compact 500-class result package with:
-
-```powershell
-python scripts\evaluate_recorded_results.py
-```
-
-The script reads the class count and seed from `split_summary.json` and writes
-to `outputs/runs/<split_id>/`. For another completed setup, pass its package
-with `--final-results-root`.
-
-## Shared Final Results
-
-The compact, report-ready results package is tracked under:
-
-```text
-outputs/final_results/inat500/
-|-- methods/                    Primary 500-class method records
-|-- comparison/                 Primary 500-class comparisons
-|-- ablations/
-|   |-- deep_learning/          Controlled ResNet18 ablations
-|   `-- <traditional studies>/
-`-- advanced/
-    `-- class_scaling/          Nested 500/1,000/2,500-class study
-```
-
-It contains standardized CSV metrics, training histories, per-class metrics,
-confusion matrices, selected result figures, and the matching fixed split
-manifests. The primary and Advanced results remain separated inside the package.
-It excludes datasets, model weights, caches, probability arrays, and smoke-test
-artifacts.
-
-Regenerate the package from completed local experiments with:
-
-```powershell
+```bash
 python scripts/export_final_results.py
 ```
 
-If the tracked per-method metrics or predictions have been refreshed, rebuild
-all primary comparison CSVs and figures without datasets or checkpoints:
+This exporter expects every method registered in
+`evaluation/export_results.py` to have completed its formal result directory.
+Run `python scripts/export_final_results.py --help` to inspect its input and
+output roots.
 
-```powershell
+Refresh comparison, ablation, class-scaling, and compact confusion-matrix
+figures from the current exported CSV files:
+
+```bash
 python scripts/refresh_final_comparison.py
 ```
 
-See `outputs/final_results/README.md` for the experiment index, metric
-definitions, timing limitations, and file descriptions.
+For an external prediction artifact that follows the generic evaluation
+contract, use:
 
-## Third-Party Libraries
-
-The implementation uses PyTorch and torchvision for deep models, scikit-learn
-and scikit-image for classical methods and features, and NumPy, pandas,
-Matplotlib, Seaborn, and Pillow for data handling and visualisation. Exact
-dependencies are listed in `requirements.txt`. Pretrained model definitions and
-weights are provided through torchvision; the project-specific training,
-evaluation, ablation, and class-scaling orchestration is implemented in this
-repository.
-
-## Build The Code Submission ZIP
-
-Do not submit a ZIP of the whole repository: the tracked report-ready results
-contain images and make a full archive exceed the 40 MB code limit. Build the
-source-only archive from the repository root:
-
-```powershell
-git archive --format=zip --output COMP9517_code.zip HEAD `
-  README.md requirements.txt configs data data_splits demo evaluation models `
-  notebooks scripts tests traditional training utils DATASET_SETUP_GUIDE.md `
-  模型输出格式指南.md 评估模块文件结构指南.md
+```bash
+python scripts/evaluate_artifacts.py --help
+python scripts/compare_models.py --help
+python scripts/analyze_errors.py --help
 ```
 
-This intentionally excludes datasets, checkpoints, report files, and all
-generated result images under `outputs/`.
+Generated result tables and images are written under `outputs/` and are not
+part of the source-code submission.
+
+## Tests
+
+Run the complete test suite:
+
+```bash
+python -m pytest -q
+```
+
+The tests generate their small image fixtures in a temporary directory. No
+dataset or result image is bundled with the submission.
+
+## Reproducibility
+
+- The base split and all training entry points use seed 9517 by default.
+- Split manifests record selected classes, image paths, and remapped labels.
+- Training history, configuration, timing, and per-image predictions are saved
+  for each run.
+- Ablation validation enforces the same split, seed, class count, and test
+  sample count while allowing only the declared factor to change.
+- The class-scaling split builder verifies nested class and image subsets.
+
+## Third-Party Libraries and Resources
+
+This submission uses third-party libraries through their public Python APIs:
+
+- PyTorch and torchvision for neural-network training, model definitions, and
+  ImageNet-pretrained weights
+- scikit-learn for classical classifiers, metrics, and clustering
+- scikit-image for HOG, LBP, SIFT, and image processing
+- NumPy and pandas for numerical and tabular processing
+- Matplotlib and seaborn for plots
+- Pillow for image loading
+- joblib for model and feature-cache serialization
+- tqdm for progress reporting
+- pytest for automated tests
+
+No third-party source files, trained weights, or dataset files are bundled in
+this submission.
+
+Dataset reference:
+
+Grant Van Horn, Elijah Cole, Sara Beery, Kimberly Wilber, Serge Belongie, and
+Oisin Mac Aodha. "Benchmarking Representation Learning for Natural World Image
+Collections." CVPR, 2021.
+
+Official dataset repository:
+<https://github.com/visipedia/inat_comp/tree/master/2021>
+
+torchvision model documentation:
+<https://pytorch.org/vision/stable/models.html>
+
+## Creating the Submission ZIP
+
+Create the ZIP from the checked-out `main` branch. Include the visible project
+files and directories, but do not include the hidden `.git/` directory or any
+locally generated ignored directory such as `datasets/`, `data_splits/`,
+`feature_cache/`, `results/`, `outputs/`, or `analysis/`.

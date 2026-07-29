@@ -1,5 +1,0 @@
-variant,display_name,variant_order,top1_accuracy_mean,top1_accuracy_std,top5_accuracy_mean,top5_accuracy_std,macro_f1_mean,macro_f1_std,macro_precision_mean,macro_precision_std,macro_recall_mean,macro_recall_std,balanced_accuracy_mean,balanced_accuracy_std,training_time_seconds_mean,training_time_seconds_std,inference_time_seconds_mean,inference_time_seconds_std,n_runs
-color,HSV colour histogram,0,0.0188,0.0,0.0724,0.0,0.014456757231,0.0,0.023330382319,0.0,0.0188,0.0,0.0188,0.0,3.8868972,0.0,0.024849400001,0.0,1
-lbp,Uniform LBP,1,0.0046,0.0,0.0178,0.0,0.002558681343,0.0,0.00492142419,0.0,0.0046,0.0,0.0046,0.0,1.5329041,0.0,0.0188487,0.0,1
-hog,HOG,2,0.0298,0.0,0.0834,0.0,0.023453008971,0.0,0.025560635591,0.0,0.0298,0.0,0.0298,0.0,75.1829271,0.0,0.0460349,0.0,1
-sift_bovw,SIFT-BoVW,3,0.0122,0.0,0.0482,0.0,0.006566082227,0.0,0.009298492895,0.0,0.0122,0.0,0.0122,0.0,4.165196800001,0.0,0.0270352,0.0,1

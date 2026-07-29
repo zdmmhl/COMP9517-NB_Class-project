@@ -1,3 +1,0 @@
-run_id,variant,display_name,variant_order,seed,run_dir,split_id,num_classes,num_test_samples,top1_accuracy,top5_accuracy,macro_f1,macro_precision,macro_recall,balanced_accuracy,training_time_seconds,inference_time_seconds
-tta_off/seed_9517,tta_off,TTA off,0,9517,tta_off/seed_9517,inat500_seed9517,500,5000,0.6456,0.8352,0.6371178838723083,0.6500633951016304,0.6456,0.6456,3555.286316000005,14.41484820000187
-tta_on/seed_9517,tta_on,Horizontal-flip TTA,1,9517,tta_on/seed_9517,inat500_seed9517,500,5000,0.6604,0.8432,0.6524533756705236,0.6675630531061646,0.6604000000000001,0.6604000000000001,3555.286316000005,15.93297309999616

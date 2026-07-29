@@ -1,9 +1,0 @@
-parameter,value
-method_key,hog_random_forest
-method_name,HOG + Random Forest (300 trees)
-initialization,handcrafted
-feature,"{""image_size"": 128, ""orientations"": 9, ""pixels_per_cell"": 16, ""cells_per_block"": 2}"
-classifier,"{""name"": ""random-forest"", ""svm_c"": null, ""sgd_alpha"": null, ""max_iter"": null, ""rf_estimators"": 300, ""rf_max_features"": ""sqrt"", ""rf_min_samples_leaf"": 1, ""rf_class_weight"": ""balanced_subsample""}"
-workers,12
-max_classes,
-max_per_class,
