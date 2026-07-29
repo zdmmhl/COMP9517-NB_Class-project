@@ -133,6 +133,7 @@ def main():
     test_labels = read_labels(test_rows)
     weight_rows = []
     best = None
+    # Choose weights on validation, then apply the winner once to test.
     for convnext_weight in np.linspace(0.0, 1.0, 11):
         probabilities = (
             (1.0 - convnext_weight) * split_probabilities["val"]["resnet50"]

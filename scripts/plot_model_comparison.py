@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from evaluation.comparison import main
+main = load_main("evaluation.comparison")
 
 
 if __name__ == "__main__":

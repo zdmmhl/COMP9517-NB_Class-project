@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from evaluation.export_results import main
+main = load_main("evaluation.export_results")
 
 
 if __name__ == "__main__":

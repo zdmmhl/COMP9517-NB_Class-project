@@ -216,6 +216,7 @@ def export_deep_run(
     save_rows_csv(output_dir / "per_class_metrics.csv", per_class_rows)
 
     if include_confusion_csv:
+        # Build the published matrix from the same per-image predictions.
         matrix = confusion_matrix(labels, predictions, labels=class_indices)
         matrix_rows = []
         for row_index, values in enumerate(matrix):

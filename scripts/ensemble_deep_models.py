@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from evaluation.ensemble import main
+main = load_main("evaluation.ensemble")
 
 
 if __name__ == "__main__":

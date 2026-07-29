@@ -74,6 +74,7 @@ def extract_sift_descriptors(image, max_descriptors):
 
 
 def rows_fingerprint(rows):
+    # Bind each cache file to the exact image order and labels.
     digest = hashlib.sha1()
     for row in rows:
         digest.update(row["file_name"].encode("utf-8"))
@@ -239,6 +240,7 @@ def fit_or_load_sift_vocabulary(train_rows, data_root, cache_dir, args):
         raise RuntimeError("SIFT found no descriptors in the vocabulary image sample.")
     descriptor_matrix = np.vstack(nonempty)
     if len(descriptor_matrix) > args.sift_vocabulary_descriptors:
+        # Limit KMeans input so vocabulary fitting stays within memory.
         sample = rng.choice(
             len(descriptor_matrix),
             size=args.sift_vocabulary_descriptors,

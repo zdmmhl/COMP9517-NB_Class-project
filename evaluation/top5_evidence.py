@@ -142,6 +142,7 @@ def save_rescued_case_plot(
 ) -> None:
     selected = []
     per_rank = max(1, max_images // 4)
+    # Sample every true-label rank so rank-2 cases do not dominate the plot.
     for rank in range(2, 6):
         ranked_cases = sorted(
             (row for row in cases if int(row["true_rank"]) == rank),

@@ -624,6 +624,7 @@ def write_manifest(output_dir):
         relative = path.relative_to(output_dir)
         data = path.read_bytes()
         if path.suffix.lower() in CANONICAL_TEXT_SUFFIXES:
+            # Keep manifest sizes stable across Windows and Linux.
             data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
         rows.append(
             {

@@ -41,6 +41,7 @@ def train_one_epoch(
         mixed_labels = labels
         mixup_lambda = 1.0
         if mixup_alpha > 0:
+            # Use the same ratio for mixed images, loss, and accuracy.
             mixup_lambda = float(np.random.beta(mixup_alpha, mixup_alpha))
             permutation = torch.randperm(images.size(0), device=device)
             images = mixup_lambda * images + (1.0 - mixup_lambda) * images[permutation]
@@ -110,6 +111,7 @@ def evaluate(
         with torch.amp.autocast("cuda", enabled=use_amp):
             logits = model(images)
             if tta:
+                # Average original and flipped logits before computing metrics.
                 logits = (logits + model(torch.flip(images, dims=[3]))) / 2
             loss = criterion(logits, labels)
         probabilities = logits.softmax(dim=1)

@@ -322,6 +322,7 @@ def train_model(
             f"val_f1={row['val_macro_f1']:.4f}"
         )
 
+        # Select checkpoints with validation data, never with the test set.
         improved = (
             val_metrics["macro_f1"]
             > best_val_f1 + args.early_stopping_min_delta

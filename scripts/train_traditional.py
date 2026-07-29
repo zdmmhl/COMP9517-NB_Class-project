@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from traditional.hog_svm import main
+main = load_main("traditional.hog_svm")
 
 
 if __name__ == "__main__":

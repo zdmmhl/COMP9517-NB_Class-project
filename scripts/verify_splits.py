@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from data.verify_splits import main
+main = load_main("data.verify_splits")
 
 
 if __name__ == "__main__":

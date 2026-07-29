@@ -10,6 +10,7 @@ def build_optimizer(model, model_name, lr, weight_decay, backbone_lr_multiplier)
         parameter for parameter in model.parameters() if id(parameter) not in head_ids
     ]
     if model_name.startswith("resnet") and backbone_lr_multiplier < 1.0:
+        # Fine-tune the pretrained backbone more slowly than the new head.
         parameter_groups = [
             {"params": backbone_params, "lr": lr * backbone_lr_multiplier},
             {"params": head_params, "lr": lr},

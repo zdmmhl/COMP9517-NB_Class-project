@@ -168,6 +168,7 @@ def build_scaling_splits(config: dict, project_root: Path) -> dict:
     if len(base_ids) != 500:
         raise ValueError("The class-scaling study requires the fixed 500-class base split")
 
+    # Keep base classes first so their class indices do not change.
     eligible_1000 = [
         category_id
         for category_id in sorted(categories)
@@ -216,6 +217,7 @@ def build_scaling_splits(config: dict, project_root: Path) -> dict:
             category = categories[category_id]
             class_rows.append(stable_species_record(category, class_index))
             if category_id in base_rows["train"]:
+                # Reuse prefixes of the base split instead of sampling again.
                 for name in manifests:
                     count = int(spec[f"{name}_per_class"])
                     selected = base_rows[name][category_id][:count]
@@ -230,6 +232,7 @@ def build_scaling_splits(config: dict, project_root: Path) -> dict:
                 pool_train_count, pool_val_count = 20, 5
             else:
                 pool_train_count, pool_val_count = 8, 2
+            # Sample one pool, then split it to prevent train/validation overlap.
             selected_train_mini = deterministic_sample(
                 train_by_category[category_id],
                 pool_train_count + pool_val_count,
@@ -330,6 +333,7 @@ def build_scaling_splits(config: dict, project_root: Path) -> dict:
             grouped.setdefault(int(row["category_id"]), set()).add(row["file_name"])
         return grouped
 
+    # Every reduced setup must be an exact subset of the larger setup.
     sample_nesting = {}
     for split_name in ["train", "val", "test"]:
         base_files = category_files("classes_500", split_name)

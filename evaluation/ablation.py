@@ -264,6 +264,7 @@ def validate_ablation_study(study: AblationStudy) -> dict[str, Any]:
     )
     allowed = set(study.spec["allowed_config_differences"])
     checked_pairs = []
+    # Only the declared ablation factor may differ from the baseline.
     for variant in study.variants:
         if variant == study.baseline_variant:
             continue

@@ -73,6 +73,7 @@ def build_classifier(args):
 
 
 def classifier_scores(model, X):
+    # Top-5 needs a ranking, so raw decision scores are sufficient.
     if hasattr(model, "decision_function"):
         scores = model.decision_function(X)
     elif hasattr(model, "predict_proba"):

@@ -1,6 +1,6 @@
-from _bootstrap import PROJECT_ROOT  # noqa: F401
+from _bootstrap import load_main
 
-from traditional.experiment import main
+main = load_main("traditional.experiment")
 
 
 if __name__ == "__main__":

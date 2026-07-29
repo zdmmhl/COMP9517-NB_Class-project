@@ -75,6 +75,7 @@ def refresh_compact_confusion_figures(output_dir: Path) -> int:
         with prediction_path.open("r", encoding="utf-8", newline="") as file:
             predictions = list(csv.DictReader(file))
         matrix = np.zeros((num_classes, num_classes), dtype=np.int64)
+        # Rebuild the figure from CSV instead of copying an older image.
         for row in predictions:
             matrix[
                 int(row["true_class_index"]),
